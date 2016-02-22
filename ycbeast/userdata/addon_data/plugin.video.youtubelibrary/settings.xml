@@ -1,0 +1,55 @@
+<settings>
+    <setting id="debugmode" value="false" />
+    <setting id="default_episode" value="default" />
+    <setting id="default_excludewords" value="" />
+    <setting id="default_generate_nfo" value="true" />
+    <setting id="default_genre" value="" />
+    <setting id="default_maxlength" value="" />
+    <setting id="default_minlength" value="" />
+    <setting id="default_musicvideo_album" value="video title and description" />
+    <setting id="default_musicvideo_album_fallback" value="hardcoded" />
+    <setting id="default_musicvideo_album_hardcoded" value="Unknown" />
+    <setting id="default_musicvideo_artist" value="video title and description" />
+    <setting id="default_musicvideo_artist_fallback" value="do not add" />
+    <setting id="default_musicvideo_artist_hardcoded" value="" />
+    <setting id="default_musicvideo_excludewords" value="" />
+    <setting id="default_musicvideo_generate_nfo" value="true" />
+    <setting id="default_musicvideo_genre" value="hardcoded" />
+    <setting id="default_musicvideo_genre_fallback" value="do not add" />
+    <setting id="default_musicvideo_genre_hardcoded" value="" />
+    <setting id="default_musicvideo_maxlength" value="" />
+    <setting id="default_musicvideo_minlength" value="" />
+    <setting id="default_musicvideo_onlyinclude" value="" />
+    <setting id="default_musicvideo_plot" value="video description" />
+    <setting id="default_musicvideo_plot_fallback" value="video description" />
+    <setting id="default_musicvideo_plot_hardcoded" value="" />
+    <setting id="default_musicvideo_removedescription" value="" />
+    <setting id="default_musicvideo_removetitle" value="" />
+    <setting id="default_musicvideo_skip_albums" value="false" />
+    <setting id="default_musicvideo_skip_audio" value="false" />
+    <setting id="default_musicvideo_skip_live" value="false" />
+    <setting id="default_musicvideo_skip_lyrics" value="false" />
+    <setting id="default_musicvideo_song_fallback" value="video title" />
+    <setting id="default_musicvideo_stripdescription" value="" />
+    <setting id="default_musicvideo_striptitle" value="" />
+    <setting id="default_musicvideo_tags" value="Youtube" />
+    <setting id="default_musicvideo_year" value="video title and description" />
+    <setting id="default_musicvideo_year_fallback" value="published year" />
+    <setting id="default_musicvideo_year_hardcoded" value="" />
+    <setting id="default_onlyinclude" value="" />
+    <setting id="default_removedescription" value="" />
+    <setting id="default_removetitle" value="" />
+    <setting id="default_season" value="year" />
+    <setting id="default_stripdescription" value="" />
+    <setting id="default_striptitle" value="" />
+    <setting id="default_tags" value="Youtube" />
+    <setting id="download_images" value="true" />
+    <setting id="mode" value="1" />
+    <setting id="musicvideo_folder" value="special://userdata/addon_data/plugin.video.youtubelibrary/Streams/MusicVideos" />
+    <setting id="resume_playback" value="true" />
+    <setting id="service_interval" value="12" />
+    <setting id="service_interval_musicvideo" value="672" />
+    <setting id="strm_link" value="Youtube Library" />
+    <setting id="tv_folder" value="special://userdata/addon_data/plugin.video.youtubelibrary/Streams/TV" />
+    <setting id="update_videolibrary" value="true" />
+</settings>

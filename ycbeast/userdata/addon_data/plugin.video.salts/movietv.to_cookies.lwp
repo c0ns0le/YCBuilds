@@ -1,0 +1,4 @@
+#LWP-Cookies-2.0
+Set-Cookie3: __cfduid=d50e219ecc7135aa5ee85c7860b785ebf1450488043; path="/"; domain=".movietv.to"; path_spec; domain_dot; expires="2016-12-18 01:20:43Z"; HttpOnly=None; version=0
+Set-Cookie3: PHPSESSID=8ea4e493b25c28cfbfbc0dc512583aef; path="/"; domain="movietv.to"; path_spec; discard; version=0
+Set-Cookie3: announcement=1450326639; path="/"; domain="movietv.to"; path_spec; expires="2016-12-18 01:20:42Z"; httponly=None; version=0

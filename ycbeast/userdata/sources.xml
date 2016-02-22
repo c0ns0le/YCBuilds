@@ -1,0 +1,107 @@
+<sources>
+    <programs>
+        <default pathversion="1"></default>
+    </programs>
+    <video>
+        <default pathversion="1"></default>
+        <source>
+            <name>YCBeast YouTube Library</name>
+            <path pathversion="1">/sdcard/Android/data/org.xbmc.kodi/files/.kodi/userdata/addon_data/plugin.video.youtubelibrary/Streams/TV/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+    </video>
+    <music>
+        <default pathversion="1"></default>
+    </music>
+    <pictures>
+        <default pathversion="1"></default>
+    </pictures>
+    <files>
+        <default pathversion="1"></default>
+        <source>
+            <name>robo</name>
+            <path pathversion="1">http://repo.shit.football/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>NJMSoccer</name>
+            <path pathversion="1">http://njmweb.we.bs/NJMSoccer/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>Legends</name>
+            <path pathversion="1">http://4legends.co.uk/Legends/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>tv</name>
+            <path pathversion="1">http://fusion.tvaddons.ag/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>dexter</name>
+            <path pathversion="1">http://dexteriptv.com/repo/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>kodi</name>
+            <path pathversion="1">http://chrisbwizard.pcriot.com/kodi/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>ares</name>
+            <path pathversion="1">http://www.areswizard.co.uk/zip/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>.tecbox</name>
+            <path pathversion="1">http://tecbox.tv/repo/install/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>.spartan</name>
+            <path pathversion="1">http://spartanpixel.net/repo/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>..YCRepository</name>
+            <path pathversion="1">http://jasongentili.com/repo/Repository/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>.metalkettle</name>
+            <path pathversion="1">http://kodi.metalkettle.co/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>.wookie</name>
+            <path pathversion="1">http://wookie.metalkettle.co/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>.gentecwiz</name>
+            <path pathversion="1">http://gen-tec.co/gentecwiz/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>.schism</name>
+            <path pathversion="1">http://justnewtech.com/schism/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>.xfinity</name>
+            <path pathversion="1">http://xunitytalk.me/xfinity/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>.specto</name>
+            <path pathversion="1">http://filmkodi.com/repository/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>.muckys</name>
+            <path pathversion="1">http://muckys.kodimediaportal.ml/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+    </files>
+</sources>

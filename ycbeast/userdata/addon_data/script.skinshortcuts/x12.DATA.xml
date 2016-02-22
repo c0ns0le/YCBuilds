@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>19024</defaultID>
+		<label>19024</label>
+		<label2 />
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(RadioChannels)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>ChannelPear</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.channelpear",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.ukturk</defaultID>
+		<label>Robocop</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ukturk%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.Operation_RobocopUltimate",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.ccloudtv</defaultID>
+		<label>[COLOR blue][B]cCloud TV[/B][/COLOR]</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ccloudtv%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ccloudtv",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Live TV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.SportsDevil%5cresources%5cimages%5cfolder.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BTV%26url%3Dcustoms.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BTV%26type%3Drss%26icon%3D",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.stalker</defaultID>
+		<label>USTV Now</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.stalker%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ustvnow.tva",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>19023</defaultID>
+		<label>19023</label>
+		<label2 />
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(TVChannels)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>19069</defaultID>
+		<label>19069</label>
+		<label2 />
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(TVGuide)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>19163</defaultID>
+		<label>19163</label>
+		<label2 />
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(TVRecordings)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>19040</defaultID>
+		<label>19040</label>
+		<label2 />
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(TVTimers)</action>
+	</shortcut>
+</shortcuts>

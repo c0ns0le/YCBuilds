@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>howtoenabledisableadult</defaultID>
+		<label>Adult On or Off</label>
+		<label2>Favourite</label2>
+		<icon>DefaultFolder.png</icon>
+		<thumb>https://i.ytimg.com/vi/4x2FqqL7qEM/hqdefault.jpg</thumb>
+		<action>PlayMedia("plugin://plugin.video.youtube/play/?video_id=O5BPn6m4dPA",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>howtoaddspecto</defaultID>
+		<label>Add Specto</label>
+		<label2>Favourite</label2>
+		<icon>DefaultFolder.png</icon>
+		<thumb>https://i.ytimg.com/vi/T6dzf8BxGN4/hqdefault.jpg</thumb>
+		<action>PlayMedia("plugin://plugin.video.youtube/play/?video_id=4ms61EDJsGM",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>ycbeasttutorial</defaultID>
+		<label>YCBeast Overview</label>
+		<label2>Favourite</label2>
+		<icon>DefaultFolder.png</icon>
+		<thumb>https://i.ytimg.com/vi/lbO5rFdldV4/hqdefault.jpg</thumb>
+		<action>PlayMedia("plugin://plugin.video.youtube/play/?video_id=JmT-SLvvCV8",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>howtofixurls</defaultID>
+		<label>Fix URLs</label>
+		<label2>Favourite</label2>
+		<icon>DefaultFolder.png</icon>
+		<thumb>https://i.ytimg.com/vi/hnt-FxoT8No/hqdefault.jpg</thumb>
+		<action>PlayMedia("plugin://plugin.video.youtube/play/?video_id=sG3ZU1k_Zas",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>watchlivetv</defaultID>
+		<label>Watch LiveTV</label>
+		<label2>Favourite</label2>
+		<icon>DefaultFolder.png</icon>
+		<thumb>https://i.ytimg.com/vi/Co6mhop5hno/hqdefault.jpg</thumb>
+		<action>PlayMedia("plugin://plugin.video.youtube/play/?video_id=183d7vKR5pI",return)</action>
+	</shortcut>
+</shortcuts>

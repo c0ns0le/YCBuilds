@@ -1,0 +1,6 @@
+<settings>
+    <setting id="display_score" value="true" />
+    <setting id="downloadPath" value="" />
+    <setting id="droid" value="true" />
+    <setting id="meta" value="false" />
+</settings>

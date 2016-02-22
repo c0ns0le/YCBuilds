@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>One242415</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fgibraltar.watchkodi.com%2fskullPhoenicIcon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=One242415&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fgibraltar.watchkodi.com%2FskullPhoenicIcon.png&amp;fanart=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.phstreams%5Cfanart.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Rockcrusher</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fyork.watchkodi.com%2fmyicon.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Rockcrusher&amp;url=http%3A%2F%2Fyork.watchkodi.com%2FMainDir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fyork.watchkodi.com%2Fmyicon.jpg&amp;fanart=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.phstreams%5Cfanart.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>[COLOR blue][B]Exodus[/B][/COLOR]</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fshanghai.watchkodi.com%2fPhoenix%2520Tv%2520Icon.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.exodus",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Staael2014</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs29.postimg.org%2fta0bxj12f%2fstaael1.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Staael2014&amp;url=http%3A%2F%2Ftuzla.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fs29.postimg.org%2Fta0bxj12f%2Fstaael1.png&amp;fanart=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.phstreams%5Cfanart.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>TNPB</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fzenica.watchkodi.com%2fMyIcon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=TNPB&amp;url=http%3A%2F%2Fzenica.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fzenica.watchkodi.com%2FMyIcon.png&amp;fanart=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.phstreams%5Cfanart.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+</shortcuts>

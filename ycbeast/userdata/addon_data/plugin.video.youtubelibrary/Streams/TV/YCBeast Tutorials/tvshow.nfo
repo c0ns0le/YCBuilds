@@ -1,0 +1,20 @@
+
+            <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+            <tvshow>
+                <title>YCBeast Tutorials</title>
+                <showtitle>YCBeast Tutorials</showtitle>
+                <year>2016</year>
+                <plot>Overviews, tutorials, sneak peaks and releases of my YCBeast Build for Kodi/XBMC. Which I load on all FireSticks, FireTVs and Android Boxes. It's Fully Loaded and only getting better!!</plot>
+                <genre>Youtube / Tutorials</genre>
+                <premiered>2016-02-04</premiered>
+                <aired>2016-02-04</aired>
+                <studio>Ashby Jest</studio>
+                <thumb>https://yt3.ggpht.com/-Bo_5Kv7evZ0/AAAAAAAAAAI/AAAAAAAAAAA/6HdJ87xSfTo/s240-c-k-no/photo.jpg</thumb>
+                <thumb aspect="poster">https://yt3.ggpht.com/-Bo_5Kv7evZ0/AAAAAAAAAAI/AAAAAAAAAAA/6HdJ87xSfTo/s240-c-k-no/photo.jpg</thumb>
+                <thumb aspect="banner">https://yt3.ggpht.com/--jEbpaaBL6Y/VrNuNWFAV4I/AAAAAAAAACU/Vo_rpBG-Vrk/w1060-fcrop64=1,00005a57ffffa5a8-nd/youtube-bg.png</thumb>
+                <fanart>
+                    <thumb>https://yt3.ggpht.com/--jEbpaaBL6Y/VrNuNWFAV4I/AAAAAAAAACU/Vo_rpBG-Vrk/w2120-fcrop64=1,00000000ffffffff-nd/youtube-bg.png</thumb>
+                </fanart>
+                <tag>Youtube</tag>
+            </tvshow>
+    

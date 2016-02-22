@@ -1,0 +1,17 @@
+<settings>
+    <setting id="Subends" value="" />
+    <setting id="accountstatus" value="free" />
+    <setting id="activationsleft" value="" />
+    <setting id="autoupdate" value="true" />
+    <setting id="deviceid" value="C9ITGAK4ZY40XY7D" />
+    <setting id="firstrun" value="false" />
+    <setting id="lastclearedcache" value="2016-01-28" />
+    <setting id="lastclearedpackages" value="2015-12-30" />
+    <setting id="lastclearedthumbnails" value="2016-01-28" />
+    <setting id="runonce" value="1" />
+    <setting id="showadult" value="true" />
+    <setting id="totalspacegained" value="361.34" />
+    <setting id="totaltempfiles" value="2935" />
+    <setting id="username" value="free" />
+    <setting id="versionoverride" value="" />
+</settings>

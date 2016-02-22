@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.ycsports" name="YCBeast Sports Version" version="1.0.1" provider-name="ForTheJest">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">The YCBeast Sports Build for Firesticks.</summary>
+    <description lang="en">Version 1.0.1 - Released on 02.21.2016</description>
+    <platform>all</platform>
+  </extension>
+</addon>

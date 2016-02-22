@@ -1,0 +1,591 @@
+# Kodi Media Center language file
+# Addon Name: Youtube Vault
+# Addon id: plugin.video.Youtube_vault
+# Addon Provider: Tvaddons
+msgid ""
+msgstr ""
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#settings labels
+
+msgctxt "#30000"
+msgid "youtube Vault"
+msgstr ""
+
+msgctxt "#30001"
+msgid "Live"
+msgstr ""
+
+msgctxt "#30002"
+msgid "No live videos available right now."
+msgstr ""
+
+msgctxt "#30003"
+msgid "Minimum percent to mark a video as watched"
+msgstr ""
+
+msgctxt "#30004"
+msgid "All Videos"
+msgstr ""
+
+msgctxt "#30005"
+msgid "Movie Info"
+msgstr ""
+
+msgctxt "#30006"
+msgid "Mark as watched"
+msgstr ""
+
+msgctxt "#30007"
+msgid "Remove watched"
+msgstr ""
+
+msgctxt "#30008"
+msgid "General"
+msgstr ""
+
+msgctxt "#30009"
+msgid "Show all videos directory"
+msgstr ""
+
+msgctxt "#30010"
+msgid "Next Page"
+msgstr ""
+
+msgctxt "#30011"
+msgid "Videos per youtube page"
+msgstr ""
+
+msgctxt "#10012"
+msgid "Action Movies"
+msgstr ""
+
+msgctxt "#10013"
+msgid "Anime Movies"
+msgstr ""
+
+msgctxt "#10014"
+msgid "Christian Movies"
+msgstr ""
+
+msgctxt "#10015"
+msgid "Comedy Movies"
+msgstr ""
+
+msgctxt "#10016"
+msgid "HORROR Movies"
+msgstr ""
+
+msgctxt "#10017"
+msgid "Family Movies"
+msgstr ""
+
+msgctxt "#10018"
+msgid "Romance/Drama Movies"
+msgstr ""
+
+msgctxt "#10019"
+msgid "Sci-fi Movies"
+msgstr ""
+
+msgctxt "#10020"
+msgid "Western Movies"
+msgstr ""
+
+msgctxt "#10021"
+msgid "LMN Movies"
+msgstr ""
+
+msgctxt "#10023"
+msgid "Hallmark Movies"
+msgstr ""
+
+msgctxt "#10024"
+msgid "Old Horror Movies"
+msgstr ""
+
+msgctxt "#10025"
+msgid "1920-1939 Movies"
+msgstr ""
+
+msgctxt "#10026"
+msgid "1940-1959 Movies"
+msgstr ""
+
+msgctxt "#10027"
+msgid "1960-1979 Movies"
+msgstr ""
+
+msgctxt "#10028"
+msgid "1980-1999 Movies"
+msgstr ""
+
+msgctxt "#10029"
+msgid "2000-2009 Movies"
+msgstr ""
+
+msgctxt "#30020"
+msgid "Bonanza"#
+msgstr ""
+
+msgctxt "#30021"
+msgid "Scooby Doo"
+msgstr ""
+
+msgctxt "#30022"
+msgid "Teenage Mutant Ninja Turtles"
+msgstr ""
+
+msgctxt "#30023"
+msgid "Captain Planet"
+msgstr ""
+
+msgctxt "#30024"
+msgid "Rugrats"
+msgstr ""
+
+msgctxt "#30025"
+msgid "Transformers"
+msgstr ""
+
+msgctxt "#30026"
+msgid "Hercules"
+msgstr ""
+
+msgctxt "#30027"
+msgid "Arthur"
+msgstr ""
+
+msgctxt "#30028"
+msgid "Kirby"
+msgstr ""
+
+msgctxt "#30029"
+msgid "Street Fighter"
+msgstr ""
+
+msgctxt "#30030"
+msgid "Dungeons & Dragons"
+msgstr ""
+
+msgctxt "#30031"
+msgid "Duck Tales"
+msgstr ""
+
+msgctxt "#30032"
+msgid "Kung Fu Panda"
+msgstr ""
+
+msgctxt "#30033"
+msgid "Darkwing Duck"
+msgstr ""
+
+msgctxt "#30034"
+msgid "X Men Evolution"
+msgstr ""
+
+msgctxt "#30035"
+msgid "He-Man"
+msgstr ""
+
+msgctxt "#30036"
+msgid "POPEYE"
+msgstr ""
+
+msgctxt "#30037"
+msgid "Pink Panther"
+msgstr ""
+
+msgctxt "#30038"
+msgid "Pippi Longstocking"
+msgstr ""
+
+msgctxt "#30039"
+msgid "Looney Tunes"
+msgstr ""
+
+msgctxt "#30040"
+msgid "Animated Classics"
+msgstr ""
+
+msgctxt "#30041"
+msgid "The Wonderful Wizard Of Oz"
+msgstr ""
+
+msgctxt "#30042"
+msgid "Casper the Friendly Ghost"
+msgstr ""
+
+msgctxt "#30043"
+msgid "SNUFFY SMITH"
+msgstr ""
+
+msgctxt "#30044"
+msgid "The Fantastic Four"
+msgstr ""
+
+msgctxt "#30045"
+msgid "THE MIGHTY HERCULES"
+msgstr ""
+
+msgctxt "#30046"
+msgid "The Smurfs"
+msgstr ""
+
+msgctxt "#30047"
+msgid "Speed Racer"
+msgstr ""
+
+msgctxt "#30048"
+msgid "The Littles"
+msgstr ""
+
+msgctxt "#30049"
+msgid "The Thing"
+msgstr ""
+
+msgctxt "#30050"
+msgid "SHE-RA"
+msgstr ""
+
+msgctxt "#30051"
+msgid "Star Wars Droids"
+msgstr ""
+
+msgctxt "#30052"
+msgid "Dr Seuss"
+msgstr ""
+
+msgctxt "#30053"
+msgid "Chilly Willy"
+msgstr ""
+
+msgctxt "#30054"
+msgid "Woody Woodpecker"
+msgstr ""
+
+msgctxt "#30055"
+msgid "Lone Ranger"
+msgstr ""
+
+msgctxt "#30056"
+msgid "Lucky Luke"
+msgstr ""
+
+msgctxt "#30057"
+msgid "Tom And Jerry"
+msgstr ""
+
+msgctxt "#30058"
+msgid "Dudley Do-Right"
+msgstr ""
+
+msgctxt "#30059"
+msgid "Alice in wonderland"
+msgstr ""
+
+msgctxt "#30060"
+msgid "Flipper & Lopaka"
+msgstr ""
+
+msgctxt "#30061"
+msgid "LOONEY TUNES COMPILATION"
+msgstr ""
+
+msgctxt "#30062"
+msgid "Christian Bible Cartoon"
+msgstr ""
+
+msgctxt "#40033"
+msgid "Bonanza"
+msgstr ""
+
+msgctxt "#40034"
+msgid "Rawhide"
+msgstr ""
+
+msgctxt "#40035"
+msgid "Gunsomke"
+msgstr ""
+
+msgctxt "#40036"
+msgid "My Classic Car"
+msgstr ""
+
+msgctxt "#40037"
+msgid "Beverly Hillbillies"
+msgstr ""
+
+msgctxt "#40038"
+msgid "Have Gun Will Travel"
+msgstr ""
+
+msgctxt "#40039"
+msgid "Newhart"
+msgstr ""
+
+msgctxt "#40040"
+msgid "Highway Patrol"
+msgstr ""
+
+msgctxt "#40041"
+msgid "Crime Stories"
+msgstr ""
+
+msgctxt "#40042"
+msgid "Doomsday Preppers"
+msgstr ""
+
+msgctxt "#40043"
+msgid "Beastmaster"
+msgstr ""
+
+msgctxt "#40044"
+msgid "The Lone Ranger"
+msgstr ""
+
+msgctxt "#40045"
+msgid "The Lost World"
+msgstr ""
+
+msgctxt "#40046"
+msgid "Rescue Special Ops"
+msgstr ""
+
+msgctxt "#40047"
+msgid "RoadKill"
+msgid ""
+
+msgctxt "#40048"
+msgid "Urban Legends"
+msgstr ""
+
+msgctxt "#40049"
+msgid "Highlander"
+msgstr ""
+
+msgctxt "#40050"
+msgid "The Adventures of Sinbad"
+msgstr ""
+
+msgctxt "#40051"
+msgid "Undercover Boss"
+msgstr ""
+
+msgctxt "#40052"
+msgid "The Extraordinary"
+msgstr ""
+
+msgctxt "#40053"
+msgid "American MuscleCar"
+msgstr ""
+
+msgctxt "#40054"
+msgid "Kitchen Nightmares"
+msgstr ""
+
+msgctxt "#40055"
+msgid "The Big Valley"
+msgstr ""
+
+msgctxt "#40056"
+msgid "The Honeymooners"
+msgstr ""
+
+msgctxt "#40057"
+msgid "Sherlock Holmes"
+msgstr ""
+
+msgctxt "#40058"
+msgid "The Lucy Show"
+msgstr ""
+
+msgctxt "#40059"
+msgid "The Adventures of Ozzie & Harriet"
+msgstr ""
+
+msgctxt "#40060"
+msgid "Amos 'n' Andy"
+msgstr ""
+
+msgctxt "#40061"
+msgid "The Cisco Kid"
+msgstr ""
+
+msgctxt "#40062"
+msgid "Homicide Hunter"
+msgstr ""
+
+msgctxt "#40063"
+msgid "48 Hours Mystery"
+msgstr ""
+
+msgctxt "#40064"
+msgid "Hot Rod Garage"
+msgstr ""
+
+msgctxt "#40065"
+msgid "Wrecks To Riches"
+msgstr ""
+
+msgctxt "#40066"
+msgid "The Monkees"
+msgstr ""
+
+msgctxt "#40067"
+msgid "The Bernie Mac Show"
+msgstr ""
+
+msgctxt "#40068"
+msgid "LA Law (S1)"
+msgstr ""
+
+msgctxt "#40069"
+msgid "LA Law (S2)"
+msgstr ""
+
+msgctxt "#40070"
+msgid "LA Law (S3)"
+msgstr ""
+
+msgctxt "#40071"
+msgid "LA Law (S4)"
+msgstr ""
+
+msgctxt "#40072"
+msgid "LA Law (S5)"
+msgstr ""
+
+msgctxt "#40073"
+msgid "LA Law (S6)"
+msgstr ""
+
+msgctxt "#40074"
+msgid "LA Law (S7)"
+msgstr ""
+
+msgctxt "#40075"
+msgid "LA Law (S8)"
+msgstr ""
+
+msgctxt "#40076"
+msgid "The FBI Files"
+msgstr ""
+
+msgctxt "#40077"
+msgid "The Andy Griffith Show"
+msgstr ""
+
+msgctxt "#40078"
+msgid "Bordertown"
+msgstr ""
+
+msgctxt "#40079"
+msgid "Wanted Dead or Alive"
+msgstr ""
+
+msgctxt "#40080"
+msgid ""
+msgstr ""
+
+msgctxt "#50001"
+msgid "Billboard Top Songs 2015"
+msgstr ""
+
+msgctxt "#50002"
+msgid "Top Tracks Pop Music"
+msgstr ""
+
+msgctxt "#50003"
+msgid "80's & 90's Rock"
+msgstr ""
+
+msgctxt "#50004"
+msgid "Popular Music"
+msgstr ""
+
+msgctxt "#50005"
+msgid "Greatest Hits Of The 70's"
+msgstr
+
+msgctxt "#50006"
+msgid "Hot Country Songs"
+msgstr ""
+
+msgctxt "#50007"
+msgid "Country Music Mix"
+msgstr ""
+
+msgctxt "#50008"
+msgid "60's Classic Hits"
+msgstr ""
+
+msgctxt "#50009"
+msgid "50's Classic Hits"
+msgstr ""
+
+msgctxt "#50010"
+msgid "Country Radio Mix 2000 - 2014 "
+msgstr ""
+
+msgctxt "#50011"
+msgid "90's Country Music"
+msgstr ""
+
+msgctxt "#50012"
+msgid "80's Country Music"
+msgstr ""
+
+msgctxt "#50013"
+msgid "Just-Released Music"
+msgstr ""
+
+msgctxt "#60001"
+msgid "World News (Top Stories)"
+msgstr ""
+
+msgctxt "#60002"
+msgid "National News (Top Stories)"
+msgstr ""
+
+msgctxt "#60003"
+msgid "Cnn (Top Stories)"
+msgstr ""
+
+msgctxt "#60004"
+msgid "Nbc News (Top stories)"
+msgstr ""
+
+msgctxt "#60005"
+msgid "ABC (World News)"
+msgstr ""
+
+msgctxt "#60006"
+msgid "Fox News (Latest Politics)"
+msgstr ""
+
+msgctxt "#60007"
+msgid "Cbs News (TOP STORIES)"
+msgstr ""
+
+msgctxt "#70001"
+msgid "NFL"
+msgstr ""
+
+msgctxt "#70002"
+msgid "NBA"
+msgstr ""
+
+msgctxt "#70003"
+msgid "NHL"
+msgstr ""
+
+msgctxt "#70004"
+msgid "Baseball"
+msgstr ""

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>New KidsTV</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fwww.oakparkonline.org%2falpha%2fwp-content%2fuploads%2f2012%2f09%2fmerry-christmas-christian-a8fcczit.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.newkidstv",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Disney Jr.</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.disneyjunior",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>[COLOR blue][B]Kids Collection[/B][/COLOR]</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs30.postimg.org%2fjsccn9npt%2fThe_DCollection.jpg/</thumb>
+		<action>ActivateWindow(Programs,"plugin://plugin.program.super.favourites/?label=Kids&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper+Favourites%2FKids&amp;image=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.kmER%2Ficons%2Ficon.png&amp;fanart=https%3A%2F%2Fi.ytimg.com%2Fvi%2FXJtQ0lNDdnY%2Fmaxresdefault.jpg&amp;content_type=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Kids &amp; Animation</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fi.imgur.com%2fYXaY4BI.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=kids+%26+animation&amp;url=http%3A%2F%2Ftuzla.watchkodi.com%2Fkids_animation.xml&amp;audio=0&amp;image=http%3A%2F%2Fi.imgur.com%2FYXaY4BI.png&amp;fanart=http%3A%2F%2F7-themes.com%2Fdata_images%2Fout%2F43%2F6917465-french-flag-wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Classic Cartoons</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk2%2fthumbs%2fUK%2520TURK%2520cartoons.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk2%2Fcartoons%2FIndex.txt&amp;mode=1&amp;name=Classic+Cartoons&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk2%2Fthumbs%2FUK%2520TURK%2520cartoons.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>All Kids Stuff</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.allinone%2ficons%2fks.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.allinone/?mode=KidsMenu",return)</action>
+	</shortcut>
+</shortcuts>

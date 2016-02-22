@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<addon id="plugin.video.chrisbwizard" name="Chris B Wizard" version="1.0.3" provider-name="chrisbwizard.pcriot.com">
+
+  <requires>
+
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+
+        <provides>video executable</provides>
+
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+
+    <summary lang="en">ChrisB Wizard</summary>
+
+    <description lang="en">Easy Install With ChrisB Wizard</description>
+
+    <platform>all</platform>
+
+  </extension>
+
+</addon>
+

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>Sports TV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.SportsDevil%5cresources%5cimages%5cstation.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DSports%2BTV%26url%3Dtv.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DTV%26type%3Drss%26icon%3DC%253A%255CUsers%255Cblowe%255CAppData%255CRoaming%255CKodi%255Caddons%255Cplugin.video.SportsDevil%255Cresources%255Cimages%255Cstation.png",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>ESPN | Sports</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FzmASXYOTuE5y49uWWy4dsQ%2F1456029899%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>[COLORblue][B]PPV[/B][/COLOR]</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fwww.payperviewliveevents.com%2fwp-content%2fuploads%2fppv-events-10.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.MoneySports/?url=http%3A%2F%2Fwww.4legends.co.uk%2FMoneySports%2FBOXING.XML&amp;mode=1&amp;name=PPV&amp;fanart=http%3A%2F%2Fwww.payperviewliveevents.com%2Fwp-content%2Fuploads%2Fppv-events-10.png",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>ESPN2</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>PlayMedia("plugin://plugin.video.castaway/?url=http%3A%2F%2Fwww.streamlive.to%2Fview%2F73070%2FESPN_2&amp;play=True&amp;mode=play&amp;img=http%3A%2F%2Fsnapshots.streamlive.to%2Fsnapshots%2Flclmw3k9o934118_snapshot.jpg&amp;title=ESPN+2",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>NFL</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.prosport/?url=&amp;home=&amp;away=&amp;mode=nfl",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>NBA</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.prosport/?url=&amp;home=&amp;away=&amp;mode=nba",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>NHL</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.prosport/?url=&amp;home=&amp;away=&amp;mode=nhl",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>LiveSports</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk2%2fthumbs%2fUK%20TURK%20sports.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+orange%5DLive+Sports%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2FDirectories%2FLive%2520Sports.xml&amp;audio=0&amp;image=http%3A%2F%2Fs5.postimg.org%2Fus4juj7rb%2FEA_Sports_Ignite.jpg&amp;fanart=http%3A%2F%2Fshanghai.watchkodi.com%2FSections%2FWoody%2FWoody.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>CCloud Sport</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ccloudtv%5cresources%2ficons%2f%2fsports.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ccloudtv/?url=sports&amp;mode=52&amp;name=%5BCOLOR+royalblue%5D%5BB%5DSports%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.ccloudtv%5Cresources%2Ficons%2F%2Fsports.png",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>SPORTS[COLOR RED]Devil[/COLOR]</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fwww.hdwallpaperscool.com%2fwp-content%2fuploads%2f2015%2f01%2fuk-england-flag-desktop-wallpapers-picture-of-british-flag.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.SportsDevil",return)</action>
+	</shortcut>
+</shortcuts>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>24001</defaultID>
+		<label>[COLOR yellow][B]LubeTube[/B][/COLOR]</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.lubetube",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>[COLOR yellow][B]YouJizz[/B][/COLOR]</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.you.jizz",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>[COLOR yellow][B]Tube8[/B][/COLOR]</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.tube8",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>[COLOR yellow][B]EroticXXX[/B][/COLOR]</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.erotik",return)</action>
+	</shortcut>
+</shortcuts>

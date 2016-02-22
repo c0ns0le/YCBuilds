@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>4</defaultID>
+		<label>4</label>
+		<label2 />
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>RunAddon(script.tv.show.next.aired,return)</action>
+		<visible>System.HasAddon(script.tv.show.next.aired)</visible>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>UKTurk TV</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.ukturk",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Ororo TV</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.ororotv/?action=root_shows",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>[COLOR blue][B]Exodus[/B][/COLOR] TV Shows</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.genesis%5cresources%5cmedia%5cgone%5ctvshows.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.exodus/?action=tvNavigator",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Specto</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.specto",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Current TV Shows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs5.postimg.org%2f6ly9gwsw7%2fCurrent_TV_shows.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+yellow%5DCurrent+TV+Shows%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fyork.watchkodi.com%2FPlaylists%2FTV.xml&amp;audio=0&amp;image=http%3A%2F%2Fs5.postimg.org%2F6ly9gwsw7%2FCurrent_TV_shows.jpg&amp;fanart=http%3A%2F%2Fs5.postimg.org%2Fn5fv921c7%2FFan_art.png&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>TNPB Tv shows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs6.postimg.org%2f4zor60kch%2fimage.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+orangered%5DT%5B%2FCOLOR%5D%5BCOLOR+white%5DV%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fzenica.watchkodi.com%2FDirectories%2FMain%2520Directory%2FTV%2520Main.xml&amp;audio=0&amp;image=http%3A%2F%2Fs6.postimg.org%2F4zor60kch%2Fimage.png&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F4ph8mo5q9%2FBackdrop.png&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>ShowTimeTV</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.tubeplus",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>1 Channel TV shows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://art%5cthemes%5cClassic%5ctelevision.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.1channel/?section=tv&amp;mode=BrowseListMenu",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Watch4Free</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.watch4free",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Classic TV Shows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk2%2fthumbs%2fUK%20TURK%20classic%20tv.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk2%2Ftv+shows%2FIndex.txt&amp;mode=1&amp;name=Classic+TV+Shows&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk2%2Fthumbs%2FUK+TURK+classic+tv.jpg&amp;description=",return)</action>
+	</shortcut>
+</shortcuts>

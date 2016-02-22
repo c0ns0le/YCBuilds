@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>colorhotpink-mygirls-color</defaultID>
+		<label>[COLOR hotpink]My Girls[/COLOR]</label>
+		<label2>Favourite</label2>
+		<icon>DefaultFolder.png</icon>
+		<thumb>http://s6.postimg.org/wevezj9fl/actress_collage_245058_2.jpg</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?action=ndmode&amp;audio=0&amp;content=0&amp;fanart=http%3a%2f%2f7-themes.com%2fdata_images%2fout%2f59%2f6973439-beautiful-forest-photos.jpg&amp;image=http%3a%2f%2fs6.postimg.org%2fwevezj9fl%2factress_collage_245058_2.jpg&amp;name=%5bCOLOR%20hotpink%5dMy%20Girls%5b%2fCOLOR%5d&amp;playable=false&amp;tvshow=0&amp;url=http%3a%2f%2fhonolulu.watchkodi.com%2fMy%2520Girls%2fThe%2520Girls.xml",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>colorblue-mykids-color</defaultID>
+		<label>[COLOR blue]My Kids[/COLOR]</label>
+		<label2>Favourite</label2>
+		<icon>DefaultFolder.png</icon>
+		<thumb>http://s6.postimg.org/gpk9zbs01/Ihae6r_JE.jpg</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?action=ndmode&amp;audio=0&amp;content=0&amp;fanart=http%3a%2f%2f7-themes.com%2fdata_images%2fout%2f59%2f6973439-beautiful-forest-photos.jpg&amp;image=http%3a%2f%2fs6.postimg.org%2fgpk9zbs01%2fIhae6r_JE.jpg&amp;name=%5bCOLOR%20blue%5dMy%20Kids%5b%2fCOLOR%5d&amp;playable=false&amp;tvshow=0&amp;url=http%3a%2f%2fhonolulu.watchkodi.com%2fPlaylists%2fKids%2520Main.xml",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>colorhotpink-myemotions-color</defaultID>
+		<label>[COLOR hotpink]My Emotions[/COLOR]</label>
+		<label2>Favourite</label2>
+		<icon>DefaultFolder.png</icon>
+		<thumb>http://s14.postimg.org/83lyc0ich/Emotions_Are_Energy1.jpg</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?action=ndmode&amp;audio=0&amp;content=0&amp;fanart=http%3a%2f%2f7-themes.com%2fdata_images%2fout%2f59%2f6973439-beautiful-forest-photos.jpg&amp;image=http%3a%2f%2fs14.postimg.org%2f83lyc0ich%2fEmotions_Are_Energy1.jpg&amp;name=%5bCOLOR%20hotpink%5dMy%20Emotions%5b%2fCOLOR%5d&amp;playable=false&amp;tvshow=0&amp;url=http%3a%2f%2fhonolulu.watchkodi.com%2fPlaylists%2fMy%2520Emotions.xml",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>colorblue-bluesfaves-color</defaultID>
+		<label>[COLOR blue]Blue's Faves[/COLOR]</label>
+		<label2>Favourite</label2>
+		<icon>DefaultFolder.png</icon>
+		<thumb>http://s6.postimg.org/dbvg51wht/19439_2.jpg</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?action=ndmode&amp;audio=0&amp;content=0&amp;fanart=http%3a%2f%2f7-themes.com%2fdata_images%2fout%2f59%2f6973439-beautiful-forest-photos.jpg&amp;image=http%3a%2f%2fs6.postimg.org%2fdbvg51wht%2f19439_2.jpg&amp;name=%5bCOLOR%20blue%5dBlue%27s%20Faves%5b%2fCOLOR%5d&amp;playable=false&amp;tvshow=0&amp;url=http%3a%2f%2fhonolulu.watchkodi.com%2fPlaylists%2fBlue%27s%2520Faves.xml",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>colorhotpink-workout-color</defaultID>
+		<label>[COLOR hotpink]Workout[/COLOR]</label>
+		<label2>Favourite</label2>
+		<icon>DefaultFolder.png</icon>
+		<thumb>http://s6.postimg.org/re40an269/fitness_woman_perspiration_2_1.jpg</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?action=ndmode&amp;audio=0&amp;content=0&amp;fanart=http%3a%2f%2f7-themes.com%2fdata_images%2fout%2f59%2f6973439-beautiful-forest-photos.jpg&amp;image=http%3a%2f%2fs6.postimg.org%2fre40an269%2ffitness_woman_perspiration_2_1.jpg&amp;name=%5bCOLOR%20hotpink%5dWorkout%5b%2fCOLOR%5d&amp;playable=false&amp;tvshow=0&amp;url=http%3a%2f%2fhonolulu.watchkodi.com%2fFitness%2fFitness%2520Main.xml",return)</action>
+	</shortcut>
+</shortcuts>

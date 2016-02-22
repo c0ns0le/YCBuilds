@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>boxinggreatestfights</defaultID>
+		<label>Greatest Fights</label>
+		<label2>Favourite</label2>
+		<icon>DefaultFolder.png</icon>
+		<thumb>http://s27.postimg.org/47oslnlf7/Boxing_Fights.jpg</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?action=ndmode&amp;audio=0&amp;content=0&amp;fanart=http%3a%2f%2fwallcomphd.com%2fwp-content%2fuploads%2f2015%2f06%2f3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;image=http%3a%2f%2fs27.postimg.org%2f47oslnlf7%2fBoxing_Fights.jpg&amp;name=Boxing%20Greatest%20Fights&amp;playable=false&amp;tvshow=0&amp;url=http%3a%2f%2fgibraltar.watchkodi.com%2fCollections%2fboxingfights.xml",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Cold As Ice</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.allinone%2ficons%2fds.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.coldasice",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>[COLOR blue][B]Man Cave[/B][/COLOR]</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.allinone%2ficons%2ftvhq.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?action=ndmode&amp;audio=0&amp;content=0&amp;fanart=http%3a%2f%2fwallcomphd.com%2fwp-content%2fuploads%2f2015%2f06%2f3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;image=http%3a%2f%2fs15.postimg.org%2f4ux16nacb%2fMan_Cave1.jpg&amp;name=The%20Man%20Cave&amp;playable=false&amp;tvshow=0&amp;url=http%3a%2f%2fgibraltar.watchkodi.com%2fManCave%2fManCave_Directory.xml",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>sportsdocumentaries</defaultID>
+		<label>30 for 30</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultFolder.png</icon>
+		<thumb>http://s15.postimg.org/5xw0lhdsb/Sports_Docs.jpg</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?action=ndmode&amp;audio=0&amp;content=0&amp;fanart=http%3a%2f%2fwallcomphd.com%2fwp-content%2fuploads%2f2015%2f06%2f3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;image=http%3a%2f%2fs27.postimg.org%2f4b8n64foz%2fEspn30.jpg&amp;name=ESPN%2030%20For%2030&amp;playable=false&amp;tvshow=0&amp;url=http%3a%2f%2fgibraltar.watchkodi.com%2fMisc%2f30for30.xml",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>documentaries</defaultID>
+		<label>Documentaries</label>
+		<label2>Favourite</label2>
+		<icon>DefaultFolder.png</icon>
+		<thumb>http://s28.postimg.org/op4gqc0ot/Documentaries.jpg</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?action=ndmode&amp;audio=0&amp;content=0&amp;fanart=http%3a%2f%2fwallcomphd.com%2fwp-content%2fuploads%2f2015%2f06%2f3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;image=http%3a%2f%2fs28.postimg.org%2fop4gqc0ot%2fDocumentaries.jpg&amp;name=Documentaries&amp;playable=false&amp;tvshow=0&amp;url=http%3a%2f%2fgibraltar.watchkodi.com%2fMisc%2fdocs.xml",return)</action>
+	</shortcut>
+</shortcuts>

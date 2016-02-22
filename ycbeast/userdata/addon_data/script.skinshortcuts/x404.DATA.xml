@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>deletepackages</defaultID>
+		<label>Maintenance</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultFolder.png</icon>
+		<thumb>C:\Users\blowe\AppData\Roaming\Kodi\addons\plugin.video.mdwizard\resources\art\MAINTENANCE.png</thumb>
+		<action>ActivateWindow(10001,"plugin://plugin.video.mdwizard/?url=http%3A%2F%2Fkodimediaportal.ml&amp;mode=3&amp;name=MAINTENANCE&amp;iconimage=%2Fstorage%2Femulated%2F0%2FAndroid%2Fdata%2Forg.xbmc.kodi%2Ffiles%2F.kodi%2Faddons%2Fplugin.video.mdwizard%2Fresources%2Fart%2FMAINTENANCE.png&amp;fanart=%2Fstorage%2Femulated%2F0%2FAndroid%2Fdata%2Forg.xbmc.kodi%2Ffiles%2F.kodi%2Faddons%2Fplugin.video.mdwizard%2Ffanart.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Super Favorites</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(Programs,"plugin://plugin.program.super.favourites",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>"script.thumbnailscleaner"</defaultID>
+		<label>[COLOR blue][B]Thumbnails Cleaner[/B][/COLOR]</label>
+		<label2>Favourite</label2>
+		<icon>DefaultFolder.png</icon>
+		<thumb>C:\Users\blowe\AppData\Roaming\Kodi\addons\script.thumbnailscleaner\icon.png</thumb>
+		<action>RunScript("script.thumbnailscleaner")</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>YCRepo</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(Programs,"plugin://plugin.program.fsycbeast",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>URL Fixes</label>
+		<label2>Program</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.mdwizard%5cresources%5cart%5cURL.png/</thumb>
+		<action>ActivateWindow(10001,"plugin://plugin.video.mdwizard/?url=http%3A%2F%2Fkodimediaportal.ml&amp;mode=2&amp;name=URL+FIXES&amp;iconimage=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cresources%5Cart%5CURL.png&amp;fanart=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cfanart.jpg&amp;description=",return)</action>
+	</shortcut>
+</shortcuts>
