@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>Entertainment</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.uktvnow%5cresources%5cart%5cent.PNG/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.uktvnow/?url=1&amp;mode=1&amp;name=Entertainment&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Music</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.uktvnow%5cresources%5cart%5cmus.PNG/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.uktvnow/?url=3&amp;mode=1&amp;name=Music&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>News</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.uktvnow%5cresources%5cart%5cnews.PNG/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.uktvnow/?url=4&amp;mode=1&amp;name=News&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Sports</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.uktvnow%5cresources%5cart%5csport.PNG/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.uktvnow/?url=5&amp;mode=1&amp;name=Sports&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Documentary</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.uktvnow%5cresources%5cart%5cdoc.PNG/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.uktvnow/?url=6&amp;mode=1&amp;name=Documentary&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Kids Corner</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.uktvnow%5cresources%5cart%5ckids.PNG/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.uktvnow/?url=7&amp;mode=1&amp;name=Kids+Corner&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>USA Channels</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.uktvnow%5cresources%5cart%5cus.PNG/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.uktvnow/?url=10&amp;mode=1&amp;name=USA+Channels&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>All Channels</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.uktvnow%5cresources%5cart%5call.PNG/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.uktvnow/?url=0&amp;mode=1&amp;name=All+Channels&amp;description=",return)</action>
+	</shortcut>
+</shortcuts>

@@ -1,0 +1,1 @@
+["Super F", ["super fruit", "super freak", "super freak rick james lyrics", "super friends", "super funny videos", "super fast", "superfly", "super fun show", "super furry animals", "super future"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

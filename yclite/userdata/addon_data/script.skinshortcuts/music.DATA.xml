@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>plugin.video.myvevo</defaultID>
+		<label>VEVO</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.myvevo%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.myvevo",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.pulsemusic</defaultID>
+		<label>Pulse Music</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.pulsemusic%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.pulsemusic",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.audio.mp3streams</defaultID>
+		<label>MP3 Streams</label>
+		<label2>Music Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.audio.mp3streams%5cicon.png/</thumb>
+		<action>ActivateWindow(10501,"plugin://plugin.audio.mp3streams",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.yt-vevo</defaultID>
+		<label>Music Videos</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.yt-vevo%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.yt-vevo",return)</action>
+	</shortcut>
+</shortcuts>

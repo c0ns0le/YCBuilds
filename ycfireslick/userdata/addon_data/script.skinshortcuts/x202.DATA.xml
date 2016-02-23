@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>plugin.video.salts</defaultID>
+		<label>SALTS</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.salts%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.salts",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.md123movies</defaultID>
+		<label>123Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.md123movies%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.md123movies",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.ukturk</defaultID>
+		<label>UK Turk Playlists</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ukturk%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ukturk",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.exodus</defaultID>
+		<label>[COLOR limegreen][B]Exodus[/COLOR][/B]</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.exodus%5cicon.png/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.exodus",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.specto</defaultID>
+		<label>Specto</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.specto%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.specto",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.titan</defaultID>
+		<label>Titan TV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.titan%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.titan",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.filmdictator</defaultID>
+		<label>Film Dictator</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.filmdictator%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.filmdictator",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.ZemTV-shani</defaultID>
+		<label>ZemTV.com</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ZemTV-shani%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ZemTV-shani",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.velocity</defaultID>
+		<label>Velocity</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.velocity%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.velocity",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.phstreams</defaultID>
+		<label>Phoenix</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.phstreams%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.mdniter</defaultID>
+		<label>Niter Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.mdniter%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.mdniter",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.md9movies</defaultID>
+		<label>9Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.md9movies%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.md9movies",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.iplayerwww</defaultID>
+		<label>iPlayer</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.iplayerwww%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.iplayerwww",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.morepower</defaultID>
+		<label>MorePower</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.morepower%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.morepower",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.mnutzreloaded</defaultID>
+		<label>MuttsNutz Reloaded</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.mnutzreloaded%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.mnutzreloaded",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.theroyalwe</defaultID>
+		<label>The Royal We</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.theroyalwe%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.theroyalwe",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.ororotv</defaultID>
+		<label>Ororo TV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ororotv%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ororotv",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.dextertv</defaultID>
+		<label>dexterTV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.dexterTV%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.dextertv",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.ProjectCypher</defaultID>
+		<label>ProjectCypherTV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ProjectCypher%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ProjectCypher",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>script.navi-x</defaultID>
+		<label>Navi-X</label>
+		<label2>Program</label2>
+		<icon>DefaultAddon.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.navi-x%5cicon.png/</thumb>
+		<action>RunAddOn(script.navi-x)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.SoapCatchup</defaultID>
+		<label>Soap Catchup</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.SoapCatchup%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.SoapCatchup",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.welovesoaps</defaultID>
+		<label>We Love Soaps</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.welovesoaps%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.welovesoaps",return)</action>
+	</shortcut>
+</shortcuts>

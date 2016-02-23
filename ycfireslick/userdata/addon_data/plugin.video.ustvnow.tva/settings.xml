@@ -1,0 +1,16 @@
+<settings>
+    <setting id="dvr" value="false" />
+    <setting id="email" value="jgentili@gmail.com" />
+    <setting id="free_package" value="true" />
+    <setting id="logo" value="1" />
+    <setting id="password" value="25talife" />
+    <setting id="quality" value="1" />
+    <setting id="rec_live" value="true" />
+    <setting id="rec_stream_type" value="0" />
+    <setting id="setup" value="true" />
+    <setting id="setup_new" value="true" />
+    <setting id="show_movies_section" value="true" />
+    <setting id="show_settings_option" value="true" />
+    <setting id="show_sports_section" value="false" />
+    <setting id="token" value="" />
+</settings>

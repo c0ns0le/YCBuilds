@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>1037</defaultID>
+		<label>1037</label>
+		<label2>Videos</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(Videos,Addons,return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>10007</defaultID>
+		<label>Information</label>
+		<label2>Common Shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(SystemInfo)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>settings</defaultID>
+		<label>10004</label>
+		<label2>Common Shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(Settings)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>1036</defaultID>
+		<label>Favorites</label>
+		<label2>Common Shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(Favourites)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>7</defaultID>
+		<label>7</label>
+		<label2>Common Shortcut</label2>
+		<icon>DefaultFolder.png</icon>
+		<thumb />
+		<action>ActivateWindow(FileManager)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>744</defaultID>
+		<label>Video Library</label>
+		<label2>item</label2>
+		<icon>DefaultFolder.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,sources://video,return)</action>
+	</shortcut>
+</shortcuts>

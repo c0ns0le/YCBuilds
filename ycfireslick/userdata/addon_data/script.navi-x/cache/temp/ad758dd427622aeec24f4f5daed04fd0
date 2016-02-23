@@ -1,0 +1,379 @@
+version=7
+background=http://media.navi-x.org/images/backgrounds/bkg_navix_bh_plain.jpg
+title=navi-xtreme [COLOR=FF888888]»[/COLOR] search for "gracie"
+logo=http://media.navi-x.org/images/logos/search.png
+
+
+type=playlist
+name=GracieCat'sFavorites
+URL=http://www.navixtreme.com/playlist/56252/graciecatsfavorites.plx
+description=tv and movies as chosen by a Gracie, the Russian Blue /description
+
+type=playlist
+name=George Burns & Gracie Allen Show
+thumb=https://sp.yimg.com/ib/th?id=HN.608027091460427344&pid=15.1&P=0
+URL=http://www.navixtreme.com/playlist/142218/george_burns_gracie_allen_show.plx
+
+type=video
+name=8/31 George Burns & Gracie Allen Show S2E02 Gracie goes to a psychiatrist (Sept 27, 1951) (George Burns & Gracie Allen Show)
+thumb=https://i.ytimg.com/vi/nIKhifmMEd0/mqdefault.jpg
+date=2014-08-31
+URL=https://www.youtube.com/watch?v=nIKhifmMEd0&feature=player_detailpage
+processor=http://www.navixtreme.com/proc/youtube
+player=default
+rating=-1.00
+
+type=video
+name=4/28 Gracie Glam - Cumfiesta (videobronx)
+thumb=http://i.imgur.com/6Q8Xi05.jpg
+date=2015-04-28
+URL=http://www.flashx.tv/v96a1mzc38vy.html
+player=default
+rating=-1.00
+
+type=video
+name=8/31 Burns and Allen: Gracie Wants the House Painted (George Burns & Gracie Allen Show)
+thumb=https://i.ytimg.com/vi/YMzIrh6wQ50/mqdefault.jpg
+date=2014-08-31
+URL=https://www.youtube.com/watch?v=YMzIrh6wQ50&feature=player_detailpage
+processor=http://www.navixtreme.com/proc/youtube
+player=default
+rating=-1.00
+
+type=video
+name=8/31 Burns and Allen: Gracie Thinks She's Not Married to George (George Burns & Gracie Allen Show)
+thumb=https://i.ytimg.com/vi/txBKbPUqXJU/default.jpg
+date=2014-08-31
+URL=https://www.youtube.com/watch?feature=player_detailpage&v=txBKbPUqXJU
+processor=http://www.navixtreme.com/proc/youtube
+player=default
+rating=-1.00
+
+type=video
+name=8/31 Burns and Allen: Gracie Buying a Boat for George (George Burns & Gracie Allen Show)
+thumb=https://i.ytimg.com/vi/EG5BFBYo97M/default.jpg
+date=2014-08-31
+URL=https://www.youtube.com/watch?feature=player_detailpage&v=EG5BFBYo97M
+processor=http://www.navixtreme.com/proc/youtube
+player=default
+rating=-1.00
+
+type=video
+name=8/31 Burns and Allen: Gracie Buys a Toaster Wholesale (George Burns & Gracie Allen Show)
+thumb=https://i.ytimg.com/vi/enxlmNqJfcY/default.jpg
+date=2014-08-31
+URL=https://www.youtube.com/watch?v=enxlmNqJfcY&feature=player_detailpage
+processor=http://www.navixtreme.com/proc/youtube
+player=default
+rating=-1.00
+
+type=video
+name=8/31 Burns and Allen: Gracie Sees a Hold-Up/Johnny Velvet (George Burns & Gracie Allen Show)
+thumb=https://i.ytimg.com/vi/LqzAmxMixME/default.jpg
+date=2014-08-31
+URL=https://www.youtube.com/watch?v=LqzAmxMixME&feature=player_detailpage
+processor=http://www.navixtreme.com/proc/youtube
+player=default
+rating=-1.00
+
+type=video
+name=8/31 Burns and Allen: Gracie Discovers George's Secret Weakness . (George Burns & Gracie Allen Show)
+thumb=https://i.ytimg.com/vi/nIlJrf5mguc/default.jpg
+date=2014-08-31
+URL=https://www.youtube.com/watch?v=nIlJrf5mguc&feature=player_detailpage
+processor=http://www.navixtreme.com/proc/youtube
+player=default
+rating=-1.00
+
+type=video
+name=11/18 The George Burns and Gracie Allen Show - Christmas in Jail ([COLOR=FF0198E1]FAMILY [COLOR=FF00FF00]CHRISTMAS  [/COLOR] [COLOR=FFAF1E2D]SPECIALS MOVIES [/COLOR] > *Christmas Classics)
+thumb=http://ecx.images-amazon.com/images/I/51fBrPocfNL._AC_UL320_SR220,320_.jpg
+date=2015-11-18
+URL=http://www.youtube.com/watch?v=tee4oz-A4Uo
+processor=http://www.navixtreme.com/proc/youtube
+player=default
+rating=-1.00
+
+type=video
+name=8/31 THE JACK BENNY PROGRAM George Burns and Gracie Allen 4th season (The Jack Benny Program)
+thumb=https://i.ytimg.com/vi/hHsbArr9rWI/default.jpg
+date=2014-08-31
+URL=https://www.youtube.com/watch?feature=player_detailpage&v=hHsbArr9rWI
+processor=http://www.navixtreme.com/proc/youtube
+player=default
+rating=-1.00
+
+type=video
+name=11/18 The George Burns and Gracie Allen Show - Christmas With Mamie Kelly (1951) ([COLOR=FF0198E1]FAMILY [COLOR=FF00FF00]CHRISTMAS  [/COLOR] [COLOR=FFAF1E2D]SPECIALS MOVIES [/COLOR] > *Christmas Classics)
+thumb=http://ecx.images-amazon.com/images/I/71FMQAWA5PL.gif
+date=2015-11-18
+URL=http://www.youtube.com/watch?v=-qe4pJ2MxUc
+processor=http://www.navixtreme.com/proc/youtube
+player=default
+rating=-1.00
+
+type=video
+name=1/19 Miss Congeniality 2: Armed and Fabulous ([COLOR purple] M&M's Awesome Tv Stuff [/COLOR]  > [COLOR aqua] 2000's Hits [/COLOR])
+thumb=http://www.gstatic.com/tv/thumb/dvdboxart/35617/p35617_d_v8_aa.jpg
+date=2016-01-19
+URL=http://www.nowvideo.sx/video/f20f706452f21
+processor=http://www.navixtreme.com/wlfwood/processors/nowvideo.txt
+player=default
+rating=-1.00
+description=Gracie Hart (Sandra Bullock) was never thrilled to have to go undercover as a competitor in a beauty pageant. Now Gracie, who works for the FBI, is dealing with some very public attention thanks to her waltz down the runway. Her overnight celebrity does not impress her new partner, Sam Fuller (Regina King). But the pair has to put aside their differences when one of Gracie's former beauty queen pals, Cheryl Frasier (Heather Burns), turns up missing, and the FBI is put on the case./description
+
+type=video
+name=10/21 Jamie Marks Is Dead (2014) (*** [2014 Movies Pg.2]  *** [COLOR=FFFFFF00]*WORLD IPTV NEWS SPORTS MUSIC ENTERTAINMENT FROM AROUND THE WORLD  *[/COLOR])
+thumb=http://i.imgur.com/YP0EFKX.jpg
+date=2014-10-21
+URL=http://www.nowvideo.sx/video/d2cc192cfc4b2
+processor=http://www.navixtreme.com/wlfwood/processors/nowvideo.txt
+player=default
+rating=-1.00
+description=In a wintry small town, the body of a teenager named Jamie Marks is
+
+
+
+found by the river. Adam, the star of his cross-country team, becomes fascinated
+
+
+
+with Jamie-a boy nobody really knew or interacted with, except occasionally to bully
+
+
+
+him. When Jamie's ghost begins to appear both to Adam and Gracie, the classmate who
+
+
+
+discovered the body, Adam is caught between two worlds. He has a budding romance
+
+
+
+with Gracie, but he also feels a deep connection to Jamie, who brings him closer to
+
+
+
+the world of the undead./description
+
+type=video
+name=4/9 Jamie Marks Is Dead (2014) (movies 1)
+thumb=http://i.imgur.com/YP0EFKX.jpg
+date=2015-04-09
+URL=http://www.nowvideo.sx/video/d2cc192cfc4b2
+processor=http://www.navixtreme.com/wlfwood/processors/nowvideo.txt
+player=default
+rating=-1.00
+description=In a wintry small town, the body of a teenager named Jamie Marks is found by the river. Adam, the star of his cross-country team, becomes fascinated with Jamie-a boy nobody really knew or interacted with, except occasionally to bully him. When Jamie's ghost begins to appear both to Adam and Gracie, the classmate who discovered the body, Adam is caught between two worlds. He has a budding romance with Gracie, but he also feels a deep connection to Jamie, who brings him closer to the world of the undead./description
+
+type=video
+name=5/21 Miss Congeniality (PG13 2000) (Mowinter Youth & Teen Movies)
+thumb=http://img39.imageshack.us/img39/8214/misscongenialitytwoarme.jpg
+date=2012-05-21
+URL=http://veehd.com/video/4654200_Miss-Congeniality-II-Armed-and-Fabulous-2005-DvD
+processor=http://www.navixtreme.com/sproc/veehd
+player=default
+rating=-1.00
+description=After Cheryl Frasier and Stan Fields are kidnapped, Gracie goes undercover in Las Vegas to find them./description
+
+type=video
+name=4/8 Grace (2014) ([COLOR=blue]* MOVIES*[/COLOR])
+thumb=http://i.imgur.com/AXuNjOJ.jpg
+date=2015-04-08
+URL=http://www.nowvideo.sx/video/d62b56d2eee30
+processor=http://www.navixtreme.com/wlfwood/processors/nowvideo.txt
+player=default
+rating=-1.00
+description=Gracie knows hangovers. She's intimately acquainted with them. But this one? Why did she wake up, half-dressed, on a Florida beach, 1100 miles from home? And this time her father - who also.../description
+
+type=video
+name=2/1 inside mma [1-30-2012] (inside mma)
+date=2012-02-01
+URL=http://www.putlocker.com/file/8C1272F439FC92E1
+processor=http://www.navixtreme.com/wlfwood/processors/putlocker.txt
+player=default
+rating=-1.00
+description=Monday, January 30th, 2012 -- Former UFC light heavyweight champ Forrest Griffin joins TV and film star Laura Prepon (That 70s Show) on the panel with hosts Kenny Rice and Bas Rutten to preview UFC 143. Ron Kruck reports on the Gracie family's efforts to empower/description
+
+type=video
+name=1/19 Miss Congeniality ([COLOR purple] M&M's Awesome Tv Stuff [/COLOR]  > [COLOR aqua] 2000's Hits [/COLOR])
+thumb=http://www.gstatic.com/tv/thumb/dvdboxart/26773/p26773_d_v8_aa.jpg
+date=2016-01-19
+URL=http://www.nowvideo.sx/video/271fd9e6042c4
+processor=http://www.navixtreme.com/wlfwood/processors/nowvideo.txt
+player=default
+rating=-1.00
+description=When a terrorist threatens to bomb the Miss United States pageant, the FBI rushes to find a female agent to go undercover as a contestant. Unfortunately, Gracie is the only female FBI agent who can "look the part" despite her complete lack of refinement and femininity. She prides herself in being "just one of the boys" and is horrified at the idea of becoming a girly girl./description
+
+type=video
+name=6/27 Big Trouble in Little China (1986) (#ZombieLife's Crypt# > Z #Movies > Directors > John Carpenter)
+thumb=http://i1180.photobucket.com/albums/x420/NaviXJustme4u2c/MovieSequels/big-trouble-in-little-china-original.jpg
+date=2012-06-27
+URL=http://veehd.com/video/2062733_Big-Trouble-In-Little-China-1986
+processor=http://www.navixtreme.com/sproc/veehd
+player=default
+rating=-1.00
+description=Taking them through a shadowy world filled with supernatural creatures and spectacular action, regular guy Jack Burton (Kurt Russell) and Gracie Law (Kim Cattrall) try to track down a 2,000-year-old magician, Lo Pan (James Hong), who has kidnapped Burton's friend's green-eyed fiancÃÂÃÂÃÂÃÂÃÂÃ¢ÂÂÃÂÃÂ©e. John Carpenter (who helmed the original Halloween) directs this adventure tale set in San Francisco's Chinatown district./description
+
+type=video
+name=10/11 Jamie Marks Is Dead (2014) (SerbianForum - Strani Filmovi 2014)
+thumb=http://i.imgur.com/8AnpSlS.jpg
+date=2014-10-11
+URL=http://mightyupload.com/q8r3twqus41s/Jamie.Marks.Is.Dead.2014.HDRip.X264.AC3.5.1-PLAYNOW.mkv.html
+processor=http://www.navixtreme.com/proc/movreel
+player=default
+rating=-1.00
+description=In a wintry small town, the body of a teenager named Jamie Marks is found by the river. Adam, the star of his cross-country team, becomes fascinated with Jamie-a boy nobody really knew or interacted with, except occasionally to bully him. When JamieAc??s ghost begins to appear both to Adam and Gracie, the classmate who discovered the body, Adam is caught between two worlds./description
+
+type=video
+name=8/30 [COLOR=FFFF00FF]***MIGHTYUPLOAD***[/COLOR] Jamie Marks Is Dead (2014) [COLOR=FFFF00FF]***HDRIP***[/COLOR] ([COLOR=FFFF0040]Movie Collection[/COLOR] [COLOR=FFFFFF00]***Old and New***[/COLOR] [COLOR=FFFF00FF]HD/SD[/COLOR] [COLOR=FFFFFF00]*Visit newmoviepalace.blogspot.com*[/COLOR] > [COLOR=FFFF00FF]2014 Movies.....[/COLOR])
+thumb=http://i.imgur.com/8AnpSlS.jpg
+date=2014-08-30
+URL=http://mightyupload.com/q8r3twqus41s/Jamie.Marks.Is.Dead.2014.HDRip.X264.AC3.5.1-PLAYNOW.mkv.html
+processor=http://www.navixtreme.com/proc/movreel
+player=default
+rating=-1.00
+description=In a wintry small town, the body of a teenager named Jamie Marks is found by the river. Adam, the star of his cross-country team, becomes fascinated with Jamie-a boy nobody really knew or interacted with, except occasionally to bully him. When JamieÃ¢??s ghost begins to appear both to Adam and Gracie, the classmate who discovered the body, Adam is caught between two worlds./description
+
+type=video
+name=12/23 The Scorpion King 4 Quest for Power 2015 ([COLOR blue] hifi2007 live streaming tv [/COLOR] [COLOR red]  updated 01/12/2016   [/COLOR] > [COLOR blue] hifi2007 MOVIE SECTION [/COLOR])
+thumb=https://upload.wikimedia.org/wikipedia/en/0/00/%22The_Scorpion_King_4%2C_Quest_for_Power%22_Blu-Ray_Cover.jpeg
+date=2015-12-23
+URL=http://www.nowvideo.sx/video/a58c0acb8616b
+processor=http://www.navixtreme.com/wlfwood/processors/nowvideo.txt
+player=default
+rating=-1.00
+description=The Scorpion King 4: Quest for Power (previously known as The Scorpion King: The Lost Throne) is a 2015 direct-to-video sword and sorcery film. It was released on Netflix on January 6, 2015.[1] It is the fourth installment in The Scorpion King series and stars Victor Webster in the title role with supporting roles by Ellen Hollman, Lou Ferrigno, Rutger Hauer, Royce Gracie, Eve Torres, and Ian Whyte. This film continues the story of Mathayus, after the events in The Scorpion King 3: Battle for Redemption.[2]/description
+
+type=video
+name=4/20 Miss FBI Infiltrata speciale (Film - Cinema)
+thumb=http://www.ilcinemaniaco.com/wp-content/uploads/2009/08/miss_congeniality_two_armed_and_fabulous_ver2-.jpg
+date=2012-04-20
+URL=http://www.putlocker.com/file/1B6412C5129DEB7D
+processor=http://www.navixtreme.com/wlfwood/processors/putlocker.txt
+player=default
+rating=-1.00
+description=LÃ¢ÂÂagente dellÃ¢ÂÂFBI Gracie Hart (Sandra Bullock) dopo aver portato a termine una pericolosa missione sotto copertura infiltrandosi nel famoso concorso di bellezza Miss America, si trova alle prese con una grande popolaritÃÂ  che ne lei, ne gli i suoi superiori riescono a gestire.
+
+ 
+
+La Hart nonostante una certa avvenenza pecca notevolmente di femminilitÃÂ  e il suo mestiere non lÃ¢ÂÂaiuta certo, cosÃÂ¬ i suoi superiori rendendosi conto che suo malgrado la donna diventerÃÂ  per i mass media, lÃ¢ÂÂimmagine pubblica di tutta lÃ¢ÂÂFBI, la mette nelle mani di uno staff di specialisti in immagine pronti a rendere il suo look e i suoi modi meno ruvidi./description
+
+type=video
+name=1/15 Miss Congeniality 2: Armed & Fabulous (2005) ([COLOR=FF00FF00]DGSProduction Movies[/COLOR] > [COLOR=FF00FF00]Movies List "M"[/COLOR])
+thumb=http://images.primewire.ag/thumbs/1700_Miss_Congeniality_2_Armed_Fabulous_2005.jpg
+date=2013-01-15
+URL=http://www.nowvideo.sx/video/pyn3oqloog75f
+processor=http://www.navixtreme.com/wlfwood/processors/nowvideo.txt
+player=default
+rating=-1.00
+description=Miss Congeniality 2: Armed & Fabulous
+
+Miss Congeniality 2: Armed & Fabulous: After Cheryl Frasier and Stan Fields are kidnapped, Gracie goes undercover in Las Vegas to find them.
+	
+
+    Currently 3.97/5
+
+(204 votes)
+Released: 	March 11, 2005
+Runtime: 	115 mins
+Genres: 	Comedy Crime
+Countries: 	USA Australia
+Director: 	John Pasquin
+Actors: 	Abraham Benrubi Adam LeFevre Affion Crockett AJ Presley Angel Princess Audrey Wasilewski Benny Nieves Bob Pepper Brad Grunberg Brendan Patrick Connor Cameron Milzer Chaz Fatur Christian Vincent Cynthia Pepper David Proval Diedrich Bader Dolly Parton Don Perry Eileen Brennan Elisabeth RÃ?Â¶hm Emy Coligado Enrique Murciano Ernesto Trinidad Ernie Hudson Esteban Cueto Eve Gordon Faith Minton Frank Marino Heather Burns James DuMont John DiResta Katie Finneran Kim Morgan Greene Kimble Jemison L Sidney Leslie Grossman Lloyd Kino Marcelo Tubert Marjorie Lovett Mark Hengst Megan Cavanagh Michael Bravo Nancy Anderson Nate Bynum Nick Offerman Octavia Spencer Rachel Iverson Rachel Smith Regina King Regis Philbin Rich Skidmore Richard DeDomenico Sandra Bullock Stephen Tobolowsky Susan Chuang Susan Leslie Todd Sherry Tomasina Parrott Treat Williams Vic Chao/description
+
+type=video
+name=12/25 Miss Congeniality 2: Armed & Fabulous (2005) (*** [MANY MOVIES]  *** [COLOR=FFFFFF00]*WORLD IPTV NEWS SPORTS MUSIC ENTERTAINMENT FROM AROUND THE WORLD  *[/COLOR])
+thumb=http://images.primewire.ag/thumbs/1700_Miss_Congeniality_2_Armed_Fabulous_2005.jpg
+date=2015-12-25
+URL=http://www.nowvideo.sx/video/pyn3oqloog75f
+processor=http://www.navixtreme.com/wlfwood/processors/nowvideo.txt
+player=default
+rating=-1.00
+description=Miss Congeniality 2: Armed & Fabulous
+
+
+
+Miss Congeniality 2: Armed & Fabulous: After Cheryl Frasier and Stan Fields are kidnapped, Gracie goes undercover in Las Vegas to find them.
+
+
+
+
+
+Currently 3.97/5
+
+
+
+(204 votes)
+
+Released: 	March 11, 2005
+
+Runtime: 	115 mins
+
+Genres: 	Comedy Crime
+
+Countries: 	USA Australia
+
+Director: 	John Pasquin
+
+Actors: 	Abraham Benrubi Adam LeFevre Affion Crockett AJ Presley Angel Princess Audrey Wasilewski Benny Nieves Bob Pepper Brad Grunberg Brendan Patrick Connor Cameron Milzer Chaz Fatur Christian Vincent Cynthia Pepper David Proval Diedrich Bader Dolly Parton Don Perry Eileen Brennan Elisabeth RÃ??Ã?Â¶hm Emy Coligado Enrique Murciano Ernesto Trinidad Ernie Hudson Esteban Cueto Eve Gordon Faith Minton Frank Marino Heather Burns James DuMont John DiResta Katie Finneran Kim Morgan Greene Kimble Jemison L Sidney Leslie Grossman Lloyd Kino Marcelo Tubert Marjorie Lovett Mark Hengst Megan Cavanagh Michael Bravo Nancy Anderson Nate Bynum Nick Offerman Octavia Spencer Rachel Iverson Rachel Smith Regina King Regis Philbin Rich Skidmore Richard DeDomenico Sandra Bullock Stephen Tobolowsky Susan Chuang Susan Leslie Todd Sherry Tomasina Parrott Treat Williams Vic Chao/description
+
+type=video
+name=9/3 Cop Land (1997) ([COLOR=FF00FF00]DGSProduction Movies[/COLOR] > [COLOR=FF00FF00]Movies List "C"[/COLOR])
+thumb=https://image.tmdb.org/t/p/w396/th2UDVewgUAfIXFUaWGWWBxCM91.jpg
+date=2015-09-03
+URL=http://vodlocker.com/l075pmycfvb1
+player=default
+rating=-1.00
+description=Cop Land ( 1997 )
+
+Cop Land: The sheriff of a suburban New Jersey community populated by New York City policeman slowly discovers the town is a front for mob connections and corruption.
+	
+
+    Currently 3.74/5
+
+(175 votes)
+Ratings: 	IMDB: 6.9/10 Metascore: 64% RT: 72%
+Released: 	August 06, 1997
+Runtime: 	104 mins
+Genres: 	Action Thriller Crime
+Countries: 	USA
+Director: 	James Mangold
+Actors: 	Adrian Lee Alexandra Adi Annabella Sciorra Arthur J Nascarella Brad Beyer Bruce Altman Cathy Moriarty Charles Dumas Christopher Del Gaudio David Butler David W Butler Deborah Harry Edie Falco Frank Pellegrino Frank Vincent Garry Pastore Geraldo Rivera Graciela Lecube Harvey Keitel Janeane Garofalo John Doman John Henry John Johnson John Spencer John Ventimiglia Malik Yoba Mark Casella Mel Gorham Method Man Michael Gaston Michael Rapaport Noah Emmerich Oliver Solomon Paul Calderon Paul Herman Peter Berg Peter Wise PJ Brown Ray Liotta Robert De Niro Robert John Burke Robert Patrick Robert W Castle Sean Cullen Sean Runnette Sylvester Stallone Terry Serpico Timothy Stickney Tony Giorgio Tony Sirico Victor Williams Vincent Laresca/description
+
+type=video
+name=12/25 Cop Land (1997) (*** [MANY MOVIES]  *** [COLOR=FFFFFF00]*WORLD IPTV NEWS SPORTS MUSIC ENTERTAINMENT FROM AROUND THE WORLD  *[/COLOR])
+thumb=https://image.tmdb.org/t/p/w396/th2UDVewgUAfIXFUaWGWWBxCM91.jpg
+date=2015-12-25
+URL=http://vodlocker.com/l075pmycfvb1
+player=default
+rating=-1.00
+description=Cop Land ( 1997 )
+
+
+
+Cop Land: The sheriff of a suburban New Jersey community populated by New York City policeman slowly discovers the town is a front for mob connections and corruption.
+
+
+
+
+
+Currently 3.74/5
+
+
+
+(175 votes)
+
+Ratings: 	IMDB: 6.9/10 Metascore: 64% RT: 72%
+
+Released: 	August 06, 1997
+
+Runtime: 	104 mins
+
+Genres: 	Action Thriller Crime
+
+Countries: 	USA
+
+Director: 	James Mangold
+
+Actors: 	Adrian Lee Alexandra Adi Annabella Sciorra Arthur J Nascarella Brad Beyer Bruce Altman Cathy Moriarty Charles Dumas Christopher Del Gaudio David Butler David W Butler Deborah Harry Edie Falco Frank Pellegrino Frank Vincent Garry Pastore Geraldo Rivera Graciela Lecube Harvey Keitel Janeane Garofalo John Doman John Henry John Johnson John Spencer John Ventimiglia Malik Yoba Mark Casella Mel Gorham Method Man Michael Gaston Michael Rapaport Noah Emmerich Oliver Solomon Paul Calderon Paul Herman Peter Berg Peter Wise PJ Brown Ray Liotta Robert De Niro Robert John Burke Robert Patrick Robert W Castle Sean Cullen Sean Runnette Sylvester Stallone Terry Serpico Timothy Stickney Tony Giorgio Tony Sirico Victor Williams Vincent Laresca/description

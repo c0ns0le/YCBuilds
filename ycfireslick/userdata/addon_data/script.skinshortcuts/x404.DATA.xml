@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>HipHop Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs22.postimg.org%2fx1pcke9b5%2fRappers.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.phstreams/?name=%5BCOLOR+red%5DNEW%3A%5B%2FCOLOR%5D+Rap+And+Hip+Hop+Movies&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FCollections%2FRap.xml&amp;audio=0&amp;image=http%3A%2F%2Fs22.postimg.org%2Fx1pcke9b5%2FRappers.jpg&amp;fanart=http%3A%2F%2Fimg1.goodfon.su%2Foriginal%2F1920x1080%2F7%2F52%2Fking-queen-crown-poker.jpg&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Star Wars Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk18022016%2fmovies%2fthumbs%2fUk%2520turk%2520thumbnails%2520star%2520wars%2520movies.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2Fmovies%2FStar%2520Wars%2520%26%2520Star%2520Trek%2520Movies.txt&amp;mode=1&amp;name=Star+Wars+%26+Star+Trek+Movies&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2Fmovies%2Fthumbs%2FUk%2520turk%2520thumbnails%2520star%2520wars%2520movies.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Wes Craven Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk18022016%2fmovies%2fthumbs%2fUk%2520turk%2520thumbnails%2520wes%2520craven%2520movies.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2Fmovies%2FWes%2520Craven%2520Movies.txt&amp;mode=1&amp;name=Wes+Craven+Movies&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2Fmovies%2Fthumbs%2FUk%2520turk%2520thumbnails%2520wes%2520craven%2520movies.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Frankenstein</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs12.postimg.org%2fqny71vxj1%2fFrankenstein.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.phstreams/?name=%5BCOLOR+red%5DNEW%3A%5B%2FCOLOR%5D+Frankenstein+Collection&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FMisc%2FFrank.xml&amp;audio=0&amp;image=http%3A%2F%2Fs12.postimg.org%2Fqny71vxj1%2FFrankenstein.jpg&amp;fanart=http%3A%2F%2Fimg1.goodfon.su%2Foriginal%2F1920x1080%2F7%2F52%2Fking-queen-crown-poker.jpg&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Dark Horse Comics</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs27.postimg.org%2f3qhmrxs77%2fDark_Horse.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.phstreams/?name=Dark+Horse+Comics+Films&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FCollections%2FDarkHorse2.xml&amp;audio=0&amp;image=http%3A%2F%2Fs27.postimg.org%2F3qhmrxs77%2FDark_Horse.jpg&amp;fanart=http%3A%2F%2Fimg1.goodfon.su%2Foriginal%2F1920x1080%2F7%2F52%2Fking-queen-crown-poker.jpg&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>IMDB Worst</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.mdizle%5cresources%5cart%5cicon2.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.mdizle/?url=http%3A%2F%2Fizlemeyedeger.com%2Ffilm-arsivi%3Fgenre%3D%26year%3D%26country%3D%26sort%3Dimdb%26orderby%3DASC&amp;mode=1&amp;name=%5BB%5D%5BCOLOR+white%5DWorst+IMDB%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=C%3A%5CUsers%5Cadmin%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdizle%5Cresources%5Cart%5Cicon2.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>IMDB Top</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.mdizle%5cresources%5cart%5cicon2.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.mdizle/?url=http%3A%2F%2Fizlemeyedeger.com%2Ffilm-arsivi%3Fgenre%3D%26year%3D%26country%3D%26sort%3Dimdb%26orderby%3DDESC&amp;mode=1&amp;name=%5BB%5D%5BCOLOR+white%5DTop+IMDB%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=C%3A%5CUsers%5Cadmin%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdizle%5Cresources%5Cart%5Cicon2.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Possessions HD</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs27.postimg.org%2fga5tphjtf%2fPossession2.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+red%5DHD%5B%2FCOLOR%5D+Possessions&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FCollections%2FHDHorror.xml&amp;audio=0&amp;image=http%3A%2F%2Fs27.postimg.org%2Fga5tphjtf%2FPossession2.jpg&amp;fanart=http%3A%2F%2Fimg1.goodfon.su%2Foriginal%2F1920x1080%2F7%2F52%2Fking-queen-crown-poker.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Batman Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs10.postimg.org%2fvrwegl2q1%2fThe_Batman.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+yellow%5DNEW%5B%2FCOLOR%5D+%5BCOLOR+red%5DHD%5B%2FCOLOR%5D+The+BEST+Of+Batman&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FCollections%2Fbatman.xml&amp;audio=0&amp;image=http%3A%2F%2Fs10.postimg.org%2Fvrwegl2q1%2FThe_Batman.jpg&amp;fanart=http%3A%2F%2Fimg1.goodfon.su%2Foriginal%2F1920x1080%2F7%2F52%2Fking-queen-crown-poker.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>DC Comics</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs16.postimg.org%2f5iqedwxx1%2fDCComics.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+yellow%5DNEW%5B%2FCOLOR%5D+%5BCOLOR+red%5DHD%5B%2FCOLOR%5D+DC+Comics+Movies&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FCollections%2FDCComics.xml&amp;audio=0&amp;image=http%3A%2F%2Fs16.postimg.org%2F5iqedwxx1%2FDCComics.jpg&amp;fanart=http%3A%2F%2Fimg1.goodfon.su%2Foriginal%2F1920x1080%2F7%2F52%2Fking-queen-crown-poker.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Marvel Comics</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs17.postimg.org%2f6kr9bvwzj%2fMarvel_Comics_HD.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+yellow%5DNEW%5B%2FCOLOR%5D+%5BCOLOR+red%5DHD%5B%2FCOLOR%5D+Marvel+Comics+Movies&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FCollections%2Flampoon.xml&amp;audio=0&amp;image=http%3A%2F%2Fs17.postimg.org%2F6kr9bvwzj%2FMarvel_Comics_HD.jpg&amp;fanart=http%3A%2F%2Fimg1.goodfon.su%2Foriginal%2F1920x1080%2F7%2F52%2Fking-queen-crown-poker.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Latest Animated</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs16.postimg.org%2fqu3swamjp%2fanimation.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Latest+Animated+Releases&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FCollections%2Fanimated.xml&amp;audio=0&amp;image=http%3A%2F%2Fs16.postimg.org%2Fqu3swamjp%2Fanimation.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Afterlife</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs17.postimg.org%2fmezjaiq0v%2fThe_Afterlife.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=AFTERLIFE&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FCollections%2Fafterlife.xml&amp;audio=0&amp;image=http%3A%2F%2Fs17.postimg.org%2Fmezjaiq0v%2FThe_Afterlife.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Conspiracy</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs29.postimg.org%2fgtf4yeh8n%2fConspiracy_Logo2.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Conspiracy&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FMisc%2Fconspiracy.xml&amp;audio=0&amp;image=http%3A%2F%2Fs29.postimg.org%2Fgtf4yeh8n%2FConspiracy_Logo2.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Top Horror</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs18.postimg.org%2fdd65emxzt%2fScary_Movies.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Scariest+Movies+Of+All-Time&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FCollections%2FScaryMovies.xml&amp;audio=0&amp;image=http%3A%2F%2Fs18.postimg.org%2Fdd65emxzt%2FScary_Movies.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Clint Eastwood</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs4.postimg.org%2fnf5ortiy5%2fClint_Eastwood.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Clint+Eastwood+Collection&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FCollections%2Fclinteastwood.xml&amp;audio=0&amp;image=http%3A%2F%2Fs4.postimg.org%2Fnf5ortiy5%2FClint_Eastwood.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Tarantino</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs14.postimg.org%2f7thsj6apt%2fQuentin_Tarantino.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=QUENTIN+TARANTINO&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FCollections%2Fquentin.xml&amp;audio=0&amp;image=http%3A%2F%2Fs14.postimg.org%2F7thsj6apt%2FQuentin_Tarantino.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Top Comedies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs3.postimg.org%2fbbzs9l983%2fComedies.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Funniest+Comedies+Ever&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FMovies%2Ffunny.xml&amp;audio=0&amp;image=http%3A%2F%2Fs3.postimg.org%2Fbbzs9l983%2FComedies.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>101 Gangster</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs16.postimg.org%2f854szqtfp%2fGangsters101.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=101+Gangster+Movies+You+Must+See+Before+You+Die&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FAgangsters%2FGangsters_Directory.xml&amp;audio=0&amp;image=http%3A%2F%2Fs16.postimg.org%2F854szqtfp%2FGangsters101.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Westerns HD</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs28.postimg.org%2fu7semgdwd%2fhd_Westerns.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+red%5DHD%5B%2FCOLOR%5D+Westerns&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FCollections%2FHDWestern.xml&amp;audio=0&amp;image=http%3A%2F%2Fs28.postimg.org%2Fu7semgdwd%2Fhd_Westerns.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Sci Fi Collection</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs2.postimg.org%2f59sabq7mh%2fScience_Fiction.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Ultimate+Sci-Fi+Collection&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FCollections%2FSciFi.xml&amp;audio=0&amp;image=http%3A%2F%2Fs2.postimg.org%2F59sabq7mh%2FScience_Fiction.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Aliens &amp; UFO</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs21.postimg.org%2feyyvr479z%2fAliens_Ufo.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Aliens+%26+UFO&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FCollections%2FUFOs.xml&amp;audio=0&amp;image=http%3A%2F%2Fs21.postimg.org%2Feyyvr479z%2FAliens_Ufo.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>British Gangsters</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs1.postimg.org%2fcwmoyq7lr%2fBritish_Gangsters.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=British+Gangsters&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FCollections%2Fbritishmob.xml&amp;audio=0&amp;image=http%3A%2F%2Fs1.postimg.org%2Fcwmoyq7lr%2FBritish_Gangsters.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>James Bond 007</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs8.postimg.org%2fmfueznlxh%2fJames_Bond.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=James+Bond+007&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FCollections%2F007.xml&amp;audio=0&amp;image=http%3A%2F%2Fs8.postimg.org%2Fmfueznlxh%2FJames_Bond.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Zombie Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs15.postimg.org%2f6qit4ghln%2fZombies.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=ZOMBIES&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FCollections%2Fzombies.xml&amp;audio=0&amp;image=http%3A%2F%2Fs15.postimg.org%2F6qit4ghln%2FZombies.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Stephen King Collection</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs8.postimg.org%2fvyb8q3qp1%2fStephen_King.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Stephen+King+Collection&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FCollections%2Fstephanking.xml&amp;audio=0&amp;image=http%3A%2F%2Fs8.postimg.org%2Fvyb8q3qp1%2FStephen_King.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Latest HD RC</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs5.postimg.org%2fp6r31q3pj%2fNew_HD.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+yellow%5DNew+HD%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fyork.watchkodi.com%2FAfdah%2FRecent.xml&amp;audio=0&amp;image=http%3A%2F%2Fs5.postimg.org%2Fp6r31q3pj%2FNew_HD.jpg&amp;fanart=http%3A%2F%2Fs5.postimg.org%2Fn5fv921c7%2FFan_art.png&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>1080p Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fi.imgur.com%2fhuFDWrs.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=1080p+movies&amp;url=http%3A%2F%2Ftuzla.watchkodi.com%2F1080p%2520movies.xml&amp;audio=0&amp;image=http%3A%2F%2Fi.imgur.com%2FhuFDWrs.png&amp;fanart=http%3A%2F%2F7-themes.com%2Fdata_images%2Fout%2F43%2F6917465-french-flag-wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Movie Boxsets</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs6.postimg.org%2fvls13i9s1%2fBoxsets.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+orangered%5DB%5B%2FCOLOR%5D%5BCOLOR+white%5DOXSETS%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fzenica.watchkodi.com%2FDirectories%2FMovies%2520Directories%2FBoxsets%2520Directory.xml&amp;audio=0&amp;image=http%3A%2F%2Fs6.postimg.org%2Fvls13i9s1%2FBoxsets.png&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F4ph8mo5q9%2FBackdrop.png&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>3D Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs6.postimg.org%2fs8jsgsg75%2f3_D.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+orangered%5D3%5B%2FCOLOR%5D%5BCOLOR+white%5DD%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fzenica.watchkodi.com%2FMovies%2F3D%2520Movies.xml&amp;audio=0&amp;image=http%3A%2F%2Fs6.postimg.org%2Fs8jsgsg75%2F3_D.png&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F4ph8mo5q9%2FBackdrop.png&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Latest Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs5.postimg.org%2f7myi619vr%2fCurrent_Movies.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+yellow%5DCurrent+Movies%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fyork.watchkodi.com%2FPlaylists%2FCurrent%2520Movies.xml&amp;audio=0&amp;image=http%3A%2F%2Fs5.postimg.org%2F7myi619vr%2FCurrent_Movies.jpg&amp;fanart=http%3A%2F%2Fs5.postimg.org%2Fn5fv921c7%2FFan_art.png&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Cinema Releases</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs6.postimg.org%2fyz13nuoap%2fLatest_Cinema.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+orangered%5DL%5B%2FCOLOR%5D%5BCOLOR+white%5DATEST%5B%2FCOLOR%5D+%5BCOLOR+orangered%5DC%5B%2FCOLOR%5D%5BCOLOR+white%5DINEMA%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fzenica.watchkodi.com%2FMovies%2FLatest%2520Cinema.xml&amp;audio=0&amp;image=http%3A%2F%2Fs6.postimg.org%2Fyz13nuoap%2FLatest_Cinema.png&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F4ph8mo5q9%2FBackdrop.png&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+</shortcuts>

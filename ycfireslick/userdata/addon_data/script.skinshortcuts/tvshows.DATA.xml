@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>GenShows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.genesis%5cresources%5cmedia%5cgone%5ctvshows.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=tvNavigator",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>FlixShows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.flixanity%5cart%5ctvshows.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.flixanity/?url=url&amp;mode=102&amp;name=TV+Shows&amp;iconimage=C%3A%5CUsers%5Cadmin%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.flixanity%5Cart%5Ctvshows.png&amp;list=&amp;showname=&amp;type=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>MarvinShows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fthebeastkodi.uk%2faddon%2fEpisodes.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.marvin/?url=http%3A%2F%2Fthebeastkodi.uk%2Faddon%2FEpisodes.txt&amp;mode=1&amp;name=%5BCOLOR+blue%5DTV+Series%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fthebeastkodi.uk%2Faddon%2FEpisodes.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.ororotv</defaultID>
+		<label>Ororo TV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ororotv%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ororotv",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>SaltsShows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.salts%5cart%5cthemes%5cShine%5ctelevision.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.salts/?section=TV&amp;mode=browse",return)</action>
+	</shortcut>
+</shortcuts>

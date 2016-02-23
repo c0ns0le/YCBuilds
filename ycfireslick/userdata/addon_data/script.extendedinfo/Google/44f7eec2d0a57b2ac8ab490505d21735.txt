@@ -1,0 +1,1 @@
+["ufc 17", ["ufc 178", "ufc 178 embedded", "ufc 175", "ufc 178 post fight press conference", "ufc 179", "ufc 173", "ufc 17", "ufc 177", "ufc 171", "ufc 172"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

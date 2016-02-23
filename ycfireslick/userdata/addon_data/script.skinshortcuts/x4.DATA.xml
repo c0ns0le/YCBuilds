@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>Exodus Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.exodus%5cicon.png/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.exodus/?action=movies&amp;url=http%3A%2F%2Fapi.themoviedb.org%2F3%2Fdiscover%2Fmovie%3Fapi_key%3D%25s%26with_genres%3D16%26primary_release_date.gte%3Ddate%5B365%5D%26primary_release_date.lte%3Ddate%5B0%5D%26page%3D1",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>UK Turk Cartoons</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk18022016%2fthumbs%2fnew%2fUk%2520turk%2520thumbnails%2520cartoons.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2Fcartoons%2FIndex.txt&amp;mode=1&amp;name=Cartoons&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2Fthumbs%2Fnew%2FUk%2520turk%2520thumbnails%2520cartoons.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Cold as Ice Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fg10.x10host.com%2fcoldasice%2fKids.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.titan/?url=http%3A%2F%2Fg10.x10host.com%2Fcoldasice%2FMovies%2FKids.txt&amp;mode=7&amp;name=Kids+Movies&amp;iconimage=http%3A%2F%2Fg10.x10host.com%2Fcoldasice%2FKids.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Society Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs22.postimg.org%2fe1gr3sha9%2fCartoons_fixed_zps0a26621b.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.titan/?url=http%3A%2F%2Fpastebin.com%2Fraw%2FF7wy2iWJ&amp;mode=30&amp;name=%5BCOLOR+FFA4C639%5DKids+Place%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fs22.postimg.org%2Fe1gr3sha9%2FCartoons_fixed_zps0a26621b.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>UKT Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk18022016%2fmovies%2fthumbs%2fUk%2520turk%2520thumbnails%2520animated%2520childrens%2520movies.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2Fmovies%2FAnimated%2520Childrens%2520Movies.txt&amp;mode=1&amp;name=Animated+Childrens+Movies&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2Fmovies%2Fthumbs%2FUk%2520turk%2520thumbnails%2520animated%2520childrens%2520movies.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Afdah Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.mdafdah%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.mdafdah/?url=https%3A%2F%2Fafdah.org%2Fanimation_movies&amp;mode=1&amp;name=%5BB%5D%5BCOLOR+white%5DAnimation%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=C%3A%5CUsers%5Cuser%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdafdah%5Cicon.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Disney UKT</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk18022016%2fmovies%2fthumbs%2fUk%2520turk%2520thumbnails%2520animated%2520walt%2520disney%2520movies.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2Fmovies%2FWalt%2520Disney%2520Animated%2520Movies.txt&amp;mode=1&amp;name=Animated+Walt+Disney+Movies&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2Fmovies%2Fthumbs%2FUk%2520turk%2520thumbnails%2520animated%2520walt%2520disney%2520movies.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Watch 1080 Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.watch1080%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.watch1080/?url=http%3A%2F%2Fwatch1080p.com%2Fgenre%2Ffilm-animation%2F&amp;mode=1&amp;name=Animation&amp;iconimage=C%3A%5CUsers%5Cadmin%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.watch1080%5Cicon.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Specto Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.specto%5cresources%5cmedia%5cmetro%5cmovieGenres.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.specto/?action=movies&amp;url=http%3A%2F%2Fapi.themoviedb.org%2F3%2Fdiscover%2Fmovie%3Fapi_key%3D%25s%26with_genres%3D16%26primary_release_date.gte%3D2015-02-01%26primary_release_date.lte%3D2016-02-01%26page%3D1",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>DubStop Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.dubstop%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.dubstop/?url=http%3A%2F%2Fuflix.ws%2Fmovie-tags%2Fanimation&amp;mode=10&amp;name=%5BCOLOR+yellow%5DAnimation%5B%2FCOLOR%5D&amp;page=0",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Dictator Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.filmdictator%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.filmdictator/?url=http%3A%2F%2Ffilmdictator.com%2Fcategory%2Fanimation%2F&amp;mode=1&amp;name=Animation&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>FilmOn Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fstatic.filmon.com%2fassets%2fgroups%2f13%2fbig_logo.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.F.T.V/?url=13&amp;mode=123&amp;name=KIDS&amp;ch_fanart=kids&amp;description=1285,316,318,1287,320,3677,3824,3944,3614,3191,29,1289,1282,1286,3263,2069,793,1861,1281,2993,3146,7,799,401",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Titan Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fi68.tinypic.com%2f1zoapon.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.titan/?url=https%3A%2F%2Farchive.org%2Fdownload%2FNaviXPlaylist%2FFamily.xml&amp;mode=5&amp;name=%5BCOLOR+aqua%5D+Family+Hits+%5B%2FCOLOR%5D++++updated%3A+2016-01-22&amp;iconimage=http%3A%2F%2Fi68.tinypic.com%2F1zoapon.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>M&amp;M Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2ficons.iconarchive.com%2ficons%2fsirubico%2fmovie-genre%2f256%2fChildren-icon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.titan/?url=https%3A%2F%2Farchive.org%2Fdownload%2FNaviXPlaylist%2FChildrens.xml&amp;mode=5&amp;name=%5BCOLOR+aqua%5DChildrens%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Ficons.iconarchive.com%2Ficons%2Fsirubico%2Fmovie-genre%2F256%2FChildren-icon.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>PFTV Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.pftvso%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.pftvso/?page=1&amp;mode=open_genre&amp;slug=animation",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>[COLOR limegreen][B]Disney Collection[/COLOR][/B]</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs30.postimg.org%2fjsccn9npt%2fThe_DCollection.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=The+D+Collection&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FDisne%2FDisne_Directory.xml&amp;audio=0&amp;image=http%3A%2F%2Fs30.postimg.org%2Fjsccn9npt%2FThe_DCollection.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>MHD Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.moviehdmax%5cart%5cgenres.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.moviehdmax/?url=http%3A%2F%2Fmoviehdmax.com%2Fsearch%2Fgenre%2Fanimation%3Fpage%3D1%23genre&amp;mode=1&amp;name=Animation&amp;iconimage=C%3A%5CUsers%5Cadmin%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.moviehdmax%5Cart%5Cgenres.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>TRW Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.theroyalwe%2fresources%2fartwork%2fgenres%2fanimation.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.theroyalwe/?mode=movie_genre&amp;id=16",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>PubFilm Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.mdpubfilm%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.mdpubfilm/?url=http%3A%2F%2Fpubfilm.com%2Ftag%2Fanimation&amp;mode=2&amp;name=%5BB%5D%5BCOLOR+white%5DANIMATION%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=C%3A%5CUsers%5Cuser%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdpubfilm%5Cicon.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Kids 9Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.md9movies%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.md9movies/?url=http%3A%2F%2F9movies.to%2Fgenre%2Fanimation%2F&amp;mode=1&amp;name=%5BB%5D%5BCOLOR+white%5DAnimation+movies%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=C%3A%5CUsers%5Cuser%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.md9movies%5Cicon.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Cartoon Crazy</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.phstreams%2fresources%2fmedia%2fphtoons%2fCartoonCrazy-icon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?action=CartoonCrazy&amp;url=0&amp;image=C%3A%5CUsers%5Cuser%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.phstreams%2Fresources%2Fmedia%2Fphtoons%2FCartoonCrazy-icon.png&amp;fanart=C%3A%5CUsers%5Cuser%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.phstreams%2Fresources%2Fmedia%2Fphtoons%2FCartoonCrazy-fanart.jpg",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Classic Disney</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fi.ytimg.com%2fvi%2f760JDRxAIWE%2fhqdefault.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.morepower/?url=http%3A%2F%2Fwww.navixtreme.com%2Fplaylist%2F78769%2Fclassic_disney_films_.plx&amp;mode=1&amp;name=%5BCOLOR+white%5D%2A%5BCOLOR%3DFF0198E1%5DClassic+Disney+Films+%5B%2FCOLOR%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fi.ytimg.com%2Fvi%2F760JDRxAIWE%2Fhqdefault.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Superhero Movies/Shows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fwww.scifinow.co.uk%2fwp-content%2fuploads%2f2015%2f03%2f001_SHMC_01R1_DE.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.morepower/?url=http%3A%2F%2Fwww.navixtreme.com%2Fplaylist%2F151521%2Fsuperheros_movies_and_tv_shows.plx&amp;mode=1&amp;name=%5BCOLOR+white%5D%2A%2ASuperheros+Movies+and+TV+Shows%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fwww.scifinow.co.uk%2Fwp-content%2Fuploads%2F2015%2F03%2F001_SHMC_01R1_DE.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Dreamworks</label>
+		<label2>Program</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2farchitects.x10host.com%2fvod%2fdream.png/</thumb>
+		<action>ActivateWindow(10001,"plugin://plugin.video.GenieTv/?url=http%3A%2F%2Frahsia.info%2Ftemp%2FKids%2520Movies%2FDreamworks.Animation.Collection.DVDRip.XviD-L329%2F&amp;mode=1006&amp;name=%5BCOLORgreen%5DDREAMWORKS%5B%2FCOLOR%5D",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>123 Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.md123movies%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.md123movies/?url=http%3A%2F%2F123movies.to%2Fgenre%2Fanimation%2F&amp;mode=1&amp;name=%5BB%5D%5BCOLOR+white%5DAnimation%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=C%3A%5CUsers%5Cuser%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.md123movies%5Cicon.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Tub Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.TubTub%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.TubTub/?url=url&amp;mode=1&amp;name=Kids&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>HP Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fcreateapk.com%2fproject%2f2014%2f09%2fafrizaldarwin%2fthe-minions-despicable-me-wallpaper%2ficon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+hotpink%5DKids%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2FPlaylists%2FKids.xml&amp;audio=0&amp;image=http%3A%2F%2Fcreateapk.com%2Fproject%2F2014%2F09%2Fafrizaldarwin%2Fthe-minions-despicable-me-wallpaper%2Ficon.png&amp;fanart=http%3A%2F%2F7-themes.com%2Fdata_images%2Fout%2F59%2F6973439-beautiful-forest-photos.jpg&amp;playable=true&amp;tvshow=0&amp;content=movies&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>HP Kids Live</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://https%3a%2f%2fwalter.trakt.us%2fimages%2fmovies%2f000%2f007%2f229%2ffanarts%2foriginal%2f75b32c169e.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+hotpink%5DKids+Live+Action%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2FPlaylists%2FKids%2520Live%2520Action.xml&amp;audio=0&amp;image=https%3A%2F%2Fwalter.trakt.us%2Fimages%2Fmovies%2F000%2F007%2F229%2Ffanarts%2Foriginal%2F75b32c169e.jpg&amp;fanart=http%3A%2F%2F7-themes.com%2Fdata_images%2Fout%2F59%2F6973439-beautiful-forest-photos.jpg&amp;playable=true&amp;tvshow=0&amp;content=movies&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>X Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.xmovies8%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.xmovies8/?url=http%3A%2F%2Fxmovies8.tv%2Fmovie-genre%2Fanimation%2Fpage%2F1&amp;mode=1&amp;name=Animation&amp;iconimage=C%3A%5CUsers%5Cuser%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.xmovies8%5Cicon.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>TNPB Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs6.postimg.org%2fmvzjgehoh%2fKids.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+orangered%5DK%5B%2FCOLOR%5D%5BCOLOR+white%5DIDS%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fzenica.watchkodi.com%2FDirectories%2FMain%2520Directory%2FKids%2520Main.xml&amp;audio=0&amp;image=http%3A%2F%2Fs6.postimg.org%2Fmvzjgehoh%2FKids.png&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F4ph8mo5q9%2FBackdrop.png&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>UK Turk Cartoons</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk2%2fthumbs%2fUK%2520TURK%2520cartoons.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk2%2Fcartoons%2FIndex.txt&amp;mode=1&amp;name=Classic+Cartoons&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk2%2Fthumbs%2FUK%2520TURK%2520cartoons.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.cartoons8</defaultID>
+		<label>Cartoons8</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.cartoons8%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.cartoons8",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>CMZ Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.coolmoviezoneER%2ficons%2ficon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.coolmoviezoneER/?url=http%3A%2F%2Fcoolmoviezone.org%2Fcategory%2Fanimation%2F&amp;text=Animation&amp;mode=GetTitles3&amp;listitem=%3Cxbmcgui.ListItem+object+at+0x129229C8%3E",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Kids Space</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.allinone%2ficons%2fks.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.allinone/?mode=KidsMenu",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>FD Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.filmdictator%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.filmdictator/?url=http%3A%2F%2Ffilmdictator.com%2Fcategory%2Fanimation%2F&amp;mode=1&amp;name=Animation&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Gen Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.genesis%5cresources%5cmedia%5cmetro%5cmovieGenres.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=movies&amp;url=http%3A%2F%2Fapi.themoviedb.org%2F3%2Fdiscover%2Fmovie%3Fapi_key%3D%25s%26with_genres%3D16%26primary_release_date.gte%3D2014-11-12%26primary_release_date.lte%3D2015-11-12%26page%3D1",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.kmER</defaultID>
+		<label>Kid's Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.kmER%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.kmER",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.kiddiecartoons</defaultID>
+		<label>Kiddie Cartoons</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.kiddiecartoons%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.kiddiecartoons",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Latest Dude Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.lmER%2ficons%2ficon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.lmER/?url=http%3A%2F%2Flatestdude.com%2F%2Fcategory%2Fanimation%2F&amp;section=ALL&amp;numOfPages=1&amp;startPage=1&amp;mode=GetTitles",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Marvin Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fthebeastkodi.uk%2faddon%2fMovies.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.marvin/?url=http%3A%2F%2Fthebeastkodi.uk%2Faddon%2Fanimation.txt&amp;mode=3&amp;name=%5BCOLOR+yellow%5DAnimation%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fthebeastkodi.uk%2Faddon%2FMovies.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Movie Hut Kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.moviehut%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.moviehut/?url=http%3A%2F%2Fwww.moviehut.co%2Fwatch-recent-animation-movies.html&amp;mode=1&amp;name=Animation&amp;iconimage=C%3A%5CUsers%5Cadmin%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.moviehut%5Cicon.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.toddlerworldtv</defaultID>
+		<label>Toddler World TV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.toddlerworldtv%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.toddlerworldtv",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.toonmania</defaultID>
+		<label>ToonMania</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.toonmania%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.toonmania",return)</action>
+	</shortcut>
+</shortcuts>

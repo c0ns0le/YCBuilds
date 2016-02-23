@@ -1,0 +1,1 @@
+["A", ["adele hello", "ariana grande", "antidote travis scott", "aphmau", "asmr", "asap rocky", "adele hello lyrics", "adele when we were young", "angry joe", "august alsina"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

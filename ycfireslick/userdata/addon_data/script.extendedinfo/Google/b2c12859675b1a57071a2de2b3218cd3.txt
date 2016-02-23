@@ -1,0 +1,1 @@
+["ufc", ["ufc", "ufc knockouts", "ufc 195", "ufc 197", "ufc on fox", "ufc 194", "ufc free fight", "ufc embedded", "ufc 2", "ufc 196"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

@@ -1,0 +1,1 @@
+["Ad", ["adele hello", "adele hello lyrics", "adele when we were young", "adele carpool karaoke", "adele someone like you", "adele rolling in the deep", "adventure of a lifetime", "adam ruins everything", "adam levine", "adam driver"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>plugin.video.tvmix</defaultID>
+		<label>TV Mix</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.tvmix%5cicon.png/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.tvmix",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>[COLOR limegreen][B]Exodus Shows[/COLOR][/B]</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://DefaultTVShows.png/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.exodus/?action=tvNavigator",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>UK Turk Shows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk18022016%2fthumbs%2fnew%2fUk%2520turk%2520thumbnails%2520tv%2520shows.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2Ftv+shows%2FIndex.txt&amp;mode=1&amp;name=TV+Shows&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2Fthumbs%2Fnew%2FUk%2520turk%2520thumbnails%2520tv%2520shows.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Cold as Ice</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://https%3a%2f%2folimex.files.wordpress.com%2f2014%2f04%2ftv.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.titan/?url=http%3A%2F%2Fg10.x10host.com%2Fcoldasice%2FTv%2FTv.txt&amp;mode=7&amp;name=Tv&amp;iconimage=https%3A%2F%2Folimex.files.wordpress.com%2F2014%2F04%2Ftv.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Specto Shows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.specto%5cresources%5cmedia%5cmetro%5ctvshows.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.specto/?action=tvNavigator",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>DubStop Shows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.dubstop%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.dubstop/?url=url&amp;mode=6&amp;name=%5BCOLOR+yellow%5DTV+Shows%5B%2FCOLOR%5D&amp;page=0",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>HiFi Shows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.titan%5cart%5chifi.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.titan/?url=https%3A%2F%2Fia601506.us.archive.org%2F26%2Fitems%2Fhifiseriescaneditthisfileworkingone%2Fhifiseriescaneditthisfileworkingone.xml&amp;mode=3&amp;name=TV+Shows&amp;iconimage=C%3A%5CUsers%5Cadmin%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.titan%5Cart%5Chifi.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>M&amp;Ms Shows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2f1.bp.blogspot.com%2f-a3_p2hxL8ys%2fVUPAu2ScZ-I%2fAAAAAAAABOs%2fy-VVLbob0lY%2fs1600%2funnamed.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.titan/?url=https%3A%2F%2Farchive.org%2Fdownload%2FNaviXPlaylist%2FTv_Shows.xml&amp;mode=3&amp;name=%5BCOLOR+aqua%5D+Tv+Series+%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2F1.bp.blogspot.com%2F-a3_p2hxL8ys%2FVUPAu2ScZ-I%2FAAAAAAAABOs%2Fy-VVLbob0lY%2Fs1600%2Funnamed.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.filmdictator</defaultID>
+		<label>Film Dictator</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.filmdictator%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.filmdictator",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.teevee</defaultID>
+		<label>TeeVee</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.teevee%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.teevee",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>3 Amigos</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs15.postimg.org%2f3rgtfhppn%2fimage.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.3amigos/?url=plugin%3A%2F%2Fplugin.video.genesis%2F%3Faction%3DtvNavigator&amp;mode=53&amp;name=%5BCOLOR+red%5DTV+SHOWS+%5B%2FCOLOR%5D%5BCOLOR+white%5DCLICK+HERE+%21%21%21%5B%2FCOLOR%5D&amp;fanart=http%3A%2F%2Fs2.postimg.org%2Fbbmmrs7h1%2F12305539_10208273877868300_661183800_n.jpg",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Watch4Free Shows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.watch4free%5cart%5ctv.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.watch4free/?url=http%3A%2F%2Fwww.watchfree.to%2F%3Ftv%3D%26page%3D1&amp;mode=1&amp;name=%5BCOLOR+lime%5DTV+Shows+%5B%2FCOLOR%5D&amp;iconimage=C%3A%5CUsers%5Cadmin%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.watch4free%5Cart%5Ctv.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>TRW TVShows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.theroyalwe%2fresources%2fartwork%2ftvshows.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.theroyalwe/?mode=tv_menu",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>MHD Shows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.moviehdmax%5cart%5clatestshows.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.moviehdmax/?url=http%3A%2F%2Ffulltvepisodes.net%2Fseries-index%2F&amp;mode=11&amp;name=%3E+Latest+TV+Episodes&amp;iconimage=C%3A%5CUsers%5Cadmin%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.moviehdmax%5Cart%5Clatestshows.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>PubFilm TV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.mdpubfilm%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.mdpubfilm/?url=http%3A%2F%2Fpubfilm.com%2Ftag%2Fseries&amp;mode=2&amp;name=%5BB%5D%5BCOLOR+white%5DSeries%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=C%3A%5CUsers%5Cuser%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdpubfilm%5Cicon.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Velocity</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.velocity%5cresources%5cart%5ctvshows.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.velocity/?url=&amp;mode=tv_menu&amp;name=TV+Shows&amp;movie_title=&amp;thumb=C%3A%5CUsers%5Cuser%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.velocity%5Cresources%5Cart%5Ctvshows.png&amp;trakt_id=&amp;media=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Retro TV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs17.postimg.org%2f5huls0ipb%2fRetro_TV.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Retro+TV&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2Fretrotv%2Fretrotv_directory2.xml&amp;audio=0&amp;image=http%3A%2F%2Fs17.postimg.org%2F5huls0ipb%2FRetro_TV.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Retro Shows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fwac.450f.edgecastcdn.net%2f80450F%2f943loudwire.com%2ffiles%2f2013%2f01%2f80s-tv.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.morepower/?url=http%3A%2F%2Fwww.navixtreme.com%2Fplaylist%2F134119%2Fclassic_70s_and_80s_tv_series.plx&amp;mode=1&amp;name=%5BCOLOR+white%5D%2A%5BCOLOR%3DFF0198E1%5D%2AClassic+70s+and+80s+TV+series%5B%2FCOLOR%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fwac.450f.edgecastcdn.net%2F80450F%2F943loudwire.com%2Ffiles%2F2013%2F01%2F80s-tv.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>TV Shows SALTS</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.salts%5cart%5cthemes%5cShine%5ctelevision.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.salts/?section=TV&amp;mode=browse",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.tv4me</defaultID>
+		<label>TV4ME</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.tv4me%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.tv4me",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.rlseriesER</defaultID>
+		<label>Rlseries</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.rlseriesER%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.rlseriesER",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>123Shows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.md123movies%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.md123movies/?url=http%3A%2F%2F123movies.to%2F%2Fmovie%2Ffilter%2Fall%2Frating%2Fall%2Fall%2Fall&amp;mode=2&amp;name=%5BB%5D%5BCOLOR+white%5DTV+Shows%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=C%3A%5CUsers%5Cuser%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.md123movies%5Cicon.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>HP Shows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs6.postimg.org%2ff2qzd7w1t%2fHer_Place_TV.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+blue%5DTV+Shows%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2FTV%2520Shows%2FShows.xml&amp;audio=0&amp;image=http%3A%2F%2Fs6.postimg.org%2Ff2qzd7w1t%2FHer_Place_TV.jpg&amp;fanart=http%3A%2F%2F7-themes.com%2Fdata_images%2Fout%2F59%2F6973439-beautiful-forest-photos.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>RC Shows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs5.postimg.org%2f6ly9gwsw7%2fCurrent_TV_shows.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+yellow%5DCurrent+TV+Shows%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fyork.watchkodi.com%2FPlaylists%2FTV.xml&amp;audio=0&amp;image=http%3A%2F%2Fs5.postimg.org%2F6ly9gwsw7%2FCurrent_TV_shows.jpg&amp;fanart=http%3A%2F%2Fs5.postimg.org%2Fn5fv921c7%2FFan_art.png&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.ts80k</defaultID>
+		<label>80's kids</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ts80k%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ts80k",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>EntHub TV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.allinone%2ficons%2ftv2.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.allinone/?mode=TvMenu",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>TV Shows Gen</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.genesis%5cresources%5cmedia%5cmetro%5ctvshows.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=tvNavigator",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Marvin TV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fthebeastkodi.uk%2faddon%2fEpisodes.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.marvin/?url=http%3A%2F%2Fthebeastkodi.uk%2Faddon%2FEpisodes.txt&amp;mode=1&amp;name=%5BCOLOR+blue%5DTV+Series%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fthebeastkodi.uk%2Faddon%2FEpisodes.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.ororotv</defaultID>
+		<label>Ororo TV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ororotv%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ororotv",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.Showbox</defaultID>
+		<label>Showbox</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.Showbox%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.Showbox",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.SoapCatchup</defaultID>
+		<label>Soap Catchup</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.SoapCatchup%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.SoapCatchup",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>TV Shows SE</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fi1295.photobucket.com%2falbums%2fb636%2fbeatbox8501%2fTVSHOWS_zpswp7dxwzd.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.streamengine/?url=https%3A%2F%2Fpastebin.com%2Fraw.php%3Fi%3D03DtwXnF&amp;mode=1&amp;name=%5BCOLOR+white%5DTV+SHOWS%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fi1295.photobucket.com%2Falbums%2Fb636%2Fbeatbox8501%2FTVSHOWS_zpswp7dxwzd.png&amp;play=&amp;date=&amp;description=&amp;page=",return)</action>
+	</shortcut>
+</shortcuts>

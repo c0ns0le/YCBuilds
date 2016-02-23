@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>[COLOR limegreen][B]Disney Collection[/B][/COLOR]</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs30.postimg.org%2fjsccn9npt%2fThe_DCollection.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=The+D+Collection&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FDisne%2FDisne_Directory.xml&amp;audio=0&amp;image=http%3A%2F%2Fs30.postimg.org%2Fjsccn9npt%2FThe_DCollection.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>ROCKCRUSHER KIDS</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+yellow%5DKids+HD%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fyork.watchkodi.com%2FAfdah%2FKids.xml&amp;audio=0&amp;image=http%3A%2F%2Fs5.postimg.org%2Fwy37mjih3%2FKids_HD.jpg&amp;fanart=http%3A%2F%2Fs5.postimg.org%2Fn5fv921c7%2FFan_art.png&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>HER PLACE KIDS</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+blue%5DMy+Kids%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2FPlaylists%2FKids%2520Main.xml&amp;audio=0&amp;image=http%3A%2F%2Fs6.postimg.org%2Fgpk9zbs01%2FIhae6r_JE.jpg&amp;fanart=http%3A%2F%2F7-themes.com%2Fdata_images%2Fout%2F59%2F6973439-beautiful-forest-photos.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>STEAAL KIDS</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=kids+%26+animation&amp;url=http%3A%2F%2Ftuzla.watchkodi.com%2Fkids_animation.xml&amp;audio=0&amp;image=http%3A%2F%2Fi.imgur.com%2FYXaY4BI.png&amp;fanart=http%3A%2F%2F7-themes.com%2Fdata_images%2Fout%2F43%2F6917465-french-flag-wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>STREAM ENGINE KIDS</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.streamengine/?url=https%3A%2F%2Fpastebin.com%2Fraw.php%3Fi%3D4guZC7WJ&amp;mode=1&amp;name=%5BCOLOR+red%5D%5BCOLOR+white%5DKIDS+STUFF%5BCOLOR+red%5D+%5BCOLOR+lime%5D%5B%2FCOLOR%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fi1295.photobucket.com%2Falbums%2Fb636%2Fbeatbox8501%2FKIDS_zpsgflhj2dv.png&amp;play=&amp;date=&amp;description=&amp;page=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>kids &amp; animation</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fi.imgur.com%2fYXaY4BI.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=kids+%26+animation&amp;url=http%3A%2F%2Ftuzla.watchkodi.com%2Fkids_animation.xml&amp;audio=0&amp;image=http%3A%2F%2Fi.imgur.com%2FYXaY4BI.png&amp;fanart=http%3A%2F%2F7-themes.com%2Fdata_images%2Fout%2F43%2F6917465-french-flag-wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Classic Cartoons</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk2%2fthumbs%2fUK%2520TURK%2520cartoons.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk2%2Fcartoons%2FIndex.txt&amp;mode=1&amp;name=Classic+Cartoons&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk2%2Fthumbs%2FUK%2520TURK%2520cartoons.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>All Kids Stuff</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.allinone%2ficons%2fks.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.allinone/?mode=KidsMenu",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Family Xmas Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fwww.oakparkonline.org%2falpha%2fwp-content%2fuploads%2f2012%2f09%2fmerry-christmas-christian-a8fcczit.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.morepower/?url=http%3A%2F%2Fwww.navixtreme.com%2Fplaylist%2F81229%2Ffamily_christmas_specials_movies.plx&amp;mode=1&amp;name=%5BCOLOR+white%5D%2A%5BCOLOR%3DFF0198E1%5D%2AFAMILY%5B%2FCOLOR%5D+%5BCOLOR%3DFF00FF00%5D%2ACHRISTMAS++%5B%2FCOLOR%5D+%5BCOLOR%3DFFAF1E2D%5DSPECIALS+%5B%2FCOLOR%5D%5BCOLOR%3DFFFFFF00%5DMOVIES%5B%2FCOLOR%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fwww.oakparkonline.org%2Falpha%2Fwp-content%2Fuploads%2F2012%2F09%2Fmerry-christmas-christian-a8fcczit.jpg&amp;description=",return)</action>
+	</shortcut>
+</shortcuts>

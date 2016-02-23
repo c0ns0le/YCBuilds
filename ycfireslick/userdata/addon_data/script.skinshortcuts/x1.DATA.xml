@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>script.xbmcbackup</defaultID>
+		<label>Backup</label>
+		<label2>Program</label2>
+		<icon>DefaultAddon.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.xbmcbackup%5cicon.png/</thumb>
+		<action>RunAddOn(script.xbmcbackup)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Addon Removal</label>
+		<label2>Program</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2ftribeca.tvaddons.ag%2ftools%2fmaintenance%2fthumbs%2faddonremoval.jpg/</thumb>
+		<action>ActivateWindow(10001,"plugin://plugin.video.xbmchubmaintenance/?url=plugin.&amp;mode=8&amp;name=Addon+Removal&amp;iconimage=http%3A%2F%2Ftribeca.tvaddons.ag%2Ftools%2Fmaintenance%2Fthumbs%2Faddonremoval.jpg&amp;fanart=C%3A%5CUsers%5Cadmin%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.xbmchubmaintenance%5Cfanart.jpg",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.program.addoninstaller</defaultID>
+		<label>[COLOR limegreen][B]Addon Installer[/COLOR][/B]</label>
+		<label2>Program</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.program.addoninstaller%5cicon.png/</thumb>
+		<action>ActivateWindow(10001,"plugin://plugin.program.addoninstaller",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Clear Cache</label>
+		<label2>Program</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2ftribeca.tvaddons.ag%2ftools%2fmaintenance%2fthumbs%2fclearcache.jpg/</thumb>
+		<action>ActivateWindow(10001,"plugin://plugin.video.xbmchubmaintenance/?url=url&amp;mode=4&amp;name=Clear+Cache&amp;iconimage=http%3A%2F%2Ftribeca.tvaddons.ag%2Ftools%2Fmaintenance%2Fthumbs%2Fclearcache.jpg&amp;fanart=C%3A%5CUsers%5Cadmin%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.xbmchubmaintenance%5Cfanart.jpg",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Other Maintenance</label>
+		<label2>Program</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.mdwizard%5cresources%5cart%5cMAINTENANCE.png/</thumb>
+		<action>ActivateWindow(10001,"plugin://plugin.video.mdwizard/?url=http%3A%2F%2Fkodimediaportal.ml&amp;mode=3&amp;name=MAINTENANCE&amp;iconimage=C%3A%5CUsers%5Cadmin%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cresources%5Cart%5CMAINTENANCE.png&amp;fanart=C%3A%5CUsers%5Cadmin%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cfanart.jpg&amp;description=",return)</action>
+	</shortcut>
+</shortcuts>

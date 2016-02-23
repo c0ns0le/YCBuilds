@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>133</defaultID>
+		<label>UK TURK SPORTS</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk2%2FSportsList.txt&amp;mode=1&amp;name=Sports&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk2%2Fthumbs%2FUK+TURK+sports.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>135</defaultID>
+		<label>DEXTER SPORT</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.dextertv/?url=http%3A%2F%2F50.7.136.90%2Fdev2%2Ftv%2Fsp%2Fsp%2525dex.php%3Fusername%3Dkitroom%40grr.la%26password%3Dpilch18&amp;mode=1&amp;name=%5BB%5D%5BCOLOR+deepskyblue%5DSPORTS%5B%2FCOLOR%5D%5B%2FB%5D&amp;fanart=http%3A%2F%2Fdexteriptv.com%2Flive%2Fthumbs%2Ffanart.jpg",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>DAFFYS SPORT</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.Daffyslist/?url=http%3A%2F%2Fdaffyslist.com%2Fxml%2Flists%2Fukiptvlinks%2F0sportlist.xml&amp;mode=1&amp;name=%5BB%5D%5BCOLOR+red%5D-%5B%2FCOLOR%5D+%5BCOLOR+aqua%5DSPORTS%5B%2FCOLOR%5D+%5BCOLOR+red%5D-%5B%2FCOLOR%5D%5B%2FB%5D&amp;fanart=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>[COLOR limegreen][B]SPORTDEVIL[/B][/COLOR]</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DSports%2BTV%26url%3Dtv.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DTV%26type%3Drss%26icon%3DC%253A%255CUsers%255Chome%255CAppData%255CRoaming%255CKodi%255Caddons%255Cplugin.video.SportsDevil%255Cresources%255Cimages%255Cstation.png",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>E HUB</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.allinone/?mode=LiveMenu",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>31328</defaultID>
+		<label>CCLOUD SPORTS</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.ccloudtv/?url=sports&amp;mode=52&amp;name=%5BCOLOR+royalblue%5D%5BB%5DSports%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=C%3A%5CUsers%5Chome%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.ccloudtv%5Cresources%2Ficons%2F%2Fsports.png",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>652</defaultID>
+		<label>PEAR SPORTS</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.channelpear/?url=https%3A%2F%2Fchannelpear.com%2Fassets%2Fm3u%2F%3Fuserid%3D20509%26key%3Def143063c77ded47459d8416f2ac69a40c670447&amp;mode=1&amp;name=Sports&amp;fanart=https%3A%2F%2Fchannelpear.com%2Fimages%2Fkiwi_new.jpg",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>20459</defaultID>
+		<label>HALOW SPORTS</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.Test/?url=http%3A%2F%2Fpastebin.com%2Fraw%2FNJEFu13T&amp;mode=1&amp;name=%5BCOLOR+royalblue%5D%5BB%5DLIVE+SPORT%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=http%3A%2F%2Fhalowtv.com%2Fhalow%2FHalowTV_Logo_Light.gif",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.castaway</defaultID>
+		<label>Castaway</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://%2fstorage%2femulated%2f0%2fAndroid%2fdata%2forg.xbmc.kodi%2ffiles%2f.kodi%2faddons%2fplugin.video.castaway%2ficon.png/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.castaway",return)</action>
+	</shortcut>
+</shortcuts>

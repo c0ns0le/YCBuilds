@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>script.tvguidetecbox</defaultID>
+		<label>iVue TV Guide</label>
+		<label2>Program</label2>
+		<icon>DefaultAddon.png</icon>
+		<thumb>image://C%3a%5cUsers%5cPLEX%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.tvguidetecbox%5cicon.png/</thumb>
+		<action>RunAddOn(script.tvguidetecbox)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.ccloudtv</defaultID>
+		<label>cCloud TV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cPLEX%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ccloudtv%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ccloudtv",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.ukturk</defaultID>
+		<label>[COLOR limegreen][B]UK Turk Playlists[/COLOR][/B]</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cPLEX%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ukturk%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ukturk",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.Operation_RobocopUltimate</defaultID>
+		<label>Robocop Ultimate</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cPLEX%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.Operation_RobocopUltimate%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.Operation_RobocopUltimate",return)</action>
+	</shortcut>
+</shortcuts>

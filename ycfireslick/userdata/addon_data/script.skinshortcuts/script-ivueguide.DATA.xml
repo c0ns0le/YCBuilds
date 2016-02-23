@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>UK Turks</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk2%2fthumbs%2fUK%20TURK%20english%20tv.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk2%2FEnglishList.txt&amp;mode=1&amp;name=English+TV&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk2%2Fthumbs%2FUK+TURK+english+tv.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.ccloudtv</defaultID>
+		<label>cCloud TV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cPLEX%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ccloudtv%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ccloudtv",return)</action>
+	</shortcut>
+</shortcuts>

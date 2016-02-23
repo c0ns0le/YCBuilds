@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.spartan" name="Spartan Wizard" version="0.17.0" provider-name="spartanpixel.net">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+		<summary lang="en">Spartan Wizard</summary>
+		<description lang="en">In this wizard you will find the latest Builds from Spartanpixel. The Beast, Spartan build, The Royalist Lite</description>
+		<disclaimer lang="en">Visit spartanpixel.net for more info.</disclaimer>
+		<forum>http://spartanpixel.net/</forum>
+		<source>http://spartanpixel/net/</source>
+		<website>https://www.youtube.com/TechTimeruuu</website>
+		<platform>all</platform>
+	</extension>
+</addon>

@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>20077</defaultID>
+		<label>20077</label>
+		<label2>Settings</label2>
+		<icon>special://skin/extras/icons/year.png</icon>
+		<thumb />
+		<action>ActivateWindow(SkinSettings)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.spartan</defaultID>
+		<label>Update</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cPLEX%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.spartan0.17.0%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.spartan",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>24001</defaultID>
+		<label>24001</label>
+		<label2>Settings</label2>
+		<icon>special://skin/extras/icons/addons.png</icon>
+		<thumb />
+		<action>ActivateWindow(AddonBrowser)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>programs</defaultID>
+		<label>10001</label>
+		<label2>Programs</label2>
+		<icon>DefaultAddonProgram.png</icon>
+		<thumb />
+		<action>ActivateWindow(Programs,Addons,return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>1036</defaultID>
+		<label>1036</label>
+		<label2>Common Shortcut</label2>
+		<icon>special://skin/extras/icons/favourites.png</icon>
+		<thumb />
+		<action>ActivateWindow(Favourites)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>script.areswizard</defaultID>
+		<label>Ares Wizard</label>
+		<label2>Program</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cPLEX%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.areswizard%5cicon.png/</thumb>
+		<action>ActivateWindow(10001,"plugin://script.areswizard",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Help Videos</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fspartanpixel.net%2ficon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.techtimeruuu/?url=http%3A%2F%2Fspartanpixel.net%2Fhelp.txt&amp;mode=1&amp;name=%5BCOLOR+blue%5D+Help+Section+%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fspartanpixel.net%2Ficon.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>7</defaultID>
+		<label>7</label>
+		<label2>Common Shortcut</label2>
+		<icon>special://skin/extras/icons/files.png</icon>
+		<thumb />
+		<action>ActivateWindow(FileManager)</action>
+	</shortcut>
+</shortcuts>

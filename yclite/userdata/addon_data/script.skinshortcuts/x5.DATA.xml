@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>24001</defaultID>
+		<label>24001</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(Videos,Addons,return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Maintanence</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10001,"plugin://plugin.video.mdwizard/?url=http%3A%2F%2Fkodimediaportal.ml&amp;mode=3&amp;name=MAINTENANCE&amp;iconimage=C%3A%5CUsers%5Chome%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cresources%5Cart%5CMAINTENANCE.png&amp;fanart=C%3A%5CUsers%5Chome%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cfanart.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>programs</defaultID>
+		<label>10001</label>
+		<label2>Common Shortcut</label2>
+		<icon>DefaultProgram.png</icon>
+		<thumb />
+		<action>ActivateWindow(Programs,Addons,return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>7</defaultID>
+		<label>7</label>
+		<label2 />
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(FileManager)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>130</defaultID>
+		<label>System info</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(SystemInfo)</action>
+	</shortcut>
+</shortcuts>

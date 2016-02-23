@@ -1,0 +1,1 @@
+["ufc 14", ["ufc 141", "ufc 148", "ufc 148 the american gangster", "ufc 145", "ufc 14", "ufc 143", "ufc 141 brock lesnar vs alistair overeem full fight", "ufc 148 weigh in", "ufc 149", "ufc 144"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

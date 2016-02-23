@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+  <!-- General -->
+  <category label="$LOCALIZE[128]">
+    <setting type="lsep" label="More Add-ons" />
+    <setting type="action" label="Add-ons Library" action="ReplaceWindow(AddonBrowser,addons://repository.passion.xbmc.org/xbmc.python.library)" option="close" default="" />
+    <setting type="action" label="Add-ons Modules" action="ReplaceWindow(AddonBrowser,addons://repository.passion.xbmc.org/xbmc.python.module)" option="close" default="" />
+  </category>
+</settings>

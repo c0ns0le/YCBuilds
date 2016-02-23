@@ -1,0 +1,1 @@
+["uf", ["ufc", "ufo", "ufc knockouts", "ufo sightings 2015", "ufc 195", "ufc 197", "ufc on fox", "ufc 194", "ufc free fight", "ufc embedded"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

@@ -1,0 +1,379 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>Exodus Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://DefaultMovies.png/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.exodus/?action=movieNavigator",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Velocity</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.velocity%5cresources%5cart%5cmovies.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.velocity/?url=&amp;mode=movie_menu&amp;name=Movies&amp;movie_title=&amp;thumb=C%3A%5CUsers%5Cuser%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.velocity%5Cresources%5Cart%5Cmovies.png&amp;trakt_id=&amp;media=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>UK Turk Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk18022016%2fthumbs%2fnew%2fUk%2520turk%2520thumbnails%2520movies1.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2Fmovies%2FIndex.txt&amp;mode=1&amp;name=Movies&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2Fthumbs%2Fnew%2FUk%2520turk%2520thumbnails%2520movies1.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Society Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs2.postimg.org%2fqlu2uof1l%2fMovies_icon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.titan/?url=http%3A%2F%2Fpastebin.com%2Fraw.php%3Fi%3DAz7KxySD&amp;mode=30&amp;name=%5BCOLOR+FFA4C639%5DMovies%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fs2.postimg.org%2Fqlu2uof1l%2FMovies_icon.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Cold as Ice</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fg10.x10host.com%2fcoldasice%2fAllMovies.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.titan/?url=http%3A%2F%2Fg10.x10host.com%2Fcoldasice%2FMovies%2FMovies.txt&amp;mode=7&amp;name=%5BB%5DMovies%5B%2FB%5D&amp;iconimage=http%3A%2F%2Fg10.x10host.com%2Fcoldasice%2FAllMovies.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.mdwatch32hd</defaultID>
+		<label>Watch32HD</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.mdwatch32hd%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.mdwatch32hd",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.mdafdah</defaultID>
+		<label>Afdah</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.mdafdah%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.mdafdah",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>TRW Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.theroyalwe%2fresources%2fartwork%2fmovies.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.theroyalwe/?mode=movie_menu",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.perfecthdmoviesER</defaultID>
+		<label>Perfect HD Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.perfecthdmoviesER%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.perfecthdmoviesER",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>[COLOR limegreen][B]Specto Movies[/COLOR][/B]</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.specto%5cresources%5cmedia%5cmetro%5cmovies.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.specto/?action=movieNavigator",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>DubStop Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.dubstop%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.dubstop/?url=url&amp;mode=3&amp;name=%5BCOLOR+yellow%5DMovies%5B%2FCOLOR%5D&amp;page=0",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>DIJ Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fdij.dijentertainments.co.uk%2fpics%2ffilms.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.dijentertainments/?url=http%3A%2F%2Fdij.dijentertainments.co.uk%2Flists%2Fxml%2Fmovies%2Fmoviedir.xml&amp;mode=1&amp;name=%5BI%5D%5BCOLOR+green%5DMovies%5B%2FCOLOR%5D%5B%2FI%5D&amp;fanart=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>M&amp;Ms Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.titan%5cart%5cmm.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.titan/?url=https%3A%2F%2Farchive.org%2Fdownload%2FNaviXPlaylist%2Fplaylist_mari.xml&amp;mode=6&amp;name=M%26Ms+Awesome+Tv+Stuff&amp;iconimage=C%3A%5CUsers%5Cadmin%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.titan%5Cart%5Cmm.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>HiFi Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.titan%5cart%5chifi.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.titan/?url=https%3A%2F%2Farchive.org%2Fdownload%2Fhifimoviesdocs%2Fhifimovies.xml&amp;mode=5&amp;name=Movies&amp;iconimage=C%3A%5CUsers%5Cadmin%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.titan%5Cart%5Chifi.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.mdhdmovie14</defaultID>
+		<label>HD-Movie14</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.mdhdmovie14%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.mdhdmovie14",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>PFTV Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.pftvso%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.pftvso/?mode=movies&amp;foldername=movies",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>3 Amigos Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs11.postimg.org%2fvpftw8w03%2fIMG_8402.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.3amigos/?url=http%3A%2F%2Fpastebin.com%2Fraw.php%3Fi%3D3Q2qPZwK&amp;mode=1&amp;name=%5BCOLOR+red%5DMOVIES%5B%2FCOLOR%5D&amp;fanart=http%3A%2F%2Fs17.postimg.org%2Fm8kwyrwov%2Fimage.jpg",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.watch1080</defaultID>
+		<label>Watch 1080p</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.watch1080%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.watch1080",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Watch4Free</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.watch4free%5cart%5cmovies.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.watch4free/?url=http%3A%2F%2Fwww.watchfree.to%2F%3Fpage%3D1&amp;mode=3&amp;name=%5BCOLOR+lime%5DMovies+%5B%2FCOLOR%5D&amp;iconimage=C%3A%5CUsers%5Cadmin%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.watch4free%5Cart%5Cmovies.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.moviehdmax</defaultID>
+		<label>Movie HD Maxx</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.moviehdmax%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.moviehdmax",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.mdniter</defaultID>
+		<label>Niter Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.mdniter%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.mdniter",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.movieshd</defaultID>
+		<label>Movies HD</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.movieshd%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.movieshd",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.mdpubfilm</defaultID>
+		<label>PubFilm</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.mdpubfilm%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.mdpubfilm",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.md9movies</defaultID>
+		<label>9Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.md9movies%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.md9movies",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.mnutzreloaded</defaultID>
+		<label>MuttsNutz Reloaded</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.mnutzreloaded%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.mnutzreloaded",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.viewmovies</defaultID>
+		<label>ViewMovies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.viewmovies%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.viewmovies",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.md123movies</defaultID>
+		<label>123Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.md123movies%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.md123movies",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.xmovies8</defaultID>
+		<label>XMovies8</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.xmovies8%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.xmovies8",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>One242415</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fgibraltar.watchkodi.com%2fskullPhoenicIcon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=One242415&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fgibraltar.watchkodi.com%2FskullPhoenicIcon.png&amp;fanart=C%3A%5CUsers%5Cuser%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.phstreams%5Cfanart.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Staael2014</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs29.postimg.org%2fta0bxj12f%2fstaael1.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Staael2014&amp;url=http%3A%2F%2Ftuzla.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fs29.postimg.org%2Fta0bxj12f%2Fstaael1.png&amp;fanart=C%3A%5CUsers%5Cadmin%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.phstreams%5Cfanart.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>TubTub Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.TubTub%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.TubTub/?url=url&amp;mode=1&amp;name=Movies&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Movie BoxSets</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fstatic1.squarespace.com%2fstatic%2f503f0892c4aa93dffe114177%2ft%2f540831eee4b08f3466ff57fe%2f1409823215324%2f/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.morepower/?url=http%3A%2F%2Fwww.navixtreme.com%2Fplaylist%2F155044%2Fbox_sets.plx&amp;mode=1&amp;name=%5BCOLOR+white%5D%2A%2A%5BCOLOR%3DFF0198E1%5DBOX+SETS%5B%2FCOLOR%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fstatic1.squarespace.com%2Fstatic%2F503f0892c4aa93dffe114177%2Ft%2F540831eee4b08f3466ff57fe%2F1409823215324%2F&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>SALTS</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.salts%5cart%5cthemes%5cShine%5cmovies.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.salts/?section=Movies&amp;mode=browse",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Gen Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.genesis%5cresources%5cmedia%5cmetro%5cmovies.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=movieNavigator",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.hulubox</defaultID>
+		<label>HuluBox</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.hulubox%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.hulubox",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.lmER</defaultID>
+		<label>LatestDude</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.lmER%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.lmER",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Marvin Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fthebeastkodi.uk%2faddon%2fMovies.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.marvin/?url=http%3A%2F%2Fthebeastkodi.uk%2Faddon%2Fmm.txt&amp;mode=1&amp;name=%5BCOLOR+blue%5DMovies%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fthebeastkodi.uk%2Faddon%2FMovies.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.moviehut</defaultID>
+		<label>Movie Hut</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.moviehut%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.moviehut",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.movienight</defaultID>
+		<label>Movie Night</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.movienight%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.movienight",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.moviexk</defaultID>
+		<label>Movies XK</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.moviexk%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.moviexk",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.onlinemovies</defaultID>
+		<label>Online Movies Pro</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.onlinemovies%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.onlinemovies",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Scooby Movies</label>
+		<label2>Program</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://image/</thumb>
+		<action>ActivateWindow(10001,"plugin://plugin.video.GenieTv/?url=http%3A%2F%2Fscoobystream.x10host.com%2Fscooby%2Fmov%2Fmovies.php&amp;mode=1027&amp;name=MOVIES",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>SE Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fi1295.photobucket.com%2falbums%2fb636%2fbeatbox8501%2fMOVIES_zpsmi1ggoz2.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.streamengine/?url=https%3A%2F%2Fpastebin.com%2Fraw.php%3Fi%3Dsxfkx4ZY&amp;mode=1&amp;name=%5BCOLOR+white%5DMOVIES%5B%2FCOLOR%5D%5BCOLOR+red%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fi1295.photobucket.com%2Falbums%2Fb636%2Fbeatbox8501%2FMOVIES_zpsmi1ggoz2.png&amp;play=&amp;date=&amp;description=&amp;page=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>EntHubMovies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.allinone%2ficons%2ffilms.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.allinone/?mode=MovieMenu",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>DIJ Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fdij.zombie-wizard.uk%2fpics%2fmovies.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.dijentertainments/?url=http%3A%2F%2Fdij.zombie-wizard.uk%2Flists%2Fxml%2Fmovies%2Fmoviedir.xml&amp;mode=1&amp;name=%5BB%5D%5BCOLOR+green%5DMovies%5B%2FCOLOR%5D%5B%2FB%5D+&amp;fanart=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.coolmoviezoneER</defaultID>
+		<label>Cool Movie Zone</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.coolmoviezoneER%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.coolmoviezoneER",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.amsER</defaultID>
+		<label>All Movies Stream</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.amsER%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.amsER",return)</action>
+	</shortcut>
+</shortcuts>

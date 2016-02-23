@@ -1,0 +1,1 @@
+["whip nae nae", ["whip nae nae", "whip nae nae lyrics", "whip nae nae kids", "whip nae nae remix", "whip nae nae parody", "whip nae nae dance tutorial", "whip nae nae minions", "whip nae nae 1 hour", "whip nae nae dance battle", "whip nae nae karaoke"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

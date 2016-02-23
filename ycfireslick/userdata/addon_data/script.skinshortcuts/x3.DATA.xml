@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>plugin.video.plexbmc</defaultID>
+		<label>[COLOR limegreen][B]PleXBMC[/COLOR][/B]</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.plexbmc-4.0.0beta4%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.plexbmc",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.ukmvjb</defaultID>
+		<label>UK Music JukeBox</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ukmvjb%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ukmvjb",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>UKT Concerts</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk18022016%2fthumbs%2fnew%2fUk%2520turk%2520thumbnails%2520concerts.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2FConcerts.txt&amp;mode=1&amp;name=Concerts&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2Fthumbs%2Fnew%2FUk%2520turk%2520thumbnails%2520concerts.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.myvevo</defaultID>
+		<label>VEVO</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.myvevo%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.myvevo",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Society Concerts</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs2.postimg.org%2fmorw8r7zd%2fmusic_600x600.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.titan/?url=http%3A%2F%2Fpastebin.com%2Fraw%2FzYWzSWLE&amp;mode=30&amp;name=%5BCOLOR+FFA4C639%5DConcerts%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fs2.postimg.org%2Fmorw8r7zd%2Fmusic_600x600.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>DIJ Music</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fdij.dijentertainments.co.uk%2fpics%2fmusix.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.dijentertainments/?url=http%3A%2F%2Fdij.dijentertainments.co.uk%2Flists%2Fxml%2Fmusic%2Fmusic.xml&amp;mode=1&amp;name=%5BI%5D%5BCOLOR+green%5DMusic%5B%2FCOLOR%5D%5B%2FI%5D&amp;fanart=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Top Albums</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2ficons.iconarchive.com%2ficons%2ftrayse101%2fbasic-filetypes-2%2f128%2fplaylist-icon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.3amigos/?url=http%3A%2F%2Fpastebin.com%2Fraw.php%3Fi%3D2jMKvQJS&amp;mode=1&amp;name=%5BCOLOR+lime%5DPLAYLISTS%5B%2FCOLOR%5D&amp;fanart=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Amigo Concerts</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs8.postimg.org%2fc4u84df8l%2fIMG_8416.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.3amigos/?url=http%3A%2F%2Fpastebin.com%2Fraw.php%3Fi%3D67wvRyWM&amp;mode=1&amp;name=%5BCOLOR+purple%5DCONCERTS%5B%2FCOLOR%5D&amp;fanart=http%3A%2F%2Fs17.postimg.org%2Fm8kwyrwov%2Fimage.jpg",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Phoenix Music</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fi.imgur.com%2fWxWAUkT.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Music&amp;url=http%3A%2F%2Ftuzla.watchkodi.com%2Fmusic%2FMusic-Directory.xml&amp;audio=0&amp;image=http%3A%2F%2Fi.imgur.com%2FWxWAUkT.png&amp;fanart=http%3A%2F%2F7-themes.com%2Fdata_images%2Fout%2F43%2F6917465-french-flag-wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Disco Fever</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fcorytonpta.files.wordpress.com%2f2012%2f07%2fdisco-fever.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Disco+Fever&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FCollections%2Fdiscofever.xml&amp;audio=0&amp;image=http%3A%2F%2Fcorytonpta.files.wordpress.com%2F2012%2F07%2Fdisco-fever.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Live In Concert</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs27.postimg.org%2fbwjiufa9v%2fLive_In_Concert.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Live+In+Concert&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2Finconcert%2Fconcertsdirectory.xml&amp;audio=0&amp;image=http%3A%2F%2Fs27.postimg.org%2Fbwjiufa9v%2FLive_In_Concert.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>YouTube Music</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.youtube%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.youtube/special/browse_channels/?guide_id=GCTXVzaWM",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.MikeysKaraoke</defaultID>
+		<label>Mikey's Karaoke</label>
+		<label2>Music Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.MikeysKaraoke%5cicon.png/</thumb>
+		<action>ActivateWindow(10502,"plugin://plugin.video.MikeysKaraoke",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>VinMan FM</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.phstreams%2fresources%2fmedia%2fphstreams%2fradios.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?action=radioDirectory",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.80smusicvideos</defaultID>
+		<label>80s Music</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.80smusicvideos%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.80smusicvideos",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Music TV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fthebeastkodi.uk%2faddon%2fMusictv.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.marvin/?url=http%3A%2F%2Fthebeastkodi.uk%2Faddon%2FMusic.txt&amp;mode=1&amp;name=%5BCOLOR+green%5DMusic+-Tv%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fthebeastkodi.uk%2Faddon%2FMusictv.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Genie Music Videos</label>
+		<label2>Program</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2farchitects.x10host.com%2fvod%2fmusic.png/</thumb>
+		<action>ActivateWindow(10001,"plugin://plugin.video.GenieTv/?url=http%3A%2F%2F176.9.192.221%2Fmp4%2F&amp;mode=1006&amp;name=%5BCOLORgreen%5DMUSIC+VIDEOS%5B%2FCOLOR%5D",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.yt-vevo</defaultID>
+		<label>Music Videos</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.yt-vevo%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.yt-vevo",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>GenieTV Radio</label>
+		<label2>Program</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.GenieTv%5cresources%5cart%5cradio.png/</thumb>
+		<action>ActivateWindow(10001,"plugin://plugin.video.GenieTv/?url=http%3A%2F%2Farchitects.x10host.com&amp;mode=1013&amp;name=%5BCOLORgreen%5DGenieTv+RADIO%5B%2FCOLOR%5D&amp;iconimage=C%3A%5CUsers%5Cuser%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.GenieTv%5Cresources%5Cart%5Cradio.png&amp;fanart=C%3A%5CUsers%5Cuser%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.GenieTv%5Cfanart.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.audio.mp3streams</defaultID>
+		<label>MP3 Streams</label>
+		<label2>Music Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.audio.mp3streams%5cicon.png/</thumb>
+		<action>ActivateWindow(10501,"plugin://plugin.audio.mp3streams",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.audio.radio_de</defaultID>
+		<label>Radio</label>
+		<label2>Music Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.audio.radio_de%5cicon.png/</thumb>
+		<action>ActivateWindow(10501,"plugin://plugin.audio.radio_de",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.audio.oldskool</defaultID>
+		<label>Old Skool</label>
+		<label2>Music Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.audio.oldskool%5cicon.png/</thumb>
+		<action>ActivateWindow(10501,"plugin://plugin.audio.oldskool",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.audio.worldradio</defaultID>
+		<label>World Radio</label>
+		<label2>Music Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.audio.worldradio%5cicon.png/</thumb>
+		<action>ActivateWindow(10501,"plugin://plugin.audio.worldradio",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.audio.housemixes</defaultID>
+		<label>House Mixes</label>
+		<label2>Music Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.audio.housemixes%5cicon.png/</thumb>
+		<action>ActivateWindow(10501,"plugin://plugin.audio.housemixes",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.pulsemusic</defaultID>
+		<label>Pulse Music</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.pulsemusic%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.pulsemusic",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>589</defaultID>
+		<label>Music Party Mode</label>
+		<label2>Common Shortcut</label2>
+		<icon>DefaultMusicAlbums.png</icon>
+		<thumb />
+		<action>PlayerControl(PartyMode)</action>
+	</shortcut>
+</shortcuts>

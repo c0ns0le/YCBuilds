@@ -1,0 +1,1 @@
+["Y", ["young thug", "youtube", "youtube rewind 2015", "young thug best friend", "yoga", "yg", "yo gotti", "yogscast", "young thug power", "yandere simulator"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>[COLOR limegreen][B]Exodus[/COLOR][/B]</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://DefaultMovies.png/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.exodus/?action=channels",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Amigo TV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs28.postimg.org%2fsdhfrzppp%2fIMG_8408.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.3amigos/?url=http%3A%2F%2Fpastebin.com%2Fraw.php%3Fi%3DQHLabMdU&amp;mode=1&amp;name=%5BCOLOR+pink%5D+LIVE+TV%5B%2FCOLOR%5D&amp;fanart=http%3A%2F%2Fs17.postimg.org%2Fm8kwyrwov%2Fimage.jpg",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>UK Turk Live</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk2%2fthumbs%2fnew%2fUk%2520turk%2520thumbnails%2520live%2520tv.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk2%2FLive%2520TV.txt&amp;mode=1&amp;name=Live+TV&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk2%2Fthumbs%2Fnew%2FUk%2520turk%2520thumbnails%2520live%2520tv.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>NJM Sports</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fwww.hdwallpaperscool.com%2fwp-content%2fuploads%2f2015%2f01%2fuk-england-flag-desktop-wallpapers-picture-of-british-flag.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.NJMSoccer/?url=http%3A%2F%2Fnjmsoccer.kodistream.info%2Frh_uksport.xml&amp;mode=1&amp;name=%5BB%5D---%3D%3D%3D%5BCOLOR+red%5DUK%5B%2FCOLOR%5D%5BCOLOR+blue%5D+SPORTS%5B%2FCOLOR%5D%3D%3D%3D---%5B%2FB%5D&amp;fanart=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.iplayerwww</defaultID>
+		<label>BBC iPlayer</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.iplayerwww%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.iplayerwww",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.itv</defaultID>
+		<label>ITV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.itv%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.itv",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.ccloudtv</defaultID>
+		<label>cCloud TV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ccloudtv%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ccloudtv",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.channelpear</defaultID>
+		<label>channel PEAR</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.channelpear%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.channelpear",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>DIJ TV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fdij.zombie-wizard.uk%2fpics%2fUKTV.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.dijentertainments/?url=http%3A%2F%2Fdij.zombie-wizard.uk%2Flists%2Fxml%2Fiptv%2Fuktv.xml&amp;mode=1&amp;name=%5BB%5D%5BCOLOR+green%5D+Uk+Tv+%5B%2FCOLOR%5D%5B%2FB%5D+&amp;fanart=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.F.T.V</defaultID>
+		<label>FilmOn.TV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.F.T.V%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.F.T.V",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Robo TV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fwww.bz55.com%2fuploads%2fallimg%2f140704%2f138-140F4213307.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.Operation_RobocopUltimate/?url=http%3A%2F%2Frobocop-kodi.ddns.net%2Flists%2Fuploaders%2Fuk-sports%2Flist2.xml&amp;mode=1&amp;name=%5BCOLOR+white%5D%5BB%5DUK+ENTERTAINMENT%2FMOVIES%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.ProjectCypher</defaultID>
+		<label>ProjectCypherTV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ProjectCypher%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ProjectCypher",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.Stallion-IPTV</defaultID>
+		<label>Stallion-IPTV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.Stallion-IPTV%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.Stallion-IPTV",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.dextertv</defaultID>
+		<label>dexterTV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.dexterTV%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.dextertv",return)</action>
+	</shortcut>
+</shortcuts>

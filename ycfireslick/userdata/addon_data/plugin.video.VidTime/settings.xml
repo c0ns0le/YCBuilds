@@ -1,0 +1,6 @@
+<settings>
+    <setting id="EMAIL" value="" />
+    <setting id="PASS" value="" />
+    <setting id="REGISTER" value="false" />
+    <setting id="USER" value="" />
+</settings>

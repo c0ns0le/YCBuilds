@@ -1,0 +1,42 @@
+version=1
+title=sportstream+
+logo=http://sportstreama.yolasite.com/resources/hp-envy-17-n109tx-17-inch-full-hd-touchscreen-laptop-sku-300962-full.jpg.opt396x263o0%2C0s396x263.jpg
+icon_playlist=hp-envy-17-n109tx-17-inch-full-hd-touchscreen-laptop-sku-300962-full.jpg.opt396x263o0,0s396x263.jpg
+description=live sports channels/description
+
+# 2570310
+type=html_youtube
+name=ss1
+date=2016-02-19
+URL=http://freecalcio.eu/player.php?id=sksps1-1&width=700&height=400"%20width="700"%20height="400">%20Your%20browser%20does%20not%20support%20iframes%20</iframe>
+player=default
+rating=-1.00
+description=&lt;iframe scrolling="no" frameborder="0" marginheight="0" marginwidth="0" src=/description
+
+# 2570303
+type=video
+name=test
+date=2016-02-19
+URL=http://content.jwplatform.com/previews/eS1HCyMb-Cz8rVPaO
+player=default
+rating=-1.00
+
+# 2570301
+type=html_youtube
+name=Http://Sportstreama.Yolasite.Com/
+date=2016-02-19
+URL=http://sportstreama.yolasite.com/
+player=default
+rating=-1.00
+
+# 2570309
+type=video
+name=filmon tv
+date=2016-02-19
+URL=http://www.filmon.com/tv/api/init
+processor=http://www.navixtreme.com/proc/simple/3c75726c3e3c215c5b43444154415c5b285b5e5c5d5d2b29
+player=default
+rating=-1.00
+
+
+# memcached

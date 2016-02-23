@@ -1,0 +1,69 @@
+<settings>
+    <setting id="CURRLOGO" value="" />
+    <setting id="DEBUG" value="true" />
+    <setting id="DIXIEURL" value="All Channels" />
+    <setting id="FIRSTRUN" value="false" />
+    <setting id="INIVERSION" value="0" />
+    <setting id="INI_0" value="" />
+    <setting id="INI_0_E" value="false" />
+    <setting id="INI_1" value="" />
+    <setting id="INI_1_E" value="false" />
+    <setting id="INI_2" value="" />
+    <setting id="INI_2_E" value="false" />
+    <setting id="INI_3" value="" />
+    <setting id="INI_3_E" value="false" />
+    <setting id="INI_4" value="" />
+    <setting id="INI_4_E" value="false" />
+    <setting id="INI_5" value="" />
+    <setting id="INI_5_E" value="false" />
+    <setting id="INI_6" value="" />
+    <setting id="INI_6_E" value="false" />
+    <setting id="INI_7" value="" />
+    <setting id="INI_7_E" value="false" />
+    <setting id="INI_8" value="" />
+    <setting id="INI_8_E" value="false" />
+    <setting id="INI_9" value="" />
+    <setting id="INI_9_E" value="false" />
+    <setting id="LOGIN_TIME" value="2015-11-12 16:31:38.716000" />
+    <setting id="LOGOVERSION" value="0" />
+    <setting id="MINIGUIDE" value="true" />
+    <setting id="PREVLOGO" value="Colour Logo Pack" />
+    <setting id="SKINVERSION" value="7" />
+    <setting id="VERSION" value="3.1.5" />
+    <setting id="alternative.playback" value="false" />
+    <setting id="autoStart" value="false" />
+    <setting id="categories" value="" />
+    <setting id="chan.type" value="0" />
+    <setting id="confirm.exit" value="false" />
+    <setting id="current.channels" value="101" />
+    <setting id="dixie.logo.folder" value="Colour Logo Pack" />
+    <setting id="dixie.skin" value="FXB v3.0" />
+    <setting id="dixie.url" value="All Channels" />
+    <setting id="dummy" value="" />
+    <setting id="email" value="" />
+    <setting id="enable.osd" value="true" />
+    <setting id="enable.touch" value="false" />
+    <setting id="epg.date" value="2015-11-11" />
+    <setting id="ftv.ini" value="Non-Geolocked UK Links" />
+    <setting id="gmtfrom" value="GMT" />
+    <setting id="gmtprev" value="0" />
+    <setting id="idle" value="4" />
+    <setting id="ignore.stream" value="false" />
+    <setting id="local.ini" value="true" />
+    <setting id="logo.type" value="0" />
+    <setting id="messageID" value="2.8" />
+    <setting id="notifications.enabled" value="true" />
+    <setting id="password" value="Cosalinda25" />
+    <setting id="playlist.file" value="" />
+    <setting id="playlist.type" value="0" />
+    <setting id="playlist.url" value="" />
+    <setting id="skip_oldlog" value="true" />
+    <setting id="streamURL" value="plugin://plugin.video.stalker/?tmp=1&amp;genre_name=%5B%27All%27%5D&amp;title=TLC&amp;cmd=ffrt2+http%3A%2F%2Flocalhost%2Fch%2F503&amp;portal=%7B%22name%22%3A+%22NFPS%22%7D&amp;mode=play&amp;logo_url=http%3A%2F%2Fportal.iptvprivateserver.tv%2Fstalker_portal%2Fmisc%2Flogos%2F320%2F104.png&amp;" />
+    <setting id="trailers.addon" value="HD-Trailers.net" />
+    <setting id="updated.channels" value="101" />
+    <setting id="user.chan.folder" value="" />
+    <setting id="user.logo.folder" value="" />
+    <setting id="username" value="spartanpixel" />
+    <setting id="ustv.addon" value="USTV VoD" />
+    <setting id="validator" value="1" />
+</settings>

@@ -1,0 +1,1 @@
+["ufc 1", ["ufc 195", "ufc 197", "ufc 194", "ufc 196", "ufc 1", "ufc 195 post fight press conference", "ufc 193", "ufc 195 embedded", "ufc 195 weigh in", "ufc 195 full fight"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

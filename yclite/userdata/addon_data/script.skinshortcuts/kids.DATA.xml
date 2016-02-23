@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>[COLOR limegreen][B]DISNEY COLLECTION[/B][/COLOR]</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=The+Disney+Collection&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FDisne%2FDisne_Directory.xml&amp;audio=0&amp;image=http%3A%2F%2Fs4.postimg.org%2F4aztnsvj1%2Fdcollection.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>KIDS MOVIES</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.kmER",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>DAFFYS KIDS</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.Daffyslist/?url=http%3A%2F%2Fdaffyslist.com%2Fxml%2Flists%2Fukiptvlinks%2F0kids.xml&amp;mode=1&amp;name=%5BB%5D%5BCOLOR+red%5D-%5B%2FCOLOR%5D+%5BCOLOR+aqua%5DKIDZ%5B%2FCOLOR%5D+%5BCOLOR+red%5D-%5B%2FCOLOR%5D%5B%2FB%5D&amp;fanart=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>FTV KIDS</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.F.T.V/?url=13&amp;mode=123&amp;name=KIDS&amp;ch_fanart=kids&amp;description=1285,316,318,1287,320,3677,3824,3944,3614,3191,29,1289,1282,1286,3263,2069,793,1861,1281,2993,3146,7,799,401",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>HER PLACE</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+blue%5DMy+Kids%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2FPlaylists%2FKids%2520Main.xml&amp;audio=0&amp;image=http%3A%2F%2Fs6.postimg.org%2Fgpk9zbs01%2FIhae6r_JE.jpg&amp;fanart=http%3A%2F%2F7-themes.com%2Fdata_images%2Fout%2F59%2F6973439-beautiful-forest-photos.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Valhallla kids</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=kids+%26+animation&amp;url=http%3A%2F%2Ftuzla.watchkodi.com%2Fkids_animation.xml&amp;audio=0&amp;image=http%3A%2F%2Fi.imgur.com%2FYXaY4BI.png&amp;fanart=http%3A%2F%2Fi.imgur.com%2F3qbgUvo.png&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>HALOW KIDS</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.Test/?url=http%3A%2F%2Fpastebin.com%2Fraw%2FWHFk8XNj&amp;mode=1&amp;name=%5BCOLOR+royalblue%5D%5BB%5DKIDS+MOVIES%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=http%3A%2F%2Fcdn.kidscreen.com%2Fwp%2Fwp-content%2Fuploads%2F2013%2F03%2FSidScienceKidMovie-300x293.jpg%3F3e2018",return)</action>
+	</shortcut>
+</shortcuts>

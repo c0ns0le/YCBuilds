@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>GenMovies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.genesis%5cresources%5cmedia%5cgone%5cmovies.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=movieNavigator",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>[COLOR limegreen][B]SALTS[/COLOR][/B]</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.salts%5cart%5cthemes%5cShine%5cmovies.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.salts/?section=Movies&amp;mode=browse",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.coolmoviezoneER</defaultID>
+		<label>Cool Movie Zone</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.coolmoviezoneER%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.coolmoviezoneER",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.moviehut</defaultID>
+		<label>Movie Hut</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.moviehut%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.moviehut",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.filmdictator</defaultID>
+		<label>Film Dictator</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.filmdictator%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.filmdictator",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Flixanity</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.flixanity%5cart%5cmovies.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.flixanity/?url=url&amp;mode=101&amp;name=Movies&amp;iconimage=C%3A%5CUsers%5Cadmin%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.flixanity%5Cart%5Cmovies.png&amp;list=&amp;showname=&amp;type=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.hulubox</defaultID>
+		<label>HuluBox</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.hulubox%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.hulubox",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Marvin</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fthebeastkodi.uk%2faddon%2fMovies.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.marvin/?url=http%3A%2F%2Fthebeastkodi.uk%2Faddon%2Fmm.txt&amp;mode=1&amp;name=%5BCOLOR+blue%5DMovies%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fthebeastkodi.uk%2Faddon%2FMovies.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.movienight</defaultID>
+		<label>Movie Night</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.movienight%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.movienight",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.moviexk</defaultID>
+		<label>Movies XK</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.moviexk%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.moviexk",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.Showbox</defaultID>
+		<label>Showbox</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.Showbox%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.Showbox",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.oneclickwatch</defaultID>
+		<label>OCW</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.oneclickwatch%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.oneclickwatch",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.viewmovies</defaultID>
+		<label>ViewMovies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.viewmovies%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.viewmovies",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.onlinemovies</defaultID>
+		<label>Online Movies Pro</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.onlinemovies%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.onlinemovies",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.muchmovies.hd</defaultID>
+		<label>Much Movies HD</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.muchmovies.hd%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.muchmovies.hd",return)</action>
+	</shortcut>
+</shortcuts>

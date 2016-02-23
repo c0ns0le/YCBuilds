@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>plugin.program.apollocosmic</defaultID>
+		<label>Wizard Installer</label>
+		<label2>Program</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.program.apollocosmic%5cicon.png/</thumb>
+		<action>ActivateWindow(10001,"plugin://plugin.program.apollocosmic",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>settings</defaultID>
+		<label>10004</label>
+		<label2>Settings</label2>
+		<icon>DefaultIconSettings.png</icon>
+		<thumb />
+		<action>ActivateWindow(Settings)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Clear Cache</label>
+		<label2>Program</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2ftribeca.tvaddons.ag%2ftools%2fmaintenance%2fthumbs%2fclearcache.jpg/</thumb>
+		<action>ActivateWindow(10001,"plugin://plugin.video.xbmchubmaintenance/?url=url&amp;mode=4&amp;name=Clear+Cache&amp;iconimage=http%3A%2F%2Ftribeca.tvaddons.ag%2Ftools%2Fmaintenance%2Fthumbs%2Fclearcache.jpg&amp;fanart=C%3A%5CUsers%5Cadmin%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.xbmchubmaintenance%5Cfanart.jpg",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Parental Controls</label>
+		<label2>Program</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2ftribeca.tvaddons.ag%2ftools%2fmaintenance%2fthumbs%2fparentalcotnrols.jpg/</thumb>
+		<action>ActivateWindow(10001,"plugin://plugin.video.xbmchubmaintenance/?url=url&amp;mode=60&amp;name=Parental+Controls&amp;iconimage=http%3A%2F%2Ftribeca.tvaddons.ag%2Ftools%2Fmaintenance%2Fthumbs%2Fparentalcotnrols.jpg&amp;fanart=C%3A%5CUsers%5Cadmin%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.xbmchubmaintenance%5Cfanart.jpg",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>script.xbmcbackup</defaultID>
+		<label>Backup</label>
+		<label2>Program</label2>
+		<icon>DefaultAddon.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.xbmcbackup%5cicon.png/</thumb>
+		<action>RunAddOn(script.xbmcbackup)</action>
+	</shortcut>
+</shortcuts>

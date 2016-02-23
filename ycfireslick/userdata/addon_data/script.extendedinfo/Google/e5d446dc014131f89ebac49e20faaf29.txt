@@ -1,0 +1,1 @@
+["Sup", ["superwoman", "superfruit", "superman", "super mario maker", "superman vs batman", "supergirl", "super bass", "supa peach", "super why", "supernatural"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

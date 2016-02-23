@@ -1,0 +1,1 @@
+["Firest", ["firestone kygo", "firestone kygo lyrics", "firestarter", "firestone kygo remix", "firestick", "fire stick jailbreak", "firestone remix", "firestarter torre florim", "firestone lyrics", "firestarter kodi"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

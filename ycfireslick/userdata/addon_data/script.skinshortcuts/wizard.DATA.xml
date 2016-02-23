@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>update</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>PlayMedia("plugin://plugin.video.royalist/?url=http%3A%2F%2Fspartanpixel.net%2Fpremiumbuild%2Fbuild.zip&amp;mode=1&amp;name=Royalist&amp;iconimage=http%3A%2F%2Fspartanpixel.net%2Fpremiumbuild%2Ficon.png&amp;fanart=http%3A%2F%2Fspartanpixel.net%2Fpremiumbuild%2Fsplash.jpg&amp;description=Royalist+Wizard",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>script.thumbnailscleaner</defaultID>
+		<label>Thumbnails Cleaner</label>
+		<label2>Program</label2>
+		<icon>DefaultAddon.png</icon>
+		<thumb>image://C%3a%5cUsers%5cPLEX%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.thumbnailscleaner%5cicon.png/</thumb>
+		<action>RunAddOn(script.thumbnailscleaner)</action>
+	</shortcut>
+</shortcuts>

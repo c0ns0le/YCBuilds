@@ -1,0 +1,1 @@
+["F", ["fetty wap", "funny videos", "future", "fetty wap 679", "fallout 4", "failarmy", "funny vines", "frozen", "fouseytube", "fireplace"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

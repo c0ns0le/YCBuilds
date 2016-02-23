@@ -1,0 +1,1 @@
+["[Specto", ["spector", "spector trailer", "spector movie", "spector bass", "spectre full movie", "specter", "spector 360", "spectre song", "spectorman", "spectrogram"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

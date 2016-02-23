@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>Marvin Stand Up</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fthebeastkodi.uk%2faddon%2fComedy.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.marvin/?url=http%3A%2F%2Fthebeastkodi.uk%2Faddon%2FComedy.txt&amp;mode=1&amp;name=%5BCOLOR+green%5DComedy%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fthebeastkodi.uk%2Faddon%2FComedy.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>UKT StandUp</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk18022016%2fthumbs%2fnew%2fUk%2520turk%2520thumbnails%2520standup%2520comedy.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2FStandup.txt&amp;mode=1&amp;name=Stand-Up+Comedy&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2Fthumbs%2Fnew%2FUk%2520turk%2520thumbnails%2520standup%2520comedy.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Society Standup</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs22.postimg.org%2fmfep2a1fl%2fCOM.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.titan/?url=http%3A%2F%2Fpastebin.com%2Fraw.php%3Fi%3DiYYxEDkE&amp;mode=30&amp;name=%5BCOLOR+FFA4C639%5DStand+UP%27s%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fs22.postimg.org%2Fmfep2a1fl%2FCOM.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>M&amp;Ms Comedy</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2ft12.deviantart.net%2fPB7zx6mcH_LDqNxzHWFtUKy4bYM%3d%2f300x200%2ffilters%3afixed_height(100%2c100)%3aorigin()%2fpre15%2f4f71%2fth%2fpre%2ff%2f2015%2f290%2f0%2fc%2fstand_up_comedy__png__by_alexwarn3-d9de5mc.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.titan/?url=https%3A%2F%2Farchive.org%2Fdownload%2FNaviXPlaylist%2Fstand_up_comedy.xml&amp;mode=5&amp;name=%5BCOLOR+aqua%5D+Stand+Up+Comedy+%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Ft12.deviantart.net%2FPB7zx6mcH_LDqNxzHWFtUKy4bYM%3D%2F300x200%2Ffilters%3Afixed_height%28100%2C100%29%3Aorigin%28%29%2Fpre15%2F4f71%2Fth%2Fpre%2Ff%2F2015%2F290%2F0%2Fc%2Fstand_up_comedy__png__by_alexwarn3-d9de5mc.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Pheonix Stand Up</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs22.postimg.org%2ftw1vt4pyp%2fStandup_Comedy.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Stand+Up+Comedy&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FMisc%2Fstandupcomedy.xml&amp;audio=0&amp;image=http%3A%2F%2Fs22.postimg.org%2Ftw1vt4pyp%2FStandup_Comedy.jpg&amp;fanart=http%3A%2F%2Fimg05.deviantart.net%2F6db8%2Fi%2F2013%2F337%2Fb%2Ff%2Fuprising_of_the_mockingjay_by_sikundoto-d6wm4rz.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>TNPB UK</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs6.postimg.org%2flizgvjqpt%2fUK_Stand_Up.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+orangered%5DU%5B%2FCOLOR%5D%5BCOLOR+white%5DK%5B%2FCOLOR%5D+%5BCOLOR+orangered%5DS%5B%2FCOLOR%5D%5BCOLOR+white%5DTAND%5B%2FCOLOR%5D+%5BCOLOR+orangered%5DU%5B%2FCOLOR%5D%5BCOLOR+white%5DP%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fzenica.watchkodi.com%2FStand%2520Up%2FUK%2520Stand%2520Up.xml&amp;audio=0&amp;image=http%3A%2F%2Fs6.postimg.org%2Flizgvjqpt%2FUK_Stand_Up.png&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F7pazdu8ox%2FRemembrance_day.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>TNPB USA</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs6.postimg.org%2frl73m1f5t%2fUSA_Stand_Up.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+orangered%5DU%5B%2FCOLOR%5D%5BCOLOR+white%5DSA%5B%2FCOLOR%5D+%5BCOLOR+orangered%5DS%5B%2FCOLOR%5D%5BCOLOR+white%5DTAND%5B%2FCOLOR%5D+%5BCOLOR+orangered%5DU%5B%2FCOLOR%5D%5BCOLOR+white%5DP%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fzenica.watchkodi.com%2FStand%2520Up%2FUSA%2520Stand%2520Up.xml&amp;audio=0&amp;image=http%3A%2F%2Fs6.postimg.org%2Frl73m1f5t%2FUSA_Stand_Up.png&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F7pazdu8ox%2FRemembrance_day.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>SE Stand Up</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fi1295.photobucket.com%2falbums%2fb636%2fbeatbox8501%2fCOMEDY_zpsdiuytb0o.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.streamengine/?url=https%3A%2F%2Fpastebin.com%2Fraw.php%3Fi%3DnqfmwMVW&amp;mode=1&amp;name=%5BCOLOR+white%5DSTAND+UP%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fi1295.photobucket.com%2Falbums%2Fb636%2Fbeatbox8501%2FCOMEDY_zpsdiuytb0o.png&amp;play=&amp;date=&amp;description=&amp;page=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Stand-Up Comedy</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk2%2fthumbs%2fUK%2520TURK%2520stand%2520up%2520comedy.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk2%2FStandup.txt&amp;mode=1&amp;name=Stand-Up+Comedy&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk2%2Fthumbs%2FUK%2520TURK%2520stand%2520up%2520comedy.jpg&amp;description=",return)</action>
+	</shortcut>
+</shortcuts>

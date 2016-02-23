@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+
+    <setting id="user" type="text" label="[COLOR yellow]Username:[/COLOR]" default=""/>
+    <setting id="pass" type="text" label="[COLOR yellow]Password:[/COLOR]" default=""/>
+    <setting id="loggedin" type="hidden" label="" default="0"/>
+	<setting id="first" type="hidden" label="" default="0"/>
+
+</settings>

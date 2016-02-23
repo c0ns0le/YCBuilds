@@ -1,0 +1,194 @@
+<window id="130">
+     <defaultcontrol>94</defaultcontrol>
+     <coordinates>
+	  <system>1</system>
+	  <posx>230</posx>
+	  <posy>75</posy>
+     </coordinates>
+     <controls>
+	  <control type="image">
+	       <description>Background</description>
+	       <posx>0</posx>
+	       <posy>0</posy>
+	       <width>820</width>
+	       <height>570</height>
+	       <texture>background.png</texture>
+	  </control>
+	  <control type="label" id="90">
+	       <description>Title</description>
+	       <wrapmultiline>false</wrapmultiline>
+	       <scroll>false</scroll>
+	       <label></label>
+	       <posx>0</posx>
+	       <posy>15</posy>
+	       <width>820</width>
+	       <height>20</height>
+	       <align>center</align>
+	       <aligny>center</aligny>
+	       <font>font12_title</font>
+	       <style>bold</style>
+	       <textcolor>blue</textcolor>
+	  </control>
+	  <control type="list" id="10">
+	       <visible>true</visible>
+	       <posx>20</posx>
+	       <posy>50</posy>
+	       <width>850</width>
+	       <height>440</height>
+	       <onup>9001</onup>
+	       <onleft>91</onleft>
+	       <onright>60</onright>
+	       <ondown>9001</ondown>
+	       <pagecontrol>60</pagecontrol>
+	       <scrolltime>200</scrolltime>
+	       <itemlayout height="40">
+		    <control type="image">
+			 <posx>0</posx>
+			 <posy>0</posy>
+			 <width>750</width>
+			 <height>40</height>
+			 <texture>item-nofocus.png</texture>
+		    </control>
+		    <control type="image">
+			 <posx>5</posx>
+			 <posy>4</posy>
+			 <width>34</width>
+			 <height>34</height>
+			 <info>ListItem.Icon</info>
+		    </control>
+		    <control type="label">
+			 <posx>50</posx>
+			 <posy>0</posy>
+			 <width>680</width>
+			 <height>40</height>
+			 <font>font12_title</font>
+			 <align>left</align>
+			 <aligny>center</aligny>
+			 <textcolor>white</textcolor>
+			 <selectedcolor>selected</selectedcolor>
+			 <info>ListItem.label</info>
+		    </control>
+	       </itemlayout>
+	       <focusedlayout height="40">
+		    <control type="image">
+			 <posx>0</posx>
+			 <posy>0</posy>
+			 <width>750</width>
+			 <height>40</height>
+			 <visible>!Control.HasFocus(10)</visible>
+			 <texture>item-nofocus.png</texture>
+		    </control>
+		    <control type="image">
+			 <posx>0</posx>
+			 <posy>0</posy>
+			 <width>750</width>
+			 <height>40</height>
+			 <visible>Control.HasFocus(10)</visible>
+			 <texture>item-focus.png</texture>
+		    </control>
+		    <control type="image">
+			 <posx>5</posx>
+			 <posy>4</posy>
+			 <width>34</width>
+			 <height>34</height>
+			 <info>ListItem.Icon</info>
+		    </control>
+		    <control type="label">
+			 <posx>50</posx>
+			 <posy>0</posy>
+			 <width>680</width>
+			 <height>40</height>
+			 <font>font12_title</font>
+			 <align>left</align>
+			 <aligny>center</aligny>
+			 <textcolor>white</textcolor>
+			 <selectedcolor>selected</selectedcolor>
+			 <info>ListItem.label</info>
+		    </control>
+	       </focusedlayout>
+	  </control>
+	  <control type="scrollbar" id="60">
+	       <posx>780</posx>
+	       <posy>50</posy>
+	       <width>25</width>
+	       <height>440</height>
+	       <texturesliderbackground border="0,14,0,14">scroll-background.png</texturesliderbackground>
+	       <texturesliderbar border="0,14,0,14">scroll-bar.png</texturesliderbar>
+	       <texturesliderbarfocus border="0,14,0,14">scroll-bar-focus.png</texturesliderbarfocus>
+	       <textureslidernib>scroll-nib.png</textureslidernib>
+	       <textureslidernibfocus>scroll-nib.png</textureslidernibfocus>
+	       <onleft>10</onleft>
+	       <onright>91</onright>
+	       <showonepage>false</showonepage>
+	       <orientation>vertical</orientation>
+	  </control>
+	  <control type="button" id="91">
+	       <description>All</description>
+	       <label></label>
+	       <posx>80</posx>
+	       <posy>510</posy>
+	       <width>150</width>
+	       <height>40</height>
+	       <align>center</align>
+	       <aligny>center</aligny>
+	       <texturenofocus border="5">button-nofocus.png</texturenofocus>
+	       <texturefocus border="5">button-focus.png</texturefocus>
+	       <font>font12_title</font>
+	       <onup>10</onup>
+	       <onleft>94</onleft>
+	       <onright>92</onright>
+	       <ondown>92</ondown>
+	  </control>
+	  <control type="button" id="92">
+	       <description>None</description>
+	       <label></label>
+	       <posx>250</posx>
+	       <posy>510</posy>
+	       <width>150</width>
+	       <height>40</height>
+	       <align>center</align>
+	       <aligny>center</aligny>
+	       <texturenofocus border="5">button-nofocus.png</texturenofocus>
+	       <texturefocus border="5">button-focus.png</texturefocus>
+	       <font>font12_title</font>
+	       <onup>10</onup>
+	       <onleft>91</onleft>
+	       <onright>93</onright>
+	       <ondown>93</ondown>
+	  </control>
+	  <control type="button" id="93">
+	       <description>Proceed</description>
+	       <label></label>
+	       <posx>420</posx>
+	       <posy>510</posy>
+	       <width>150</width>
+	       <height>40</height>
+	       <align>center</align>
+	       <aligny>center</aligny>
+	       <texturenofocus border="5">button-nofocus.png</texturenofocus>
+	       <texturefocus border="5">button-focus.png</texturefocus>
+	       <font>font12_title</font>
+	       <onup>10</onup>
+	       <onleft>92</onleft>
+	       <onright>94</onright>
+	       <ondown>94</ondown>
+	  </control>
+	  <control type="button" id="94">
+	       <description>Cancel</description>
+	       <label></label>
+	       <posx>590</posx>
+	       <posy>510</posy>
+	       <width>150</width>
+	       <height>40</height>
+	       <align>center</align>
+	       <aligny>center</aligny>
+	       <texturenofocus border="5">button-nofocus.png</texturenofocus>
+	       <texturefocus border="5">button-focus.png</texturefocus>
+	       <font>font12_title</font>
+	       <onup>10</onup>
+	       <onleft>93</onleft>
+	       <onright>91</onright>
+	       <ondown>91</ondown>
+	  </control>
+     </controls>
+</window>

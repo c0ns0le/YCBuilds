@@ -1,0 +1,1 @@
+["ADD", ["addicted", "add", "addicted to love", "adderall", "addiction", "addicted to you avicii", "addicted to sexting trailer", "addicted saving abel", "addict with a pen twenty one pilots", "addition songs for kindergarten"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

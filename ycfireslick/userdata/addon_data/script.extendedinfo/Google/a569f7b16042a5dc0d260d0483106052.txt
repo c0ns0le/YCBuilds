@@ -1,0 +1,1 @@
+["Firesticks", ["fire sticks", "fire sticks drum", "fire stick tv", "fire sticks drum cover", "fire sticks - ellie goulding", "fire sticks amazon", "fire stick kodi"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

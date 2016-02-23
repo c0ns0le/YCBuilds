@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>plugin.video.footballreplays</defaultID>
+		<label>Football Replays</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.footballreplays%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.footballreplays",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>NJM</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fwww.hdwallpaperscool.com%2fwp-content%2fuploads%2f2015%2f01%2fuk-england-flag-desktop-wallpapers-picture-of-british-flag.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.NJMSoccer/?url=http%3A%2F%2Fnjmsoccer.kodistream.info%2Frh_uksport.xml&amp;mode=1&amp;name=%5BB%5D---%3D%3D%3D%5BCOLOR+red%5DUK%5B%2FCOLOR%5D%5BCOLOR+blue%5D+SPORTS%5B%2FCOLOR%5D%3D%3D%3D---%5B%2FB%5D&amp;fanart=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>UK Turk Sport</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk18022016%2fthumbs%2fnew%2fUk%2520turk%2520thumbnails%2520sports.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2FSportsList.txt&amp;mode=1&amp;name=Sports&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2Fthumbs%2Fnew%2FUk%2520turk%2520thumbnails%2520sports.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Halow Sport</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://https%3a%2f%2flh5.googleusercontent.com%2f-VLJUzfCR7a0%2fVgq_tWcafoI%2fAAAAAAAAAno%2fah4lz773k3U%2fw675-h384-no%2fSportsBanner41.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.Test/?url=http%3A%2F%2Fpastebin.com%2Fraw%2FNJEFu13T&amp;mode=1&amp;name=%5BCOLOR+royalblue%5D%5BB%5DLIVE+SPORT%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=http%3A%2F%2Fhalowtv.com%2Fhalow%2FHalowTV_Logo_Light.gif",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Amigo Sports</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs12.postimg.org%2fho80sp8a5%2fIMG_8400.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.3amigos/?url=http%3A%2F%2Fpastebin.com%2Fraw.php%3Fi%3D1M00vVYG&amp;mode=1&amp;name=%5BCOLOR+lime%5DLIVE+SPORTS%5B%2FCOLOR%5D&amp;fanart=http%3A%2F%2Fs17.postimg.org%2Fm8kwyrwov%2Fimage.jpg",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.prosport</defaultID>
+		<label>Pro Sport</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.prosport%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.prosport",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>PTC sports</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ZemTV-shani%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ZemTV-shani/?url=sss&amp;mode=51&amp;name=PTC+sports",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Woody Sports</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs5.postimg.org%2fus4juj7rb%2fEA_Sports_Ignite.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+orange%5DLive+Sports%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2FDirectories%2FLive%2520Sports.xml&amp;audio=0&amp;image=http%3A%2F%2Fs5.postimg.org%2Fus4juj7rb%2FEA_Sports_Ignite.jpg&amp;fanart=http%3A%2F%2Fshanghai.watchkodi.com%2FSections%2FWoody%2FWoody.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>HD Sports</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs5.postimg.org%2f4vavhx43r%2fOnline_Sports_isn_t_it_Fun.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+orange%5DHD+Sports%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2FSections%2FHD%2520Sports.xml&amp;audio=0&amp;image=http%3A%2F%2Fs5.postimg.org%2F4vavhx43r%2FOnline_Sports_isn_t_it_Fun.jpg&amp;fanart=http%3A%2F%2Fshanghai.watchkodi.com%2FSections%2FWoody%2FWoody.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>UK Sports</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs5.postimg.org%2fvcjkx80zr%2fScreen_Shot_2015_12_19_at_11_24_06_AM.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+orange%5DUK+Sports%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2FSections%2FUK%2520Sports.xml&amp;audio=0&amp;image=http%3A%2F%2Fs5.postimg.org%2Fvcjkx80zr%2FScreen_Shot_2015_12_19_at_11_24_06_AM.png&amp;fanart=http%3A%2F%2Fshanghai.watchkodi.com%2FSections%2FWoody%2FWoody.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>[COLOR limegreen][B]USA Sports[/B][/COLOR]</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs5.postimg.org%2fcmrlgh893%2fCapture2_600x300.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+orange%5DUSA%2FCanada+Sports%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2FSections%2FUSA.Canada%2520Sports.xml&amp;audio=0&amp;image=http%3A%2F%2Fs5.postimg.org%2Fcmrlgh893%2FCapture2_600x300.png&amp;fanart=http%3A%2F%2Fshanghai.watchkodi.com%2FSections%2FWoody%2FWoody.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Sports Replays</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs5.postimg.org%2fi9nydyarr%2fScreen_Shot_2015_12_19_at_11_29_47_AM.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+orange%5DSports+Replays%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2FDirectories%2FSports%2520Replays.xml&amp;audio=0&amp;image=http%3A%2F%2Fs5.postimg.org%2Fi9nydyarr%2FScreen_Shot_2015_12_19_at_11_29_47_AM.png&amp;fanart=http%3A%2F%2Fshanghai.watchkodi.com%2FSections%2FWoody%2FWoody.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.mdsportsextra</defaultID>
+		<label>MD Sports Extra</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.mdsportsextra%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.mdsportsextra",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.MoneySports</defaultID>
+		<label>MoneySports</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.MoneySports%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.MoneySports",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>DIJ Sports</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fdij.zombie-wizard.uk%2fpics%2fEVE.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.dijentertainments/?url=http%3A%2F%2Fdij.zombie-wizard.uk%2Flists%2Fxml%2Fsport%2FEVE.xml&amp;mode=1&amp;name=%5BB%5D%5BCOLOR+green%5D+Sport+Events+%5B%2FCOLOR%5D%5B%2FB%5D&amp;fanart=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.ilovefootball</defaultID>
+		<label>I Love Football</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ilovefootball%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ilovefootball",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Marvin Sport</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fthebeastkodi.uk%2faddon%2fSports.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.marvin/?url=http%3A%2F%2Fthebeastkodi.uk%2Faddon%2FSports.txt&amp;mode=1&amp;name=%5BCOLOR+green%5DSports%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fthebeastkodi.uk%2Faddon%2FSports.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>script.navi-x</defaultID>
+		<label>Navi-X</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultAddon.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.navi-x%5cicon.png/</thumb>
+		<action>RunAddOn(script.navi-x)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Robo Sport</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2frobocop-kodi.ddns.net%2ficon%2fsports.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.Operation_RobocopUltimate/?url=http%3A%2F%2Frobocop-kodi.ddns.net%2Flists%2Fsports%2Flist.xml&amp;mode=1&amp;name=%5BB%5D%5BCOLOR+limegreen%5DSPORTS%5B%2FCOLOR%5D%5B%2FB%5D&amp;fanart=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.ProjectCypher</defaultID>
+		<label>ProjectCypherTV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ProjectCypher%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ProjectCypher",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>SE Sport</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fi1295.photobucket.com%2falbums%2fb636%2fbeatbox8501%2fHIGHLIGHTS_zpsim3trylt.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.streamengine/?url=https%3A%2F%2Fpastebin.com%2Fraw.php%3Fi%3D7bS56gLu&amp;mode=1&amp;name=%5BCOLOR+white%5DSPORT%5B%2FCOLOR%5D%5BCOLOR+red%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fi1295.photobucket.com%2Falbums%2Fb636%2Fbeatbox8501%2FHIGHLIGHTS_zpsim3trylt.png&amp;play=&amp;date=&amp;description=&amp;page=",return)</action>
+	</shortcut>
+</shortcuts>

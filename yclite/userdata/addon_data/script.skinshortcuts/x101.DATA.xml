@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>plugin.video.NJMSoccer</defaultID>
+		<label>NJM-Soccer</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.NJMSoccer%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.NJMSoccer",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>[COLOR limegreen][B]Castaway[/B][/COLOR]</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.castaway/?mode=live_sport",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.Operation_RobocopUltimate</defaultID>
+		<label>Operation Robocop</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.Operation_RobocopUltimate%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.Operation_RobocopUltimate",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.SportsDevil</defaultID>
+		<label>SportsDevil</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.SportsDevil%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.SportsDevil",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.MoneySports</defaultID>
+		<label>MoneySports</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.MoneySports%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.MoneySports",return)</action>
+	</shortcut>
+</shortcuts>

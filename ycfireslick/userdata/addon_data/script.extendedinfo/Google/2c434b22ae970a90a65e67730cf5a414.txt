@@ -1,0 +1,1 @@
+["k", ["kevin gates", "kendrick lamar", "kanye west", "katy perry", "ksi", "kevin hart", "key and peele", "kodak black", "karaoke", "kylo ren"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

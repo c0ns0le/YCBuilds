@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>plugin.video.stalker</defaultID>
+		<label>IPTV Stalker</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cPLEX%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.stalker%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.stalker",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.genesis</defaultID>
+		<label>Genesis</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cPLEX%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.genesis%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.genesis",return)</action>
+	</shortcut>
+</shortcuts>

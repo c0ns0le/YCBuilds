@@ -1,0 +1,28 @@
+
+<episodedetails>
+    <title>How to add the YCRepo Repository</title>
+    <season>2016</season>
+    <episode>4</episode>
+    <plot>Tutorial on How to add the YCRepo Repository to your Kodi/XBMC system.
+
+Go to System - File Manager add New Source and type in (no quotes) "http://jasongentili.com/repo/Repository/" now give it a meaningful name and click OK.
+
+Then go to add-ons and click install from zip. Choose the source you just added (above). and select repository.ycrepoXXXXXX.zip and install.
+
+Then go to add-ons and click install from Repository and choose YC Repository - Video Add-ons and install YCBeast Addon Wizard.
+
+Downloading can take a while (BE PATIENT) once installed you will get a message to unplug from power, do that and then plug back in. On reboot to Kodi you will notice you now have the YCBeast Build installed!!</plot>
+    <thumb>https://i.ytimg.com/vi/MhaflkWTAZw/sddefault.jpg</thumb>
+    <credits>Ashby Jest</credits>
+    <director>Ashby Jest</director>
+    <aired>2016/02/11</aired>
+    <premiered>2016/02/11</premiered>
+    <studio>Youtube</studio>
+    <runtime>2</runtime>
+    <fileinfo>
+        <streamdetails>
+            <durationinseconds>149</durationinseconds>
+        </streamdetails>
+    </fileinfo>
+</episodedetails>
+        

@@ -1,0 +1,10 @@
+<settings>
+    <setting id="LanguageID" value="en" />
+    <setting id="autocomplete_lang" value="en" />
+    <setting id="autocomplete_lang_local" value="en" />
+    <setting id="autocomplete_provider" value="youtube" />
+    <setting id="changelog_version" value="3.1.2" />
+    <setting id="first_start_infodialog" value="True" />
+    <setting id="infodialog_onclick" value="true" />
+    <setting id="window_mode" value="false" />
+</settings>

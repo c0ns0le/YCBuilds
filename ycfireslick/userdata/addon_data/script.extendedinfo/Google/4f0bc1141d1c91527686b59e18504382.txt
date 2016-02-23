@@ -1,0 +1,1 @@
+["g", ["game grumps", "g eazy", "game theory", "good mythical morning", "gangnam style", "gta 5", "gmm", "google", "grav3yardgirl", "g eazy me myself and i"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>plugin.video.NJMSoccer</defaultID>
+		<label>YouTube</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.NJMSoccer%5cicon.png/</thumb>
+		<action>RunAddOn(script.program.FTVyoutube)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Netflix</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2frobocop-kodi.ddns.net%2ficon%2fRoboLive%2520events.jpg/</thumb>
+		<action>RunAddOn(script.program.FTVnetflix)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>livegames</defaultID>
+		<label>Pandora</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultFolder.png</icon>
+		<thumb>http://buskerbrownes.com/wp-content/uploads/2013/06/img1.jpg</thumb>
+		<action>RunAddOn(script.program.FTVpandora)</action>
+	</shortcut>
+</shortcuts>

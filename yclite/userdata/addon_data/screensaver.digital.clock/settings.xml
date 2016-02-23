@@ -1,0 +1,6 @@
+<settings>
+    <setting id="anti_burn_in" value="true" />
+    <setting id="enable_seconds" value="true" />
+    <setting id="military_time" value="false" />
+    <setting id="skin" value="Simple Green" />
+</settings>

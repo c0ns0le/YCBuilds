@@ -1,0 +1,11 @@
+<settings>
+    <setting id="bitrate" value="7" />
+    <setting id="login_name" value="" />
+    <setting id="login_pass" value="" />
+    <setting id="perpage" value="0" />
+    <setting id="us_proxy" value="" />
+    <setting id="us_proxy_enable" value="false" />
+    <setting id="us_proxy_pass" value="" />
+    <setting id="us_proxy_port" value="" />
+    <setting id="us_proxy_user" value="" />
+</settings>

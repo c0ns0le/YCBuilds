@@ -1,0 +1,103 @@
+v2
+cacheable='1
+#verbose 2
+
+url_ori=s_url
+
+# plugin=1 cookie is for veehd plugin installation
+
+s_cookie='nsfw=1; plugin=1
+regex='#playeriframe"\)\.attr\(\{src : "([^"]+)
+scrape
+
+#print htmRaw
+
+main_cookie='user=322220; ppt=2; PHPSESSID=
+concat main_cookie cookies.PHPSESSID
+concat main_cookie '; plugin=1
+
+if cookies.pp>'
+    concat main_cookie '; pp=
+    concat main_cookie cookies.pp
+endif
+s_cookie=main_cookie
+
+src=v1
+print src
+regex='do=s
+replace src 'do=d
+
+# do auth requests
+regex='get\("(/xhr\?[^"]+)
+match htmRaw
+xhr=v1
+print xhr
+
+regex='var sgn = "([^"]+)
+match htmRaw
+sgn=v1
+print sgn
+
+regex='var ts = "([^"]+)
+match htmRaw
+ts=v1
+print ts
+s_postdata='p=1&ts=
+concat s_postdata ts
+concat s_postdata '&sgn=
+concat s_postdata sgn
+
+concat s_postdata '&v=c
+
+s_url='http://veehd.com/xhrp
+s_method='post
+regex='
+scrape
+
+### in original scrape; apparently not needed
+#s_url='http://veehd.com
+#concat s_url xhr
+#s_cookie=main_cookie
+#s_method='get
+#scrape
+
+# Believe it or not, these next two stanzas are not redundant.
+s_url='http://veehd.com
+concat s_url src
+print s_url
+
+s_referer=url_ori
+s_cookie=main_cookie
+scrape
+
+s_url='http://veehd.com
+concat s_url src
+print s_url
+regex='"src" value="(http://[^"]+)
+
+s_referer=url_ori
+s_cookie=main_cookie
+scrape
+
+if v1
+    url=v1
+    play
+endif
+
+regex='"0","url":"([^"]+)
+match htmRaw
+if v1
+    url=v1
+    unescape url
+    play
+endif
+
+regex='color:#31A0FF;" href="([^"]+)
+match htmRaw
+if v1
+    url=v1
+    play
+endif
+
+print htmRaw
+error 'Could not scrape source

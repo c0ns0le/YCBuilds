@@ -1,0 +1,1 @@
+["YCR", ["ycrs", "zycron", "y crew", "lycra", "nyc rules", "ycr pati", "ycr makassar 2015", "ycraft", "ycr 2015", "lyrics"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

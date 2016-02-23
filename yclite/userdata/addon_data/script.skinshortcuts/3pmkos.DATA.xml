@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>SPORTSDEVIL</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BSports%26url%3Dlivesports.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BSports%26type%3Drss%26icon%3DC%253A%255CUsers%255Chome%255CAppData%255CRoaming%255CKodi%255Caddons%255Cplugin.video.SportsDevil%255Cresources%255Cimages%255Clivesports.png",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>[COLOR limegreen][B]castaway[/B][/COLOR]</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://%2fstorage%2femulated%2f0%2fAndroid%2fdata%2forg.xbmc.kodi%2ffiles%2f.kodi%2faddons%2fplugin.video.castaway%2fresources%2fmedia%2flive_sport.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.castaway/?mode=live_sport",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>valhalla</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fbuskerbrownes.com%2fwp-content%2fuploads%2f2013%2f06%2fimg1.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.phstreams/?name=LIVE+GAMES&amp;url=http%3A%2F%2Ftuzla.watchkodi.com%2FLIVE%2520TV%2Fnewsport.xml&amp;audio=0&amp;image=http%3A%2F%2Fbuskerbrownes.com%2Fwp-content%2Fuploads%2F2013%2F06%2Fimg1.jpg&amp;fanart=https%3A%2F%2Flh4.googleusercontent.com%2F-WwZHUFLPK2E%2FU3Kd4itvhPI%2FAAAAAAAAAKM%2FsaEb-0QngnM%2Fs0-d%2FBurning-Soccer-Ball-1600x1200.jpg&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>NJM SOCCER</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.NJMSoccer",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>ROBOCOP PLP</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.Operation_RobocopUltimate/?url=http%3A%2F%2Frobocop-kodi.ddns.net%2Frobsplp.xml&amp;mode=1&amp;name=%5BB%5D%5BCOLOR+limegreen%5DPLP%5B%2FCOLOR%5D%5B%2FB%5D+&amp;fanart=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>MONEYSPORT</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,"plugin://plugin.video.MoneySports",return)</action>
+	</shortcut>
+</shortcuts>

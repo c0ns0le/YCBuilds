@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>PC SkySports</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2frepo.run%2fcypher%2fimages%2fss.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ProjectCypher/?url=http%3A%2F%2Frepo.run%2Fcypher%2Ftsport.m3u&amp;mode=1&amp;name=%5BB%5D%5BCOLOR+yellow%5D---%5B%2FCOLOR%5D%5BCOLOR+red%5DSky%5BCOLOR+white%5D+Sports+SD%5B%2FCOLOR%5D+%5BCOLOR+blue%5DDirectory%5B%2FCOLOR%5D%5BCOLOR+yellow%5D---%5B%2FCOLOR%5D%5B%2FB%5D&amp;fanart=http%3A%2F%2Frepo.run%2Fcypher%2Fimages%2Fback.jpg",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Phoenix Matchday</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs22.postimg.org%2fg8gta0jox%2fsoccer.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?action=Huddle_Sites&amp;url=Soccer&amp;image=http%3A%2F%2Fs22.postimg.org%2Fg8gta0jox%2Fsoccer.png&amp;fanart=http%3A%2F%2Fs22.postimg.org%2Fgb0owuncd%2FHuddle_fanart.jpg",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>UK Turk Sports</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk2%2fthumbs%2fnew%2fUk%2520turk%2520thumbnails%2520sports.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk2%2FSportsList.txt&amp;mode=1&amp;name=Sports&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk2%2Fthumbs%2Fnew%2FUk%2520turk%2520thumbnails%2520sports.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Zem Live Sports</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ZemTV-shani%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ZemTV-shani/?url=sss&amp;mode=51&amp;name=PTC+sports",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>NJM</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fwww.thepublicreviews.com%2fwp-content%2fuploads%2fThe-Beautiful-Game-Union-Theatre-620x330.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.NJMSoccer/?url=http%3A%2F%2Fnjmsoccer.kodistream.info%2Frh_matchday.xml&amp;mode=1&amp;name=%5BB%5D---%3D%3D%3D%5BCOLOR+red%5DMatchday%5B%2FCOLOR%5D%5BCOLOR+blue%5D+2016%5B%2FCOLOR%5D%3D%3D%3D---%5B%2FB%5D&amp;fanart=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>MDSE Live</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cuser%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.mdsportsextra%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.mdsportsextra/?url=http%3A%2F%2Fm.liveonlinetv247.info%2Fsports-channels.php&amp;mode=99&amp;name=%5BCOLOR+white%5DLive%5B%2FCOLOR%5D&amp;iconimage=C%3A%5CUsers%5Cuser%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdsportsextra%5Cicon.png&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>ST MatchDay</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fbuskerbrownes.com%2fwp-content%2fuploads%2f2013%2f06%2fimg1.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=LIVE+GAMES&amp;url=http%3A%2F%2Ftuzla.watchkodi.com%2FLIVE%2520TV%2Fnewsport.xml&amp;audio=0&amp;image=http%3A%2F%2Fbuskerbrownes.com%2Fwp-content%2Fuploads%2F2013%2F06%2Fimg1.jpg&amp;fanart=https%3A%2F%2Flh4.googleusercontent.com%2F-WwZHUFLPK2E%2FU3Kd4itvhPI%2FAAAAAAAAAKM%2FsaEb-0QngnM%2Fs0-d%2FBurning-Soccer-Ball-1600x1200.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>SportsDevil</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.SportsDevil%5cresources%5cimages%5clivesports.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BSports%26url%3Dlivesports.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BSports%26type%3Drss%26icon%3DC%253A%255CUsers%255Cadmin%255CAppData%255CRoaming%255CKodi%255Caddons%255Cplugin.video.SportsDevil%255Cresources%255Cimages%255Clivesports.png",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Premier League Pass</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2frobocop-kodi.ddns.net%2ficon%2fLive_and_Replay.png/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.Operation_RobocopUltimate/?url=http%3A%2F%2Frobocop-kodi.ddns.net%2Frobsplp.xml&amp;mode=1&amp;name=%5BB%5D%5BCOLOR+limegreen%5DPLP%5B%2FCOLOR%5D%5B%2FB%5D+&amp;fanart=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>RoboMD</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2frobocop-kodi.ddns.net%2ficon%2fRoboLive%2520events.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.Operation_RobocopUltimate/?url=http%3A%2F%2Fx.shit.football%3A8080%2Fget.php%3Fusername%3DILOVE%26password%3DWATCHINGDIRTYPORN%26type%3Dm3u&amp;mode=1&amp;name=%5BB%5D%5BCOLOR+limegreen%5DTODAYS+EVENTS+IN+HERE%5B%2FCOLOR%5D%5B%2FB%5D&amp;fanart=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>StreamEngine</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fi1295.photobucket.com%2falbums%2fb636%2fbeatbox8501%2fHIGHLIGHTS_zpsim3trylt.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.streamengine/?url=https%3A%2F%2Fpastebin.com%2Fraw.php%3Fi%3D7bS56gLu&amp;mode=1&amp;name=%5BCOLOR+white%5DSPORT%5B%2FCOLOR%5D%5BCOLOR+red%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fi1295.photobucket.com%2Falbums%2Fb636%2Fbeatbox8501%2FHIGHLIGHTS_zpsim3trylt.png&amp;play=&amp;date=&amp;description=&amp;page=",return)</action>
+	</shortcut>
+</shortcuts>

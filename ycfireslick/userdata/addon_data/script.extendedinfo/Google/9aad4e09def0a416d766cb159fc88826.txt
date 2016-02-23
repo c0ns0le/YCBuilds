@@ -1,0 +1,1 @@
+["gracie", ["gracie gold", "gracie breakdown", "gracie and mommy show", "gracie gold 2016", "gracie jiu jitsu", "gracie", "gracies journey", "gracie and spats tv", "graciela beltran", "gracie academy"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

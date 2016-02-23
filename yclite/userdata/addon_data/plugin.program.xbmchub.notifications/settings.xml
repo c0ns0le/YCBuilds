@@ -1,0 +1,6 @@
+<settings>
+    <setting id="noteImage" value="23" />
+    <setting id="noteMessage" value="We&apos;re very pleased to announce that the addon you&apos;ve all been waiting&#x0A;for has finally been released, [B][COLOR white]Exodus[/COLOR][/B] is here!&#x0A;&#x0A;Exodus has secretly been in the works for quite some time now, and is&#x0A;the masterpiece of none other than lambda, [I]the creator of Genesis[/I].&#x0A;You definitely want to get it right now!&#x0A;&#x0A;Visit the Following Page for a Step by Step Installation Guide:&#x0A;[B][COLOR white]https://www.tvaddons.ag/exodus/[/COLOR][/B]&#x0A;&#x0A;If you enjoy this and other unofficial addons for Kodi, please&#x0A;tell your friends, family, and coworkers about us." />
+    <setting id="noteType" value="t" />
+    <setting id="notifications-on-startup" value="false" />
+</settings>

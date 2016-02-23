@@ -1,0 +1,13 @@
+v1.0.6 Added Epic Fail
+
+V1.0.5 Added Youtube Support
+
+V1.0.4 Code Cosmetics 
+
+V1.0.3 Sports Section
+
+V1.0.2 Fixed code change
+
+V1.0.1 Fixed Genres page function
+
+V1.0.0 Inital Release.

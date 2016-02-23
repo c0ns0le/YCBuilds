@@ -1,0 +1,16 @@
+<settings>
+	
+	<category label="AutoView">
+		<setting id="auto-view" type="bool" label="Enable Automatic View" default="true"/>
+		<setting id="show-view" type="labelenum" label="Choose View" values="Info|Info2|Info3|Fanart|Big list|Poster Wrap" default="Info2" enable="!eq(-1,false)+!eq(-2,false)"/>
+		<setting id="default-view" type="number" label="Default View" default="500" enable="!eq(-2,false)"/>
+	</category>
+
+	<category label="Metadata">
+		<setting id="enable_meta" type="bool" label="Enable Metadata" default="true"/>
+	</category>
+	
+	<category label="Update">
+		<setting label="32032" type="action" action="UpdateAddonRepos"/>
+	</category>
+</settings>

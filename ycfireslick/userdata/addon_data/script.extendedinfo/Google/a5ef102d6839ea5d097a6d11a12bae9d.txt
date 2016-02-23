@@ -1,0 +1,1 @@
+["3", ["360 video", "3 times in a row", "30 vet", "30 seconds to mars", "3 doors down", "3500 travis scott", "3005", "3d printer", "3 idiots full movie", "30 for 30"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

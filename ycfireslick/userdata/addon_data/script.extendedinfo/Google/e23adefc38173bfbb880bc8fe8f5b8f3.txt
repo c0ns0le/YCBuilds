@@ -1,0 +1,1 @@
+["d", ["drake", "david bowie", "dantdm", "dude perfect", "drake hotline bling", "donald trump", "don't bryson tiller", "dubstep", "dashiegames", "dilwale"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

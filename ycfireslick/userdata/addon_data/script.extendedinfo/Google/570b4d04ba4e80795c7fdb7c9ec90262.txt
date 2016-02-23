@@ -1,0 +1,1 @@
+["Su", ["superwoman", "sugar", "sunday candy", "sugar robin schulz", "superfruit", "surprise eggs", "superman", "sublime", "super mario maker", "superman vs batman"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

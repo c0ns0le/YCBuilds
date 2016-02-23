@@ -1,0 +1,1 @@
+["Firestic", ["firestick", "fire stick jailbreak", "fire stick kodi", "firestick hack", "firestick jailbroken", "firestick hack kodi", "firestick genesis", "firestick apps", "fire stick tv", "fire stick jailbreak kodi"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]

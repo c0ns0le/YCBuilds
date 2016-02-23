@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>UKT Fit</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk18022016%2fthumbs%2fnew%2fUk%2520turk%2520thumbnails%2520fitness.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2FFitness%2520Videos.txt&amp;mode=1&amp;name=Fitness&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2Fthumbs%2Fnew%2FUk%2520turk%2520thumbnails%2520fitness.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Workouts</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs21.postimg.org%2fjr9dvc6p3%2fFitness.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Fitness&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2Ffitness%2Ffitness_directory.xml&amp;audio=0&amp;image=http%3A%2F%2Fs21.postimg.org%2Fjr9dvc6p3%2FFitness.jpg&amp;fanart=http%3A%2F%2Fwallcomphd.com%2Fwp-content%2Fuploads%2F2015%2F06%2F3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Society Fitness</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs1.postimg.org%2fgbmdpbfpr%2ffitness.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.titan/?url=http%3A%2F%2Fpastebin.com%2Fraw.php%3Fi%3DC7Z92cfT&amp;mode=30&amp;name=%5BCOLOR+FFA4C639%5DFitness%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fs1.postimg.org%2Fgbmdpbfpr%2Ffitness.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>DIJ Fitness</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fdij.dijentertainments.co.uk%2fpics%2fhealth.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.dijentertainments/?url=http%3A%2F%2Fdij.dijentertainments.co.uk%2Flists%2Fxml%2Ffitness%2Ffitnessdir.xml&amp;mode=1&amp;name=%5BI%5D%5BCOLOR+green%5DFitness%5B%2FCOLOR%5D%5B%2FI%5D&amp;fanart=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Workout DVDs</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fdij.dijentertainments.co.uk%2fpics%2foriginals%2fDVD.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.dijentertainments/?url=http%3A%2F%2Fdij.dijentertainments.co.uk%2Flists%2Fxml%2Ffitness%2Ffitdvd.xml&amp;mode=1&amp;name=%5BB%5D%5BCOLOR+green%5DFITNESS+DVDS%5B%2FCOLOR%5D+%5B%2FB%5D&amp;fanart=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.yogatube</defaultID>
+		<label>YogaTube</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.yogatube%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.yogatube",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>One Fitness</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs21.postimg.org%2fjr9dvc6p3%2fFitness.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Fitness&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2Ffitness%2Ffitness_directory.xml&amp;audio=0&amp;image=http%3A%2F%2Fs21.postimg.org%2Fjr9dvc6p3%2FFitness.jpg&amp;fanart=http%3A%2F%2Fimg05.deviantart.net%2F6db8%2Fi%2F2013%2F337%2Fb%2Ff%2Fuprising_of_the_mockingjay_by_sikundoto-d6wm4rz.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Marvin Fitness</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fthebeastkodi.uk%2faddon%2fFitness.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.marvin/?url=http%3A%2F%2Fthebeastkodi.uk%2Faddon%2FFitness.txt&amp;mode=1&amp;name=%5BCOLOR+green%5DFitness%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fthebeastkodi.uk%2Faddon%2FFitness.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>SE Fitness</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fi1295.photobucket.com%2falbums%2fb636%2fbeatbox8501%2fFITNESS_zpsef9go3z1.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.streamengine/?url=https%3A%2F%2Fpastebin.com%2Fraw.php%3Fi%3DqTYGkdxm&amp;mode=1&amp;name=%5BCOLOR+red%5D%5BCOLOR+white%5DFITNESS%5BCOLOR+red%5D+%5BCOLOR+lime%5D%5B%2FCOLOR%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fi1295.photobucket.com%2Falbums%2Fb636%2Fbeatbox8501%2FFITNESS_zpsef9go3z1.png&amp;play=&amp;date=&amp;description=&amp;page=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.pulsefitness</defaultID>
+		<label>Pulse Fitness</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cadmin%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.pulse%20fitness%5cicon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.pulsefitness",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Pheonix Fitness</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fs6.postimg.org%2fre40an269%2ffitness_woman_perspiration_2_1.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+hotpink%5DWorkout%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2FFitness%2FFitness%2520Main.xml&amp;audio=0&amp;image=http%3A%2F%2Fs6.postimg.org%2Fre40an269%2Ffitness_woman_perspiration_2_1.jpg&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F4e7vodlfl%2F14266.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
+	</shortcut>
+</shortcuts>

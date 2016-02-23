@@ -1,0 +1,32 @@
+<config>
+  <playlists>
+    <playlist enabled="yes" id="PLNxz8kWwA2KwpcANM1cLA_yZEBOFj0HbK" scansince="22/02/2016 18:21:19">
+      <overwritefolder />
+      <stripdescription />
+      <excludewords />
+      <onlyinclude />
+      <thumb>https://yt3.ggpht.com/-Bo_5Kv7evZ0/AAAAAAAAAAI/AAAAAAAAAAA/6HdJ87xSfTo/s240-c-k-no/photo.jpg</thumb>
+      <title>YCBeast Tutorials</title>
+      <fanart>https://yt3.ggpht.com/--jEbpaaBL6Y/VrNuNWFAV4I/AAAAAAAAACU/Vo_rpBG-Vrk/w2120-fcrop64=1,00000000ffffffff-nd/youtube-bg.png</fanart>
+      <minlength />
+      <removedescription />
+      <writenfo>Yes</writenfo>
+      <striptitle />
+      <type>TV</type>
+      <channel>Ashby Jest</channel>
+      <description>Overviews, tutorials, sneak peaks and releases of my YCBeast Build for Kodi/XBMC. Which I load on all FireSticks, FireTVs and Android Boxes. It's Fully Loaded and only getting better!!</description>
+      <tags>Youtube</tags>
+      <season>year</season>
+      <published>2016-02-04T14:35:04.000Z</published>
+      <genre>Youtube / Tutorials</genre>
+      <banner>https://yt3.ggpht.com/--jEbpaaBL6Y/VrNuNWFAV4I/AAAAAAAAACU/Vo_rpBG-Vrk/w1060-fcrop64=1,00005a57ffffa5a8-nd/youtube-bg.png</banner>
+      <lastvideoId />
+      <episode>default</episode>
+      <removetitle />
+      <maxlength />
+      <keepvideos />
+      <epsownfanart>No</epsownfanart>
+      <delete />
+    </playlist>
+  </playlists>
+</config>

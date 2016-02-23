@@ -1,0 +1,1 @@
+["Super Favorites", ["super favorites kodi", "super favorites iptv stalker", "super favorites zip file", "super favorites addon kodi", "super favorites addon", "super favorites playlist", "super favorites xbmc"], [], {"google:suggesttype": ["QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY", "QUERY"]}]
