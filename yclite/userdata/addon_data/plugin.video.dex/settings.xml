@@ -1,6 +1,0 @@
-<settings>
-    <setting id="first" value="0" />
-    <setting id="loggedin" value="0" />
-    <setting id="pass" value="" />
-    <setting id="user" value="" />
-</settings>

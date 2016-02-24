@@ -1,4 +1,0 @@
-#LWP-Cookies-2.0
-Set-Cookie3: __cfduid=d9cd3cf9b31fb611d5a3ec342fb5aef5e1453145530; path="/"; domain=".123movies.to"; path_spec; domain_dot; expires="2017-01-17 19:32:10Z"; HttpOnly=None; version=0
-Set-Cookie3: __cfduid=de83be7bea2d852a18493fd9452a37aa11453145542; path="/"; domain=".trakt.tv"; path_spec; domain_dot; expires="2017-01-17 19:32:22Z"; HttpOnly=None; version=0
-Set-Cookie3: ci_session=72b8f715f5a6e93640682aea89ea0e68c4d157ca; path="/"; domain="123movies.to"; path_spec; expires="2016-02-14 00:53:02Z"; HttpOnly=None; version=0
