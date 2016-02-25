@@ -1,3 +1,15 @@
+[B]Version 14.2.1[/B]
+- Free Accounts now able to stream in HD for the first 45 days after account activation
+- PBS and My9 are not available in HD so they will be SD
+- added 'Account Info' to settings
+- this gives information on the USTVnow Account including Account Status, total DVR Points, etc
+- udpated addon description to be more accurate
+- added 'Version Info' to settings
+- will hopefully make it easier for users to know what version they are using
+- added option in 'Advanced Settings' to force clear the current token
+- added option in 'Advanced Settings' to view/edit the current token
+- fixed issue with special characters in show/movie data
+
 [B]Version 14.2.0[/B]
 - forgot to clear out the invalid tokens in the last update.
 - added code to clear out all previous tokens to ensure that a fresh one is grabbed
@@ -68,6 +80,26 @@
 Below is the changelog from the BETA releases
 -----------------------------------------------------------
 -----------------------------------------------------------
+
+[B]Version 1.4.9[/B]
+- Free Accounts now able to stream in HD for the first 45 days after account activation
+- PBS and My9 are not available in HD so they will be SD
+
+[B]Version 1.4.8[/B]
+- added 'Account Info' to settings
+- this gives information on the USTVnow Account including Account Status, total DVR Points, etc
+- udpated addon description to be more accurate
+
+[B]Version 1.4.7[/B]
+- added 'Version Info' to settings
+- will hopefully make it easier for users to know what version they are using
+
+[B]Version 1.4.6[/B]
+- added option in 'Advanced Settings' to force clear the current token
+- added option in 'Advanced Settings' to view/edit the current token
+
+[B]Version 1.4.5[/B]
+- fixed issue with special characters in show/movie data
 
 [B]Version 1.4.4[/B]
 - forgot to clear out the invalid tokens in the last update.

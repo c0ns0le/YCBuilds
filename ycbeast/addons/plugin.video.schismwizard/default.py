@@ -444,7 +444,9 @@ def INDEX():
 		os.makedirs(backupdir)
 	if not os.path.exists(packdir):	os.makedirs(packdir)
 	addDir('[COLOR red][B]FRESH START[/B][/COLOR]','url',6,ART+'freshstart.png',FANART,'')
-	addDir('[COLOR lime][B]SchisM TV Builds [/B][/COLOR]',BASEURL,20,ART+'schismwiz.png',FANART,'')
+	addDir('[COLOR lime][B]SchisM TV Builds [/B][/COLOR] - [FAST SERVER]',BASEURL,20,ART+'schismwiz.png',FANART,'')
+	addDir('[COLOR lime][B]SchisM TV Builds [/B][/COLOR] - [NORMAL SERVER]',BASEURL,21,ART+'schismwiz.png',FANART,'')
+
 	addDir('[COLOR yellow][B]UPDATE[/B][/COLOR]','url',1,ART+'update.png',FANART,'')
 	addDir('[COLOR orange][B]Backup Settings[/B][/COLOR]','url',3,ART+'tool.png',FANART,'')
 	addDir('[COLOR orange][B]Restore Settings[/B][/COLOR]','url',4,ART+'tool.png',FANART,'')
@@ -452,7 +454,16 @@ def INDEX():
 
 def BUILDMENU():
     
-    link = OPEN_URL('https://dg1tgb1503.fusa.be/wizard/schism/wizard_rel.txt').replace('\n','').replace('\r','')
+    link = OPEN_URL('http://87.98.254.165/wizard/schism/wizard_rel.txt').replace('\n','').replace('\r','')
+    match = re.compile('name="(.+?)".+?rl="(.+?)".+?mg="(.+?)".+?anart="(.+?)".+?escription="(.+?)".+?urrentversion="(.+?)"').findall(link)
+   
+    for name,url,iconimage,fanart,description,version in match:
+        addDir(name + "  ver: " + version,url,90,iconimage,fanart,description)
+    setView('movies', 'MAIN')
+	
+def BUILDMENU_ARCHIVE():
+    
+    link = OPEN_URL('https://archive.org/download/stv_rel/wizard_rel_archive.txt').replace('\n','').replace('\r','')
     match = re.compile('name="(.+?)".+?rl="(.+?)".+?mg="(.+?)".+?anart="(.+?)".+?escription="(.+?)".+?urrentversion="(.+?)"').findall(link)
    
     for name,url,iconimage,fanart,description,version in match:
@@ -1301,7 +1312,7 @@ def FRESHSTARTUPDATE(params):
         choice2 = xbmcgui.Dialog().yesno("[COLOR=red]CLEAN INSTALLATION[/COLOR]", 'Do you want to perform a clean installation?', 'Performing a clean installation is highly recommended', 'All addons will be deleted!', yeslabel='[COLOR=red]Yes[/COLOR]',nolabel='[COLOR=green]No[/COLOR]')
     if choice2 == 0:
 		
-		BUILDMENU()
+		BUILDMENU_ARCHIVE()
 		return
     elif choice2 == 1:
         dp.create("[COLOR lime][B]SchisM TV[/B][/COLOR][COLOR white]Wizard[/COLOR]","Wiping Install",'', 'Please Wait')
@@ -1326,9 +1337,9 @@ def FRESHSTARTUPDATE(params):
         REMOVE_EMPTY_FOLDERS_2()
         REMOVE_EMPTY_FOLDERS_2()
         xbmc.executebuiltin( "Container.Refresh" )
-        dialog.ok('[COLOR lime][B]SchisM TV[/B][/COLOR][COLOR white]Wizard[/COLOR]','Wipe Successful, Now you can run the update.','','')
+        dialog.ok('[COLOR lime][B]SchisM TV[/B][/COLOR][COLOR white]Wizard[/COLOR]','Wipe Successful, Now you can run the Installer','','')
         
-        BUILDMENU()
+        BUILDMENU_ARCHIVE()
         
  
 def FRESHSTART(params):
@@ -1495,7 +1506,8 @@ elif mode==4:
 		
 elif mode==3:
         BACKUPMENU()
-
+elif mode==21:
+        BUILDMENU_ARCHIVE()
 		
 elif mode==6:        
 	FRESHSTART(params)

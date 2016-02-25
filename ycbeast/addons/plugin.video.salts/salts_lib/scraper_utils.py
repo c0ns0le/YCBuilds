@@ -23,6 +23,7 @@ import time
 import urllib
 import urlparse
 import json
+import htmlentitydefs
 from salts_lib import kodi
 from salts_lib import pyaes
 from salts_lib import log_utils
@@ -269,6 +270,7 @@ def pathify_url(url):
         strip = ''
     strip += '//' + pieces.netloc
     url = url.replace(strip, '')
+    if url.startswith('..'): url = url[2:]
     if not url.startswith('/'): url = '/' + url
     url = url.replace('/./', '/')
     url = url.replace('&amp;', '&')
@@ -291,3 +293,24 @@ def format_size(num, suffix='B'):
             return "%3.1f%s%s" % (num, unit, suffix)
         num /= 1024.0
     return "%.1f%s%s" % (num, 'Y', suffix)
+
+def cleanse_title(text):
+    def fixup(m):
+        text = m.group(0)
+        if text[:2] == "&#":
+            # character reference
+            try:
+                if text[:3] == "&#x":
+                    return unichr(int(text[3:-1], 16))
+                else:
+                    return unichr(int(text[2:-1]))
+            except ValueError:
+                pass
+        else:
+            # named entity
+            try:
+                text = unichr(htmlentitydefs.name2codepoint[text[1:-1]])
+            except KeyError:
+                pass
+        return text
+    return re.sub("&#?\w+;", fixup, text.strip())

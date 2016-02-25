@@ -1,3 +1,8 @@
+[B]Version 5.2.5[/B]
+*OCW Reborn its a new beginning* (TV Calendar and index searches are still in beta)
+- small fixes
+- changed some sites
+
 [B]Version 5.2.4[/B]
 *OCW Reborn its a new beginning* (TV Calendar and index searches are still in beta)
 - small fixes

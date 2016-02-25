@@ -57,7 +57,7 @@ class Dizibox_Scraper(scraper.Scraper):
         if source_url and source_url != FORCE_NO_MATCH:
             page_url = urlparse.urljoin(self.base_url, source_url)
             html = self._http_get(page_url, cache_limit=.25)
-            match = re.search('''<option[^>]+value\s*=\s*["']([^"']+)[^>]*>(?:1|Altyaz.{1,3}s.{1,3}z)<''', html)
+            match = re.search('''<option[^>]+value\s*=\s*["']([^"']+)[^>]*>(?:Altyaz.{1,3}s.{1,3}z)<''', html)
             if match:
                 option_url = urlparse.urljoin(self.base_url, match.group(1))
                 html = self._http_get(option_url, cache_limit=.25)
@@ -66,6 +66,7 @@ class Dizibox_Scraper(scraper.Scraper):
                     iframe_url = dom_parser.parse_dom(fragment[0], 'iframe', ret='src')
                     if iframe_url:
                         html = self._http_get(iframe_url[0], cache_limit=.25)
+
                         seen_urls = {}
                         for match in re.finditer('"?file"?\s*:\s*"([^"]+)"\s*,\s*"?label"?\s*:\s*"(\d+)p?[^"]*"', html):
                             stream_url, height = match.groups()
@@ -95,7 +96,7 @@ class Dizibox_Scraper(scraper.Scraper):
             episode_pattern = '''href=['"]([^'"]+-%s-sezon-%s-[^\;"]*bolum[^'"]*)''' % (video.season, video.episode)
             return self._default_get_episode_url(season_url, video, episode_pattern)
 
-    def search(self, video_type, title, year):
+    def search(self, video_type, title, year, season=''):
         html = self._http_get(self.base_url, cache_limit=8)
         results = []
         seen_urls = {}
@@ -106,7 +107,7 @@ class Dizibox_Scraper(scraper.Scraper):
                 if url not in seen_urls:
                     seen_urls[url] = True
                     if norm_title in scraper_utils.normalize_title(match_title):
-                        result = {'url': scraper_utils.pathify_url(url), 'title': match_title, 'year': ''}
+                        result = {'url': scraper_utils.pathify_url(url), 'title': scraper_utils.cleanse_title(match_title), 'year': ''}
                         results.append(result)
 
         return results

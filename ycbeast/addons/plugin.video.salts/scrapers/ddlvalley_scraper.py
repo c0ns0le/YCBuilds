@@ -26,7 +26,7 @@ from salts_lib import scraper_utils
 from salts_lib.constants import FORCE_NO_MATCH
 from salts_lib.constants import SHORT_MONS
 from salts_lib.constants import VIDEO_TYPES
-from salts_lib.utils2 import i18n
+from salts_lib.kodi import i18n
 import scraper
 
 
@@ -113,7 +113,7 @@ class DDLValley_Scraper(scraper.Scraper):
                 
             page_url = dom_parser.parse_dom(html, 'a', {'class': 'nextpostslink'}, ret='href')
     
-    def search(self, video_type, title, year):
+    def search(self, video_type, title, year, season=''):
         results = []
         search_url = urlparse.urljoin(self.base_url, '/search/')
         search_url += urllib.quote_plus(title)
@@ -126,7 +126,7 @@ class DDLValley_Scraper(scraper.Scraper):
                     if match:
                         show_url, match_title = match.groups()
                         if show_url not in seen_urls:
-                            result = {'url': scraper_utils.pathify_url(show_url), 'title': match_title, 'year': ''}
+                            result = {'url': scraper_utils.pathify_url(show_url), 'title': scraper_utils.cleanse_title(match_title), 'year': ''}
                             seen_urls[show_url] = result
                             results.append(result)
         elif video_type == VIDEO_TYPES.MOVIE:
@@ -146,7 +146,7 @@ class DDLValley_Scraper(scraper.Scraper):
                     
                     match_norm_title = scraper_utils.normalize_title(match_title)
                     if (match_norm_title in norm_title or norm_title in match_norm_title) and (not year or not match_year or year == match_year):
-                        result = {'url': scraper_utils.pathify_url(post_url), 'title': full_title, 'year': match_year}
+                        result = {'url': scraper_utils.pathify_url(post_url), 'title': scraper_utils.cleanse_title(full_title), 'year': match_year}
                         results.append(result)
         
         return results

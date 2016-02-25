@@ -107,7 +107,7 @@ class ClickPlay_Scraper(scraper.Scraper):
         title_pattern = 'href="(?P<url>[^"]+)"\s+title="[^"]+/\s*(?P<title>[^"]+)'
         return self._default_get_episode_url(season_url, video, episode_pattern, title_pattern)
 
-    def search(self, video_type, title, year):
+    def search(self, video_type, title, year, season=''):
         url = urlparse.urljoin(self.base_url, '/tv-series-a-z-list')
         html = self._http_get(url, cache_limit=8)
 
@@ -124,7 +124,7 @@ class ClickPlay_Scraper(scraper.Scraper):
                 match_year = ''
 
             if norm_title in scraper_utils.normalize_title(match_title) and (not year or not match_year or year == match_year):
-                result = {'url': scraper_utils.pathify_url(url), 'title': match_title, 'year': match_year}
+                result = {'url': scraper_utils.pathify_url(url), 'title': scraper_utils.cleanse_title(match_title), 'year': match_year}
                 results.append(result)
 
         return results

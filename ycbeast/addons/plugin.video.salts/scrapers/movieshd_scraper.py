@@ -83,7 +83,7 @@ class MoviesHD_Scraper(scraper.Scraper):
     def get_url(self, video):
         return self._default_get_url(video)
 
-    def search(self, video_type, title, year):
+    def search(self, video_type, title, year, season=''):
         search_url = urlparse.urljoin(self.base_url, '/?s=')
         search_url += urllib.quote_plus(title)
         html = self._http_get(search_url, cache_limit=.25)
@@ -93,6 +93,6 @@ class MoviesHD_Scraper(scraper.Scraper):
             for match in re.finditer(pattern, html):
                 url, title, match_year = match.groups('')
                 if not year or not match_year or year == match_year:
-                    result = {'url': scraper_utils.pathify_url(url), 'title': title, 'year': match_year}
+                    result = {'url': scraper_utils.pathify_url(url), 'title': scraper_utils.cleanse_title(title), 'year': match_year}
                     results.append(result)
         return results

@@ -27,7 +27,7 @@ from salts_lib import scraper_utils
 from salts_lib.constants import FORCE_NO_MATCH
 from salts_lib.constants import QUALITIES
 from salts_lib.constants import VIDEO_TYPES
-from salts_lib.utils2 import i18n
+from salts_lib.kodi import i18n
 import scraper
 
 
@@ -104,10 +104,10 @@ class Flixanity_Scraper(scraper.Scraper):
     def get_url(self, video):
         return self._default_get_url(video)
 
-    def search(self, video_type, title, year):
+    def search(self, video_type, title, year, season=''):
         self.__get_token()
         results = []
-        search_url = urlparse.urljoin(self.base_url, '/api/v1/caut')
+        search_url = urlparse.urljoin(self.base_url, '/api/v1/fsearch/cautare')
         timestamp = int(time.time() * 1000)
         query = {'q': title, 'limit': '100', 'timestamp': timestamp, 'verifiedCheck': self.__token}
         html = self._http_get(search_url, data=query, headers=XHR, cache_limit=1)
@@ -120,7 +120,7 @@ class Flixanity_Scraper(scraper.Scraper):
             if item['meta'].upper().startswith(media_type):
                 match_year = str(item['year']) if 'year' in item and item['year'] else ''
                 if not year or not match_year or year == match_year:
-                    result = {'title': item['title'], 'url': scraper_utils.pathify_url(item['permalink']), 'year': match_year}
+                    result = {'title': scraper_utils.cleanse_title(item['title']), 'url': scraper_utils.pathify_url(item['permalink']), 'year': match_year}
                     results.append(result)
 
         return results
@@ -139,16 +139,16 @@ class Flixanity_Scraper(scraper.Scraper):
         settings.append('         <setting id="%s-password" type="text" label="     %s" option="hidden" default="" visible="eq(-5,true)"/>' % (name, i18n('password')))
         return settings
 
-    def _http_get(self, url, data=None, headers=None, cache_limit=8):
+    def _http_get(self, url, data=None, headers=None, method=None, cache_limit=8):
         # return all uncached blank pages if no user or pass
         if not self.username or not self.password:
             return ''
 
-        html = self._cached_http_get(url, self.base_url, self.timeout, data=data, headers=headers, cache_limit=cache_limit)
+        html = self._cached_http_get(url, self.base_url, self.timeout, data=data, headers=headers, method=method, cache_limit=cache_limit)
         if '<span>Log In</span>' in html:
             log_utils.log('Logging in for url (%s)' % (url), log_utils.LOGDEBUG)
             self.__login()
-            html = self._cached_http_get(url, self.base_url, self.timeout, data=data, headers=headers, cache_limit=0)
+            html = self._cached_http_get(url, self.base_url, self.timeout, data=data, headers=headers, method=method, cache_limit=0)
 
         self.__get_token(html)
         return html

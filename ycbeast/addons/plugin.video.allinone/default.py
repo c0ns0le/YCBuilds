@@ -41,7 +41,6 @@ BASE_URL46 = 'http://www.mhighonline.com/'
 BASE_URL47 = 'http://watchkidsmoviesonline.blogspot.co.uk/'
 BASE_URL49 = 'http://www.moviefone.com/'
 BASE_URL50 = 'http://movie900.com/'
-BASE_URL51 = 'http://futbik.com/'
 BASE_URL52 = 'http://asdl.us/'
 BASE_URL54 = 'http://free-download.link/'
 BASE_URL55 = 'http://documentarystorm.com/'
@@ -928,28 +927,6 @@ def GetTitles50(section, url, startPage= '1', numOfPages= '1'):
         xbmc.executebuiltin("XBMC.Notification([COLOR red][B]Sorry site is down [/B][/COLOR],[COLOR blue][B]Please try a different site[/B][/COLOR],7000,"")")
        	xbmcplugin.endOfDirectory(int(sys.argv[1]))
 
-#------------------------------------------------------------------------------- futbik ------------------------------------------------------------------------------#
-
-def GetTitles51(section, url, startPage= '1', numOfPages= '1'):
-    try:
-        pageUrl = url
-        if int(startPage)> 1:
-                pageUrl = url + 'page/' + startPage + '/'
-        print pageUrl
-        html = net.http_GET(pageUrl).content
-        start = int(startPage)
-        end = start + int(numOfPages)
-        for page in range( start, end):
-                if ( page != start):
-                        pageUrl = url + 'page/' + str(page) + '/'
-                        html = net.http_GET(pageUrl).content                       
-                match = re.compile('<li class="post-link">\s*?<a href="(.+?)"><img class="img_mini" src="(.+?)" alt="(.+?)" /> <span class="post-date">(.+?)</span>(.+?)</a>\s*?</li>', re.DOTALL).findall(html)
-                for movieUrl, img, name, date, team in match:
-                        addon.add_directory({'mode': 'GetLinks1b', 'section': section, 'url': movieUrl}, {'title':  name.strip().replace('</li>', ' ').replace('</span>', ' ').replace('</a>', ' ').replace('</b>', ' ').replace('<b>', ' ') + ' - ' + date.replace('</li>', ' ').replace('</span>', ' ').replace('</a>', ' ').replace('</b>', ' ').replace('<b>', ' ') + team.replace('</li>', ' ').replace('</span>', ' ').replace('</a>', ' ').replace('</b>', ' ').replace('<b>', ' ')}, img= img, fanart=FanartPath + 'fanart.png')    
-    except:
-        xbmc.executebuiltin("XBMC.Notification([COLOR red][B]Sorry site is down [/B][/COLOR],[COLOR blue][B]Please try a different site[/B][/COLOR],7000,"")")
-       	xbmcplugin.endOfDirectory(int(sys.argv[1]))
-
 #------------------------------------------------------------------------------- asdl.us ------------------------------------------------------------------------------#
 
 def GetTitles52(section, url, startPage= '1', numOfPages= '1'):
@@ -1477,66 +1454,6 @@ def GetLinks1a(section, url):
                 host = GetDomain(url)
                 if urlresolver.HostedMediaFile(url= url):
                         addon.add_directory({'mode': 'PlayVideo', 'url': url, 'listitem': listitem}, {'title':  host }, img=IconPath + 'play.png', fanart=FanartPath + 'fanart.png')
-        xbmcplugin.endOfDirectory(int(sys.argv[1]))
-
-#------------------------------------------------------------------------------ futbik ---------------------------------------------------------------------------------#
-
-def GetLinks1b(section, url):
-        html = net.http_GET(url).content
-        listitem = GetMediaInfo(html)
-        content = html
-        match = re.compile('src="(http://vk.com.+?)"').findall(content)
-        match1 = re.compile('src="//rutube.ru/play/embed/(.+?)"').findall(content)
-        match2 = re.compile('src="//www.youtube.com(.+?)"').findall(content)
-        match4 = re.compile('src="(.+?)"').findall(content)
-        match5 = re.compile('data-config="http://config.playwire.com/(.+?)/videos/v2/(.+?)/zeus.json"').findall(content)
-        match6 = re.compile('src="//www.dailymotion.com/embed/video/(.+?)"').findall(content)
-        listitem = GetMediaInfo(content)
-        #for url in match1:
-                #addon.add_directory({'mode': 'GetLinks1c', 'url': 'http://rutube.ru/play/embed/' + url, 'listitem': listitem}, {'title':  'RuTube'}, img= 'http://3.bp.blogspot.com/-jlcs_aOb66M/T8aXQdhT7LI/AAAAAAAAGCA/cAtoeavbkyI/s1600/Rutube+logo.png', fanart=FanartPath + 'fanart.png')
-        for url in match2:
-                addon.add_directory({'mode': 'GetLinks1d', 'url': 'https://www.youtube.com/' + url, 'listitem': listitem}, {'title':  'YouTube'}, img= 'http://www.ontariosdoctors.com/wp-content/uploads/2014/02/youtubelogo.jpg', fanart=FanartPath + 'fanart.png')
-        for url, url1 in match5:
-                addon.add_directory({'mode': 'PlayVideo1', 'url': 'http://cdn.phoenix.intergi.com/' + url + '/videos/' + url1 + '/video-sd.mp4?hosting_id=' + url, 'listitem': listitem}, {'title':  'PlayWire'}, img= 'http://www.thevideoink.com/wp-content/uploads/2014/04/playwire-sponsor-logo-large.png', fanart=FanartPath + 'fanart.png')
-        for url in match6:
-                addon.add_directory({'mode': 'GetLinks1e', 'url': 'https://www.dailymotion.com/embed/video/' + url, 'listitem': listitem}, {'title':  'DailyMotion'}, img= 'http://medias.unifrance.org/medias/248/227/58360/format_hd/dailymotion.jpg', fanart=FanartPath + 'fanart.png')
-        for url in match:
-                host = GetDomain(url)
-                if urlresolver.HostedMediaFile(url= url):
-                        addon.add_directory({'mode': 'PlayVideo', 'url': url, 'listitem': listitem}, {'title':  host }, img=IconPath + 'play.png', fanart=FanartPath + 'fanart.png')
-        xbmcplugin.endOfDirectory(int(sys.argv[1]))
-
-def GetLinks1c(section, url):                                            
-        html = net.http_GET(url).content
-        listitem = GetMediaInfo(html)
-        content = html
-        match = re.compile('"m3u8": "(.+?)"}').findall(content)
-        listitem = GetMediaInfo(content)
-        for url in match:
-                addon.add_directory({'mode': 'PlayVideo1', 'url': url, 'listitem': listitem}, {'title':  'load stream'}, img= 'http://3.bp.blogspot.com/-jlcs_aOb66M/T8aXQdhT7LI/AAAAAAAAGCA/cAtoeavbkyI/s1600/Rutube+logo.png', fanart=FanartPath + 'fanart.png')
-        xbmcplugin.endOfDirectory(int(sys.argv[1]))
-
-def GetLinks1d(section, url):
-        html = net.http_GET(url).content
-        listitem = GetMediaInfo(html)
-        content = html
-        match = re.compile('href="(.+?)"').findall(content)
-        listitem = GetMediaInfo(content)
-        for url in match:
-                host = GetDomain(url)
-                if urlresolver.HostedMediaFile(url= url):
-                        addon.add_directory({'mode': 'PlayVideo', 'url': url, 'listitem': listitem}, {'title':  host }, img=IconPath + 'play.png', fanart=FanartPath + 'fanart.png')
-        xbmcplugin.endOfDirectory(int(sys.argv[1]))
-
-
-def GetLinks1e(section, url):                                            
-        html = net.http_GET(url).content
-        listitem = GetMediaInfo(html)
-        content = html
-        match = re.compile('stream_h264_hq_url":"(.+?)"').findall(content)
-        listitem = GetMediaInfo(content)
-        for url in match:
-                addon.add_directory({'mode': 'PlayVideo1', 'url': url.replace('/', ''), 'listitem': listitem}, {'title':  'load stream'}, img= 'http://medias.unifrance.org/medias/248/227/58360/format_hd/dailymotion.jpg', fanart=FanartPath + 'fanart.png')
         xbmcplugin.endOfDirectory(int(sys.argv[1]))
 
 #------------------------------------------------------------------------------ bluray ------------------------------------------------------------------------------------#
@@ -2297,8 +2214,6 @@ def DocMenu():    #documentarys
 #----------------------------sport------------------------------sport----------------------sport---------------------------sport------------------------------sport--------#
 
 def SportMenu():   #sport
-        addon.add_directory({'mode': 'GetTitles51', 'section': 'ALL', 'url': BASE_URL51 + '/',
-                             'startPage': '1', 'numOfPages': '1'}, {'title':  '[COLOR blue][B]Latest Football Highlights[/B][/COLOR]  [COLOR lime](futbik) [/COLOR] >>'}, img=IconPath + 'fb1.png', fanart=FanartPath + 'fanart.png')
         addon.add_directory({'mode': 'GetTitles42', 'section': 'ALL', 'url': BASE_URL42 + '/category/wwe/',
                              'startPage': '1', 'numOfPages': '1'}, {'title':  '[COLOR lemonchiffon][B]Latest WWE[/B][/COLOR]  [COLOR gold](watchwrestling) [/COLOR] >>'}, img=IconPath + 'ww.png', fanart=FanartPath + 'fanart.png')
         addon.add_directory({'mode': 'GetTitles42', 'section': 'ALL', 'url': BASE_URL42 + '/category/wwenetwork/',

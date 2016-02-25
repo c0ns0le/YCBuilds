@@ -26,7 +26,7 @@ from salts_lib import scraper_utils
 from salts_lib.constants import FORCE_NO_MATCH
 from salts_lib.constants import QUALITIES
 from salts_lib.constants import VIDEO_TYPES
-from salts_lib.utils2 import i18n
+from salts_lib.kodi import i18n
 import scraper
 
 
@@ -102,7 +102,7 @@ class MoviesPlanet_Scraper(scraper.Scraper):
     def get_url(self, video):
         return self._default_get_url(video)
 
-    def search(self, video_type, title, year):
+    def search(self, video_type, title, year, season=''):
         results = []
         search_url = urlparse.urljoin(self.base_url, '/ajax/search.php')
         timestamp = int(time.time() * 1000)
@@ -116,7 +116,7 @@ class MoviesPlanet_Scraper(scraper.Scraper):
         js_data = scraper_utils.parse_json(html, search_url)
         for item in js_data:
             if item['meta'].upper().startswith(media_type):
-                result = {'title': item['title'], 'url': scraper_utils.pathify_url(item['permalink']), 'year': ''}
+                result = {'title': scraper_utils.cleanse_title(item['title']), 'url': scraper_utils.pathify_url(item['permalink']), 'year': ''}
                 results.append(result)
 
         return results
@@ -133,16 +133,16 @@ class MoviesPlanet_Scraper(scraper.Scraper):
         settings.append('         <setting id="%s-password" type="text" label="     %s" option="hidden" default="" visible="eq(-5,true)"/>' % (name, i18n('password')))
         return settings
 
-    def _http_get(self, url, data=None, headers=None, allow_redirect=True, cache_limit=8):
+    def _http_get(self, url, data=None, headers=None, allow_redirect=True, method=None, cache_limit=8):
         # return all uncached blank pages if no user or pass
         if not self.username or not self.password:
             return ''
 
-        html = self._cached_http_get(url, self.base_url, self.timeout, data=data, headers=headers, allow_redirect=allow_redirect, cache_limit=cache_limit)
+        html = self._cached_http_get(url, self.base_url, self.timeout, data=data, headers=headers, allow_redirect=allow_redirect, method=method, cache_limit=cache_limit)
         if re.search('Please Register or Login', html, re.I):
             log_utils.log('Logging in for url (%s)' % (url), log_utils.LOGDEBUG)
             self.__login()
-            html = self._cached_http_get(url, self.base_url, self.timeout, data=data, headers=headers, allow_redirect=allow_redirect, cache_limit=0)
+            html = self._cached_http_get(url, self.base_url, self.timeout, data=data, headers=headers, allow_redirect=allow_redirect, method=method, cache_limit=0)
         return html
 
     def __login(self):

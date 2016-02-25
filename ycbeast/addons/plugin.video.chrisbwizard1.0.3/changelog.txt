@@ -1,6 +1,0 @@
-v1.0.3
-[Mark Dobson] Added Fresh start option which retains wizard
-
-
-v1.0.2Fixed Script Error when Force Colsing Kodi
-v1.0Initial Release

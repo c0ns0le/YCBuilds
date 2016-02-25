@@ -28,7 +28,7 @@ from salts_lib.constants import VIDEO_TYPES
 import scraper
 
 
-BASE_URL = 'http://tvwatchtvseries.com'
+BASE_URL = 'http://tvserieswatch.net'
 LINK_URL = '/plugins/gkpluginsphp.php'
 
 class TVWTVS_Scraper(scraper.Scraper):
@@ -73,7 +73,7 @@ class TVWTVS_Scraper(scraper.Scraper):
 
     def __get_iframe_links(self, html):
         sources = {}
-        for iframe_url in dom_parser.parse_dom(html, 'iframe', ret='src'):
+        for iframe_url in dom_parser.parse_dom(html, 'iframe', ret='data-lazy-src'):
             html = self._http_get(iframe_url, cache_limit=.25)
             for match in re.finditer('"file"\s*:\s*"([^"]+)"\s*,\s*"label"\s*:\s*"([^"]+)', html, re.DOTALL):
                 stream_url, height = match.groups()
@@ -139,7 +139,7 @@ class TVWTVS_Scraper(scraper.Scraper):
             pages = dom_parser.parse_dom(fragment[0], 'a', ret='href')
         return pages
     
-    def search(self, video_type, title, year):
+    def search(self, video_type, title, year, season=''):
         results = self.__search(title)
         results = [result for result in results if not re.search('-season-\d+$', result['url']) and not re.search('Season\s+\d+$', result['title'])]
         return results
@@ -156,7 +156,7 @@ class TVWTVS_Scraper(scraper.Scraper):
                 match_title = re.sub('\s+\(\d+\)$', '', match_title)
                 match_title = match_title.replace('&amp;', '&')
                 if norm_title in scraper_utils.normalize_title(match_title):
-                    result = {'url': scraper_utils.pathify_url(url), 'title': match_title, 'year': ''}
+                    result = {'url': scraper_utils.pathify_url(url), 'title': scraper_utils.cleanse_title(match_title), 'year': ''}
                     results.append(result)
 
         return results

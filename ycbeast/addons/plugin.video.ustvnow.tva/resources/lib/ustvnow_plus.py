@@ -64,6 +64,7 @@ class Ustvnow:
             Addon.add_directory({'mode': 'recurring'}, Addon.get_string(30006))
         if Addon.get_setting('show_settings_option') == 'true':
             Addon.add_directory({'mode': 'settings'}, Addon.get_string(30002))
+
         if Addon.get_setting('clear_token') == 'true':
             Addon.set_setting('token', '')
             Addon.set_setting('clear_token', 'false')
@@ -88,8 +89,6 @@ class Ustvnow:
         account_type = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['plan_free']
         if account_type == 1 and dvr_check != 'Nittany Plan':
             Addon.set_setting('free_package', 'true')
-            if Addon.get_setting('quality') == '3':
-                Addon.set_setting('quality', '2')
         else:
             Addon.set_setting('free_package', 'false')
         content = self._get_json('gtv/1/live/channelguide', {'token': self.token})
@@ -247,8 +246,6 @@ class Ustvnow:
         account_type = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['plan_free']
         if account_type == 1 and dvr_check != 'Nittany Plan':
             Addon.set_setting('free_package', 'true')
-            if Addon.get_setting('quality') == '3':
-                Addon.set_setting('quality', '2')
         else:
             Addon.set_setting('free_package', 'false')
         content = self._get_json('gtv/1/live/viewdvrlist', {'token': self.token})
@@ -378,8 +375,6 @@ class Ustvnow:
         account_type = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['plan_free']
         if account_type == 1 and dvr_check != 'Nittany Plan':
             Addon.set_setting('free_package', 'true')
-            if Addon.get_setting('quality') == '3':
-                Addon.set_setting('quality', '2')
         else:
             Addon.set_setting('free_package', 'false')
         content = self._get_json('gtv/1/live/upcoming', {'token': self.token})
@@ -543,8 +538,6 @@ class Ustvnow:
         account_type = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['plan_free']
         if account_type == 1 and dvr_check != 'Nittany Plan':
             Addon.set_setting('free_package', 'true')
-            if Addon.get_setting('quality') == '3':
-                Addon.set_setting('quality', '2')
         else:
             Addon.set_setting('free_package', 'false')
         content = self._get_json('gtv/1/live/channelguide', {'token': self.token})
@@ -883,7 +876,6 @@ class Ustvnow:
         except urllib2.URLError, e:
             return False
 
-            
     def _get_json(self, path, queries={}):
         Addon.log('_get_json')
         content = False

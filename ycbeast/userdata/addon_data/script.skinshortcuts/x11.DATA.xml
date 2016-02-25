@@ -43,6 +43,14 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
+		<label>SALTS HD TV</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.saltshd.lite/?section=TV&amp;mode=browse",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
 		<label>Current TV Shows</label>
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>

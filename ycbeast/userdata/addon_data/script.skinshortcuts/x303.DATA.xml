@@ -18,11 +18,11 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>ycbeasttutorial</defaultID>
-		<label>YCBeast Overview</label>
-		<label2>Favourite</label2>
+		<label>[COLOR limegreen][B]All Tutorials [/B][/COLOR]</label>
+		<label2>Custom item</label2>
 		<icon>DefaultFolder.png</icon>
 		<thumb>https://i.ytimg.com/vi/lbO5rFdldV4/hqdefault.jpg</thumb>
-		<action>PlayMedia("plugin://plugin.video.youtube/play/?video_id=JmT-SLvvCV8",return)</action>
+		<action>ActivateWindow(10025,"/sdcard/Android/data/org.xbmc.kodi/files/.kodi/userdata/addon_data/plugin.video.youtubelibrary/Streams/TV/YCBeast Tutorials/",return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID>howtofixurls</defaultID>

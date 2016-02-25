@@ -79,7 +79,7 @@ class IzlemeyeDeger_Scraper(scraper.Scraper):
     def get_url(self, video):
         return self._default_get_url(video)
 
-    def search(self, video_type, title, year):
+    def search(self, video_type, title, year, season=''):
         results = []
         search_url = urlparse.urljoin(self.base_url, '/arama?q=%s')
         search_url = search_url % (urllib.quote_plus(title))
@@ -90,7 +90,7 @@ class IzlemeyeDeger_Scraper(scraper.Scraper):
                 url, match_year, match_title = match.groups('')
                 match_title = match_title.strip()
                 if not year or not match_year or year == match_year:
-                    result = {'url': scraper_utils.pathify_url(url), 'title': match_title, 'year': match_year}
+                    result = {'url': scraper_utils.pathify_url(url), 'title': scraper_utils.cleanse_title(match_title), 'year': match_year}
                     results.append(result)
         
         return results

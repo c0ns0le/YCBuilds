@@ -33,6 +33,9 @@ from xml.etree import ElementTree as ET
 from datetime import date
 from datetime import timedelta
 
+reload(sys)  
+sys.setdefaultencoding('utf8')
+
 addon = xbmcaddon.Addon(id='plugin.video.ustvnow.tva')
 plugin_path = addon.getAddonInfo('path')
 ICON = os.path.join(plugin_path, 'icon.png')
@@ -178,6 +181,7 @@ def parse_query(query, clean=True):
     if clean:
         q['mode'] = q.get('mode', 'main')
         q['play'] = q.get('play', '')
+        q['play_dvr'] = q.get('play_dvr', '')
 
     return q
 

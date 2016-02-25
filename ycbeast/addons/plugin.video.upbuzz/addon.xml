@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.upbuzz" version="0.0.2" name="UpBuzz" provider-name="Mr Entertainment">
+<addon id="plugin.video.upbuzz" version="0.0.4" name="UpBuzz" provider-name="Mr Entertainment">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.t0mm0.common" version="2.1.1"/>
@@ -11,7 +11,7 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>upbuzz [COLOR blue][B]THE ORIGINAL[/B][/COLOR] for all scene releases lovers free on demand streaming with FASTSUB VOSTFR on loads of tv episodes</summary>
-        <description>Play a wide selection of scene release movies and Tv shows from upbuzz</description>
+        <description>Play a wide selection of scene release movies and Tv shows from upbuzz for more info please go to www.entertainmentrepo.com</description>
         <platform>all</platform>
         <disclaimer lang="en"></disclaimer>
     </extension>

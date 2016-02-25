@@ -35,7 +35,8 @@ TOKEN = kodi.get_setting('trakt_oauth_token')
 use_https = kodi.get_setting('use_https') == 'true'
 trakt_timeout = int(kodi.get_setting('trakt_timeout'))
 list_size = int(kodi.get_setting('list_size'))
-trakt_api = Trakt_API(TOKEN, use_https, list_size, trakt_timeout)
+offline = kodi.get_setting('trakt_offline') == 'true'
+trakt_api = Trakt_API(TOKEN, use_https, list_size, trakt_timeout, offline)
 
 # delay db_connection until needed to force db errors during recovery try: block
 def _get_db_connection():
@@ -111,10 +112,13 @@ def update_url(video_type, title, year, source, old_url, new_url, season, episod
     else:
         db_connection.clear_related_url(video_type, title, year, source, season, episode)
 
-    # clear all episode local urls if tvshow url changes
-    if video_type == VIDEO_TYPES.TVSHOW and new_url != old_url:
-        db_connection.clear_related_url(VIDEO_TYPES.EPISODE, title, year, source)
-
+    # clear all episode local urls if tvshow or season url changes
+    if new_url != old_url:
+        if video_type == VIDEO_TYPES.TVSHOW:
+            db_connection.clear_related_url(VIDEO_TYPES.EPISODE, title, year, source)
+        elif video_type == VIDEO_TYPES.SEASON:
+            db_connection.clear_related_url(VIDEO_TYPES.EPISODE, title, year, source, season)
+            
 def make_source_sort_key():
     sso = kodi.get_setting('source_sort_order')
     # migrate sso to kodi setting

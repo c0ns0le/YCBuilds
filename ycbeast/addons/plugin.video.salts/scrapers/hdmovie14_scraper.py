@@ -62,7 +62,7 @@ class Flixanity_Scraper(scraper.Scraper):
                 if iframe_url:
                     url = urlparse.urljoin(self.base_url, iframe_url[0])
                     html = self._http_get(url, cache_limit=.5)
-                    for match in re.finditer('"src"\s*:\s*"([^"]+)[^}]+"res"\s*:\s*([^,]+)', html):
+                    for match in re.finditer('"(?:url|src)"\s*:\s*"([^"]+)[^}]+"res"\s*:\s*([^,]+)', html):
                         stream_url, height = match.groups()
                         host = self._get_direct_hostname(stream_url)
                         if host == 'gvideo':
@@ -78,7 +78,7 @@ class Flixanity_Scraper(scraper.Scraper):
     def get_url(self, video):
         return self._default_get_url(video)
 
-    def search(self, video_type, title, year):
+    def search(self, video_type, title, year, season=''):
         results = []
         search_url = urlparse.urljoin(self.base_url, '/search?key=')
         search_key = title.lower()
@@ -128,7 +128,7 @@ class Flixanity_Scraper(scraper.Scraper):
                             match_year = ''
                         
                         if not year or not match_year or year == match_year:
-                            result = {'title': match_title, 'year': match_year, 'url': scraper_utils.pathify_url(match_url)}
+                            result = {'title': scraper_utils.cleanse_title(match_title), 'year': match_year, 'url': scraper_utils.pathify_url(match_url)}
                             results.append(result)
 
         return results

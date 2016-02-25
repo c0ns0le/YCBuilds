@@ -1,0 +1,7 @@
+<smartplaylist type="tvshows">
+	<name>YCBeast Tutorials</name>
+	<match>one</match>
+	<rule field="path" operator="startswith">
+		<value>/sdcard/Android/data/org.xbmc.kodi/files/.kodi/userdata/addon_data/plugin.video.youtubelibrary/Streams/TV/YCBeast Tutorials/</value>
+	</rule>
+</smartplaylist>

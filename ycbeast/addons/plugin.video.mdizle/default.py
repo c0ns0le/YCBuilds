@@ -15,22 +15,23 @@ icon = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'ico
 fanart = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id , 'fanart.png'))
 metaset = selfAddon.getSetting('enable_meta')
 metaget = metahandlers.MetaData()
-baseurl = 'http://izlemeyedeger.com'
+baseurl = 'http://proxyduck.net/proxy/browse.php?u=http%3A%2F%2Fwww.izlemeyedeger.com%2F'
+baseurl2 = 'http://proxyduck.net'
 net = Net()
 
 
 
 
 def CAT():
-        addDir('[B][COLOR white]Latest Added[/COLOR][/B]',baseurl+'/film-arsivi?genre=&year=&country=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Most Viewed[/COLOR][/B]',baseurl+'/film-arsivi?genre=&year=&country=&sort=view',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Most Liked[/COLOR][/B]',baseurl+'/film-arsivi?genre=&year=&country=&sort=like',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Worst IMDB[/COLOR][/B]',baseurl+'/film-arsivi?genre=&year=&country=&sort=imdb&orderby=ASC',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Top IMDB[/COLOR][/B]',baseurl+'/film-arsivi?genre=&year=&country=&sort=imdb&orderby=DESC',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Country[/COLOR][/B]',baseurl+'/film-arsivi',7,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Search[/COLOR][/B]','url',4,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Genre[/COLOR][/B]',baseurl+'/film-arsivi',5,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Year[/COLOR][/B]',baseurl+'/film-arsivi',6,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Latest Added[/COLOR][/B]',baseurl+'film-arsivi%3Fgenre%3D%26year%3D%26country%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Most Viewed[/COLOR][/B]',baseurl+'film-arsivi%3Fgenre%3D%26year%3D%26country%3D%26sort%3Dview'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Most Liked[/COLOR][/B]',baseurl+'film-arsivi%3Fgenre%3D%26year%3D%26country%3D%26sort%3Dlike'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Worst IMDB[/COLOR][/B]',baseurl+'film-arsivi%3Fgenre%3D%26year%3D%26country%3D%26sort%3Dimdb%26orderby%3DASC'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Top IMDB[/COLOR][/B]',baseurl+'film-arsivi%3Fgenre%3D%26year%3D%26country%3D%26sort%3Dimdb%26orderby%3DDESC'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Country[/COLOR][/B]',baseurl+'film-arsivi'+'&b=4',7,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Search[/COLOR][/B]','url',4,art+'icon2.png'+'&b=4',fanart,'')
+        addDir('[B][COLOR white]Genre[/COLOR][/B]',baseurl+'film-arsivi'+'&b=4',5,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Year[/COLOR][/B]',baseurl+'film-arsivi'+'&b=4',6,art+'icon2.png',fanart,'')
 
 
 
@@ -41,7 +42,7 @@ def INDEX(url):
         all_videos = regex_get_all(str(all_links), '<li>', '</li>')
         items = len(all_videos)
         for a in all_videos:
-                name = regex_from_to(a, 'title">', '                            <').replace("&amp;","&").replace("\\r\\n","").replace("\\n","").replace("                                ","").replace('&#39;',"'").replace('&quot;','"').replace('&#039;',"'")
+                name = regex_from_to(a, 'video-title">', '<').replace('\n','').replace('\r','').replace('\t','').replace('\b','').replace("&amp;","&").replace("\\r\\n","").replace("\\n","").replace('&#39;',"'").replace('&quot;','"').replace('&#039;',"'")
                 name = addon.unescape(name)
                 url = regex_from_to(a, 'href="', '"').replace("&amp;","&")
                 thumb = regex_from_to(a, 'src="', '"')
@@ -49,13 +50,13 @@ def INDEX(url):
                 year = regex_from_to(a, 'year">', '<').replace(' ','').replace("\\r\\n","").replace("\\n","")
                 print year
                 if metaset=='true':
-                        addDir2('[B][COLOR white]%s[/COLOR][/B]' %name,url,3,thumb,items)
+                        addDir2('[B][COLOR white]%s[/COLOR][/B]' %name,baseurl2+url,3,thumb,items)
                 else:
-                        addDir('[B][COLOR white]%s[/COLOR][/B]' %name,url,3,thumb,fanart,'')
+                        addDir('[B][COLOR white]%s[/COLOR][/B]' %name,baseurl2+url,3,thumb,fanart,'')
         try:
                 match = re.compile('<li class=""><a href="(.*?)">(.*?)</a>').findall(link)
                 for url, pn in match:
-                        addDir('[I][B][COLOR red]Page %s >>>[/COLOR][/B][/I]' %pn,url,1,icon,fanart,'')
+                        addDir('[I][B][COLOR red]Page %s >>>[/COLOR][/B][/I]' %pn,baseurl2+url,1,icon,fanart,'')
         except: pass
         setView('movies', 'movie-view')
 
@@ -65,7 +66,7 @@ def INDEX(url):
 def LINK(url):
         link = OPEN_URL(url)
         link = re.findall(r'<if.*?rc="(.*?)" .*?>', link, re.I|re.DOTALL)[0]
-        link = OPEN_URL(link)
+        link = OPEN_URL(baseurl2+link)
         try:
                 url = re.compile('file: "(.*?)"').findall(link)[-1]
         except:
@@ -84,35 +85,34 @@ def SEARCH():
         keyb.doModal()
         if (keyb.isConfirmed()):
                 search = keyb.getText().replace(' ','+')
-                url = baseurl+'/arama?q='+search
+                url = baseurl+'arama?q='+search+'&b=4'
                 INDEX(url)
 
 
 
-
 def GENRE(url):
-        addDir('[B][COLOR white]All[/COLOR][/B]',baseurl+'/film-arsivi?genre=&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Family[/COLOR][/B]',baseurl+'/film-arsivi?genre=28&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Action[/COLOR][/B]',baseurl+'/film-arsivi?genre=20&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Animation[/COLOR][/B]',baseurl+'/film-arsivi?genre=22&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Documentary[/COLOR][/B]',baseurl+'/film-arsivi?genre=26&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Science fiction[/COLOR][/B]',baseurl+'/film-arsivi?genre=35&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Biography[/COLOR][/B]',baseurl+'/film-arsivi?genre=23&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Drama[/COLOR][/B]',baseurl+'/film-arsivi?genre=27&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Fantasy[/COLOR][/B]',baseurl+'/film-arsivi?genre=29&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Thriller[/COLOR][/B]',baseurl+'/film-arsivi?genre=37&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Mystery[/COLOR][/B]',baseurl+'/film-arsivi?genre=33&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Comedy[/COLOR][/B]',baseurl+'/film-arsivi?genre=24&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Horror[/COLOR][/B]',baseurl+'/film-arsivi?genre=31&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Adventure[/COLOR][/B]',baseurl+'/film-arsivi?genre=21&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Musical[/COLOR][/B]',baseurl+'/film-arsivi?genre=32&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Romantic[/COLOR][/B]',baseurl+'/film-arsivi?genre=34&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]War[/COLOR][/B]',baseurl+'/film-arsivi?genre=38&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Sport[/COLOR][/B]',baseurl+'/film-arsivi?genre=36&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Crime[/COLOR][/B]',baseurl+'/film-arsivi?genre=25&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]History[/COLOR][/B]',baseurl+'/film-arsivi?genre=30&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Far East[/COLOR][/B]',baseurl+'/film-arsivi?genre=40&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
-        addDir('[B][COLOR white]Western[/COLOR][/B]',baseurl+'/film-arsivi?genre=39&year=&country=&sort=&orderby=',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]All[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Family[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D28%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Action[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D20%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Animation[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D22%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Documentary[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D26%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Science fiction[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D35%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Biography[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D23%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Drama[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D27%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Fantasy[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D29%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Thriller[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D37%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Mystery[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D33%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Comedy[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D24%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Horror[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D31%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Adventure[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D21%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Musical[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D32%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Romantic[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D34%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]War[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D38%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Sport[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D36%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Crime[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D25%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]History[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D30%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Far East[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D40%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
+        addDir('[B][COLOR white]Western[/COLOR][/B]',baseurl+'/film-arsivi%3Fgenre%3D39%26year%3D%26country%3D%26sort%3D%26orderby%3D'+'&b=4',1,art+'icon2.png',fanart,'')
         xbmcplugin.addSortMethod( handle=int( sys.argv[ 1 ] ), sortMethod=xbmcplugin.SORT_METHOD_VIDEO_TITLE )
 
 
@@ -122,9 +122,10 @@ def COUNTRY(url):
         headers['User-Agent'] = User_Agent
         link = requests.get(url, headers=headers).content
         link = addon.unescape(link)
-        match=re.compile('<a href="http://www.izlemeyedeger.com/film-arsivi\?genre=\&year=\&country=(.*?)\&sort=\&orderby=" class="gender">').findall(link) 
+        match = re.compile('/proxy/browse\.php\?u\=http\%3A\%2F\%2Fwww\.izlemeyedeger\.com\%2Ffilm-arsivi\%3Fgenre\%3D\%26year\%3D\%26country\%3D(.*?)\%26sort\%3D\%26orderby\%3D\&amp;b=4').findall(link)
+        #match=re.compile('<a href="'+baseurl+'/film-arsivi\?genre=\&year=\&country=(.*?)\&sort=\&orderby=" class="gender">').findall(link) 
         for country in match:
-                url = 'http://www.izlemeyedeger.com/film-arsivi?genre=&year=&country='+country+'&sort=&orderby='
+                url = baseurl+'/film-arsivi?genre=&year=&country='+country+'&sort=&orderby='+'&b=4'
                 country = country.replace('Almanya','Germany').replace('Amerika','America').replace('\xc4\xb0ngiltere','Britain').replace('\xc4\xb0ran','Iranian').replace('S\xc4\xb1rbistan','Serbia')
                 country = country.replace('Arjantin','Argentina').replace('Avustralya','Australia').replace('\xc4\xb0rlanda','Ireland').replace('\xc4\xb0spanya','Spain').replace('T\xc3\xbcrkiye','Turkey')
                 country = country.replace('Bel\xc3\xa7ika','Belgium').replace('Birle\xc5\x9fik Arap Emirlikleri','United Arab Emirates').replace('\xc4\xb0sve\xc3\xa7','Swedish').replace('Yeni Zelanda','New Zeland').replace('','')
@@ -136,7 +137,7 @@ def COUNTRY(url):
                 country = country.replace('Hollanda','Netherlands').replace('Rusya','Russia').replace('\xc5\x9eili','Chile').replace('Singapur','Singapore')
                 country = addon.unescape(country)
                 if 'implode' not in url:
-                        addDir('[B][COLOR white]%s[/COLOR][/B]' %country,url,1,art+'icon2.png',fanart,'')
+                        addDir('[B][COLOR white]%s[/COLOR][/B]' %country,baseurl2+url,1,art+'icon2.png',fanart,'')
         xbmcplugin.addSortMethod( handle=int( sys.argv[ 1 ] ), sortMethod=xbmcplugin.SORT_METHOD_VIDEO_TITLE )
 
 
@@ -144,10 +145,11 @@ def COUNTRY(url):
 
 def YEAR(url):
         link = OPEN_URL(url)
-        match=re.compile('<a href="http://www.izlemeyedeger.com/film-arsivi\?genre=\&year=(.*?)\&country=\&sort=\&orderby=" class="gender">').findall(link) 
+        match = re.compile('/proxy/browse\.php\?u\=http\%3A\%2F\%2Fwww\.izlemeyedeger\.com\%2Ffilm-arsivi\%3Fgenre\%3D\%26year\%3D(.*?)\%26country\%3D\%26sort\%3D\%26orderby\%3D\&amp;b=4').findall(link)
         for year in match:
-                url = 'http://www.izlemeyedeger.com/film-arsivi?genre=&year='+year+'&country=&sort=&orderby='
-                addDir('[B][COLOR white]%s[/COLOR][/B]' %year,url,1,art+'icon2.png',fanart,'')
+                if year > '':
+                        url = baseurl+'film-arsivi%3Fgenre%3D%26year%3D'+year+'%26country%3D%26sort%3D%26orderby%3D'+'&b=4'
+                        addDir('[B][COLOR white]%s[/COLOR][/B]' %year,url,1,art+'icon2.png',fanart,'')
 
 
 

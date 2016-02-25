@@ -1,0 +1,7 @@
+[B]Version 1.0.112[/B]
+- Remove movietv.to scraper
+- DD.tv scraper
+- Remove library update popup.
+
+
+

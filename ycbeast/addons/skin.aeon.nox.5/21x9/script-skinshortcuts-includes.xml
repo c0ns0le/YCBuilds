@@ -21,26 +21,11 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUM[2]</property>
-			<label>[COLOR black].[/COLOR] Ares Wizard</label>
-			<label2>Program</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.areswizard%5cicon.png/</thumb>
-			<property name="labelID">script.areswizard</property>
-			<property name="defaultID">script.areswizard</property>
-			<onclick>ActivateWindow(10001,"plugin://script.areswizard",return)</onclick>
-			<property name="path">ActivateWindow(10001,"plugin://script.areswizard",return)</property>
-			<property name="list">plugin://script.areswizard</property>
-			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),x2)</visible>
-			<property name="group">x2</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="3">
-			<property name="id">$NUM[3]</property>
-			<label>$LOCALIZE[20343]</label>
-			<label2 />
+			<label>[COLOR orangered][B]TV Shows[/B][/COLOR]</label>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">tvshows</property>
+			<property name="labelID">colororangered-b-tvshows-b-color</property>
 			<property name="defaultID">tvshows</property>
 			<visible>[Library.HasContent(TVShows)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),x2)</visible>
 			<onclick>ActivateWindow(Videos,TvShows,root)</onclick>
@@ -50,13 +35,13 @@
 			<property name="group">x2</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="4">
-			<property name="id">$NUM[4]</property>
-			<label>$LOCALIZE[24001]</label>
-			<label2 />
+		<item id="3">
+			<property name="id">$NUM[3]</property>
+			<label>[COLOR orangered][B]Add-ons[/B][/COLOR]</label>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">24001</property>
+			<property name="labelID">colororangered-b-add-ons-b-color</property>
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
@@ -65,13 +50,13 @@
 			<property name="group">x2</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="5">
-			<property name="id">$NUM[5]</property>
-			<label>$LOCALIZE[744]</label>
-			<label2 />
+		<item id="4">
+			<property name="id">$NUM[4]</property>
+			<label>[COLOR orangered][B]Files[/B][/COLOR]</label>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">744</property>
+			<property name="labelID">colororangered-b-files-b-color</property>
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(Videos,Files,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Files,return)</property>
@@ -80,13 +65,13 @@
 			<property name="group">x2</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="6">
-			<property name="id">$NUM[6]</property>
-			<label>$LOCALIZE[136]</label>
-			<label2 />
+		<item id="5">
+			<property name="id">$NUM[5]</property>
+			<label>[COLOR orangered][B]Playlists[/B][/COLOR]</label>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">136</property>
+			<property name="labelID">colororangered-b-playlists-b-color</property>
 			<property name="defaultID">136</property>
 			<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Playlists,return)</property>
@@ -95,13 +80,13 @@
 			<property name="group">x2</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUM[7]</property>
-			<label>$LOCALIZE[14022]</label>
-			<label2 />
+		<item id="6">
+			<property name="id">$NUM[6]</property>
+			<label>[COLOR orangered][B]Library[/B][/COLOR]</label>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">14022</property>
+			<property name="labelID">colororangered-b-library-b-color</property>
 			<property name="defaultID">14022</property>
 			<onclick>ActivateWindow(Videos,Root)</onclick>
 			<property name="path">ActivateWindow(Videos,Root)</property>
@@ -281,21 +266,6 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUM[3]</property>
-			<label>[COLOR yellow][B]Tube8[/B][/COLOR]</label>
-			<label2>Custom shortcut</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="labelID">plugin.video.tube8</property>
-			<property name="defaultID" />
-			<onclick>ActivateWindow(10025,"plugin://plugin.video.tube8",return)</onclick>
-			<property name="path">ActivateWindow(10025,"plugin://plugin.video.tube8",return)</property>
-			<property name="list">plugin://plugin.video.tube8</property>
-			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),x4)</visible>
-			<property name="group">x4</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="4">
-			<property name="id">$NUM[4]</property>
 			<label>[COLOR yellow][B]EroticXXX[/B][/COLOR]</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -498,9 +468,9 @@
 			<thumb>special://home/addons\plugin.video.SportsDevil\icon.png</thumb>
 			<property name="labelID">colororange-b-espn-b-color</property>
 			<property name="defaultID">sport</property>
-			<onclick>PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FzmASXYOTuE5y49uWWy4dsQ%2F1456029899%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</onclick>
-			<property name="path">PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FzmASXYOTuE5y49uWWy4dsQ%2F1456029899%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</property>
-			<property name="list">PlayMedia(plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FzmASXYOTuE5y49uWWy4dsQ%2F1456029899%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png,return)</property>
+			<onclick>PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FsH_RwtsPgAbKL4wDypt2DQ%2F1456378128%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</onclick>
+			<property name="path">PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FsH_RwtsPgAbKL4wDypt2DQ%2F1456378128%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</property>
+			<property name="list">PlayMedia(plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FsH_RwtsPgAbKL4wDypt2DQ%2F1456378128%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png,return)</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),x8)</visible>
 			<property name="group">x8</property>
 			<property name="isSubmenu">True</property>
@@ -627,15 +597,15 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUM[3]</property>
-			<label>[COLOR blue][B]SALTS Movies[/B][/COLOR]</label>
-			<label2>Video Add-On</label2>
+			<label>[COLOR blue][B]SALTS HD Movies[/B][/COLOR]</label>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.salts%5cart%5cthemes%5cShine%5cmovies.png/</thumb>
-			<property name="labelID">colorblue-b-saltsmovies-b-color</property>
+			<property name="labelID">colorblue-b-saltshdmovies-b-color</property>
 			<property name="defaultID" />
-			<onclick>ActivateWindow(10025,"plugin://plugin.video.salts/?section=Movies&amp;mode=browse",return)</onclick>
-			<property name="path">ActivateWindow(10025,"plugin://plugin.video.salts/?section=Movies&amp;mode=browse",return)</property>
-			<property name="list">plugin://plugin.video.salts/?section=Movies&amp;mode=browse</property>
+			<onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.saltshd.lite/?section=Movies&amp;mode=browse",return)</onclick>
+			<property name="path">ActivateWindow(VideoLibrary,"plugin://plugin.video.saltshd.lite/?section=Movies&amp;mode=browse",return)</property>
+			<property name="list">plugin://plugin.video.saltshd.lite/?section=Movies&amp;mode=browse</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),x10)</visible>
 			<property name="group">x10</property>
 			<property name="isSubmenu">True</property>
@@ -733,11 +703,11 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUM[4]</property>
-			<label>[COLOR blue][B]Exodus[/B][/COLOR] TV Shows</label>
+			<label>[COLOR blue][B]Exodus TV Shows[/B][/COLOR]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.genesis%5cresources%5cmedia%5cgone%5ctvshows.jpg/</thumb>
-			<property name="labelID">colorblue-b-exodus-b-color-tvshows</property>
+			<property name="labelID">colorblue-b-exodustvshows-b-color</property>
 			<property name="defaultID" />
 			<onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.exodus/?action=tvNavigator",return)</onclick>
 			<property name="path">ActivateWindow(VideoLibrary,"plugin://plugin.video.exodus/?action=tvNavigator",return)</property>
@@ -763,6 +733,21 @@
 		</item>
 		<item id="6">
 			<property name="id">$NUM[6]</property>
+			<label>[COLOR limegreen][B]SALTS HD TV[/B][/COLOR]</label>
+			<label2>Custom item</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">colorlimegreen-b-saltshdtv-b-color</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.saltshd.lite/?section=TV&amp;mode=browse",return)</onclick>
+			<property name="path">ActivateWindow(VideoLibrary,"plugin://plugin.video.saltshd.lite/?section=TV&amp;mode=browse",return)</property>
+			<property name="list">plugin://plugin.video.saltshd.lite/?section=TV&amp;mode=browse</property>
+			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),x11)</visible>
+			<property name="group">x11</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="7">
+			<property name="id">$NUM[7]</property>
 			<label>Current TV Shows</label>
 			<label2>Video Add-On</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -776,8 +761,8 @@
 			<property name="group">x11</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUM[7]</property>
+		<item id="8">
+			<property name="id">$NUM[8]</property>
 			<label>TNPB Tv shows</label>
 			<label2>Video Add-On</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -791,8 +776,8 @@
 			<property name="group">x11</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="8">
-			<property name="id">$NUM[8]</property>
+		<item id="9">
+			<property name="id">$NUM[9]</property>
 			<label>ShowTimeTV</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -806,8 +791,8 @@
 			<property name="group">x11</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="9">
-			<property name="id">$NUM[9]</property>
+		<item id="10">
+			<property name="id">$NUM[10]</property>
 			<label>1 Channel TV shows</label>
 			<label2>Video Add-On</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -821,8 +806,8 @@
 			<property name="group">x11</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="10">
-			<property name="id">$NUM[10]</property>
+		<item id="11">
+			<property name="id">$NUM[11]</property>
 			<label>Watch4Free</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -836,8 +821,8 @@
 			<property name="group">x11</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUM[11]</property>
+		<item id="12">
+			<property name="id">$NUM[12]</property>
 			<label>Classic TV Shows</label>
 			<label2>Video Add-On</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -900,13 +885,13 @@
 		<item id="4">
 			<property name="id">$NUM[4]</property>
 			<label>[COLOR blue][B]cCloud TV[/B][/COLOR]</label>
-			<label2>Video Add-On</label2>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ccloudtv%5cicon.png/</thumb>
 			<property name="labelID">plugin.video.ccloudtv</property>
 			<property name="defaultID">plugin.video.ccloudtv</property>
-			<onclick>ActivateWindow(10025,"plugin://plugin.video.ccloudtv",return)</onclick>
-			<property name="path">ActivateWindow(10025,"plugin://plugin.video.ccloudtv",return)</property>
+			<onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.ccloudtv",return)</onclick>
+			<property name="path">ActivateWindow(VideoLibrary,"plugin://plugin.video.ccloudtv",return)</property>
 			<property name="list">plugin://plugin.video.ccloudtv</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),x12)</visible>
 			<property name="group">x12</property>
@@ -914,21 +899,6 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUM[5]</property>
-			<label>Live TV</label>
-			<label2>Video Add-On</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.SportsDevil%5cresources%5cimages%5cfolder.png/</thumb>
-			<property name="labelID">livetv</property>
-			<property name="defaultID" />
-			<onclick>ActivateWindow(10025,"plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BTV%26url%3Dcustoms.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BTV%26type%3Drss%26icon%3D",return)</onclick>
-			<property name="path">ActivateWindow(10025,"plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BTV%26url%3Dcustoms.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BTV%26type%3Drss%26icon%3D",return)</property>
-			<property name="list">plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BTV%26url%3Dcustoms.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BTV%26type%3Drss%26icon%3D</property>
-			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),x12)</visible>
-			<property name="group">x12</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="6">
-			<property name="id">$NUM[6]</property>
 			<label>USTV Now</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -942,8 +912,8 @@
 			<property name="group">x12</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUM[7]</property>
+		<item id="6">
+			<property name="id">$NUM[6]</property>
 			<label>$LOCALIZE[19023]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -958,8 +928,8 @@
 			<property name="group">x12</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="8">
-			<property name="id">$NUM[8]</property>
+		<item id="7">
+			<property name="id">$NUM[7]</property>
 			<label>$LOCALIZE[19069]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -971,6 +941,21 @@
 			<property name="path">ActivateWindow(TVGuide)</property>
 			<property name="list">TVGuide</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x12</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="8">
+			<property name="id">$NUM[8]</property>
+			<label>Live TV</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.SportsDevil%5cresources%5cimages%5cfolder.png/</thumb>
+			<property name="labelID">livetv</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BTV%26url%3Dcustoms.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BTV%26type%3Drss%26icon%3D",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BTV%26url%3Dcustoms.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BTV%26type%3Drss%26icon%3D",return)</property>
+			<property name="list">plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BTV%26url%3Dcustoms.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BTV%26type%3Drss%26icon%3D</property>
+			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),x12)</visible>
 			<property name="group">x12</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1113,15 +1098,15 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUM[3]</property>
-			<label>Pandora</label>
-			<label2>Custom shortcut</label2>
+			<label>Hulu</label>
+			<label2>Custom item</label2>
 			<icon>DefaultFolder.png</icon>
 			<thumb>http://buskerbrownes.com/wp-content/uploads/2013/06/img1.jpg</thumb>
-			<property name="labelID">script.program.FTVpandora</property>
+			<property name="labelID">hulu</property>
 			<property name="defaultID">livegames</property>
-			<onclick>RunAddOn(script.program.FTVpandora)</onclick>
-			<property name="path">RunAddOn(script.program.FTVpandora)</property>
-			<property name="list">RunAddOn(script.program.FTVpandora)</property>
+			<onclick>ActivateWindow(Videos,addons://sources/video/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,addons://sources/video/,return)</property>
+			<property name="list">addons://sources/video/</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),x101)</visible>
 			<property name="group">x101</property>
 			<property name="isSubmenu">True</property>
@@ -1149,9 +1134,9 @@
 			<thumb />
 			<property name="labelID">espn-sports</property>
 			<property name="defaultID" />
-			<onclick>PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FzmASXYOTuE5y49uWWy4dsQ%2F1456029899%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</onclick>
-			<property name="path">PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FzmASXYOTuE5y49uWWy4dsQ%2F1456029899%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</property>
-			<property name="list">PlayMedia(plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FzmASXYOTuE5y49uWWy4dsQ%2F1456029899%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png,return)</property>
+			<onclick>PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FsH_RwtsPgAbKL4wDypt2DQ%2F1456378128%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</onclick>
+			<property name="path">PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FsH_RwtsPgAbKL4wDypt2DQ%2F1456378128%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</property>
+			<property name="list">PlayMedia(plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FsH_RwtsPgAbKL4wDypt2DQ%2F1456378128%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png,return)</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),x202)</visible>
 			<property name="group">x202</property>
 			<property name="isSubmenu">True</property>
@@ -1173,15 +1158,15 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUM[4]</property>
-			<label>ESPN2</label>
+			<label>VS VersusTV</label>
 			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">espn2</property>
+			<property name="labelID">vsversustv</property>
 			<property name="defaultID" />
-			<onclick>PlayMedia("plugin://plugin.video.castaway/?url=http%3A%2F%2Fwww.streamlive.to%2Fview%2F73070%2FESPN_2&amp;play=True&amp;mode=play&amp;img=http%3A%2F%2Fsnapshots.streamlive.to%2Fsnapshots%2Flclmw3k9o934118_snapshot.jpg&amp;title=ESPN+2",return)</onclick>
-			<property name="path">PlayMedia("plugin://plugin.video.castaway/?url=http%3A%2F%2Fwww.streamlive.to%2Fview%2F73070%2FESPN_2&amp;play=True&amp;mode=play&amp;img=http%3A%2F%2Fsnapshots.streamlive.to%2Fsnapshots%2Flclmw3k9o934118_snapshot.jpg&amp;title=ESPN+2",return)</property>
-			<property name="list">PlayMedia(plugin://plugin.video.castaway/?url=http%3A%2F%2Fwww.streamlive.to%2Fview%2F73070%2FESPN_2&amp;play=True&amp;mode=play&amp;img=http%3A%2F%2Fsnapshots.streamlive.to%2Fsnapshots%2Flclmw3k9o934118_snapshot.jpg&amp;title=ESPN+2,return)</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.program.super.favourites/?label=VS%20Versus%20Channel&amp;mode=600&amp;cmd=PlayMedia%28%22plugin%3A%2F%2Fplugin.video.ukturk%2F%3Furl%3Dhttp%253A%252F%252F208.92.36.158%252Fipad%252Flive%252Fnba_ipad_1240.m3u8%26mode%3D3%26name%3DVS%2BVersus%2BChannel%26iconimage%3Dhttps%253A%252F%252Fnbcprohockeytalk.files.wordpress.com%252F2010%252F11%252Fversus_logo.jpg%26description%3DBL%26sf_options%3Dfanart%253Dspecial%253A%252F%252Fhome%252Faddons%252Fplugin.video.ukturk%252Ffanart.jpg%2526winID%253D10025%2526_options_sf%22%29&amp;image=https%3A%2F%2Fnbcprohockeytalk.files.wordpress.com%2F2010%2F11%2Fversus_logo.jpg&amp;fanart=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.ukturk%2Ffanart.jpg&amp;content_type=&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%2Fplugin.video.ukturk%2Ffanart.jpg%26_options_sf",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.program.super.favourites/?label=VS%20Versus%20Channel&amp;mode=600&amp;cmd=PlayMedia%28%22plugin%3A%2F%2Fplugin.video.ukturk%2F%3Furl%3Dhttp%253A%252F%252F208.92.36.158%252Fipad%252Flive%252Fnba_ipad_1240.m3u8%26mode%3D3%26name%3DVS%2BVersus%2BChannel%26iconimage%3Dhttps%253A%252F%252Fnbcprohockeytalk.files.wordpress.com%252F2010%252F11%252Fversus_logo.jpg%26description%3DBL%26sf_options%3Dfanart%253Dspecial%253A%252F%252Fhome%252Faddons%252Fplugin.video.ukturk%252Ffanart.jpg%2526winID%253D10025%2526_options_sf%22%29&amp;image=https%3A%2F%2Fnbcprohockeytalk.files.wordpress.com%2F2010%2F11%2Fversus_logo.jpg&amp;fanart=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.ukturk%2Ffanart.jpg&amp;content_type=&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%2Fplugin.video.ukturk%2Ffanart.jpg%26_options_sf",return)</property>
+			<property name="list">plugin://plugin.program.super.favourites/?label=VS%20Versus%20Channel&amp;mode=600&amp;cmd=PlayMedia%28%22plugin%3A%2F%2Fplugin.video.ukturk%2F%3Furl%3Dhttp%253A%252F%252F208.92.36.158%252Fipad%252Flive%252Fnba_ipad_1240.m3u8%26mode%3D3%26name%3DVS%2BVersus%2BChannel%26iconimage%3Dhttps%253A%252F%252Fnbcprohockeytalk.files.wordpress.com%252F2010%252F11%252Fversus_logo.jpg%26description%3DBL%26sf_options%3Dfanart%253Dspecial%253A%252F%252Fhome%252Faddons%252Fplugin.video.ukturk%252Ffanart.jpg%2526winID%253D10025%2526_options_sf%22%29&amp;image=https%3A%2F%2Fnbcprohockeytalk.files.wordpress.com%2F2010%2F11%2Fversus_logo.jpg&amp;fanart=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.ukturk%2Ffanart.jpg&amp;content_type=&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%2Fplugin.video.ukturk%2Ffanart.jpg%26_options_sf</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),x202)</visible>
 			<property name="group">x202</property>
 			<property name="isSubmenu">True</property>
@@ -1308,15 +1293,15 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUM[3]</property>
-			<label>YCBeast Overview</label>
+			<label>[COLOR limegreen][B]ALL TUTORIALS[/B][/COLOR]</label>
 			<label2>Favourite</label2>
 			<icon>DefaultFolder.png</icon>
 			<thumb>https://i.ytimg.com/vi/lbO5rFdldV4/hqdefault.jpg</thumb>
-			<property name="labelID">ycbeastoverview</property>
+			<property name="labelID">colorlimegreen-b-alltutorials-b-color</property>
 			<property name="defaultID">ycbeasttutorial</property>
-			<onclick>PlayMedia("plugin://plugin.video.youtube/play/?video_id=JmT-SLvvCV8",return)</onclick>
-			<property name="path">PlayMedia("plugin://plugin.video.youtube/play/?video_id=JmT-SLvvCV8",return)</property>
-			<property name="list">PlayMedia(plugin://plugin.video.youtube/play/?video_id=JmT-SLvvCV8,return)</property>
+			<onclick>PlayMedia("plugin.video.youtubelibrary/Streams/TV/YCBeast Tutorials?sf_options=fanart%3D%2Fsdcard%2FAndroid%2Fdata%2Forg.xbmc.kodi%2Ffiles%2F.kodi%2Fuserdata%2Faddon_data%2Fplugin.video.youtubelibrary%2FStreams%2FTV%2FYCBeast+Tutorials%2Ffanart.jpg%26desc%3DOverviews%2C+tutorials%2C+sneak+peaks+and+releases+of+my+YCBeast+Build+for+Kodi%2FXBMC.+Which+I+load+on+all+FireSticks%2C+FireTVs+and+Android+Boxes.+It%27s+Fully+Loaded+and+only+getting+better%21%21%26_options_sf",return)</onclick>
+			<property name="path">PlayMedia("plugin.video.youtubelibrary/Streams/TV/YCBeast Tutorials?sf_options=fanart%3D%2Fsdcard%2FAndroid%2Fdata%2Forg.xbmc.kodi%2Ffiles%2F.kodi%2Fuserdata%2Faddon_data%2Fplugin.video.youtubelibrary%2FStreams%2FTV%2FYCBeast+Tutorials%2Ffanart.jpg%26desc%3DOverviews%2C+tutorials%2C+sneak+peaks+and+releases+of+my+YCBeast+Build+for+Kodi%2FXBMC.+Which+I+load+on+all+FireSticks%2C+FireTVs+and+Android+Boxes.+It%27s+Fully+Loaded+and+only+getting+better%21%21%26_options_sf",return)</property>
+			<property name="list">PlayMedia(plugin.video.youtubelibrary/Streams/TV/YCBeast Tutorials?sf_options=fanart%3D%2Fsdcard%2FAndroid%2Fdata%2Forg.xbmc.kodi%2Ffiles%2F.kodi%2Fuserdata%2Faddon_data%2Fplugin.video.youtubelibrary%2FStreams%2FTV%2FYCBeast+Tutorials%2Ffanart.jpg%26desc%3DOverviews%2C+tutorials%2C+sneak+peaks+and+releases+of+my+YCBeast+Build+for+Kodi%2FXBMC.+Which+I+load+on+all+FireSticks%2C+FireTVs+and+Android+Boxes.+It%27s+Fully+Loaded+and+only+getting+better%21%21%26_options_sf,return)</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),x303)</visible>
 			<property name="group">x303</property>
 			<property name="isSubmenu">True</property>
@@ -1398,15 +1383,15 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUM[4]</property>
-			<label>YCRepo</label>
+			<label>Delete Cache</label>
 			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">plugin.program.fsycbeast</property>
+			<property name="labelID">deletecache</property>
 			<property name="defaultID" />
-			<onclick>ActivateWindow(Programs,"plugin://plugin.program.fsycbeast",return)</onclick>
-			<property name="path">ActivateWindow(Programs,"plugin://plugin.program.fsycbeast",return)</property>
-			<property name="list">plugin://plugin.program.fsycbeast</property>
+			<onclick>PlayMedia("plugin://plugin.video.mdwizard/?url=url&amp;mode=14&amp;name=DELETE+CACHE&amp;iconimage=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cresources%5Cart%5CMAINTENANCE.png&amp;fanart=&amp;description=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cfanart.jpg&amp;sf_options=winID%3D10001%26_options_sf",return)</onclick>
+			<property name="path">PlayMedia("plugin://plugin.video.mdwizard/?url=url&amp;mode=14&amp;name=DELETE+CACHE&amp;iconimage=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cresources%5Cart%5CMAINTENANCE.png&amp;fanart=&amp;description=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cfanart.jpg&amp;sf_options=winID%3D10001%26_options_sf",return)</property>
+			<property name="list">PlayMedia(plugin://plugin.video.mdwizard/?url=url&amp;mode=14&amp;name=DELETE+CACHE&amp;iconimage=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cresources%5Cart%5CMAINTENANCE.png&amp;fanart=&amp;description=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cfanart.jpg&amp;sf_options=winID%3D10001%26_options_sf,return)</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Container(9000).ListItem.Property(submenuVisibility),x404)</visible>
 			<property name="group">x404</property>
 			<property name="isSubmenu">True</property>
@@ -1613,26 +1598,11 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUM[2]</property>
-			<label>[COLOR black].[/COLOR] Ares Wizard</label>
-			<label2>Program</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.areswizard%5cicon.png/</thumb>
-			<property name="labelID">script.areswizard</property>
-			<property name="defaultID">script.areswizard</property>
-			<onclick>ActivateWindow(10001,"plugin://script.areswizard",return)</onclick>
-			<property name="path">ActivateWindow(10001,"plugin://script.areswizard",return)</property>
-			<property name="list">plugin://script.areswizard</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">x2</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="3">
-			<property name="id">$NUM[3]</property>
-			<label>$LOCALIZE[20343]</label>
-			<label2 />
+			<label>[COLOR orangered][B]TV Shows[/B][/COLOR]</label>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">tvshows</property>
+			<property name="labelID">colororangered-b-tvshows-b-color</property>
 			<property name="defaultID">tvshows</property>
 			<visible>Library.HasContent(TVShows)</visible>
 			<onclick>ActivateWindow(Videos,TvShows,root)</onclick>
@@ -1642,13 +1612,13 @@
 			<property name="group">x2</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="4">
-			<property name="id">$NUM[4]</property>
-			<label>$LOCALIZE[24001]</label>
-			<label2 />
+		<item id="3">
+			<property name="id">$NUM[3]</property>
+			<label>[COLOR orangered][B]Add-ons[/B][/COLOR]</label>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">24001</property>
+			<property name="labelID">colororangered-b-add-ons-b-color</property>
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
@@ -1657,13 +1627,13 @@
 			<property name="group">x2</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="5">
-			<property name="id">$NUM[5]</property>
-			<label>$LOCALIZE[744]</label>
-			<label2 />
+		<item id="4">
+			<property name="id">$NUM[4]</property>
+			<label>[COLOR orangered][B]Files[/B][/COLOR]</label>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">744</property>
+			<property name="labelID">colororangered-b-files-b-color</property>
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(Videos,Files,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Files,return)</property>
@@ -1672,13 +1642,13 @@
 			<property name="group">x2</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="6">
-			<property name="id">$NUM[6]</property>
-			<label>$LOCALIZE[136]</label>
-			<label2 />
+		<item id="5">
+			<property name="id">$NUM[5]</property>
+			<label>[COLOR orangered][B]Playlists[/B][/COLOR]</label>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">136</property>
+			<property name="labelID">colororangered-b-playlists-b-color</property>
 			<property name="defaultID">136</property>
 			<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Playlists,return)</property>
@@ -1687,13 +1657,13 @@
 			<property name="group">x2</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUM[7]</property>
-			<label>$LOCALIZE[14022]</label>
-			<label2 />
+		<item id="6">
+			<property name="id">$NUM[6]</property>
+			<label>[COLOR orangered][B]Library[/B][/COLOR]</label>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">14022</property>
+			<property name="labelID">colororangered-b-library-b-color</property>
 			<property name="defaultID">14022</property>
 			<onclick>ActivateWindow(Videos,Root)</onclick>
 			<property name="path">ActivateWindow(Videos,Root)</property>
@@ -1722,26 +1692,11 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUM[2]</property>
-			<label>[COLOR black].[/COLOR] Ares Wizard</label>
-			<label2>Program</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.areswizard%5cicon.png/</thumb>
-			<property name="labelID">script.areswizard</property>
-			<property name="defaultID">script.areswizard</property>
-			<onclick>ActivateWindow(10001,"plugin://script.areswizard",return)</onclick>
-			<property name="path">ActivateWindow(10001,"plugin://script.areswizard",return)</property>
-			<property name="list">plugin://script.areswizard</property>
-			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),x2)</visible>
-			<property name="group">x2</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="3">
-			<property name="id">$NUM[3]</property>
-			<label>$LOCALIZE[20343]</label>
-			<label2 />
+			<label>[COLOR orangered][B]TV Shows[/B][/COLOR]</label>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">tvshows</property>
+			<property name="labelID">colororangered-b-tvshows-b-color</property>
 			<property name="defaultID">tvshows</property>
 			<visible>[Library.HasContent(TVShows)] + StringCompare(Window(10000).Property(submenuVisibility),x2)</visible>
 			<onclick>ActivateWindow(Videos,TvShows,root)</onclick>
@@ -1751,13 +1706,13 @@
 			<property name="group">x2</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="4">
-			<property name="id">$NUM[4]</property>
-			<label>$LOCALIZE[24001]</label>
-			<label2 />
+		<item id="3">
+			<property name="id">$NUM[3]</property>
+			<label>[COLOR orangered][B]Add-ons[/B][/COLOR]</label>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">24001</property>
+			<property name="labelID">colororangered-b-add-ons-b-color</property>
 			<property name="defaultID">24001</property>
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Addons,return)</property>
@@ -1766,13 +1721,13 @@
 			<property name="group">x2</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="5">
-			<property name="id">$NUM[5]</property>
-			<label>$LOCALIZE[744]</label>
-			<label2 />
+		<item id="4">
+			<property name="id">$NUM[4]</property>
+			<label>[COLOR orangered][B]Files[/B][/COLOR]</label>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">744</property>
+			<property name="labelID">colororangered-b-files-b-color</property>
 			<property name="defaultID">744</property>
 			<onclick>ActivateWindow(Videos,Files,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Files,return)</property>
@@ -1781,13 +1736,13 @@
 			<property name="group">x2</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="6">
-			<property name="id">$NUM[6]</property>
-			<label>$LOCALIZE[136]</label>
-			<label2 />
+		<item id="5">
+			<property name="id">$NUM[5]</property>
+			<label>[COLOR orangered][B]Playlists[/B][/COLOR]</label>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">136</property>
+			<property name="labelID">colororangered-b-playlists-b-color</property>
 			<property name="defaultID">136</property>
 			<onclick>ActivateWindow(Videos,Playlists,return)</onclick>
 			<property name="path">ActivateWindow(Videos,Playlists,return)</property>
@@ -1796,13 +1751,13 @@
 			<property name="group">x2</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUM[7]</property>
-			<label>$LOCALIZE[14022]</label>
-			<label2 />
+		<item id="6">
+			<property name="id">$NUM[6]</property>
+			<label>[COLOR orangered][B]Library[/B][/COLOR]</label>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">14022</property>
+			<property name="labelID">colororangered-b-library-b-color</property>
 			<property name="defaultID">14022</property>
 			<onclick>ActivateWindow(Videos,Root)</onclick>
 			<property name="path">ActivateWindow(Videos,Root)</property>
@@ -2127,21 +2082,6 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUM[3]</property>
-			<label>[COLOR yellow][B]Tube8[/B][/COLOR]</label>
-			<label2>Custom shortcut</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="labelID">plugin.video.tube8</property>
-			<property name="defaultID" />
-			<onclick>ActivateWindow(10025,"plugin://plugin.video.tube8",return)</onclick>
-			<property name="path">ActivateWindow(10025,"plugin://plugin.video.tube8",return)</property>
-			<property name="list">plugin://plugin.video.tube8</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">x4</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="4">
-			<property name="id">$NUM[4]</property>
 			<label>[COLOR yellow][B]EroticXXX[/B][/COLOR]</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -2189,21 +2129,6 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUM[3]</property>
-			<label>[COLOR yellow][B]Tube8[/B][/COLOR]</label>
-			<label2>Custom shortcut</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="labelID">plugin.video.tube8</property>
-			<property name="defaultID" />
-			<onclick>ActivateWindow(10025,"plugin://plugin.video.tube8",return)</onclick>
-			<property name="path">ActivateWindow(10025,"plugin://plugin.video.tube8",return)</property>
-			<property name="list">plugin://plugin.video.tube8</property>
-			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),x4)</visible>
-			<property name="group">x4</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="4">
-			<property name="id">$NUM[4]</property>
 			<label>[COLOR yellow][B]EroticXXX[/B][/COLOR]</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -2586,9 +2511,9 @@
 			<thumb>special://home/addons\plugin.video.SportsDevil\icon.png</thumb>
 			<property name="labelID">colororange-b-espn-b-color</property>
 			<property name="defaultID">sport</property>
-			<onclick>PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FzmASXYOTuE5y49uWWy4dsQ%2F1456029899%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</onclick>
-			<property name="path">PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FzmASXYOTuE5y49uWWy4dsQ%2F1456029899%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</property>
-			<property name="list">PlayMedia(plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FzmASXYOTuE5y49uWWy4dsQ%2F1456029899%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png,return)</property>
+			<onclick>PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FsH_RwtsPgAbKL4wDypt2DQ%2F1456378128%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</onclick>
+			<property name="path">PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FsH_RwtsPgAbKL4wDypt2DQ%2F1456378128%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</property>
+			<property name="list">PlayMedia(plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FsH_RwtsPgAbKL4wDypt2DQ%2F1456378128%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">x8</property>
 			<property name="isSubmenu">True</property>
@@ -2708,9 +2633,9 @@
 			<thumb>special://home/addons\plugin.video.SportsDevil\icon.png</thumb>
 			<property name="labelID">colororange-b-espn-b-color</property>
 			<property name="defaultID">sport</property>
-			<onclick>PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FzmASXYOTuE5y49uWWy4dsQ%2F1456029899%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</onclick>
-			<property name="path">PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FzmASXYOTuE5y49uWWy4dsQ%2F1456029899%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</property>
-			<property name="list">PlayMedia(plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FzmASXYOTuE5y49uWWy4dsQ%2F1456029899%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png,return)</property>
+			<onclick>PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FsH_RwtsPgAbKL4wDypt2DQ%2F1456378128%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</onclick>
+			<property name="path">PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FsH_RwtsPgAbKL4wDypt2DQ%2F1456378128%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</property>
+			<property name="list">PlayMedia(plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FsH_RwtsPgAbKL4wDypt2DQ%2F1456378128%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png,return)</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),x8)</visible>
 			<property name="group">x8</property>
 			<property name="isSubmenu">True</property>
@@ -2841,15 +2766,15 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUM[3]</property>
-			<label>[COLOR blue][B]SALTS Movies[/B][/COLOR]</label>
-			<label2>Video Add-On</label2>
+			<label>[COLOR blue][B]SALTS HD Movies[/B][/COLOR]</label>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.salts%5cart%5cthemes%5cShine%5cmovies.png/</thumb>
-			<property name="labelID">colorblue-b-saltsmovies-b-color</property>
+			<property name="labelID">colorblue-b-saltshdmovies-b-color</property>
 			<property name="defaultID" />
-			<onclick>ActivateWindow(10025,"plugin://plugin.video.salts/?section=Movies&amp;mode=browse",return)</onclick>
-			<property name="path">ActivateWindow(10025,"plugin://plugin.video.salts/?section=Movies&amp;mode=browse",return)</property>
-			<property name="list">plugin://plugin.video.salts/?section=Movies&amp;mode=browse</property>
+			<onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.saltshd.lite/?section=Movies&amp;mode=browse",return)</onclick>
+			<property name="path">ActivateWindow(VideoLibrary,"plugin://plugin.video.saltshd.lite/?section=Movies&amp;mode=browse",return)</property>
+			<property name="list">plugin://plugin.video.saltshd.lite/?section=Movies&amp;mode=browse</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">x10</property>
 			<property name="isSubmenu">True</property>
@@ -2933,15 +2858,15 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUM[3]</property>
-			<label>[COLOR blue][B]SALTS Movies[/B][/COLOR]</label>
-			<label2>Video Add-On</label2>
+			<label>[COLOR blue][B]SALTS HD Movies[/B][/COLOR]</label>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.salts%5cart%5cthemes%5cShine%5cmovies.png/</thumb>
-			<property name="labelID">colorblue-b-saltsmovies-b-color</property>
+			<property name="labelID">colorblue-b-saltshdmovies-b-color</property>
 			<property name="defaultID" />
-			<onclick>ActivateWindow(10025,"plugin://plugin.video.salts/?section=Movies&amp;mode=browse",return)</onclick>
-			<property name="path">ActivateWindow(10025,"plugin://plugin.video.salts/?section=Movies&amp;mode=browse",return)</property>
-			<property name="list">plugin://plugin.video.salts/?section=Movies&amp;mode=browse</property>
+			<onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.saltshd.lite/?section=Movies&amp;mode=browse",return)</onclick>
+			<property name="path">ActivateWindow(VideoLibrary,"plugin://plugin.video.saltshd.lite/?section=Movies&amp;mode=browse",return)</property>
+			<property name="list">plugin://plugin.video.saltshd.lite/?section=Movies&amp;mode=browse</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),x10)</visible>
 			<property name="group">x10</property>
 			<property name="isSubmenu">True</property>
@@ -3041,11 +2966,11 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUM[4]</property>
-			<label>[COLOR blue][B]Exodus[/B][/COLOR] TV Shows</label>
+			<label>[COLOR blue][B]Exodus TV Shows[/B][/COLOR]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.genesis%5cresources%5cmedia%5cgone%5ctvshows.jpg/</thumb>
-			<property name="labelID">colorblue-b-exodus-b-color-tvshows</property>
+			<property name="labelID">colorblue-b-exodustvshows-b-color</property>
 			<property name="defaultID" />
 			<onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.exodus/?action=tvNavigator",return)</onclick>
 			<property name="path">ActivateWindow(VideoLibrary,"plugin://plugin.video.exodus/?action=tvNavigator",return)</property>
@@ -3071,6 +2996,21 @@
 		</item>
 		<item id="6">
 			<property name="id">$NUM[6]</property>
+			<label>[COLOR limegreen][B]SALTS HD TV[/B][/COLOR]</label>
+			<label2>Custom item</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">colorlimegreen-b-saltshdtv-b-color</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.saltshd.lite/?section=TV&amp;mode=browse",return)</onclick>
+			<property name="path">ActivateWindow(VideoLibrary,"plugin://plugin.video.saltshd.lite/?section=TV&amp;mode=browse",return)</property>
+			<property name="list">plugin://plugin.video.saltshd.lite/?section=TV&amp;mode=browse</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x11</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="7">
+			<property name="id">$NUM[7]</property>
 			<label>Current TV Shows</label>
 			<label2>Video Add-On</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3084,8 +3024,8 @@
 			<property name="group">x11</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUM[7]</property>
+		<item id="8">
+			<property name="id">$NUM[8]</property>
 			<label>TNPB Tv shows</label>
 			<label2>Video Add-On</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3099,8 +3039,8 @@
 			<property name="group">x11</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="8">
-			<property name="id">$NUM[8]</property>
+		<item id="9">
+			<property name="id">$NUM[9]</property>
 			<label>ShowTimeTV</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3114,8 +3054,8 @@
 			<property name="group">x11</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="9">
-			<property name="id">$NUM[9]</property>
+		<item id="10">
+			<property name="id">$NUM[10]</property>
 			<label>1 Channel TV shows</label>
 			<label2>Video Add-On</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3129,8 +3069,8 @@
 			<property name="group">x11</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="10">
-			<property name="id">$NUM[10]</property>
+		<item id="11">
+			<property name="id">$NUM[11]</property>
 			<label>Watch4Free</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3144,8 +3084,8 @@
 			<property name="group">x11</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUM[11]</property>
+		<item id="12">
+			<property name="id">$NUM[12]</property>
 			<label>Classic TV Shows</label>
 			<label2>Video Add-On</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3209,11 +3149,11 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUM[4]</property>
-			<label>[COLOR blue][B]Exodus[/B][/COLOR] TV Shows</label>
+			<label>[COLOR blue][B]Exodus TV Shows[/B][/COLOR]</label>
 			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.genesis%5cresources%5cmedia%5cgone%5ctvshows.jpg/</thumb>
-			<property name="labelID">colorblue-b-exodus-b-color-tvshows</property>
+			<property name="labelID">colorblue-b-exodustvshows-b-color</property>
 			<property name="defaultID" />
 			<onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.exodus/?action=tvNavigator",return)</onclick>
 			<property name="path">ActivateWindow(VideoLibrary,"plugin://plugin.video.exodus/?action=tvNavigator",return)</property>
@@ -3239,6 +3179,21 @@
 		</item>
 		<item id="6">
 			<property name="id">$NUM[6]</property>
+			<label>[COLOR limegreen][B]SALTS HD TV[/B][/COLOR]</label>
+			<label2>Custom item</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">colorlimegreen-b-saltshdtv-b-color</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.saltshd.lite/?section=TV&amp;mode=browse",return)</onclick>
+			<property name="path">ActivateWindow(VideoLibrary,"plugin://plugin.video.saltshd.lite/?section=TV&amp;mode=browse",return)</property>
+			<property name="list">plugin://plugin.video.saltshd.lite/?section=TV&amp;mode=browse</property>
+			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),x11)</visible>
+			<property name="group">x11</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="7">
+			<property name="id">$NUM[7]</property>
 			<label>Current TV Shows</label>
 			<label2>Video Add-On</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3252,8 +3207,8 @@
 			<property name="group">x11</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUM[7]</property>
+		<item id="8">
+			<property name="id">$NUM[8]</property>
 			<label>TNPB Tv shows</label>
 			<label2>Video Add-On</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3267,8 +3222,8 @@
 			<property name="group">x11</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="8">
-			<property name="id">$NUM[8]</property>
+		<item id="9">
+			<property name="id">$NUM[9]</property>
 			<label>ShowTimeTV</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3282,8 +3237,8 @@
 			<property name="group">x11</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="9">
-			<property name="id">$NUM[9]</property>
+		<item id="10">
+			<property name="id">$NUM[10]</property>
 			<label>1 Channel TV shows</label>
 			<label2>Video Add-On</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3297,8 +3252,8 @@
 			<property name="group">x11</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="10">
-			<property name="id">$NUM[10]</property>
+		<item id="11">
+			<property name="id">$NUM[11]</property>
 			<label>Watch4Free</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3312,8 +3267,8 @@
 			<property name="group">x11</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUM[11]</property>
+		<item id="12">
+			<property name="id">$NUM[12]</property>
 			<label>Classic TV Shows</label>
 			<label2>Video Add-On</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3378,13 +3333,13 @@
 		<item id="4">
 			<property name="id">$NUM[4]</property>
 			<label>[COLOR blue][B]cCloud TV[/B][/COLOR]</label>
-			<label2>Video Add-On</label2>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ccloudtv%5cicon.png/</thumb>
 			<property name="labelID">plugin.video.ccloudtv</property>
 			<property name="defaultID">plugin.video.ccloudtv</property>
-			<onclick>ActivateWindow(10025,"plugin://plugin.video.ccloudtv",return)</onclick>
-			<property name="path">ActivateWindow(10025,"plugin://plugin.video.ccloudtv",return)</property>
+			<onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.ccloudtv",return)</onclick>
+			<property name="path">ActivateWindow(VideoLibrary,"plugin://plugin.video.ccloudtv",return)</property>
 			<property name="list">plugin://plugin.video.ccloudtv</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">x12</property>
@@ -3392,21 +3347,6 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUM[5]</property>
-			<label>Live TV</label>
-			<label2>Video Add-On</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.SportsDevil%5cresources%5cimages%5cfolder.png/</thumb>
-			<property name="labelID">livetv</property>
-			<property name="defaultID" />
-			<onclick>ActivateWindow(10025,"plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BTV%26url%3Dcustoms.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BTV%26type%3Drss%26icon%3D",return)</onclick>
-			<property name="path">ActivateWindow(10025,"plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BTV%26url%3Dcustoms.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BTV%26type%3Drss%26icon%3D",return)</property>
-			<property name="list">plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BTV%26url%3Dcustoms.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BTV%26type%3Drss%26icon%3D</property>
-			<visible>StringCompare(System.ProfileName,Master user)</visible>
-			<property name="group">x12</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="6">
-			<property name="id">$NUM[6]</property>
 			<label>USTV Now</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3420,8 +3360,8 @@
 			<property name="group">x12</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUM[7]</property>
+		<item id="6">
+			<property name="id">$NUM[6]</property>
 			<label>$LOCALIZE[19023]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3436,8 +3376,8 @@
 			<property name="group">x12</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="8">
-			<property name="id">$NUM[8]</property>
+		<item id="7">
+			<property name="id">$NUM[7]</property>
 			<label>$LOCALIZE[19069]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3448,6 +3388,21 @@
 			<onclick>ActivateWindow(TVGuide)</onclick>
 			<property name="path">ActivateWindow(TVGuide)</property>
 			<property name="list">TVGuide</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x12</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="8">
+			<property name="id">$NUM[8]</property>
+			<label>Live TV</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.SportsDevil%5cresources%5cimages%5cfolder.png/</thumb>
+			<property name="labelID">livetv</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BTV%26url%3Dcustoms.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BTV%26type%3Drss%26icon%3D",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BTV%26url%3Dcustoms.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BTV%26type%3Drss%26icon%3D",return)</property>
+			<property name="list">plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BTV%26url%3Dcustoms.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BTV%26type%3Drss%26icon%3D</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">x12</property>
 			<property name="isSubmenu">True</property>
@@ -3535,13 +3490,13 @@
 		<item id="4">
 			<property name="id">$NUM[4]</property>
 			<label>[COLOR blue][B]cCloud TV[/B][/COLOR]</label>
-			<label2>Video Add-On</label2>
+			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ccloudtv%5cicon.png/</thumb>
 			<property name="labelID">plugin.video.ccloudtv</property>
 			<property name="defaultID">plugin.video.ccloudtv</property>
-			<onclick>ActivateWindow(10025,"plugin://plugin.video.ccloudtv",return)</onclick>
-			<property name="path">ActivateWindow(10025,"plugin://plugin.video.ccloudtv",return)</property>
+			<onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.ccloudtv",return)</onclick>
+			<property name="path">ActivateWindow(VideoLibrary,"plugin://plugin.video.ccloudtv",return)</property>
 			<property name="list">plugin://plugin.video.ccloudtv</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),x12)</visible>
 			<property name="group">x12</property>
@@ -3549,21 +3504,6 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUM[5]</property>
-			<label>Live TV</label>
-			<label2>Video Add-On</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.SportsDevil%5cresources%5cimages%5cfolder.png/</thumb>
-			<property name="labelID">livetv</property>
-			<property name="defaultID" />
-			<onclick>ActivateWindow(10025,"plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BTV%26url%3Dcustoms.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BTV%26type%3Drss%26icon%3D",return)</onclick>
-			<property name="path">ActivateWindow(10025,"plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BTV%26url%3Dcustoms.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BTV%26type%3Drss%26icon%3D",return)</property>
-			<property name="list">plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BTV%26url%3Dcustoms.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BTV%26type%3Drss%26icon%3D</property>
-			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),x12)</visible>
-			<property name="group">x12</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="6">
-			<property name="id">$NUM[6]</property>
 			<label>USTV Now</label>
 			<label2>Custom shortcut</label2>
 			<icon>DefaultShortcut.png</icon>
@@ -3577,8 +3517,8 @@
 			<property name="group">x12</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUM[7]</property>
+		<item id="6">
+			<property name="id">$NUM[6]</property>
 			<label>$LOCALIZE[19023]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3593,8 +3533,8 @@
 			<property name="group">x12</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="8">
-			<property name="id">$NUM[8]</property>
+		<item id="7">
+			<property name="id">$NUM[7]</property>
 			<label>$LOCALIZE[19069]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3606,6 +3546,21 @@
 			<property name="path">ActivateWindow(TVGuide)</property>
 			<property name="list">TVGuide</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x12</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="8">
+			<property name="id">$NUM[8]</property>
+			<label>Live TV</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.SportsDevil%5cresources%5cimages%5cfolder.png/</thumb>
+			<property name="labelID">livetv</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BTV%26url%3Dcustoms.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BTV%26type%3Drss%26icon%3D",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BTV%26url%3Dcustoms.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BTV%26type%3Drss%26icon%3D",return)</property>
+			<property name="list">plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BTV%26url%3Dcustoms.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BTV%26type%3Drss%26icon%3D</property>
+			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),x12)</visible>
 			<property name="group">x12</property>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -3829,15 +3784,15 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUM[3]</property>
-			<label>Pandora</label>
-			<label2>Custom shortcut</label2>
+			<label>Hulu</label>
+			<label2>Custom item</label2>
 			<icon>DefaultFolder.png</icon>
 			<thumb>http://buskerbrownes.com/wp-content/uploads/2013/06/img1.jpg</thumb>
-			<property name="labelID">script.program.FTVpandora</property>
+			<property name="labelID">hulu</property>
 			<property name="defaultID">livegames</property>
-			<onclick>RunAddOn(script.program.FTVpandora)</onclick>
-			<property name="path">RunAddOn(script.program.FTVpandora)</property>
-			<property name="list">RunAddOn(script.program.FTVpandora)</property>
+			<onclick>ActivateWindow(Videos,addons://sources/video/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,addons://sources/video/,return)</property>
+			<property name="list">addons://sources/video/</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">x101</property>
 			<property name="isSubmenu">True</property>
@@ -3876,15 +3831,15 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUM[3]</property>
-			<label>Pandora</label>
-			<label2>Custom shortcut</label2>
+			<label>Hulu</label>
+			<label2>Custom item</label2>
 			<icon>DefaultFolder.png</icon>
 			<thumb>http://buskerbrownes.com/wp-content/uploads/2013/06/img1.jpg</thumb>
-			<property name="labelID">script.program.FTVpandora</property>
+			<property name="labelID">hulu</property>
 			<property name="defaultID">livegames</property>
-			<onclick>RunAddOn(script.program.FTVpandora)</onclick>
-			<property name="path">RunAddOn(script.program.FTVpandora)</property>
-			<property name="list">RunAddOn(script.program.FTVpandora)</property>
+			<onclick>ActivateWindow(Videos,addons://sources/video/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,addons://sources/video/,return)</property>
+			<property name="list">addons://sources/video/</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),x101)</visible>
 			<property name="group">x101</property>
 			<property name="isSubmenu">True</property>
@@ -3914,9 +3869,9 @@
 			<thumb />
 			<property name="labelID">espn-sports</property>
 			<property name="defaultID" />
-			<onclick>PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FzmASXYOTuE5y49uWWy4dsQ%2F1456029899%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</onclick>
-			<property name="path">PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FzmASXYOTuE5y49uWWy4dsQ%2F1456029899%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</property>
-			<property name="list">PlayMedia(plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FzmASXYOTuE5y49uWWy4dsQ%2F1456029899%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png,return)</property>
+			<onclick>PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FsH_RwtsPgAbKL4wDypt2DQ%2F1456378128%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</onclick>
+			<property name="path">PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FsH_RwtsPgAbKL4wDypt2DQ%2F1456378128%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</property>
+			<property name="list">PlayMedia(plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FsH_RwtsPgAbKL4wDypt2DQ%2F1456378128%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">x202</property>
 			<property name="isSubmenu">True</property>
@@ -3938,15 +3893,15 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUM[4]</property>
-			<label>ESPN2</label>
+			<label>VS VersusTV</label>
 			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">espn2</property>
+			<property name="labelID">vsversustv</property>
 			<property name="defaultID" />
-			<onclick>PlayMedia("plugin://plugin.video.castaway/?url=http%3A%2F%2Fwww.streamlive.to%2Fview%2F73070%2FESPN_2&amp;play=True&amp;mode=play&amp;img=http%3A%2F%2Fsnapshots.streamlive.to%2Fsnapshots%2Flclmw3k9o934118_snapshot.jpg&amp;title=ESPN+2",return)</onclick>
-			<property name="path">PlayMedia("plugin://plugin.video.castaway/?url=http%3A%2F%2Fwww.streamlive.to%2Fview%2F73070%2FESPN_2&amp;play=True&amp;mode=play&amp;img=http%3A%2F%2Fsnapshots.streamlive.to%2Fsnapshots%2Flclmw3k9o934118_snapshot.jpg&amp;title=ESPN+2",return)</property>
-			<property name="list">PlayMedia(plugin://plugin.video.castaway/?url=http%3A%2F%2Fwww.streamlive.to%2Fview%2F73070%2FESPN_2&amp;play=True&amp;mode=play&amp;img=http%3A%2F%2Fsnapshots.streamlive.to%2Fsnapshots%2Flclmw3k9o934118_snapshot.jpg&amp;title=ESPN+2,return)</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.program.super.favourites/?label=VS%20Versus%20Channel&amp;mode=600&amp;cmd=PlayMedia%28%22plugin%3A%2F%2Fplugin.video.ukturk%2F%3Furl%3Dhttp%253A%252F%252F208.92.36.158%252Fipad%252Flive%252Fnba_ipad_1240.m3u8%26mode%3D3%26name%3DVS%2BVersus%2BChannel%26iconimage%3Dhttps%253A%252F%252Fnbcprohockeytalk.files.wordpress.com%252F2010%252F11%252Fversus_logo.jpg%26description%3DBL%26sf_options%3Dfanart%253Dspecial%253A%252F%252Fhome%252Faddons%252Fplugin.video.ukturk%252Ffanart.jpg%2526winID%253D10025%2526_options_sf%22%29&amp;image=https%3A%2F%2Fnbcprohockeytalk.files.wordpress.com%2F2010%2F11%2Fversus_logo.jpg&amp;fanart=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.ukturk%2Ffanart.jpg&amp;content_type=&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%2Fplugin.video.ukturk%2Ffanart.jpg%26_options_sf",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.program.super.favourites/?label=VS%20Versus%20Channel&amp;mode=600&amp;cmd=PlayMedia%28%22plugin%3A%2F%2Fplugin.video.ukturk%2F%3Furl%3Dhttp%253A%252F%252F208.92.36.158%252Fipad%252Flive%252Fnba_ipad_1240.m3u8%26mode%3D3%26name%3DVS%2BVersus%2BChannel%26iconimage%3Dhttps%253A%252F%252Fnbcprohockeytalk.files.wordpress.com%252F2010%252F11%252Fversus_logo.jpg%26description%3DBL%26sf_options%3Dfanart%253Dspecial%253A%252F%252Fhome%252Faddons%252Fplugin.video.ukturk%252Ffanart.jpg%2526winID%253D10025%2526_options_sf%22%29&amp;image=https%3A%2F%2Fnbcprohockeytalk.files.wordpress.com%2F2010%2F11%2Fversus_logo.jpg&amp;fanart=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.ukturk%2Ffanart.jpg&amp;content_type=&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%2Fplugin.video.ukturk%2Ffanart.jpg%26_options_sf",return)</property>
+			<property name="list">plugin://plugin.program.super.favourites/?label=VS%20Versus%20Channel&amp;mode=600&amp;cmd=PlayMedia%28%22plugin%3A%2F%2Fplugin.video.ukturk%2F%3Furl%3Dhttp%253A%252F%252F208.92.36.158%252Fipad%252Flive%252Fnba_ipad_1240.m3u8%26mode%3D3%26name%3DVS%2BVersus%2BChannel%26iconimage%3Dhttps%253A%252F%252Fnbcprohockeytalk.files.wordpress.com%252F2010%252F11%252Fversus_logo.jpg%26description%3DBL%26sf_options%3Dfanart%253Dspecial%253A%252F%252Fhome%252Faddons%252Fplugin.video.ukturk%252Ffanart.jpg%2526winID%253D10025%2526_options_sf%22%29&amp;image=https%3A%2F%2Fnbcprohockeytalk.files.wordpress.com%2F2010%2F11%2Fversus_logo.jpg&amp;fanart=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.ukturk%2Ffanart.jpg&amp;content_type=&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%2Fplugin.video.ukturk%2Ffanart.jpg%26_options_sf</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">x202</property>
 			<property name="isSubmenu">True</property>
@@ -4066,9 +4021,9 @@
 			<thumb />
 			<property name="labelID">espn-sports</property>
 			<property name="defaultID" />
-			<onclick>PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FzmASXYOTuE5y49uWWy4dsQ%2F1456029899%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</onclick>
-			<property name="path">PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FzmASXYOTuE5y49uWWy4dsQ%2F1456029899%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</property>
-			<property name="list">PlayMedia(plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FzmASXYOTuE5y49uWWy4dsQ%2F1456029899%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png,return)</property>
+			<onclick>PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FsH_RwtsPgAbKL4wDypt2DQ%2F1456378128%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</onclick>
+			<property name="path">PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FsH_RwtsPgAbKL4wDypt2DQ%2F1456378128%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</property>
+			<property name="list">PlayMedia(plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FsH_RwtsPgAbKL4wDypt2DQ%2F1456378128%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png,return)</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),x202)</visible>
 			<property name="group">x202</property>
 			<property name="isSubmenu">True</property>
@@ -4090,15 +4045,15 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUM[4]</property>
-			<label>ESPN2</label>
+			<label>VS VersusTV</label>
 			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">espn2</property>
+			<property name="labelID">vsversustv</property>
 			<property name="defaultID" />
-			<onclick>PlayMedia("plugin://plugin.video.castaway/?url=http%3A%2F%2Fwww.streamlive.to%2Fview%2F73070%2FESPN_2&amp;play=True&amp;mode=play&amp;img=http%3A%2F%2Fsnapshots.streamlive.to%2Fsnapshots%2Flclmw3k9o934118_snapshot.jpg&amp;title=ESPN+2",return)</onclick>
-			<property name="path">PlayMedia("plugin://plugin.video.castaway/?url=http%3A%2F%2Fwww.streamlive.to%2Fview%2F73070%2FESPN_2&amp;play=True&amp;mode=play&amp;img=http%3A%2F%2Fsnapshots.streamlive.to%2Fsnapshots%2Flclmw3k9o934118_snapshot.jpg&amp;title=ESPN+2",return)</property>
-			<property name="list">PlayMedia(plugin://plugin.video.castaway/?url=http%3A%2F%2Fwww.streamlive.to%2Fview%2F73070%2FESPN_2&amp;play=True&amp;mode=play&amp;img=http%3A%2F%2Fsnapshots.streamlive.to%2Fsnapshots%2Flclmw3k9o934118_snapshot.jpg&amp;title=ESPN+2,return)</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.program.super.favourites/?label=VS%20Versus%20Channel&amp;mode=600&amp;cmd=PlayMedia%28%22plugin%3A%2F%2Fplugin.video.ukturk%2F%3Furl%3Dhttp%253A%252F%252F208.92.36.158%252Fipad%252Flive%252Fnba_ipad_1240.m3u8%26mode%3D3%26name%3DVS%2BVersus%2BChannel%26iconimage%3Dhttps%253A%252F%252Fnbcprohockeytalk.files.wordpress.com%252F2010%252F11%252Fversus_logo.jpg%26description%3DBL%26sf_options%3Dfanart%253Dspecial%253A%252F%252Fhome%252Faddons%252Fplugin.video.ukturk%252Ffanart.jpg%2526winID%253D10025%2526_options_sf%22%29&amp;image=https%3A%2F%2Fnbcprohockeytalk.files.wordpress.com%2F2010%2F11%2Fversus_logo.jpg&amp;fanart=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.ukturk%2Ffanart.jpg&amp;content_type=&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%2Fplugin.video.ukturk%2Ffanart.jpg%26_options_sf",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.program.super.favourites/?label=VS%20Versus%20Channel&amp;mode=600&amp;cmd=PlayMedia%28%22plugin%3A%2F%2Fplugin.video.ukturk%2F%3Furl%3Dhttp%253A%252F%252F208.92.36.158%252Fipad%252Flive%252Fnba_ipad_1240.m3u8%26mode%3D3%26name%3DVS%2BVersus%2BChannel%26iconimage%3Dhttps%253A%252F%252Fnbcprohockeytalk.files.wordpress.com%252F2010%252F11%252Fversus_logo.jpg%26description%3DBL%26sf_options%3Dfanart%253Dspecial%253A%252F%252Fhome%252Faddons%252Fplugin.video.ukturk%252Ffanart.jpg%2526winID%253D10025%2526_options_sf%22%29&amp;image=https%3A%2F%2Fnbcprohockeytalk.files.wordpress.com%2F2010%2F11%2Fversus_logo.jpg&amp;fanart=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.ukturk%2Ffanart.jpg&amp;content_type=&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%2Fplugin.video.ukturk%2Ffanart.jpg%26_options_sf",return)</property>
+			<property name="list">plugin://plugin.program.super.favourites/?label=VS%20Versus%20Channel&amp;mode=600&amp;cmd=PlayMedia%28%22plugin%3A%2F%2Fplugin.video.ukturk%2F%3Furl%3Dhttp%253A%252F%252F208.92.36.158%252Fipad%252Flive%252Fnba_ipad_1240.m3u8%26mode%3D3%26name%3DVS%2BVersus%2BChannel%26iconimage%3Dhttps%253A%252F%252Fnbcprohockeytalk.files.wordpress.com%252F2010%252F11%252Fversus_logo.jpg%26description%3DBL%26sf_options%3Dfanart%253Dspecial%253A%252F%252Fhome%252Faddons%252Fplugin.video.ukturk%252Ffanart.jpg%2526winID%253D10025%2526_options_sf%22%29&amp;image=https%3A%2F%2Fnbcprohockeytalk.files.wordpress.com%2F2010%2F11%2Fversus_logo.jpg&amp;fanart=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.ukturk%2Ffanart.jpg&amp;content_type=&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%2Fplugin.video.ukturk%2Ffanart.jpg%26_options_sf</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),x202)</visible>
 			<property name="group">x202</property>
 			<property name="isSubmenu">True</property>
@@ -4227,15 +4182,15 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUM[3]</property>
-			<label>YCBeast Overview</label>
+			<label>[COLOR limegreen][B]ALL TUTORIALS[/B][/COLOR]</label>
 			<label2>Favourite</label2>
 			<icon>DefaultFolder.png</icon>
 			<thumb>https://i.ytimg.com/vi/lbO5rFdldV4/hqdefault.jpg</thumb>
-			<property name="labelID">ycbeastoverview</property>
+			<property name="labelID">colorlimegreen-b-alltutorials-b-color</property>
 			<property name="defaultID">ycbeasttutorial</property>
-			<onclick>PlayMedia("plugin://plugin.video.youtube/play/?video_id=JmT-SLvvCV8",return)</onclick>
-			<property name="path">PlayMedia("plugin://plugin.video.youtube/play/?video_id=JmT-SLvvCV8",return)</property>
-			<property name="list">PlayMedia(plugin://plugin.video.youtube/play/?video_id=JmT-SLvvCV8,return)</property>
+			<onclick>PlayMedia("plugin.video.youtubelibrary/Streams/TV/YCBeast Tutorials?sf_options=fanart%3D%2Fsdcard%2FAndroid%2Fdata%2Forg.xbmc.kodi%2Ffiles%2F.kodi%2Fuserdata%2Faddon_data%2Fplugin.video.youtubelibrary%2FStreams%2FTV%2FYCBeast+Tutorials%2Ffanart.jpg%26desc%3DOverviews%2C+tutorials%2C+sneak+peaks+and+releases+of+my+YCBeast+Build+for+Kodi%2FXBMC.+Which+I+load+on+all+FireSticks%2C+FireTVs+and+Android+Boxes.+It%27s+Fully+Loaded+and+only+getting+better%21%21%26_options_sf",return)</onclick>
+			<property name="path">PlayMedia("plugin.video.youtubelibrary/Streams/TV/YCBeast Tutorials?sf_options=fanart%3D%2Fsdcard%2FAndroid%2Fdata%2Forg.xbmc.kodi%2Ffiles%2F.kodi%2Fuserdata%2Faddon_data%2Fplugin.video.youtubelibrary%2FStreams%2FTV%2FYCBeast+Tutorials%2Ffanart.jpg%26desc%3DOverviews%2C+tutorials%2C+sneak+peaks+and+releases+of+my+YCBeast+Build+for+Kodi%2FXBMC.+Which+I+load+on+all+FireSticks%2C+FireTVs+and+Android+Boxes.+It%27s+Fully+Loaded+and+only+getting+better%21%21%26_options_sf",return)</property>
+			<property name="list">PlayMedia(plugin.video.youtubelibrary/Streams/TV/YCBeast Tutorials?sf_options=fanart%3D%2Fsdcard%2FAndroid%2Fdata%2Forg.xbmc.kodi%2Ffiles%2F.kodi%2Fuserdata%2Faddon_data%2Fplugin.video.youtubelibrary%2FStreams%2FTV%2FYCBeast+Tutorials%2Ffanart.jpg%26desc%3DOverviews%2C+tutorials%2C+sneak+peaks+and+releases+of+my+YCBeast+Build+for+Kodi%2FXBMC.+Which+I+load+on+all+FireSticks%2C+FireTVs+and+Android+Boxes.+It%27s+Fully+Loaded+and+only+getting+better%21%21%26_options_sf,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">x303</property>
 			<property name="isSubmenu">True</property>
@@ -4304,15 +4259,15 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUM[3]</property>
-			<label>YCBeast Overview</label>
+			<label>[COLOR limegreen][B]ALL TUTORIALS[/B][/COLOR]</label>
 			<label2>Favourite</label2>
 			<icon>DefaultFolder.png</icon>
 			<thumb>https://i.ytimg.com/vi/lbO5rFdldV4/hqdefault.jpg</thumb>
-			<property name="labelID">ycbeastoverview</property>
+			<property name="labelID">colorlimegreen-b-alltutorials-b-color</property>
 			<property name="defaultID">ycbeasttutorial</property>
-			<onclick>PlayMedia("plugin://plugin.video.youtube/play/?video_id=JmT-SLvvCV8",return)</onclick>
-			<property name="path">PlayMedia("plugin://plugin.video.youtube/play/?video_id=JmT-SLvvCV8",return)</property>
-			<property name="list">PlayMedia(plugin://plugin.video.youtube/play/?video_id=JmT-SLvvCV8,return)</property>
+			<onclick>PlayMedia("plugin.video.youtubelibrary/Streams/TV/YCBeast Tutorials?sf_options=fanart%3D%2Fsdcard%2FAndroid%2Fdata%2Forg.xbmc.kodi%2Ffiles%2F.kodi%2Fuserdata%2Faddon_data%2Fplugin.video.youtubelibrary%2FStreams%2FTV%2FYCBeast+Tutorials%2Ffanart.jpg%26desc%3DOverviews%2C+tutorials%2C+sneak+peaks+and+releases+of+my+YCBeast+Build+for+Kodi%2FXBMC.+Which+I+load+on+all+FireSticks%2C+FireTVs+and+Android+Boxes.+It%27s+Fully+Loaded+and+only+getting+better%21%21%26_options_sf",return)</onclick>
+			<property name="path">PlayMedia("plugin.video.youtubelibrary/Streams/TV/YCBeast Tutorials?sf_options=fanart%3D%2Fsdcard%2FAndroid%2Fdata%2Forg.xbmc.kodi%2Ffiles%2F.kodi%2Fuserdata%2Faddon_data%2Fplugin.video.youtubelibrary%2FStreams%2FTV%2FYCBeast+Tutorials%2Ffanart.jpg%26desc%3DOverviews%2C+tutorials%2C+sneak+peaks+and+releases+of+my+YCBeast+Build+for+Kodi%2FXBMC.+Which+I+load+on+all+FireSticks%2C+FireTVs+and+Android+Boxes.+It%27s+Fully+Loaded+and+only+getting+better%21%21%26_options_sf",return)</property>
+			<property name="list">PlayMedia(plugin.video.youtubelibrary/Streams/TV/YCBeast Tutorials?sf_options=fanart%3D%2Fsdcard%2FAndroid%2Fdata%2Forg.xbmc.kodi%2Ffiles%2F.kodi%2Fuserdata%2Faddon_data%2Fplugin.video.youtubelibrary%2FStreams%2FTV%2FYCBeast+Tutorials%2Ffanart.jpg%26desc%3DOverviews%2C+tutorials%2C+sneak+peaks+and+releases+of+my+YCBeast+Build+for+Kodi%2FXBMC.+Which+I+load+on+all+FireSticks%2C+FireTVs+and+Android+Boxes.+It%27s+Fully+Loaded+and+only+getting+better%21%21%26_options_sf,return)</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),x303)</visible>
 			<property name="group">x303</property>
 			<property name="isSubmenu">True</property>
@@ -4396,15 +4351,15 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUM[4]</property>
-			<label>YCRepo</label>
+			<label>Delete Cache</label>
 			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">plugin.program.fsycbeast</property>
+			<property name="labelID">deletecache</property>
 			<property name="defaultID" />
-			<onclick>ActivateWindow(Programs,"plugin://plugin.program.fsycbeast",return)</onclick>
-			<property name="path">ActivateWindow(Programs,"plugin://plugin.program.fsycbeast",return)</property>
-			<property name="list">plugin://plugin.program.fsycbeast</property>
+			<onclick>PlayMedia("plugin://plugin.video.mdwizard/?url=url&amp;mode=14&amp;name=DELETE+CACHE&amp;iconimage=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cresources%5Cart%5CMAINTENANCE.png&amp;fanart=&amp;description=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cfanart.jpg&amp;sf_options=winID%3D10001%26_options_sf",return)</onclick>
+			<property name="path">PlayMedia("plugin://plugin.video.mdwizard/?url=url&amp;mode=14&amp;name=DELETE+CACHE&amp;iconimage=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cresources%5Cart%5CMAINTENANCE.png&amp;fanart=&amp;description=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cfanart.jpg&amp;sf_options=winID%3D10001%26_options_sf",return)</property>
+			<property name="list">PlayMedia(plugin://plugin.video.mdwizard/?url=url&amp;mode=14&amp;name=DELETE+CACHE&amp;iconimage=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cresources%5Cart%5CMAINTENANCE.png&amp;fanart=&amp;description=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cfanart.jpg&amp;sf_options=winID%3D10001%26_options_sf,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">x404</property>
 			<property name="isSubmenu">True</property>
@@ -4473,15 +4428,15 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUM[4]</property>
-			<label>YCRepo</label>
+			<label>Delete Cache</label>
 			<label2>Custom item</label2>
 			<icon>DefaultShortcut.png</icon>
 			<thumb />
-			<property name="labelID">plugin.program.fsycbeast</property>
+			<property name="labelID">deletecache</property>
 			<property name="defaultID" />
-			<onclick>ActivateWindow(Programs,"plugin://plugin.program.fsycbeast",return)</onclick>
-			<property name="path">ActivateWindow(Programs,"plugin://plugin.program.fsycbeast",return)</property>
-			<property name="list">plugin://plugin.program.fsycbeast</property>
+			<onclick>PlayMedia("plugin://plugin.video.mdwizard/?url=url&amp;mode=14&amp;name=DELETE+CACHE&amp;iconimage=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cresources%5Cart%5CMAINTENANCE.png&amp;fanart=&amp;description=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cfanart.jpg&amp;sf_options=winID%3D10001%26_options_sf",return)</onclick>
+			<property name="path">PlayMedia("plugin://plugin.video.mdwizard/?url=url&amp;mode=14&amp;name=DELETE+CACHE&amp;iconimage=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cresources%5Cart%5CMAINTENANCE.png&amp;fanart=&amp;description=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cfanart.jpg&amp;sf_options=winID%3D10001%26_options_sf",return)</property>
+			<property name="list">PlayMedia(plugin://plugin.video.mdwizard/?url=url&amp;mode=14&amp;name=DELETE+CACHE&amp;iconimage=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cresources%5Cart%5CMAINTENANCE.png&amp;fanart=&amp;description=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cfanart.jpg&amp;sf_options=winID%3D10001%26_options_sf,return)</property>
 			<visible>[StringCompare(System.ProfileName,Master user)] + StringCompare(Window(10000).Property(submenuVisibility),x404)</visible>
 			<property name="group">x404</property>
 			<property name="isSubmenu">True</property>

@@ -74,7 +74,7 @@ class Ayyex_Scraper(scraper.Scraper):
     def get_url(self, video):
         return self._default_get_url(video)
 
-    def search(self, video_type, title, year):
+    def search(self, video_type, title, year, season=''):
         results = []
         search_url = urlparse.urljoin(self.base_url, '/?s=%s')
         search_url = search_url % (urllib.quote_plus(title))
@@ -85,7 +85,7 @@ class Ayyex_Scraper(scraper.Scraper):
             if match:
                 url, match_title, match_year = match.groups('')
                 if norm_title in scraper_utils.normalize_title(match_title) and (not year or not match_year or year == match_year):
-                    result = {'url': scraper_utils.pathify_url(url), 'title': match_title, 'year': match_year}
+                    result = {'url': scraper_utils.pathify_url(url), 'title': scraper_utils.cleanse_title(match_title), 'year': match_year}
                     results.append(result)
                 
         return results

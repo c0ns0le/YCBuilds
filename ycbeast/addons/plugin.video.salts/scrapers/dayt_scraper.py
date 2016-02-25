@@ -16,9 +16,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 import re
-import urllib
 import urlparse
-
 from salts_lib import dom_parser
 from salts_lib import kodi
 from salts_lib import log_utils
@@ -86,7 +84,7 @@ class DayT_Scraper(scraper.Scraper):
         episode_pattern = 'href="([^"]*[Ss]%02d[Ee]%02d[^"]*)' % (int(video.season), int(video.episode))
         return self._default_get_episode_url(show_url, video, episode_pattern)
 
-    def search(self, video_type, title, year):
+    def search(self, video_type, title, year, season=''):
         results = []
         url = urlparse.urljoin(self.base_url, '/forum/forum.php')
         html = self._http_get(url, cache_limit=48)
@@ -96,7 +94,7 @@ class DayT_Scraper(scraper.Scraper):
             if match:
                 url, match_title = match.groups()
                 if norm_title in scraper_utils.normalize_title(match_title):
-                    result = {'url': scraper_utils.pathify_url(url), 'title': match_title, 'year': ''}
+                    result = {'url': scraper_utils.pathify_url(url), 'title': scraper_utils.cleanse_title(match_title), 'year': ''}
                     results.append(result)
 
         return results

@@ -18,6 +18,14 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>livegames</defaultID>
+		<label>Hulu</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>RunAddOn(script.program.FTVhulu)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>livegames</defaultID>
 		<label>Pandora</label>
 		<label2>Custom shortcut</label2>
 		<icon>DefaultFolder.png</icon>

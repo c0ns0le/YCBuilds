@@ -25,13 +25,13 @@ from salts_lib.constants import FORCE_NO_MATCH
 from salts_lib.constants import QUALITIES
 from salts_lib.constants import Q_ORDER
 from salts_lib.constants import VIDEO_TYPES
-from salts_lib.utils2 import i18n
+from salts_lib.kodi import i18n
 import scraper
 
 
 Q_LIST = [item[0] for item in sorted(Q_ORDER.items(), key=lambda x:x[1])]
 
-BASE_URL = 'http://www.alluc.com'
+BASE_URL = 'http://www.alluc.ee'
 SEARCH_URL = '/api/search/%s/?query=%s+lang%%3Aen&count=100&from=0&getmeta=0'
 SEARCH_TYPES = ['stream', 'download']
 API_KEY = '&apikey=02216ecc1bf4bcc83a1ee6c72a5f0eda'
@@ -92,7 +92,7 @@ class Alluc_Scraper(scraper.Scraper):
             search_url = self.__translate_search(url, search_type)
             html = self._http_get(search_url, cache_limit=.5)
             js_result = scraper_utils.parse_json(html, search_url)
-            if js_result['status'] == 'success':
+            if 'status' in js_result and js_result['status'] == 'success':
                 for result in js_result['result']:
                     if len(result['hosterurls']) > 1: continue
                     if result['extension'] == 'rar': continue
@@ -137,7 +137,7 @@ class Alluc_Scraper(scraper.Scraper):
             self.db_connection.set_related_url(video.video_type, video.title, video.year, self.get_name(), url)
         return url
 
-    def search(self, video_type, title, year):
+    def search(self, video_type, title, year, season=''):
         return []
 
     @classmethod

@@ -14,7 +14,7 @@
 		<label2>Custom item</label2>
 		<icon>DefaultFolder.png</icon>
 		<thumb>special://home/addons\plugin.video.SportsDevil\icon.png</thumb>
-		<action>PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FzmASXYOTuE5y49uWWy4dsQ%2F1456029899%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</action>
+		<action>PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2Fv2R7J1spzDDcyQaHD7SveQ%2F1456346706%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID>script.navi-x</defaultID>

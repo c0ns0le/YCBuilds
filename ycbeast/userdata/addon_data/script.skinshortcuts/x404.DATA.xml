@@ -26,11 +26,11 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>YCRepo</label>
+		<label>Delete Cache</label>
 		<label2>Custom item</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb />
-		<action>ActivateWindow(Programs,"plugin://plugin.program.fsycbeast",return)</action>
+		<action>PlayMedia("plugin://plugin.video.mdwizard/?url=url&amp;mode=6&amp;name=DELETE+PACKAGES&amp;iconimage=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cresources%5Cart%5CMAINTENANCE.png&amp;fanart=&amp;description=C%3A%5CUsers%5Cblowe%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.mdwizard%5Cfanart.jpg&amp;sf_options=winID%3D10001%26_options_sf",return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID />

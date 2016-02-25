@@ -1,5 +1,21 @@
+[B]Version 2.5.68[/B]
+Minor Code Fixes
+
+[B]Version 2.5.67[/B]
+- Fix library playback
+- Fix translated string
+
+[B]Version 2.5.66[/B]
+- Migrate addon to use po files
+- Move all strings to strings.po in preparation for translation
+- Code cleanup
+
+[B]Version 2.5.65[/B]
+- Add notification on failed streams
+- Fix proxy captchas
+
 [B]Version 2.5.64[/B]
-Various bug fixes when metadata is off
+- Various bug fixes when metadata is off
 
 [B]Version 2.5.63[/B]
 - Add Firestorm Theme

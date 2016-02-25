@@ -40,7 +40,7 @@ from salts_lib.constants import Q_ORDER
 from salts_lib.constants import SHORT_MONS
 from salts_lib.constants import VIDEO_TYPES
 from salts_lib.db_utils import DB_Connection
-from salts_lib.utils2 import i18n
+from salts_lib.kodi import i18n
 
 
 BASE_URL = ''
@@ -160,7 +160,7 @@ class Scraper(object):
         raise NotImplementedError
 
     @abc.abstractmethod
-    def search(self, video_type, title, year):
+    def search(self, video_type, title, year, season=''):
         """
         Must return a list of results returned from the site associated with this scraper when doing a search using the input parameters
 
@@ -172,6 +172,7 @@ class Scraper(object):
         video_type: one of the VIDEO_TYPES being searched for. Only tvshows and movies are expected generally
         title: the title being search for
         year: the year being search for
+        season: the season being searched for (only required if video_type == VIDEO_TYPES.SEASON)
 
         * Method must be provided, but can raise NotImplementedError if search not available on the site
         """
@@ -200,19 +201,27 @@ class Scraper(object):
         url = None
         self.create_db_connection()
         if video.video_type == VIDEO_TYPES.EPISODE:
-            temp_video_type = VIDEO_TYPES.TVSHOW
+            if VIDEO_TYPES.TVSHOW in self.provides():
+                temp_video_type = VIDEO_TYPES.TVSHOW
+            else:
+                temp_video_type = VIDEO_TYPES.SEASON
         else:
             temp_video_type = video.video_type
 
-        result = self.db_connection.get_related_url(temp_video_type, video.title, video.year, self.get_name())
+        if temp_video_type == VIDEO_TYPES.SEASON:
+            season = video.season
+        else:
+            season = ''
+            
+        result = self.db_connection.get_related_url(temp_video_type, video.title, video.year, self.get_name(), season)
         if result:
             url = result[0][0]
-            log_utils.log('Got local related url: |%s|%s|%s|%s|%s|' % (temp_video_type, video.title, video.year, self.get_name(), url))
+            log_utils.log('Got local related url: |%s|%s|%s|%s|%s|%s|' % (temp_video_type, video.title, video.year, season, self.get_name(), url))
         else:
-            results = self.search(temp_video_type, video.title, video.year)
+            results = self.search(temp_video_type, video.title, video.year, season)
             if results:
                 url = results[0]['url']
-                self.db_connection.set_related_url(temp_video_type, video.title, video.year, self.get_name(), url)
+                self.db_connection.set_related_url(temp_video_type, video.title, video.year, self.get_name(), url, season)
 
         if video.video_type == VIDEO_TYPES.EPISODE:
             if url == FORCE_NO_MATCH:
@@ -223,18 +232,18 @@ class Scraper(object):
                     url = result[0][0]
                     log_utils.log('Got local related url: |%s|%s|%s|' % (video, self.get_name(), url))
                 else:
-                    show_url = url
-                    url = self._get_episode_url(show_url, video)
+                    landing_url = url
+                    url = self._get_episode_url(landing_url, video)
                     if url:
                         self.db_connection.set_related_url(VIDEO_TYPES.EPISODE, video.title, video.year, self.get_name(), url, video.season, video.episode)
 
         return url
 
-    def _http_get(self, url, cookies=None, data=None, multipart_data=None, headers=None, allow_redirect=True, cache_limit=8):
+    def _http_get(self, url, cookies=None, data=None, multipart_data=None, headers=None, allow_redirect=True, method=None, cache_limit=8):
         return self._cached_http_get(url, self.base_url, self.timeout, cookies=cookies, data=data, multipart_data=multipart_data,
-                                     headers=headers, allow_redirect=allow_redirect, cache_limit=cache_limit)
+                                     headers=headers, allow_redirect=allow_redirect, method=method, cache_limit=cache_limit)
     
-    def _cached_http_get(self, url, base_url, timeout, cookies=None, data=None, multipart_data=None, headers=None, allow_redirect=True, cache_limit=8):
+    def _cached_http_get(self, url, base_url, timeout, cookies=None, data=None, multipart_data=None, headers=None, allow_redirect=True, method=None, cache_limit=8):
         if cookies is None: cookies = {}
         if timeout == 0: timeout = None
         if headers is None: headers = {}
@@ -274,6 +283,7 @@ class Scraper(object):
                 opener2 = urllib2.build_opener(urllib2.HTTPCookieProcessor(self.cj))
                 urllib2.install_opener(opener2)
 
+            if method is not None: request.get_method = lambda: method.upper()
             response = urllib2.urlopen(request, timeout=timeout)
             self.cj.extract_cookies(response, request)
             if kodi.get_setting('cookie_debug') == 'true':
@@ -352,13 +362,13 @@ class Scraper(object):
         wdlg.close()
         return {'recaptcha_challenge_field': match.group(1), 'recaptcha_response_field': solution}
 
-    def _default_get_episode_url(self, show_url, video, episode_pattern, title_pattern='', airdate_pattern='', data=None, headers=None):
+    def _default_get_episode_url(self, show_url, video, episode_pattern, title_pattern='', airdate_pattern='', data=None, headers=None, method=None):
         log_utils.log('Default Episode Url: |%s|%s|%s|%s|' % (self.base_url, show_url, str(video).decode('utf-8', 'replace'), data), log_utils.LOGDEBUG)
         if not show_url.startswith('http'):
             url = urlparse.urljoin(self.base_url, show_url)
         else:
             url = show_url
-        html = self._http_get(url, data=data, headers=headers, cache_limit=2)
+        html = self._http_get(url, data=data, headers=headers, method=method, cache_limit=2)
         if html:
             force_title = scraper_utils.force_title(video)
 
@@ -407,7 +417,6 @@ class Scraper(object):
                 show_title = title
         norm_title = scraper_utils.normalize_title(show_title)
 
-        filter_days = datetime.timedelta(days=int(kodi.get_setting('%s-filter' % (self.get_name()))))
         today = datetime.date.today()
         for match in re.finditer(post_pattern, html, re.DOTALL):
             post_data = match.groupdict()
@@ -415,7 +424,10 @@ class Scraper(object):
             if 'quality' in post_data:
                 post_title += '- [%s]' % (post_data['quality'])
 
+            try: filter_days = int(kodi.get_setting('%s-filter' % (self.get_name())))
+            except ValueError: filter_days = 0
             if filter_days and date_format and 'date' in post_data:
+                filter_days = datetime.timedelta(days=filter_days)
                 try: post_date = datetime.datetime.strptime(post_data['date'], date_format).date()
                 except TypeError: post_date = datetime.datetime(*(time.strptime(post_data['date'], date_format)[0:6])).date()
                 if today - post_date > filter_days:
@@ -425,8 +437,6 @@ class Scraper(object):
             match_title = ''
             match_date = ''
             match_sxe = ''
-            post_title = post_title.replace('&#8211;', '-')
-            post_title = post_title.replace('&#8217;', "'")
             full_title = post_title
             if video_type == VIDEO_TYPES.MOVIE:
                 match = re.search('(.*?)\s*[\[(]?(\d{4})[)\]]?\s*(.*)', post_title)
@@ -450,7 +460,7 @@ class Scraper(object):
                           log_utils.LOGDEBUG)
             if (match_norm_title in norm_title or norm_title in match_norm_title) and (not year or not match_year or year == match_year) \
                     and (not search_date or (search_date == match_date)) and (not search_sxe or (search_sxe == match_sxe)):
-                result = {'url': scraper_utils.pathify_url(post_data['url']), 'title': full_title, 'year': match_year}
+                result = {'url': scraper_utils.pathify_url(post_data['url']), 'title': scraper_utils.cleanse_title(full_title), 'year': match_year}
                 results.append(result)
         return results
     
@@ -492,9 +502,9 @@ class Scraper(object):
                         if match:
                             q_str = match.group(1)
                             quality = scraper_utils.blog_get_quality(video, q_str, '')
-                            # print 'result: |%s|%s|%s|%s|' % (result, q_str, quality, Q_ORDER[quality])
+                            log_utils.log('result: |%s|%s|%s|%s|' % (result, q_str, quality, Q_ORDER[quality]), log_utils.LOGDEBUG)
                             if Q_ORDER[quality] > best_qorder:
-                                # print 'Setting best as: |%s|%s|%s|%s|' % (result, q_str, quality, Q_ORDER[quality])
+                                log_utils.log('Setting best as: |%s|%s|%s|%s|' % (result, q_str, quality, Q_ORDER[quality]), log_utils.LOGDEBUG)
                                 best_result = result
                                 best_qorder = Q_ORDER[quality]
 

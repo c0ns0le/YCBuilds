@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.ocw" version="5.2.4" name="[B]OCW[/B] [COLOR lemonchiffon]Reborn[/COLOR]" provider-name="@MrEntertainRepo">
+<addon id="plugin.video.ocw" version="5.2.5" name="[B]OCW[/B] [COLOR lemonchiffon]Reborn[/COLOR]" provider-name="@MrEntertainRepo">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.t0mm0.common" version="2.1.1"/>
         <import addon="script.module.urlresolver"  version="2.0.9"/>
-	 <import addon="repository.entertainmentrepobackup" version="1.1.2" />
+        <import addon="script.module.simplejson" version="3.3.0"/>
+	 <import addon="repository.entertainmentrepobackup" version="1.1.4" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>

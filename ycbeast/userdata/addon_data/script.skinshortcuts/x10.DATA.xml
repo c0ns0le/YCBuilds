@@ -26,6 +26,14 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
+		<label>SALTS HD Movies</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.saltshd.lite/?section=Movies&amp;mode=browse",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
 		<label>Staael2014</label>
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>

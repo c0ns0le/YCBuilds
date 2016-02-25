@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.schismwizard" version="2.26" name="SchisM TV Wizard" provider-name="SchisM">
+<addon id="plugin.video.schismwizard" version="2.28" name="SchisM TV Wizard" provider-name="SchisM">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.addon.common" version="2.0.0" />

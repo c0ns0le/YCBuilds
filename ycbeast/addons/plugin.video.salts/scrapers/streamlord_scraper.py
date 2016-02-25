@@ -60,15 +60,16 @@ class StreamLord_Scraper(scraper.Scraper):
         if source_url and source_url != FORCE_NO_MATCH:
             url = urlparse.urljoin(self.base_url, source_url)
             html = self._http_get(url, cache_limit=1)
-            match = re.search('"file"\s*:\s*"([^"]+)', html)
+            match = re.search('''["']sources['"]\s*:\s*\[(.*?)\]''', html, re.DOTALL)
             if match:
-                if video.video_type == VIDEO_TYPES.MOVIE:
-                    quality = QUALITIES.HD720
-                else:
-                    quality = QUALITIES.HIGH
-                stream_url = match.group(1) + '|User-Agent=%s&Referer=%s' % (scraper_utils.get_ua(), urllib.quote(url))
-                hoster = {'multi-part': False, 'host': self._get_direct_hostname(stream_url), 'class': self, 'url': stream_url, 'quality': quality, 'views': None, 'rating': None, 'direct': True}
-                hosters.append(hoster)
+                for match in re.finditer('''['"]*file['"]*\s*:\s*['"]*([^'"]+)''', match.group(1), re.DOTALL):
+                    if video.video_type == VIDEO_TYPES.MOVIE:
+                        quality = QUALITIES.HD720
+                    else:
+                        quality = QUALITIES.HIGH
+                    stream_url = match.group(1) + '|User-Agent=%s&Referer=%s' % (scraper_utils.get_ua(), urllib.quote(url))
+                    hoster = {'multi-part': False, 'host': self._get_direct_hostname(stream_url), 'class': self, 'url': stream_url, 'quality': quality, 'views': None, 'rating': None, 'direct': True}
+                    hosters.append(hoster)
 
         return hosters
 
@@ -80,7 +81,7 @@ class StreamLord_Scraper(scraper.Scraper):
         title_pattern = 'class="head".*?</span>(?P<title>.*?)</a>.*?href="(?P<url>[^"]+)'
         return self._default_get_episode_url(show_url, video, episode_pattern, title_pattern)
         
-    def search(self, video_type, title, year):
+    def search(self, video_type, title, year, season=''):
         results = []
         url = urlparse.urljoin(self.base_url, '/search.html')
         data = {'search': title}
@@ -98,7 +99,7 @@ class StreamLord_Scraper(scraper.Scraper):
                 match_title = self.__make_title(link, query_type)
                 match_year = ''
                 if norm_title in scraper_utils.normalize_title(match_title) and (not year or not match_year or int(year) == int(match_year)):
-                    result = {'url': scraper_utils.pathify_url(link), 'title': match_title, 'year': match_year}
+                    result = {'url': scraper_utils.pathify_url(link), 'title': scraper_utils.cleanse_title(match_title), 'year': match_year}
                     results.append(result)
 
         return results

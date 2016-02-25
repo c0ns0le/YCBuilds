@@ -14,7 +14,7 @@
 		<label2>Custom item</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb />
-		<action>PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2FzmASXYOTuE5y49uWWy4dsQ%2F1456029899%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</action>
+		<action>PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2Fv2R7J1spzDDcyQaHD7SveQ%2F1456346706%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID />
@@ -30,7 +30,7 @@
 		<label2>Custom item</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb />
-		<action>PlayMedia("plugin://plugin.video.castaway/?url=http%3A%2F%2Fwww.streamlive.to%2Fview%2F73070%2FESPN_2&amp;play=True&amp;mode=play&amp;img=http%3A%2F%2Fsnapshots.streamlive.to%2Fsnapshots%2Flclmw3k9o934118_snapshot.jpg&amp;title=ESPN+2",return)</action>
+		<action>ActivateWindow(10025,"plugin://plugin.video.SportsDevil/?item=title.tmp%3d%26catcher%3dstreams%26title%3dEspn%2b2%26url%3dhttp%253A%252F%252Fsports4u.tv%252Fchannel%252Fespn-2-live-stream%252F%26videoTitle%3dEspn%2b2%26director%3dsports4u.tv%26genre%3dTV%26referer%3dhttp%253A%252F%252Fsports4u.tv%252F%26definedIn%3dtv%252Fsports4u.tv.cfg%26type%3drss%26icon%3dhttp%253A%252F%252Fsports4u.tv%252Fwp-content%252Fuploads%252F800px-ESPN2_logo.svg_.png&amp;mode=1",return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID />

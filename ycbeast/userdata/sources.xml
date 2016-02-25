@@ -4,11 +4,6 @@
     </programs>
     <video>
         <default pathversion="1"></default>
-        <source>
-            <name>YCBeast YouTube Library</name>
-            <path pathversion="1">/sdcard/Android/data/org.xbmc.kodi/files/.kodi/userdata/addon_data/plugin.video.youtubelibrary/Streams/TV/</path>
-            <allowsharing>true</allowsharing>
-        </source>
     </video>
     <music>
         <default pathversion="1"></default>
@@ -19,33 +14,28 @@
     <files>
         <default pathversion="1"></default>
         <source>
-            <name>robo</name>
+            <name>.robo</name>
             <path pathversion="1">http://repo.shit.football/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>
-            <name>NJMSoccer</name>
+            <name>.NJMSoccer</name>
             <path pathversion="1">http://njmweb.we.bs/NJMSoccer/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>
-            <name>Legends</name>
+            <name>.legends</name>
             <path pathversion="1">http://4legends.co.uk/Legends/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>
-            <name>tv</name>
+            <name>.tvaddons</name>
             <path pathversion="1">http://fusion.tvaddons.ag/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>
-            <name>dexter</name>
+            <name>.dexter</name>
             <path pathversion="1">http://dexteriptv.com/repo/</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>kodi</name>
-            <path pathversion="1">http://chrisbwizard.pcriot.com/kodi/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>
@@ -64,8 +54,8 @@
             <allowsharing>true</allowsharing>
         </source>
         <source>
-            <name>..YCRepository</name>
-            <path pathversion="1">http://jasongentili.com/repo/Repository/</path>
+            <name>..YCBeast</name>
+            <path pathversion="1">http://jasongentili.com/repo/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>
@@ -89,7 +79,7 @@
             <allowsharing>true</allowsharing>
         </source>
         <source>
-            <name>.xfinity</name>
+            <name>.xunitytalk</name>
             <path pathversion="1">http://xunitytalk.me/xfinity/</path>
             <allowsharing>true</allowsharing>
         </source>

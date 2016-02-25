@@ -589,6 +589,38 @@ elif mode == 'refresh':
     xbmc.executebuiltin('Container.Refresh')
 
 elif mode == 'settings':
+
+    version = xbmcaddon.Addon(id=addonid).getAddonInfo('version')
+    addon_name = xbmcaddon.Addon(id=addonid).getAddonInfo('name')
+    Addon.set_setting('version', version)
+    Addon.set_setting('addon_name', addon_name)
+
+    token_check = ustv._get_json('gtv/1/live/getcustomerkey', {'token': Addon.get_setting('token')})['username']
+    if token_check != Addon.get_setting('email'):
+        ustv.token = ustv._login()
+    else:
+        ustv.token = Addon.get_setting('token')
+
+    customer_key = ustv._get_json('gtv/1/live/getcustomerkey', {'token': Addon.get_setting('token')})['customerkey']
+        
+    account_fname = ustv._get_json('gtv/1/live/getaccountsubscription', {'username': Addon.get_setting('email'), 'customerkey': customer_key})['fname']
+
+    account_lname = ustv._get_json('gtv/1/live/getaccountsubscription', {'username': Addon.get_setting('email'), 'customerkey': customer_key})['lname']
+    account_name = account_fname + ' ' + account_lname
+    Addon.set_setting('account_name',account_name)
+
+    account_plan = ustv._get_json('gtv/1/live/getaccountsubscription', {'username': Addon.get_setting('email'), 'customerkey': customer_key})['subscription']
+    Addon.set_setting('account_plan',account_plan)
+
+    account_status = ustv._get_json('gtv/1/live/getaccountsubscription', {'username': Addon.get_setting('email'), 'customerkey': customer_key})['ocaccountstatus']
+    Addon.set_setting('account_status',account_status)
+
+    date_opened = ustv._get_json('gtv/1/live/getaccountsubscription', {'username': Addon.get_setting('email'), 'customerkey': customer_key})['dateopened']
+    Addon.set_setting('date_opened',date_opened)
+
+    dvr_points = ustv._get_json('gtv/1/live/getaccountsubscription', {'username': Addon.get_setting('email'), 'customerkey': customer_key})['dvrpoints']
+    Addon.set_setting('dvr_points',str(dvr_points))
+
     Addon.show_settings()
 
 elif mode=='play':
