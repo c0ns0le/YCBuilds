@@ -211,9 +211,9 @@
 		</font>
 		<font>
 			<name>font_MainMenu</name>
-			<filename>BebasNeue.ttf</filename>
+			<filename>Boycott.ttf</filename>
 			<linespacing>0</linespacing>
-			<size>112</size>
+			<size>100</size>
 		</font>
 		<font>
 			<name>BigAssFont</name>
@@ -384,7 +384,7 @@
         </font>
         <font>
             <name>font_MainMenu</name>
-            <filename>CatboxNeue.ttf</filename>
+            <filename>Boycott.ttf</filename>
             <size>100</size>
         </font>
         <font>
