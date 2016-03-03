@@ -3,8 +3,17 @@
     <setting id="accountstatus" value="free" />
     <setting id="activationsleft" value="" />
     <setting id="autoupdate" value="true" />
+    <setting id="buildcanupdate" value="" />
+    <setting id="buildinstalledversion" value="" />
+    <setting id="buildlatestversion" value="" />
+    <setting id="buildname" value="" />
+    <setting id="buildupdatefreq" value="1" />
+    <setting id="checkbuildupdate" value="true" />
     <setting id="deviceid" value="C9ITGAK4ZY40XY7D" />
     <setting id="firstrun" value="false" />
+    <setting id="keepfavourites" value="true" />
+    <setting id="keepsources" value="true" />
+    <setting id="lastbuildcheck" value="" />
     <setting id="lastclearedcache" value="2016-01-28" />
     <setting id="lastclearedpackages" value="2015-12-30" />
     <setting id="lastclearedthumbnails" value="2016-01-28" />

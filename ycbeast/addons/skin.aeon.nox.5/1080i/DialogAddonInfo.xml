@@ -45,6 +45,14 @@
 						<align>left</align>
 						<font>font15</font>
 					</control>
+					<control type="radiobutton" id="13">
+						<description>Auto Update Addon button</description>
+						<width>356</width>
+						<height>68.57</height>
+						<label>21340</label>
+						<align>left</align>
+						<font>font15</font>
+					</control>
 					<control type="button" id="12">
 						<description>Launch Addon button</description>
 						<width>356</width>
@@ -66,14 +74,6 @@
 						<width>356</width>
 						<height>68.57</height>
 						<label>24021</label>
-						<align>left</align>
-						<font>font15</font>
-					</control>
-					<control type="button" id="11">
-						<description>Rollback button</description>
-						<width>356</width>
-						<height>68.57</height>
-						<label>24048</label>
 						<align>left</align>
 						<font>font15</font>
 					</control>
@@ -148,7 +148,7 @@
 							<description>Disclaimer</description>
 							<top>10</top>
 							<width>1256</width>
-							<height>170</height>
+							<height>175</height>
 							<font>font15_textbox</font>
 							<align>justify</align>
 							<textcolor>grey2</textcolor>
@@ -158,9 +158,9 @@
 						</control>
 					</control>
 					<control type="scrollbar" id="60">
-						<left>1351</left>
+						<left>1347</left>
 						<top>232</top>
-						<width>8</width>
+						<width>14</width>
 						<height>294</height>
 						<onleft>9000</onleft>
 						<onright>9000</onright>

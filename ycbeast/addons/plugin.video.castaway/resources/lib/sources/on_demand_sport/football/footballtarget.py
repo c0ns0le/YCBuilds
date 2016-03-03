@@ -1,6 +1,6 @@
 from __future__ import unicode_literals
-from resources.lib.modules import client,webutils
-import re,urlparse,json
+from resources.lib.modules import client,webutils,convert
+import re,urlparse,json,xbmcgui
 
 
 
@@ -21,12 +21,13 @@ class main():
 
 	def items(self):
 		html = client.request(self.url)
+		html = convert.unescape(html.decode('utf-8'))
 		soup = webutils.bs(html)
 		items = soup.find('div',{'id':'cat-container'}).findAll('li')
 		out = []
 		for item in items:
 			url = item.find('a')['href']
-			title = item.find('a')['title'].replace('Full Match: ','').encode('utf-8')
+			title = item.find('a')['title'].replace('Full Match: ','').encode('utf-8', 'xmlcharrefreplace')
 			img = item.find('img')['src']
 			out.append((title,url,img))
 

@@ -89,14 +89,14 @@ def get(function, timeout, *args, **table):
         pass
 
 
-def clear(table=None):
+def clear(table=None,notify=False):
     try:
         control.idle()
 
         if table == None: table = ['rel_list', 'rel_lib']
         elif not type(table) == list: table = [table]
 
-        yes = control.yesnoDialog(control.lang(30401).encode('utf-8'), '', '')
+        yes = control.yesnoDialog("Are you sure?", '', '')
         if not yes: return
 
         dbcon = database.connect(control.cacheFile)
@@ -109,8 +109,7 @@ def clear(table=None):
                 dbcon.commit()
             except:
                 pass
-
-        control.infoDialog(control.lang(30402).encode('utf-8'))
+        control.infoDialog("Process complete")
     except:
         pass
 

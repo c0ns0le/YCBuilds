@@ -18,7 +18,15 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>[COLOR blue][B]SALTS Movies[/B][/COLOR]</label>
+		<label>[COLOR limegreen][B]SALTS HD Movies[/B][/COLOR]</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.saltshd.lite/?section=Movies&amp;mode=browse",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>SALTS Movies</label>
 		<label2>Video Add-On</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.salts%5cart%5cthemes%5cShine%5cmovies.png/</thumb>
@@ -26,11 +34,19 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>SALTS HD Movies</label>
+		<label>Yify Movies</label>
 		<label2>Custom item</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb />
-		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.saltshd.lite/?section=Movies&amp;mode=browse",return)</action>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.yifymovies.hd",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>123Movies</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.123movies",return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID />

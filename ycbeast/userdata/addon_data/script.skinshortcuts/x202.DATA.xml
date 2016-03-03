@@ -10,11 +10,11 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>ESPN | Sports</label>
+		<label>NFL Now</label>
 		<label2>Custom item</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb />
-		<action>PlayMedia("plugin://plugin.video.ccloudtv/?url=http%3A%2F%2F167.114.102.27%2Flive%2Fv2R7J1spzDDcyQaHD7SveQ%2F1456346706%2F7b0ef842a6a1233a8a86a8533063a1a1.m3u8%7CUser-Agent%3DMozilla%252F5.0%2520%28Windows%2520NT%25206.1%253B%2520WOW64%29%2520AppleWebKit%252F537.36%2520%28KHTML%252C%2520like%2520Gecko%29%2520Chrome%252F47.0.2526.106%2520Safari%252F537.36&amp;mode=1&amp;name=ESPN+%28Sports%29+%28US%29+%28English%29&amp;iconimage=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F2f%2FESPN_wordmark.svg%2F1280px-ESPN_wordmark.svg.png",return)</action>
+		<action>PlayMedia("plugin://plugin.video.channelpear/?url=http%3A%2F%2Fnflioslivesvg2-i.akamaihd.net%2Fhls%2Flive%2F221521%2Fnflioslive%2F2015HackerNow_w99d9.m3u8&amp;mode=12",return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID />
@@ -26,11 +26,11 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>ESPN2</label>
+		<label>VS Verses</label>
 		<label2>Custom item</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb />
-		<action>ActivateWindow(10025,"plugin://plugin.video.SportsDevil/?item=title.tmp%3d%26catcher%3dstreams%26title%3dEspn%2b2%26url%3dhttp%253A%252F%252Fsports4u.tv%252Fchannel%252Fespn-2-live-stream%252F%26videoTitle%3dEspn%2b2%26director%3dsports4u.tv%26genre%3dTV%26referer%3dhttp%253A%252F%252Fsports4u.tv%252F%26definedIn%3dtv%252Fsports4u.tv.cfg%26type%3drss%26icon%3dhttp%253A%252F%252Fsports4u.tv%252Fwp-content%252Fuploads%252F800px-ESPN2_logo.svg_.png&amp;mode=1",return)</action>
+		<action>ActivateWindow(10025,"plugin://plugin.program.super.favourites/?label=VS%20Versus%20Channel&amp;mode=600&amp;cmd=PlayMedia%28%22plugin%3A%2F%2Fplugin.video.ukturk%2F%3Furl%3Dhttp%253A%252F%252F208.92.36.158%252Fipad%252Flive%252Fnba_ipad_1240.m3u8%26mode%3D3%26name%3DVS%2BVersus%2BChannel%26iconimage%3Dhttps%253A%252F%252Fnbcprohockeytalk.files.wordpress.com%252F2010%252F11%252Fversus_logo.jpg%26description%3DBL%26sf_options%3Dfanart%253Dspecial%253A%252F%252Fhome%252Faddons%252Fplugin.video.ukturk%252Ffanart.jpg%2526winID%253D10025%2526_options_sf%22%29&amp;image=https%3A%2F%2Fnbcprohockeytalk.files.wordpress.com%2F2010%2F11%2Fversus_logo.jpg&amp;fanart=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.ukturk%2Ffanart.jpg&amp;content_type=&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%2Fplugin.video.ukturk%2Ffanart.jpg%26_options_sf",return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID />

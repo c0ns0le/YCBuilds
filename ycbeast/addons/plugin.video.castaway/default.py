@@ -26,6 +26,7 @@ if mode is None:
     addon.add_item({'mode': 'live_tv'}, {'title':'Live TV'}, img=icon_path('live_tv.jpg'), fanart=fanart,is_folder=True)
     addon.add_item({'mode': 'p2p_corner'}, {'title':'P2P Corner'}, img=icon_path('p2p_corner.jpg'), fanart=fanart,is_folder=True)
     addon.add_item({'mode': 'on_demand_sport_categories'}, {'title':'Sport On Demand'}, img=icon_path('sport_on_demand.jpg'), fanart=fanart,is_folder=True)
+    #addon.add_item({'mode': 'blogs'}, {'title':'Blogs'}, img=icon_path('blogs.jpg'), fanart=fanart,is_folder=True)
     addon.add_item({'mode': 'tools'}, {'title':'Tools'}, img=icon_path('tools.jpg'), fanart=fanart,is_folder=True)
     addon.add_item({'mode': 'my_castaway'}, {'title':'My Castaway'}, img=icon_path('my_castaway.jpg'), fanart=fanart,is_folder=True)
 
@@ -35,7 +36,9 @@ if mode is None:
     
 
 elif mode[0]=='my_castaway':
-    addon.add_item({'mode': 'keyboard_open'}, {'title':'Open URL'}, img=icon_path('live.png'), fanart=fanart,is_folder=True)
+    #addon.add_item({'mode': 'favourites'}, {'title':'Favourites'}, img=icon_path('favourites.jpg'), fanart=fanart,is_folder=True)
+    #addon.add_item({'mode': 'my_lists'}, {'title':'My Lists'}, img=icon_path('my_lists.jpg'), fanart=fanart,is_folder=True)
+    addon.add_item({'mode': 'keyboard_open'}, {'title':'Open URL'}, img=icon_path('my_castaway.jpg'), fanart=fanart,is_folder=True)
     addon.add_item({'mode': 'x'}, {'title':'[COLOR yellow]Follow me @natko1412[/COLOR]'}, img=icon_path('twitter.png'), fanart=fanart)
     addon.end_of_directory()
 
@@ -226,7 +229,15 @@ elif mode[0] == 'open_p2p_sport':
         source = eval(site+".main()")
         categories  = source.categories()
         for cat in categories:
-            addon.add_item({'mode': 'open_p2p_cat', 'url': cat[0], 'site': info.mode}, {'title': cat[1]}, img=icon_path(cat[2]), fanart=fanart,is_folder=True)
+            from resources.lib.modules import constants
+            adult = False
+            for a in constants.adult:
+                if a in cat[1].lower():
+                    adult = True
+            from resources.lib.modules import parental
+            parent = parental.Parental()
+            if not adult or parent.isVisible():
+                addon.add_item({'mode': 'open_p2p_cat', 'url': cat[0], 'site': info.mode, 'adult':adult}, {'title': cat[1]}, img=icon_path(cat[2]), fanart=fanart,is_folder=True)
 
     addon.end_of_directory()
 
@@ -240,23 +251,31 @@ elif mode[0] == 'open_p2p_sport':
 elif mode[0]=='open_p2p_cat':
     url = args['url'][0]
     site = args['site'][0]
+    adult = args['adult'][0]=='True'
     exec "from resources.lib.sources.p2p_sport import %s"%site
     info = eval(site+".info()")
     source = eval(site+".main()")
     channels = source.channels(url)
+    from resources.lib.modules import parental
+    par = parental.Parental()
+    par_enabled = par.isEnabled()
+    correct = True
+    if adult and par_enabled:
+        correct = par.promptPassword()
 
-    for event in channels:
-        if not info.multilink:
-            browser = 'plugin://plugin.program.chrome.launcher/?url=%s&mode=showSite&stopPlayback=no'%(event[0])
-            context= [('Open in browser','RunPlugin(%s)'%browser)]
-            addon.add_video_item({'mode': 'play', 'url': event[0],'title':event[1], 'img': event[2]}, {'title': event[1]}, img=event[2], fanart=fanart,contextmenu_items=context)
-        else:
-            addon.add_item({'mode': 'get_p2p_event', 'url': event[0],'site':site , 'title':event[1], 'img': event[2]}, {'title': event[1]}, img=event[2], fanart=fanart,is_folder=True)
-    
-    if (info.paginated and source.next_page()):
-        addon.add_item({'mode': 'open_p2p_cat', 'site': info.mode, 'url': source.next_page()}, {'title': 'Next Page >>'}, img=icon_path(info.icon), fanart=fanart,is_folder=True)
-    
-    addon.end_of_directory()
+    if correct or not adult:
+        for event in channels:
+            if not info.multilink:
+                browser = 'plugin://plugin.program.chrome.launcher/?url=%s&mode=showSite&stopPlayback=no'%(event[0])
+                context= [('Open in browser','RunPlugin(%s)'%browser)]
+                addon.add_video_item({'mode': 'play', 'url': event[0],'title':event[1], 'img': event[2]}, {'title': event[1]}, img=event[2], fanart=fanart,contextmenu_items=context)
+            else:
+                addon.add_item({'mode': 'get_p2p_event', 'url': event[0],'site':site , 'title':event[1], 'img': event[2]}, {'title': event[1]}, img=event[2], fanart=fanart,is_folder=True)
+        
+        if (info.paginated and source.next_page()):
+            addon.add_item({'mode': 'open_p2p_cat', 'site': info.mode, 'url': source.next_page()}, {'title': 'Next Page >>'}, img=icon_path(info.icon), fanart=fanart,is_folder=True)
+        
+        addon.end_of_directory()
 
 elif mode[0] == 'open_demand_sport':
     cat = args['category'][0]
@@ -555,12 +574,83 @@ elif mode[0]=='play_od_item':
 ########################################################################################################################################################################################################
 
 
+
+
 elif mode[0]=='tools':
-    addon.add_item({'mode': 'addon_installer'}, {'title':'Install external addons'}, img=icon_path('tools.jpg'), fanart=fanart,is_folder=True)
     addon.add_item({'mode': 'settings'}, {'title':'Settings'}, img=icon_path('tools.jpg'), fanart=fanart,is_folder=True)
+    addon.add_item({'mode': 'addon_installer'}, {'title':'Install external addons'}, img=icon_path('tools.jpg'), fanart=fanart,is_folder=True)
+    addon.add_item({'mode': 'parental'}, {'title':'Parental control'}, img=icon_path('tools.jpg'), fanart=fanart, is_folder=True)
+    addon.add_item({'mode': 'clear_liveresolver_cache'}, {'title':'Clear Liveresolver cache'}, img=icon_path('tools.jpg'), fanart=fanart,is_folder=True)
     addon.add_item({'mode': 'x'}, {'title':'[COLOR yellow]Follow me @natko1412[/COLOR]'}, img=icon_path('twitter.png'), fanart=fanart)
 
     addon.end_of_directory()
+
+elif mode[0]=='clear_liveresolver_cache':
+    import liveresolver
+    liveresolver.delete_cache()
+
+elif mode[0]=='parental':
+    from resources.lib.modules import parental
+    parent = parental.Parental()
+    parental_enabled = parent.isEnabled()
+    adult_visible = parent.isVisible()
+
+    title = 'Enable'
+    tit = 'Parental protection disabled'
+    color = 'red'
+    if parental_enabled:
+        tit = 'Parental protection enabled'
+        title = 'Disable'
+        color='green'
+
+    tit2 = 'Adult content not visible'
+    m2 = 'Show adult content'
+    color2='green'
+    if adult_visible:
+        tit2 = 'Adult content visible'
+        m2 = 'Hide adult content'
+        color2 = 'red'
+
+    addon.add_item({'mode': 'x'}, {'title':'[COLOR %s]%s[/COLOR] / [COLOR %s]%s[/COLOR]'%(color,tit,color2,tit2)}, img=icon_path('tools.jpg'), fanart=fanart)
+    password_set = parent.isPasswordSet()
+    addon.add_item({'mode': 'toggle_parental'}, {'title':title}, img=icon_path('tools.jpg'), fanart=fanart, is_folder=True)
+    if password_set:
+        addon.add_item({'mode': 'change_password'}, {'title':'Change password'}, img=icon_path('tools.jpg'), fanart=fanart, is_folder=True)
+    else:
+        addon.add_item({'mode': 'set_password'}, {'title':'Set password'}, img=icon_path('tools.jpg'), fanart=fanart, is_folder=True)
+
+    addon.add_item({'mode': 'toggle_visible'}, {'title':m2}, img=icon_path('tools.jpg'), fanart=fanart, is_folder=True)    
+
+
+    addon.end_of_directory()
+
+elif mode[0]=='toggle_visible':
+    from resources.lib.modules import parental
+    parent = parental.Parental()
+    parental_enabled = parent.isVisible()
+    if parental_enabled:
+        parent.setVisible(0)
+    else:
+        parent.setVisible(1)
+
+elif mode[0]=='toggle_parental':
+    from resources.lib.modules import parental
+    parent = parental.Parental()
+    parental_enabled = parent.isEnabled()
+    if parental_enabled:
+        parent.disable()
+    else:
+        parent.enable()
+
+elif mode[0]=='set_password':
+    from resources.lib.modules import parental
+    parent = parental.Parental()
+    parent.setPassword()
+
+elif mode[0]=='change_password':
+    from resources.lib.modules import parental
+    parent = parental.Parental()
+    parent.changePassword()
 
 
 elif mode[0]=='settings':
@@ -587,3 +677,76 @@ elif mode[0]=='install':
         from resources.lib.modules import control
         control.infoDialog('%s already installed'%name)
 
+elif mode[0]=='blogs':
+    sources = os.listdir(AddonPath + '/resources/lib/sources/blogs')
+    sources.remove('__init__.py')
+    for source in sources:
+        if '.pyo' not in source and '__init__' not in source:
+            #try:
+                source = source.replace('.py','')
+                exec "from resources.lib.sources.blogs import %s"%source
+                info = eval(source+".info()")
+                addon.add_item({'mode': 'open_blog', 'site': info.mode}, {'title': info.name}, img=icon_path(info.icon), fanart=fanart,is_folder=True)
+            #except:
+            #    pass
+    addon.end_of_directory()
+
+############################################################################################################################################################################################################################################
+############################################################################################################################################################################################################################################
+############################################################################################################################################################################################################################################
+
+elif mode[0]=='open_blog':
+    site = args['site'][0]
+    try:
+        next_page = args['next'][0]
+    except:
+        next_page = None
+    exec "from resources.lib.sources.blogs import %s"%site
+    info = eval(site+".info()")
+    
+    if not info.categorized:
+        if next_page:
+            source = eval(site+".main(url=next_page)")
+        else:
+            source = eval(site+".main()")
+        articles = source.articles()
+        for channel in articles:
+            browser = 'plugin://plugin.program.chrome.launcher/?url=%s&mode=showSite&stopPlayback=no'%(channel[0])
+            context = [('Open in browser','RunPlugin(%s)'%browser)]
+            addon.add_item({'mode': 'open_article', 'url': channel[0], 'title': channel[1], 'img':channel[2], 'site':site}, {'title': channel[1]}, img=channel[2], fanart=fanart, contextmenu_items=context,is_folder=True)
+
+
+        if (info.paginated and source.next_page()):
+            addon.add_item({'mode': 'open_blog', 'site': info.mode, 'next' : source.next_page()}, {'title': 'Next Page >>'}, img=icon_path(info.icon), fanart=fanart,is_folder=True)
+    else:
+        source = eval(site+".main()")
+        categories  = source.categories()
+        for cat in categories:
+            thumb = cat[2]
+            if not 'http' in thumb:
+                thumb = icon_path(thumb)
+            addon.add_item({'mode': 'open_blog_cat', 'url': cat[0], 'site': info.mode}, {'title': cat[1]}, img=thumb, fanart=fanart, is_folder=True)
+
+
+    addon.end_of_directory()
+
+elif mode[0]=='open_article':
+    site = args['site'][0]
+    url = args['url'][0]
+    title = args['title'][0]
+    img = args['img'][0]
+
+    exec "from resources.lib.sources.blogs import %s"%site
+    source = eval(site+".main()")
+
+    text,video = source.content(url)
+    from resources.lib.modules import blog_viewer as bv
+    wind = bv.Viewer(title, image=img, text=text)
+    wind.doModal()
+    del wind
+
+elif mode[0]=='bblogs':
+    from resources.lib.modules import blog_viewer as bv
+    wind = bv.Viewer('My first window')
+    wind.doModal()
+    del wind

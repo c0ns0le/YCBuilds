@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 '''
-    Genesis Add-on
-    Copyright (C) 2015 lambda
+    Exodus Add-on
+    Copyright (C) 2016 lambda
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -21,8 +21,8 @@
 
 import re,urllib,urlparse,time
 
-import cache
-import client
+from resources.lib.modules import cache
+from resources.lib.modules import client
 
 
 def request(url, post=None, headers=None, mobile=False, safe=False, timeout='30'):
@@ -30,15 +30,21 @@ def request(url, post=None, headers=None, mobile=False, safe=False, timeout='30'
         try: headers.update(headers)
         except: headers = {}
 
-        if not 'User-Agent' in headers: headers['User-Agent'] = client.agent()
+        agent = cache.get(cloudflareAgent, 168)
+
+        if not 'User-Agent' in headers: headers['User-Agent'] = agent
 
         u = '%s://%s' % (urlparse.urlparse(url).scheme, urlparse.urlparse(url).netloc)
 
-        cookie = cache.get(cloudflare, 168, u, post, headers, mobile, safe, timeout)
+        cookie = cache.get(cloudflareCookie, 168, u, post, headers, mobile, safe, timeout)
+
         result = client.request(url, cookie=cookie, post=post, headers=headers, mobile=mobile, safe=safe, timeout=timeout, output='response', error=True)
 
         if result[0] == '503':
-            cookie = cache.get(cloudflare, 0, u, post, headers, mobile, safe, timeout)
+            agent = cache.get(cloudflareAgent, 0) ; headers['User-Agent'] = agent
+
+            cookie = cache.get(cloudflareCookie, 0, u, post, headers, mobile, safe, timeout)
+
             result = client.request(url, cookie=cookie, post=post, headers=headers, mobile=mobile, safe=safe, timeout=timeout)
         else:
             result= result[1]
@@ -52,7 +58,11 @@ def source(url, post=None, headers=None, mobile=False, safe=False, timeout='30')
     return request(url, post, headers, mobile, safe, timeout)
 
 
-def cloudflare(url, post, headers, mobile, safe, timeout):
+def cloudflareAgent():
+    return client.randomagent()
+
+
+def cloudflareCookie(url, post, headers, mobile, safe, timeout):
     try:
         result = client.request(url, post=post, headers=headers, mobile=mobile, safe=safe, timeout=timeout, error=True)
 
@@ -90,4 +100,5 @@ def parseJSString(s):
         return val
     except:
         pass
+
 

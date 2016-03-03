@@ -2,7 +2,8 @@
 <settings>
     <category label="10000">
         <setting type="lsep" label="20000" />
-            <setting id="quality" type="enum" label="30100" values="400kbps|750kbps|1024kbps|HD" default="1" subsetting="true"/>
+            <setting id="quality" type="enum" label="30100" values="Low|Medium|High|HD" default="1" subsetting="true"/>
+            <setting id="rec_quality" type="enum" label="30110" values="Low|Medium|High" default="1" subsetting="true"/>
         <setting type="lsep" label="20001" />
             <setting id="email" type="text" label="30102" default="" subsetting="true"/>
             <setting id="password" type="text" label="30103" option="hidden" default="" subsetting="true"/>
@@ -18,7 +19,7 @@
 </category>
 
     <category label="10002">
-            <setting id="skin" type="enum" label="40008" values="Simple (Default)|Glossy|Outline|No Icons" default="0" />
+            <setting id="skin" type="enum" label="40008" values="Simple (Default)|Glossy|Outline|Simple (Stylish)|No Icons" default="0" />
             <setting id="logo" type="enum" label="40000" values="Channel Logo|Show/Movie Poster" default="1" />
             <setting id="show_tv_guide" type="bool" label="40006" default="true" />
             <setting id="show_movies_section" type="bool" label="40002" default="true" />

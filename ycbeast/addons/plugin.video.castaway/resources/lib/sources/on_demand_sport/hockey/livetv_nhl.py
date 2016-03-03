@@ -1,6 +1,8 @@
 from __future__ import unicode_literals
 from resources.lib.modules import client,webutils
-import re,urlparse,os,sys,json
+import re,urlparse,os,sys,json,xbmcgui,urllib,requests
+from resources.lib.modules.log_utils import log
+
 
 try:
     import CommonFunctions as common
@@ -25,8 +27,8 @@ class info():
 
 
 class main():
-	def __init__(self,url = 'http://livetv.sx/en/videotourney/2/'):
-		self.base = 'http://livetv.sx'
+	def __init__(self,url = addon.get_setting('livetv_base') + '/en/videotourney/2/'):
+		self.base = addon.get_setting('livetv_base')
 		self.url = url
 
 	def items(self):
@@ -67,9 +69,16 @@ class main():
 		return out
 
 	def resolve(self,url):
+		ref = url
 		html = client.request(url)
 		soup = webutils.bs(html)
-		url = soup.find('iframe',{'width':'600'})['src']
+		try:
+			url = soup.find('iframe',{'width':'600'})['src']
+		except:
+			try:
+				url = 'http:' + re.findall('(\/\/config\.playwire\.com\/[^\'\"]+)',html)[0]
+			except:
+				return
 		if 'nhl' in url:
 			url = url.split("playlist=")[-1]
 			url = 'http://video.nhl.com/videocenter/servlets/playlist?ids=%s&format=json' % url
@@ -77,16 +86,67 @@ class main():
 			url = re.compile('"publishPoint":"(.+?)"').findall(result)[0]
 			return url
 		elif 'rutube' in url:
-			url = 'http:' + url
+			url = re.findall('embed/(\d+)',url)[0]
+			url = 'http://rutube.ru/api/play/options/'+url+'?format=json'
 			result = client.request(url)
-			m3u8 = re.compile('video_balancer&quot;: {.*?&quot;m3u8&quot;: &quot;(.*?)&quot;}').findall(result)[0]
-			result = client.request(m3u8)
-			url = re.compile('"\n(.+?)\n').findall(result)
-			url = url[::-1]
-			return url[0]
+			jsx = json.loads(result)
+			link = jsx['video_balancer']['m3u8']
+			return link
+		
+		elif 'mail.ru' in url:
+			link=url
+
+			link = link.replace('https://videoapi.my.mail.ru/videos/embed/mail/','http://videoapi.my.mail.ru/videos/mail/')
+			link = link.replace('http://videoapi.my.mail.ru/videos/embed/mail/','http://videoapi.my.mail.ru/videos/mail/')
+			link = link.replace('html','json')
+			s = requests.Session()
+			f = s.get(link).text
+
+			js = json.loads(f)
+			token = s.cookies.get_dict()['video_key']
+			url = js['videos'][-1]['url'] + '|%s'%(urllib.urlencode({'Cookie':'video_key=%s'%token, 'User-Agent':client.agent(), 'Referer':ref} ))
+			return url
+
 		elif 'youtube' in url:
 			import liveresolver
 			return liveresolver.resolve(url)
+		elif 'playwire' in url:
+			try:
+				result = client.request(url)
+				html = result
+				result = json.loads(result)
+				try:
+					f4m=result['content']['media']['f4m']
+				except:
+					reg=re.compile('"src":"http://(.+?).f4m"')
+					f4m=re.findall(reg,html)[0]
+					f4m='http://'+pom+'.f4m'
+
+				result = client.request(f4m)
+				soup = webutils.bs(result)
+				try:
+					base=soup.find('baseURL').getText()+'/'
+				except:
+					base=soup.find('baseurl').getText()+'/'
+
+				linklist = soup.findAll('media')
+				choices,links=[],[]
+				for link in linklist:
+					url = base + link['url']
+					bitrate = link['bitrate']
+					choices.append(bitrate)
+					links.append(url)
+				if len(links)==1:
+					return links[0]
+				if len(links)>1:
+					import xbmcgui
+					dialog = xbmcgui.Dialog()
+					index = dialog.select('Select bitrate', choices)
+					if index>-1:
+						return links[index]
+				return
+			except:
+				return
 		else:
 			import urlresolver
 			url = urlresolver.resolve(url)

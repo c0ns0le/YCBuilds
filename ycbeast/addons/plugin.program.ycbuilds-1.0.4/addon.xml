@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.ycbuilds" name="YCBeast Builds" version="1.0.4" provider-name="ForTheJest">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">The YCBeast Builds Repository for Firesticks.</summary>
+    <description lang="en">Version 1.0.4 - Released on 03.01.2016
+      This Repository Contains All the YCBeast Builds ie YCBeast, YCFireSlick, YCSports, etc. Along with other Add-ons and Scripts for Kodi. - Faith is often the death of Reason.</description>
+    <platform>all</platform>
+  </extension>
+</addon>

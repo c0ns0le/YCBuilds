@@ -2,7 +2,7 @@
     <lastloaded>0</lastloaded>
     <useloginscreen>false</useloginscreen>
     <autologin>-1</autologin>
-    <nextIdProfile>2</nextIdProfile>
+    <nextIdProfile>1</nextIdProfile>
     <profile>
         <id>0</id>
         <name>Master user</name>
@@ -21,6 +21,6 @@
         <lockprograms>false</lockprograms>
         <lockmode>0</lockmode>
         <lockcode></lockcode>
-        <lastdate>01/28/2016 - 10:37 PM</lastdate>
+        <lastdate></lastdate>
     </profile>
 </profiles>

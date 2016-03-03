@@ -1,19 +1,21 @@
 # -*- coding: utf-8 -*-
 import re
-from modules import client,webutils,cloudflare,decryptionUtils
+from modules import client,webutils,cloudflare,decryptionUtils,cache
 from modules.constants import resolver_dict
 from modules.log_utils import log
 import urlparse,urllib,base64
 from BeautifulSoup import BeautifulSoup as bs
 
-
+global limit
+limit = 0
 
 def resolve(url):
     try:
         log("Resolver called with url: " + url)
         resolved=resolve_it(url)
         if resolved==None:
-            url=find_link(url)
+            #semi-cached resolving
+            url=cache.get(find_link,3600*3,url)
             resolved=url
             url=resolve_it(url)
             if url!=None:
@@ -27,8 +29,12 @@ def resolve(url):
 
 
 
+def delete_cache():
+    cache.clear()
 
 def find_link(url, html=''):
+    global limit
+    limit+=1
     log('Finding in : %s'%url)
     try: referer = urlparse.parse_qs(urlparse.urlparse(url).query)['referer'][0]
     except: referer = 'http://' + urlparse.urlparse(url).netloc
@@ -49,6 +55,8 @@ def find_link(url, html=''):
                 log('Resolved with %s: %s'%(f,resolved))
                 return resolved
                 break
+
+
     return
 
 
@@ -65,7 +73,7 @@ def resolve_it(url):
         resolved = f4m.resolve(url)
         return resolved
 
-    if url.startswith('acestream://') or url.startswith('sop://'):
+    if url.startswith('acestream://') or url.startswith('sop://') or '.acelive' in url:
         from resolvers import sop_ace
         resolved = sop_ace.resolve(url, 'Video')
         return resolved
@@ -101,6 +109,10 @@ def manual_url_fix(url):
     return url
 
 def manual_html_fix(url,html, headers):
+    try:
+        html = re.sub("(<!--.*?-->)", "", html, flags=re.MULTILINE)
+    except:
+        pass
 
     try:
         if '@3C' in html:
@@ -125,7 +137,7 @@ def manual_html_fix(url,html, headers):
         pass
 
     
-    if 'livetv.sx' in url or 'shadow' in url or 'futandres' in url and 'goto/' not in url:
+    if 'livetv.sx' in url or 'shadow' in url or 'blogspot.com' in url and 'goto/' not in url:
         import requests
         s = requests.Session()
         s.headers.update(headers)
@@ -185,6 +197,7 @@ def add_args(url, arg_dict):
 
 #embeded iframes
 def finder1(html,url):
+    global limit
     ref=url
     try:
         urls = re.findall('<i?frame.+?src=(?:\'|\")(.+?)(?:\'|\")',html)
@@ -200,6 +213,9 @@ def finder1(html,url):
             if rr:
                 return rr
             uri = manual_fix(url,ref)
+            if limit>=25:
+                log("Exiting - iframe visit limit reached")
+                return
             resolved = find_link(uri) 
             if resolved:
                 break
@@ -537,7 +553,7 @@ def finder30(html,url):
 def finder31(html,url):
     try:
         ref=url
-        url = re.findall('src="(http://(?:www.)?iguide.to/embed/[^"]+)"',html)[0]
+        url = re.findall('(http://(?:www.)?iguide.to/embed/[^"\']+)"',html)[0]
         return url+'&referer='+ref
     except:
         return
@@ -572,7 +588,7 @@ def finder34(html,url):
         try:
             id = re.findall('http://p2pcast.tv/(?:p2pembed|stream).php\?id=([^&]+)',html)[0]
         except:
-            id = re.findall("id=(?:\'|\")(.+?)(?:\'|\");.+?src='http://js.p2pcast.tv/p2pcast/.+?.js'>",html)[0]
+            id = re.findall("id=(?:\'|\")(.+?)(?:\'|\");.+?src='http://js.p2pcast.+?.js'>",html)[0]
         url = 'http://p2pcast.tv/stream.php?id=%s&referer=%s'%(id,ref)
         return url
     except:
@@ -604,7 +620,7 @@ def finder36(html,url):
 def finder37(html,url):
     try:
         try:
-            ace = re.findall('this.loadPlayer\((?:\'|\")(.+?)(?:\'|\")',html)[0]
+            ace = re.findall('this.load(?:Player|Torrent)\((?:\'|\")(.+?)(?:\'|\")',html)[0]
         except:
             ace = re.findall('"http://torrentstream.net/p/(.+?)"',html)[0]
         url = 'plugin://program.plexus/?mode=1&url=%s&name=Video'%(ace)
@@ -1019,9 +1035,11 @@ def finder77(html,url):
 #weplayer
 def finder78(html,url):
     try:
-        id = re.findall("id=['\"](.+?)['\"];.+?src=['\"]http://weplayer.pw/.+?.js",html)[0]
-        url = 'http://weplayer.pw/stream.php?id=%s&width=640&height=480&stretching=&referer=%s'%(id,url)
-        return url
+        id = re.findall("id=['\"](.+?)['\"];.+?src=['\"]http://weplayer.pw/.+?.js([^$]+)",html)[0]
+        url = 'http://weplayer.pw/stream.php?id=%s&width=640&height=480&stretching=&referer=%s'%(id[0],url)
+        if '-->' in id[1]:
+            return
+        return find_link(url)
     except:
         return
 
@@ -1038,7 +1056,7 @@ def finder79(html,url):
 def finder80(html,ref):
     try:
         id = re.findall('c="(.+?)";.+?</script>\s*<script.+?src="http://i.tvope.com/js/.+?.js',html)[0]
-        url = 'http://tvope.com/emb/player.php?c=%s&w=700&h=480&referer=%s'%(id,ref)
+        url = 'http://tvope.com/emb/player.php?c=%s&w=700&h=480&referer=%s&d=www.popofthestreams.xyz'%(id,ref)
         return url
     except:
         return
@@ -1098,7 +1116,16 @@ def finder95(html,url):
     except:
         return
 
+#acelive
+def finder96(html,url):
+    try:
+        url = re.findall('[\"\'](.+?.acelive.+?)[\"\']',html)[0]
+        return url
+    except:
+        return
 
+
+#castasap
 def finder97(html,url):
     try:
         ref = url
@@ -1108,7 +1135,22 @@ def finder97(html,url):
         for c in chars:
             html = html.replace('&#%s'%c, chr(int(c)))
         html = html.replace(';','')
-        url = re.findall('src="(http://www.(?:castasap|castflash|flashlive|fastflash).pw/.+?embed.php\?id=.+?)"',html)[0]
-        return url + '&referer=' + ref
+        try:
+            url = re.findall('src="(http://www.(?:castasap|castflash|flashlive|fastflash).pw/.+?embed.php\?id=.+?)"',html)[0]
+        except:
+            url = re.findall('src="(http://www.(?:castasap|castflash|flashlive|fastflash).pw/embed.+?)"',html)[0]
+
+        url = add_args(url,{'referer':ref})
+        return url
     except:
         return
+
+#deltatv
+def finder98(html,ref):
+    try:
+        x = re.findall('id=[\'\"](.+?)[\'\"].+?src=[\'\"]http://deltatv.xyz/.+?.js',html)[0]
+        url = 'http://deltatv.xyz/stream.php?id=%s&width=640&height=480&referer=%s'%(x,ref)
+        return url
+    except:
+        return
+

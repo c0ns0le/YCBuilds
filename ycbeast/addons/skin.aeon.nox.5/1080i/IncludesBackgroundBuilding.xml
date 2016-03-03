@@ -31,11 +31,11 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>![Window.IsActive(home) | Window.IsActive(startup)] | Window.IsActive(script-globalsearch-main.xml)</visible>
+			<visible>![Window.IsActive(home) | Window.IsActive(startup) | [Window.IsVisible(TVGuide) + Player.HasVideo]] | Window.IsActive(script-globalsearch-main.xml)</visible>
 			<include>Window_OpenClose_Animation</include>
 			<visible>![Control.IsVisible(59) | Control.IsVisible(501) | Control.IsVisible(502) | Control.IsVisible(503)]</visible>
 			<include>ViewAnimation</include>
-			<animation effect="slide" start="0,0" end="0,80" time="720" tween="cubic" easing="inout" condition="![[Control.isVisible(52) + !Window.IsActive(systeminfo)] | Control.IsVisible(53) | Control.IsVisible(54) | Control.IsVisible(55)  | Control.IsVisible(56) | Control.IsVisible(500) | Control.IsVisible(57)]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,80" time="720" tween="cubic" easing="inout" condition="![[Control.IsVisible(52) + !Window.IsActive(systeminfo)] | Control.IsVisible(53) | Control.IsVisible(54) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(500) | Control.IsVisible(57)]">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-20" time="720" tween="cubic" easing="inout" condition="[Control.IsVisible(58) | Control.IsVisible(510)]">Conditional</animation>
 			<control type="image">
 				<left>0</left>
@@ -103,11 +103,10 @@
 			<include>HiddenList</include>
 			<content>
 				<include condition="Window.IsActive(pictures)">PicturesFallback</include>
-				<include condition="Window.IsActive(musiclibrary) | Window.IsActive(musicfiles) | Window.IsActive(musicplaylist)">MusicFallback</include>
+				<include condition="Window.IsActive(musiclibrary) | Window.IsActive(musicplaylist)">MusicFallback</include>
 				<include condition="Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRSearch.xml) | Window.IsActive(MyPVRTimers.xml)">LiveTVFallback</include>
 				<include condition="Window.IsActive(programs)">AppsFallback</include>
-				<include condition="Window.IsActive(SettingsCategory.xml) | Window.IsActive(systeminfo) | Window.IsActive(skinsettings) | Window.IsActive(settings) | Window.IsActive(addonbrowser) | Window.IsActive(filemanager)">SystemFallback</include>
-				<include condition="Window.IsActive(weather)">WeatherFallback</include>
+				<include condition="Window.IsActive(SettingsCategory.xml) | Window.IsActive(systeminfo) | Window.IsActive(skinsettings) | Window.IsActive(settings) | Window.IsActive(addonbrowser) | Window.IsActive(filemanager) | Window.IsActive(eventlog)">SystemFallback</include>
 				<include condition="Window.IsActive(videos) | Window.IsActive(videoplaylist)">VideoFallback</include>
 				<item>
 					<onclick>noop</onclick>
@@ -127,6 +126,16 @@
 			<description>Normal Default Background Image</description>
 			<include>FullscreenDimensions</include>
 			<imagepath fallback="special://skin/backgrounds/default_bg.jpg" background="true">$VAR[HomeBackgroundVar]</imagepath>
+			<visible>![ControlGroup(9003).HasFocus() | ControlGroup(9004).HasFocus()]</visible>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="image">
+			<description>Normal Default Background Image</description>
+			<include>FullscreenDimensions</include>
+			<fadetime>600</fadetime>
+			<texture fallback="special://skin/backgrounds/default_bg.jpg" background="true">$VAR[HomeBackgroundVar]</texture>
+			<visible>ControlGroup(9003).HasFocus() | ControlGroup(9004).HasFocus()</visible>
+			<include>VisibleFadeEffect</include>
 		</control>
 	</include>
 	<include name="TVShowNextAiredBackground">
@@ -224,12 +233,12 @@
 			<top>0</top>
 			<width>FullScreenWidth</width>
 			<height>1080</height>
-			<imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
+			<imagepath background="true">$INFO[Skin.String(WeatherFanartDir),resource://,/]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
 			<timeperimage>10000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))</visible>
+			<visible>!IsEmpty(Skin.String(WeatherFanartDir))</visible>
 			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 	</include>
@@ -263,12 +272,6 @@
 			<thumb>$INFO[Skin.String(Apps.Fallback)]</thumb>
 		</item>
 	</include>
-	<include name="WeatherFallback">
-		<item>
-			<onclick>noop</onclick>
-			<thumb>$INFO[Skin.String(Weather.Fallback)]</thumb>
-		</item>
-	</include>
 	<include name="VideoFallback">
 		<item>
 			<onclick>noop</onclick>
@@ -279,6 +282,11 @@
 			<onclick>noop</onclick>
 			<thumb>$INFO[Skin.String(TVShows.Fallback)]</thumb>
 			<visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
+		</item>
+		<item>
+			<onclick>noop</onclick>
+			<thumb>$INFO[Skin.String(MusicVideos.Fallback)]</thumb>
+			<visible>Container.Content(musicvideos)</visible>
 		</item>
 		<item>
 			<onclick>noop</onclick>

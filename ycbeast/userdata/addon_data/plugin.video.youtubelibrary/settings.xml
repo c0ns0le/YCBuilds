@@ -19,6 +19,7 @@
     <setting id="default_musicvideo_genre_hardcoded" value="" />
     <setting id="default_musicvideo_maxlength" value="" />
     <setting id="default_musicvideo_minlength" value="" />
+    <setting id="default_musicvideo_onlygrab" value="5000" />
     <setting id="default_musicvideo_onlyinclude" value="" />
     <setting id="default_musicvideo_plot" value="video description" />
     <setting id="default_musicvideo_plot_fallback" value="video description" />
@@ -33,9 +34,12 @@
     <setting id="default_musicvideo_stripdescription" value="" />
     <setting id="default_musicvideo_striptitle" value="" />
     <setting id="default_musicvideo_tags" value="Youtube" />
+    <setting id="default_musicvideo_updateat" value="23:59" />
+    <setting id="default_musicvideo_updateevery" value="every 168 hours" />
     <setting id="default_musicvideo_year" value="video title and description" />
     <setting id="default_musicvideo_year_fallback" value="published year" />
     <setting id="default_musicvideo_year_hardcoded" value="" />
+    <setting id="default_onlygrab" value="5000" />
     <setting id="default_onlyinclude" value="" />
     <setting id="default_removedescription" value="" />
     <setting id="default_removetitle" value="" />
@@ -43,13 +47,16 @@
     <setting id="default_stripdescription" value="" />
     <setting id="default_striptitle" value="" />
     <setting id="default_tags" value="Youtube" />
+    <setting id="default_updateat" value="23:59" />
+    <setting id="default_updateevery" value="every 12 hours" />
     <setting id="download_images" value="true" />
     <setting id="mode" value="1" />
     <setting id="musicvideo_folder" value="special://userdata/addon_data/plugin.video.youtubelibrary/Streams/MusicVideos" />
+    <setting id="notify_update" value="true" />
     <setting id="resume_playback" value="true" />
-    <setting id="service_interval" value="12" />
+    <setting id="service_interval" value="1440" />
     <setting id="service_interval_musicvideo" value="672" />
     <setting id="strm_link" value="Youtube Library" />
-    <setting id="tv_folder" value="special://userdata/addon_data/plugin.video.youtubelibrary/Streams/TV" />
+    <setting id="tv_folder" value="special://userdata/addon_data/plugin.video.youtubelibrary/Streams/TV/" />
     <setting id="update_videolibrary" value="true" />
 </settings>

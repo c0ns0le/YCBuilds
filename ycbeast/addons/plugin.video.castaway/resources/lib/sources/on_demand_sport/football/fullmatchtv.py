@@ -1,5 +1,5 @@
 from __future__ import unicode_literals
-from resources.lib.modules import client,webutils
+from resources.lib.modules import client,webutils,convert
 import re,urlparse,json
 
 
@@ -22,12 +22,13 @@ class main():
 
 	def items(self):
 		html = client.request(self.url)
+		html = convert.unescape(html.decode('utf-8'))
 		items = re.findall('<div class="td-module-thumb"><a href="(.+?)" rel="bookmark" title="(.+?)"><img.+?class="entry-thumb" src="(.+?)"',html)
 		out = []
 		urls=[]
 		for item in items:
 			url = item[0]
-			title = item[1]
+			title = item[1].encode('utf-8', 'xmlcharrefreplace')
 			img = item[2]
 			
 			item = (title,url,img)
@@ -42,7 +43,6 @@ class main():
 		urls = re.findall('<iframe.+?src=[\'"](.+?)[\'"]',html)
 		import urlresolver
 		for url in urls:
-			print(url)
 			resolved = urlresolver.resolve(url)
 			if resolved:
 				return resolved

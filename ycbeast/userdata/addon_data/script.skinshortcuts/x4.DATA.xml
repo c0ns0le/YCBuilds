@@ -18,14 +18,6 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>[COLOR yellow][B]Tube8[/B][/COLOR]</label>
-		<label2>Custom shortcut</label2>
-		<icon>DefaultShortcut.png</icon>
-		<thumb />
-		<action>ActivateWindow(10025,"plugin://plugin.video.tube8",return)</action>
-	</shortcut>
-	<shortcut>
-		<defaultID />
 		<label>[COLOR yellow][B]EroticXXX[/B][/COLOR]</label>
 		<label2>Custom shortcut</label2>
 		<icon>DefaultShortcut.png</icon>

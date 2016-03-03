@@ -15,22 +15,27 @@
     <audiooutput>
         <ac3passthrough default="true">true</ac3passthrough>
         <ac3transcode default="true">false</ac3transcode>
-        <audiodevice>AUDIOTRACK:AudioTrack:stream0</audiodevice>
+        <audiodevice default="true">AUDIOTRACK:AudioTrack</audiodevice>
         <channels default="true">1</channels>
         <config default="true">2</config>
+        <dspaddonsenabled default="true">false</dspaddonsenabled>
         <dtshdpassthrough default="true">false</dtshdpassthrough>
         <dtspassthrough default="true">false</dtspassthrough>
         <eac3passthrough default="true">false</eac3passthrough>
         <guisoundmode default="true">1</guisoundmode>
         <maintainoriginalvolume default="true">true</maintainoriginalvolume>
         <passthrough default="true">false</passthrough>
-        <passthroughdevice default="true">default</passthroughdevice>
+        <passthroughdevice default="true">AUDIOTRACK:AudioTrack</passthroughdevice>
         <processquality default="true">30</processquality>
         <samplerate default="true">48000</samplerate>
         <stereoupmix default="true">false</stereoupmix>
         <streamsilence default="true">1</streamsilence>
+        <supportdtshdcpudecoding default="true">false</supportdtshdcpudecoding>
         <truehdpassthrough default="true">false</truehdpassthrough>
     </audiooutput>
+    <bluray>
+        <playerregion default="true">1</playerregion>
+    </bluray>
     <cache>
         <harddisk default="true">256</harddisk>
     </cache>
@@ -73,6 +78,10 @@
         <preventupdateswhileplayingtv default="true">false</preventupdateswhileplayingtv>
         <selectaction default="true">2</selectaction>
     </epg>
+    <eventlog>
+        <enabled default="true">true</enabled>
+        <enablednotifications default="true">false</enablednotifications>
+    </eventlog>
     <filelists>
         <allowfiledeletion default="true">false</allowfiledeletion>
         <ignorethewhensorting default="true">true</ignorethewhensorting>
@@ -86,24 +95,17 @@
         <addonforeignfilter default="true">false</addonforeignfilter>
         <addonnotifications default="true">true</addonnotifications>
         <addonupdates default="true">0</addonupdates>
-        <settinglevel>3</settinglevel>
-        <systemtotaluptime>1318</systemtotaluptime>
+        <settinglevel>1</settinglevel>
+        <eventlog>
+            <level>0</level>
+            <showhigherlevels>true</showhigherlevels>
+        </eventlog>
+        <systemtotaluptime>3</systemtotaluptime>
     </general>
     <input>
-        <appleremotealwayson default="true">false</appleremotealwayson>
-        <appleremotemode default="true">1</appleremotemode>
-        <appleremotesequencetime default="true">500</appleremotesequencetime>
         <enablejoystick default="true">true</enablejoystick>
         <enablemouse default="true">true</enablemouse>
     </input>
-    <karaoke>
-        <autopopupselector default="true">false</autopopupselector>
-        <charset default="true">DEFAULT</charset>
-        <enabled default="true">false</enabled>
-        <font default="true">arial.ttf</font>
-        <fontcolors default="true">0</fontcolors>
-        <fontheight default="true">36</fontheight>
-    </karaoke>
     <locale>
         <audiolanguage default="true">original</audiolanguage>
         <charset default="true">DEFAULT</charset>
@@ -116,13 +118,13 @@
         <subtitlelanguage default="true">original</subtitlelanguage>
         <temperatureunit default="true">regional</temperatureunit>
         <timeformat default="true">regional</timeformat>
-        <timezone>default</timezone>
-        <timezonecountry>default</timezonecountry>
+        <timezone default="true"></timezone>
+        <timezonecountry default="true"></timezonecountry>
         <use24hourclock default="true">regional</use24hourclock>
     </locale>
     <lookandfeel>
         <enablerssfeeds>false</enablerssfeeds>
-        <font>YCFonts</font>
+        <font default="true">Default</font>
         <rssedit default="true"></rssedit>
         <skin>skin.aeon.nox.5</skin>
         <skincolors default="true">SKINDEFAULT</skincolors>
@@ -130,6 +132,7 @@
         <skinzoom default="true">0</skinzoom>
         <soundskin>resource.uisounds.androidtv</soundskin>
         <startupwindow default="true">10000</startupwindow>
+        <stereostrength default="true">5</stereostrength>
     </lookandfeel>
     <masterlock>
         <maxretries default="true">3</maxretries>
@@ -138,11 +141,8 @@
     <musicfiles>
         <findremotethumbs default="true">true</findremotethumbs>
         <librarytrackformat default="true"></librarytrackformat>
-        <librarytrackformatright default="true"></librarytrackformatright>
         <nowplayingtrackformat default="true"></nowplayingtrackformat>
-        <nowplayingtrackformatright default="true"></nowplayingtrackformatright>
         <trackformat default="true">[%N. ]%A - %T</trackformat>
-        <trackformatright default="true">%D</trackformatright>
         <usetags default="true">true</usetags>
     </musicfiles>
     <musiclibrary>
@@ -166,7 +166,7 @@
         <replaygaintype default="true">1</replaygaintype>
         <seekdelay default="true">750</seekdelay>
         <seeksteps default="true">-60,-30,-10,10,30,60</seeksteps>
-        <visualisation default="true">visualization.glspectrum</visualisation>
+        <visualisation default="true">visualization.spectrum</visualisation>
     </musicplayer>
     <mymusic>
         <defaultlibview default="true"></defaultlibview>
@@ -208,8 +208,6 @@
         <displayresolution default="true">14</displayresolution>
         <generatethumbs default="true">true</generatethumbs>
         <showvideos default="true">true</showvideos>
-        <useexifrotation default="true">true</useexifrotation>
-        <usetags default="true">true</usetags>
     </pictures>
     <powermanagement>
         <displaysoff default="true">0</displaysoff>
@@ -237,11 +235,15 @@
     <pvrplayback>
         <channelentrytimeout default="true">0</channelentrytimeout>
         <confirmchannelswitch default="true">false</confirmchannelswitch>
+        <enableradiords default="true">true</enableradiords>
         <fps default="true">0</fps>
         <playminimized default="true">true</playminimized>
         <scantime default="true">10</scantime>
+        <sendrdstrafficmsg default="true">false</sendrdstrafficmsg>
         <signalquality default="true">true</signalquality>
         <startlast default="true">0</startlast>
+        <trafficadvisory default="true">false</trafficadvisory>
+        <trafficadvisoryvolume default="true">10</trafficadvisoryvolume>
     </pvrplayback>
     <pvrpowermanagement>
         <backendidletime default="true">15</backendidletime>
@@ -257,11 +259,15 @@
         <instantrecordtime default="true">120</instantrecordtime>
         <marginend default="true">0</marginend>
         <marginstart default="true">0</marginstart>
+        <preventduplicateepisodes default="true">0</preventduplicateepisodes>
         <timernotifications default="true">true</timernotifications>
     </pvrrecord>
+    <pvrtimers>
+        <timertypefilter default="true">true</timertypefilter>
+    </pvrtimers>
     <scrapers>
         <moviesdefault default="true">metadata.themoviedb.org</moviesdefault>
-        <musicvideosdefault default="true">metadata.musicvideos.theaudiodb.com</musicvideosdefault>
+        <musicvideosdefault default="true">metadata.local</musicvideosdefault>
         <tvshowsdefault default="true">metadata.tvdb.com</tvshowsdefault>
     </scrapers>
     <screensaver>
@@ -271,12 +277,12 @@
         <usemusicvisinstead default="true">true</usemusicvisinstead>
     </screensaver>
     <services>
-        <airplay>true</airplay>
-        <airplayios8compat default="true">true</airplayios8compat>
+        <airplay default="true">false</airplay>
         <airplaypassword default="true"></airplaypassword>
+        <airplayvideosupport default="true">true</airplayvideosupport>
         <airplayvolumecontrol default="true">true</airplayvolumecontrol>
         <devicename default="true">Kodi</devicename>
-        <esallinterfaces>true</esallinterfaces>
+        <esallinterfaces default="true">false</esallinterfaces>
         <escontinuousdelay default="true">25</escontinuousdelay>
         <esenabled default="true">true</esenabled>
         <esinitialdelay default="true">750</esinitialdelay>
@@ -284,12 +290,12 @@
         <esport default="true">9777</esport>
         <esportrange default="true">10</esportrange>
         <upnpannounce default="true">true</upnpannounce>
-        <upnpcontroller>true</upnpcontroller>
+        <upnpcontroller default="true">false</upnpcontroller>
         <upnplookforexternalsubtitles default="true">false</upnplookforexternalsubtitles>
-        <upnprenderer>true</upnprenderer>
-        <upnpserver>true</upnpserver>
+        <upnprenderer default="true">false</upnprenderer>
+        <upnpserver default="true">false</upnpserver>
         <useairplaypassword default="true">false</useairplaypassword>
-        <webserver>true</webserver>
+        <webserver default="true">false</webserver>
         <webserverpassword default="true"></webserverpassword>
         <webserverport default="true">8080</webserverport>
         <webserverusername default="true">kodi</webserverusername>
@@ -331,7 +337,9 @@
         <backgroundupdate default="true">false</backgroundupdate>
         <flattentvshows default="true">1</flattentvshows>
         <groupmoviesets default="true">false</groupmoviesets>
+        <groupsingleitemsets default="true">false</groupsingleitemsets>
         <showallitems default="true">true</showallitems>
+        <showemptytvshows default="true">false</showemptytvshows>
         <showunwatchedplots default="true">true</showunwatchedplots>
         <tvshowsincludeallseasonsandspecials default="true">0</tvshowsincludeallseasonsandspecials>
         <tvshowsselectfirstunwatcheditem default="true">0</tvshowsselectfirstunwatcheditem>
@@ -356,8 +364,11 @@
         <useamcodec>false</useamcodec>
         <usedisplayasclock default="true">false</usedisplayasclock>
         <usedxva2 default="true">true</usedxva2>
+        <usemediacodec default="true">true</usemediacodec>
+        <usemediacodecsurface default="true">true</usemediacodecsurface>
         <useomx default="true">true</useomx>
         <useomxplayer default="true">true</useomxplayer>
+        <usestagefright default="true">true</usestagefright>
         <usevaapi default="true">true</usevaapi>
         <usevaapimpeg2 default="true">true</usevaapimpeg2>
         <usevaapimpeg4 default="true">true</usevaapimpeg4>
@@ -387,9 +398,14 @@
         <currentlocation default="true">1</currentlocation>
     </weather>
     <window>
-        <height>705</height>
-        <width>1354</width>
+        <height default="true">480</height>
+        <width default="true">720</width>
     </window>
+    <audio>
+        <mute>false</mute>
+        <fvolumelevel>1.000000</fvolumelevel>
+    </audio>
+    <resolutions />
     <defaultvideosettings>
         <deinterlacemode>1</deinterlacemode>
         <interlacemethod>1</interlacemethod>
@@ -412,296 +428,99 @@
         <nonlinstretch>false</nonlinstretch>
         <stereomode>0</stereomode>
     </defaultvideosettings>
-    <skinsettings>
-        <setting type="bool" name="skin.confluence.Use_Startup_Playlist">false</setting>
-        <setting type="bool" name="skin.confluence.UseCustomBackground">false</setting>
-        <setting type="bool" name="skin.confluence.HideBackGroundFanart">false</setting>
-        <setting type="bool" name="skin.confluence.ShowBackgroundVideo">false</setting>
-        <setting type="bool" name="skin.confluence.ShowBackgroundVis">false</setting>
-        <setting type="bool" name="skin.confluence.HomepageHideRecentlyAddedVideo">false</setting>
-        <setting type="bool" name="skin.confluence.HomepageHideRecentlyAddedAlbums">false</setting>
-        <setting type="bool" name="skin.confluence.homepageWeatherinfo">false</setting>
-        <setting type="bool" name="skin.confluence.homepageMusicinfo">false</setting>
-        <setting type="bool" name="skin.confluence.homepageVideoinfo">false</setting>
-        <setting type="bool" name="skin.confluence.HomeMenuNoMovieButton">false</setting>
-        <setting type="bool" name="skin.confluence.HomeMenuNoTVShowButton">false</setting>
-        <setting type="bool" name="skin.confluence.HomeMenuNoWeatherButton">false</setting>
-        <setting type="bool" name="skin.confluence.HomeMenuNoPicturesButton">false</setting>
-        <setting type="bool" name="skin.confluence.HomeMenuNoVideosButton">false</setting>
-        <setting type="bool" name="skin.confluence.HomeMenuNoMusicButton">false</setting>
-        <setting type="bool" name="skin.confluence.HomeMenuNoProgramsButton">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.Disable.Fanart">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.Disable.ShowBackgroundVis">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.Disable.ShowBackgroundVideo">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.lowermainmenu">true</setting>
-        <setting type="bool" name="skin.aeon.nox.5.Detach.RSS">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.Disable.Musicinfo">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.Disable.Videoinfo">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.mainmenuicons">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.biggergap">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.Enable.AutoScroll">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.VideoInfoPlotToggle">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.Disable.NextAired">true</setting>
-        <setting type="bool" name="skin.aeon.nox.5.KioskMode.Enabled">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.HorizontalListNav">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.Enable.SlimList">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.Enable.HideRatings">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.Disable.UnwatchedIcon">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.nohighlist">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.Disable.Resumable">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.Video.Plot.Cast">false</setting>
-        <setting type="bool" name="skin.aeon.nox.5.SkinShortcuts-FullMenu">true</setting>
-        <setting type="string" name="skin.confluence.CustomBackgroundPath"></setting>
-        <setting type="string" name="skin.confluence.HomeVideosButton1"></setting>
-        <setting type="string" name="skin.confluence.HomeVideosButton2"></setting>
-        <setting type="string" name="skin.confluence.HomeVideosButton3"></setting>
-        <setting type="string" name="skin.confluence.HomeVideosButton4"></setting>
-        <setting type="string" name="skin.confluence.HomeVideosButton5"></setting>
-        <setting type="string" name="skin.confluence.HomeMusicButton1"></setting>
-        <setting type="string" name="skin.confluence.HomeMusicButton2"></setting>
-        <setting type="string" name="skin.confluence.HomeMusicButton3"></setting>
-        <setting type="string" name="skin.confluence.HomeMusicButton4"></setting>
-        <setting type="string" name="skin.confluence.HomeMusicButton5"></setting>
-        <setting type="string" name="skin.confluence.HomePictureButton1"></setting>
-        <setting type="string" name="skin.confluence.HomePictureButton2"></setting>
-        <setting type="string" name="skin.confluence.HomePictureButton3"></setting>
-        <setting type="string" name="skin.confluence.HomePictureButton4"></setting>
-        <setting type="string" name="skin.confluence.HomePictureButton5"></setting>
-        <setting type="string" name="skin.confluence.HomeProgramButton1"></setting>
-        <setting type="string" name="skin.confluence.HomeProgramButton2"></setting>
-        <setting type="string" name="skin.confluence.HomeProgramButton3"></setting>
-        <setting type="string" name="skin.confluence.HomeProgramButton4"></setting>
-        <setting type="string" name="skin.confluence.HomeProgramButton5"></setting>
-        <setting type="string" name="skin.aeon.nox.5.VideoGenreFanartPath"></setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicGenreFanartPath"></setting>
-        <setting type="string" name="skin.aeon.nox.5.System.Fallback">special://userdata/background_pics\fallback.png</setting>
-        <setting type="string" name="skin.aeon.nox.5.WeatherFanartDir">http://aeon-nox-background-packs.googlecode.com/svn/trunk/weather-fanart/default/</setting>
-        <setting type="string" name="skin.aeon.nox.5.InfoPanel.Delay"></setting>
-        <setting type="string" name="skin.aeon.nox.5.PicturesHomeItem.Label">[COLOR red][B]ADULT[/B][/COLOR]</setting>
-        <setting type="string" name="skin.aeon.nox.5.PicturesHomeItem.MultiFanart">special://userdata/background_pics\adult.jpg</setting>
-        <setting type="string" name="skin.aeon.nox.5.PicturesHomeItem.Icon"></setting>
-        <setting type="string" name="skin.aeon.nox.5.PicturesHomeItem.Path">ActivateWindow(10025,&quot;plugin://plugin.video.you.jizz/&quot;,return)</setting>
-        <setting type="string" name="skin.aeon.nox.5.PicturesHomeItem.BGType">1</setting>
-        <setting type="string" name="skin.aeon.nox.5.PicturesHomeItem.Widget"></setting>
-        <setting type="string" name="skin.aeon.nox.5.PicturesHomeItem.WidgetLabel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.PicturesHomeItem.WidgetType"></setting>
-        <setting type="string" name="skin.aeon.nox.5.PicturesHomeItem.InfoLine"></setting>
-        <setting type="string" name="skin.aeon.nox.5.PicturesHomeItem.SubMenu"></setting>
-        <setting type="string" name="skin.aeon.nox.5.PicturesHomeItem.Disable">True</setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicHomeItem.Label"></setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicHomeItem.MultiFanart">special://userdata/background_pics\music\</setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicHomeItem.Icon"></setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicHomeItem.Path"></setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicHomeItem.BGType">2</setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicHomeItem.Widget"></setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicHomeItem.WidgetLabel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicHomeItem.WidgetType"></setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicHomeItem.InfoLine"></setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicHomeItem.SubMenu"></setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicHomeItem.Disable"></setting>
-        <setting type="string" name="skin.aeon.nox.5.MovieHomeItem.Label">Movies</setting>
-        <setting type="string" name="skin.aeon.nox.5.MovieHomeItem.MultiFanart">special://userdata\background_pics\movies\</setting>
-        <setting type="string" name="skin.aeon.nox.5.MovieHomeItem.Icon"></setting>
-        <setting type="string" name="skin.aeon.nox.5.MovieHomeItem.Path">ActivateWindow(10025,&quot;plugin://plugin.video.genesis/?action=movieNavigator&quot;,return)</setting>
-        <setting type="string" name="skin.aeon.nox.5.MovieHomeItem.BGType">2</setting>
-        <setting type="string" name="skin.aeon.nox.5.MovieHomeItem.Widget">plugin://plugin.video.salts?section=Movies&amp;mode=trending</setting>
-        <setting type="string" name="skin.aeon.nox.5.MovieHomeItem.WidgetLabel">Trending</setting>
-        <setting type="string" name="skin.aeon.nox.5.MovieHomeItem.WidgetType">1</setting>
-        <setting type="string" name="skin.aeon.nox.5.MovieHomeItem.InfoLine"></setting>
-        <setting type="string" name="skin.aeon.nox.5.MovieHomeItem.SubMenu"></setting>
-        <setting type="string" name="skin.aeon.nox.5.MovieHomeItem.Disable"></setting>
-        <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.Label">TV Shows</setting>
-        <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.MultiFanart">special://userdata/background_pics\tv shows\</setting>
-        <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.Icon"></setting>
-        <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.Path">ActivateWindow(10025,&quot;plugin://plugin.video.salts/?section=TV&amp;mode=browse&quot;,return)</setting>
-        <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.BGType">2</setting>
-        <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.Widget"></setting>
-        <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.WidgetLabel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.WidgetType"></setting>
-        <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.InfoLine"></setting>
-        <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.SubMenu"></setting>
-        <setting type="string" name="skin.aeon.nox.5.TVShowHomeItem.Disable"></setting>
-        <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.Label">Live TV</setting>
-        <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.MultiFanart">special://userdata/background_pics\live tv\</setting>
-        <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.Icon"></setting>
-        <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.Path">ActivateWindow(10025,&quot;plugin://plugin.video.ccloudtv&quot;,return)</setting>
-        <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.BGType">2</setting>
-        <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.Widget"></setting>
-        <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.WidgetLabel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.WidgetType"></setting>
-        <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.InfoLine"></setting>
-        <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.SubMenu"></setting>
-        <setting type="string" name="skin.aeon.nox.5.LiveTVHomeItem.Disable"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom1HomeItem.Label">Firestick</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom1HomeItem.MultiFanart">special://userdata/background_pics\3pm\</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom1HomeItem.Icon"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom1HomeItem.Path">ActivateWindow(10025,&quot;plugin://plugin.video.phstreams/?name=Sports&amp;url=http://shanghai.watchkodi.com/Directories/Sports.xml&amp;audio=0&amp;image=http://s20.postimg.org/y47sfmnfh/Sports.png&amp;fanart=http://shanghai.watchkodi.com/Sections/Woody/Woody.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode&quot;,return)</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom1HomeItem.BGType">2</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom1HomeItem.Widget"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom1HomeItem.WidgetLabel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom1HomeItem.WidgetType"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom1HomeItem.InfoLine"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom1HomeItem.SubMenu"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom1HomeItem.Disable"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom2HomeItem.Label">Sports</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom2HomeItem.MultiFanart">special://userdata\background_pics\sport tv\</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom2HomeItem.Icon"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom2HomeItem.Path">ActivateWindow(10025,&quot;plugin://plugin.video.phstreams/?name=Sports&amp;url=http://shanghai.watchkodi.com/Directories/Sports.xml&amp;audio=0&amp;image=http://s20.postimg.org/y47sfmnfh/Sports.png&amp;fanart=http://shanghai.watchkodi.com/Sections/Woody/Woody.jpg&amp;playable=false&amp;tvshow=0&amp;content=0&amp;action=ndmode&quot;,return)</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom2HomeItem.BGType">2</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom2HomeItem.Widget"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom2HomeItem.WidgetLabel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom2HomeItem.WidgetType"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom2HomeItem.InfoLine"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom2HomeItem.SubMenu"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom2HomeItem.Disable"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom3HomeItem.Label">Tutorials</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom3HomeItem.MultiFanart">special://userdata/background_pics\help vid\</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom3HomeItem.Icon"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom3HomeItem.Path">ActivateWindow(10025,&quot;videodb://tvshows/titles/1/?xsp={&quot;order&quot;:{&quot;direction&quot;:&quot;ascending&quot;,&quot;ignorefolders&quot;:0,&quot;method&quot;:&quot;sorttitle&quot;},&quot;type&quot;:&quot;tvshows&quot;}&quot;,return)</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom3HomeItem.BGType">1</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom3HomeItem.Widget"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom3HomeItem.WidgetLabel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom3HomeItem.WidgetType"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom3HomeItem.InfoLine"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom3HomeItem.SubMenu"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom3HomeItem.Disable"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom4HomeItem.Label">[COLOR black].[/COLOR][COLOR limegreen]YC[/COLOR]Beast</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom4HomeItem.MultiFanart">special://userdata/background_pics\YCBeast-system.png</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom4HomeItem.Icon"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom4HomeItem.Path">ActivateWindow(10001,&quot;plugin://script.areswizard&quot;,return)</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom4HomeItem.BGType">1</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom4HomeItem.Widget"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom4HomeItem.WidgetLabel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom4HomeItem.WidgetType"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom4HomeItem.InfoLine"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom4HomeItem.SubMenu"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom4HomeItem.Disable"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom5HomeItem.Label">KIDS</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom5HomeItem.MultiFanart">special://userdata/background_pics\kids\</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom5HomeItem.Icon"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom5HomeItem.Path">ActivateWindow(10025,&quot;plugin://plugin.video.kmER&quot;,return)</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom5HomeItem.BGType">2</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom5HomeItem.Widget"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom5HomeItem.WidgetLabel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom5HomeItem.WidgetType"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom5HomeItem.InfoLine"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom5HomeItem.SubMenu"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom5HomeItem.Disable"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom6HomeItem.Label">Mens</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom6HomeItem.MultiFanart">special://userdata/background_pics\mens\</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom6HomeItem.Icon"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom6HomeItem.Path">ActivateWindow(10025,&quot;plugin://plugin.video.phstreams/?action=ndmode&amp;audio=0&amp;content=0&amp;fanart=http://wallcomphd.com/wp-content/uploads/2015/06/3D-The-Hunger-Games-Mockingjay-Logo-Wallpaper.jpg&amp;image=http://s27.postimg.org/47oslnlf7/Boxing_Fights.jpg&amp;name=Boxing Greatest Fights&amp;playable=false&amp;tvshow=0&amp;url=http://gibraltar.watchkodi.com/Collections/boxingfights.xml&quot;,return)</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom6HomeItem.BGType">2</setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom6HomeItem.Widget"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom6HomeItem.WidgetLabel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom6HomeItem.WidgetType"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom6HomeItem.InfoLine"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom6HomeItem.SubMenu"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Custom6HomeItem.Disable"></setting>
-        <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.Label">Womens</setting>
-        <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.MultiFanart">special://userdata/background_pics\womens\</setting>
-        <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.Icon">views/list/DefaultAddonWeather.png</setting>
-        <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.Path">ActivateWindow(10025,&quot;plugin://plugin.video.phstreams/?action=ndmode&amp;audio=0&amp;content=0&amp;fanart=http://7-themes.com/data_images/out/59/6973439-beautiful-forest-photos.jpg&amp;image=http://1.bp.blogspot.com/-WHsuK6uVWY8/VGpDGNjqwOI/AAAAAAAAKac/uCtVtXKZv4Q/s1600/movies_and_popcorn_folder_icon_by_matheusgrilo-d7ay4tw.png&amp;name=[COLOR blue]New Releases for Women[/COLOR]&amp;playable=false&amp;tvshow=0&amp;url=http://honolulu.watchkodi.com/Playlists/New%20Releases.xml&quot;,return)</setting>
-        <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.BGType">2</setting>
-        <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.Widget"></setting>
-        <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.WidgetLabel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.WidgetType"></setting>
-        <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.InfoLine"></setting>
-        <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.SubMenu">x7</setting>
-        <setting type="string" name="skin.aeon.nox.5.VideosHomeItem.Disable"></setting>
-        <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.Label">Favorites</setting>
-        <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.MultiFanart">special://userdata/background_pics\favs\</setting>
-        <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.Icon">special://skin/extras/icons/Favorites.png</setting>
-        <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.Path">ActivateWindow(Favourites)</setting>
-        <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.BGType">2</setting>
-        <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.Widget"></setting>
-        <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.WidgetLabel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.WidgetType"></setting>
-        <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.InfoLine"></setting>
-        <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.SubMenu">x8</setting>
-        <setting type="string" name="skin.aeon.nox.5.ProgramsHomeItem.Disable"></setting>
-        <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.Label">Phoenix</setting>
-        <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.MultiFanart">special://userdata/background_pics\phonix\</setting>
-        <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.Icon">views/list/DefaultMusicVideos.png</setting>
-        <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.Path">ActivateWindow(10025,&quot;plugin://plugin.video.phstreams&quot;,return)</setting>
-        <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.BGType">2</setting>
-        <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.Widget"></setting>
-        <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.WidgetLabel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.WidgetType"></setting>
-        <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.InfoLine"></setting>
-        <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.SubMenu">x13</setting>
-        <setting type="string" name="skin.aeon.nox.5.SettingsHomeItem.Disable"></setting>
-        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.Label">SYSTEM</setting>
-        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.MultiFanart">special://userdata/background_pics\settings\</setting>
-        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.Icon">views/list/DefaultAddonService.png</setting>
-        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.Path">ActivateWindow(Settings)</setting>
-        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.BGType">2</setting>
-        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.Widget"></setting>
-        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.WidgetLabel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.WidgetType"></setting>
-        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.InfoLine">8</setting>
-        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.SubMenu">x5</setting>
-        <setting type="string" name="skin.aeon.nox.5.ShutdownHomeItem.Disable"></setting>
-        <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.Label">Programs</setting>
-        <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.MultiFanart">special://userdata/background_pics\programs\</setting>
-        <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.Icon">views/list/DefaultProgram.png</setting>
-        <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.Path">ActivateWindow(Programs,Addons,return)</setting>
-        <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.BGType">2</setting>
-        <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.Widget"></setting>
-        <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.WidgetLabel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.WidgetType"></setting>
-        <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.InfoLine"></setting>
-        <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.SubMenu">x1</setting>
-        <setting type="string" name="skin.aeon.nox.5.FavoritesHomeItem.Disable"></setting>
-        <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.Label">VIDEOS</setting>
-        <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.MultiFanart">special://userdata/background_pics\videos\</setting>
-        <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.Icon">views/list/DefaultVideo.png</setting>
-        <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.Path">ActivateWindow(Videos,root)</setting>
-        <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.BGType">2</setting>
-        <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.Widget"></setting>
-        <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.WidgetLabel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.WidgetType"></setting>
-        <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.InfoLine"></setting>
-        <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.SubMenu">x2</setting>
-        <setting type="string" name="skin.aeon.nox.5.WeatherHomeItem.Disable"></setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.Label">Power</setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.MultiFanart">special://userdata/background_pics\power\</setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.Icon">special://skin/extras/icons/power.png</setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.Path">ActivateWindow(shutdownmenu)</setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.BGType">2</setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.Widget"></setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.WidgetLabel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.WidgetType"></setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.InfoLine"></setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.SubMenu">x6</setting>
-        <setting type="string" name="skin.aeon.nox.5.MusicVideoHomeItem.Disable"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Apps.Fallback"></setting>
-        <setting type="string" name="skin.aeon.nox.5.53.Movies.InfoPanel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.53.TVShows.InfoPanel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.53.Seasons.InfoPanel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.53.Sets.InfoPanel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.52.Movies.InfoPanel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.52.TVShows.InfoPanel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.52.Seasons.InfoPanel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.52.Episodes.InfoPanel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.52.Sets.InfoPanel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Movies.Fallback"></setting>
-        <setting type="string" name="skin.aeon.nox.5.TVShows.Fallback"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Videos.Fallback"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Overlay.Toggle"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Music.Fallback"></setting>
-        <setting type="string" name="skin.aeon.nox.5.ItemToEdit.BGType"></setting>
-        <setting type="string" name="skin.aeon.nox.5.ItemToEdit.MultiFanart"></setting>
-        <setting type="string" name="skin.aeon.nox.5.ItemToEdit.Widget"></setting>
-        <setting type="string" name="skin.aeon.nox.5.ItemToEdit.WidgetLabel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.ItemToEdit.WidgetType"></setting>
-        <setting type="string" name="skin.aeon.nox.5.ItemToEdit.InfoLine"></setting>
-        <setting type="string" name="skin.aeon.nox.5.54.Albums.InfoPanel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.54.Artists.InfoPanel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.52.Artists.InfoPanel"></setting>
-        <setting type="string" name="skin.aeon.nox.5.Pictures.Fallback"></setting>
-        <setting type="string" name="skin.aeon.nox.5.skinshortcuts-sharedmenu">true</setting>
-    </skinsettings>
+    <defaultaudiosettings>
+        <masterstreamtype>7</masterstreamtype>
+        <masterstreamtypesel>7</masterstreamtypesel>
+        <masterstreambase>0</masterstreambase>
+        <masterprocess_0_0>0</masterprocess_0_0>
+        <masterprocess_0_1>0</masterprocess_0_1>
+        <masterprocess_0_2>0</masterprocess_0_2>
+        <masterprocess_0_3>0</masterprocess_0_3>
+        <masterprocess_0_4>0</masterprocess_0_4>
+        <masterprocess_0_5>0</masterprocess_0_5>
+        <masterprocess_0_6>0</masterprocess_0_6>
+        <masterprocess_0_7>0</masterprocess_0_7>
+        <masterprocess_0_8>0</masterprocess_0_8>
+        <masterprocess_0_9>0</masterprocess_0_9>
+        <masterprocess_0_10>0</masterprocess_0_10>
+        <masterprocess_1_0>0</masterprocess_1_0>
+        <masterprocess_1_1>0</masterprocess_1_1>
+        <masterprocess_1_2>0</masterprocess_1_2>
+        <masterprocess_1_3>0</masterprocess_1_3>
+        <masterprocess_1_4>0</masterprocess_1_4>
+        <masterprocess_1_5>0</masterprocess_1_5>
+        <masterprocess_1_6>0</masterprocess_1_6>
+        <masterprocess_1_7>0</masterprocess_1_7>
+        <masterprocess_1_8>0</masterprocess_1_8>
+        <masterprocess_1_9>0</masterprocess_1_9>
+        <masterprocess_1_10>0</masterprocess_1_10>
+        <masterprocess_2_0>0</masterprocess_2_0>
+        <masterprocess_2_1>0</masterprocess_2_1>
+        <masterprocess_2_2>0</masterprocess_2_2>
+        <masterprocess_2_3>0</masterprocess_2_3>
+        <masterprocess_2_4>0</masterprocess_2_4>
+        <masterprocess_2_5>0</masterprocess_2_5>
+        <masterprocess_2_6>0</masterprocess_2_6>
+        <masterprocess_2_7>0</masterprocess_2_7>
+        <masterprocess_2_8>0</masterprocess_2_8>
+        <masterprocess_2_9>0</masterprocess_2_9>
+        <masterprocess_2_10>0</masterprocess_2_10>
+        <masterprocess_3_0>0</masterprocess_3_0>
+        <masterprocess_3_1>0</masterprocess_3_1>
+        <masterprocess_3_2>0</masterprocess_3_2>
+        <masterprocess_3_3>0</masterprocess_3_3>
+        <masterprocess_3_4>0</masterprocess_3_4>
+        <masterprocess_3_5>0</masterprocess_3_5>
+        <masterprocess_3_6>0</masterprocess_3_6>
+        <masterprocess_3_7>0</masterprocess_3_7>
+        <masterprocess_3_8>0</masterprocess_3_8>
+        <masterprocess_3_9>0</masterprocess_3_9>
+        <masterprocess_3_10>0</masterprocess_3_10>
+        <masterprocess_4_0>0</masterprocess_4_0>
+        <masterprocess_4_1>0</masterprocess_4_1>
+        <masterprocess_4_2>0</masterprocess_4_2>
+        <masterprocess_4_3>0</masterprocess_4_3>
+        <masterprocess_4_4>0</masterprocess_4_4>
+        <masterprocess_4_5>0</masterprocess_4_5>
+        <masterprocess_4_6>0</masterprocess_4_6>
+        <masterprocess_4_7>0</masterprocess_4_7>
+        <masterprocess_4_8>0</masterprocess_4_8>
+        <masterprocess_4_9>0</masterprocess_4_9>
+        <masterprocess_4_10>0</masterprocess_4_10>
+        <masterprocess_5_0>0</masterprocess_5_0>
+        <masterprocess_5_1>0</masterprocess_5_1>
+        <masterprocess_5_2>0</masterprocess_5_2>
+        <masterprocess_5_3>0</masterprocess_5_3>
+        <masterprocess_5_4>0</masterprocess_5_4>
+        <masterprocess_5_5>0</masterprocess_5_5>
+        <masterprocess_5_6>0</masterprocess_5_6>
+        <masterprocess_5_7>0</masterprocess_5_7>
+        <masterprocess_5_8>0</masterprocess_5_8>
+        <masterprocess_5_9>0</masterprocess_5_9>
+        <masterprocess_5_10>0</masterprocess_5_10>
+        <masterprocess_6_0>0</masterprocess_6_0>
+        <masterprocess_6_1>0</masterprocess_6_1>
+        <masterprocess_6_2>0</masterprocess_6_2>
+        <masterprocess_6_3>0</masterprocess_6_3>
+        <masterprocess_6_4>0</masterprocess_6_4>
+        <masterprocess_6_5>0</masterprocess_6_5>
+        <masterprocess_6_6>0</masterprocess_6_6>
+        <masterprocess_6_7>0</masterprocess_6_7>
+        <masterprocess_6_8>0</masterprocess_6_8>
+        <masterprocess_6_9>0</masterprocess_6_9>
+        <masterprocess_6_10>0</masterprocess_6_10>
+        <masterprocess_7_0>0</masterprocess_7_0>
+        <masterprocess_7_1>0</masterprocess_7_1>
+        <masterprocess_7_2>0</masterprocess_7_2>
+        <masterprocess_7_3>0</masterprocess_7_3>
+        <masterprocess_7_4>0</masterprocess_7_4>
+        <masterprocess_7_5>0</masterprocess_7_5>
+        <masterprocess_7_6>0</masterprocess_7_6>
+        <masterprocess_7_7>0</masterprocess_7_7>
+        <masterprocess_7_8>0</masterprocess_7_8>
+        <masterprocess_7_9>0</masterprocess_7_9>
+        <masterprocess_7_10>0</masterprocess_7_10>
+    </defaultaudiosettings>
     <viewstates>
         <musicfiles>
             <viewmode>720896</viewmode>
@@ -746,9 +565,9 @@
             <sortattributes>0</sortattributes>
         </programs>
         <videofiles>
-            <viewmode>131572</viewmode>
-            <sortmethod>0</sortmethod>
-            <sortorder>0</sortorder>
+            <viewmode>720896</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
             <sortattributes>0</sortattributes>
         </videofiles>
         <videonavactors>
@@ -759,7 +578,7 @@
         </videonavactors>
         <videonavepisodes>
             <viewmode>720896</viewmode>
-            <sortmethod>21</sortmethod>
+            <sortmethod>23</sortmethod>
             <sortorder>1</sortorder>
             <sortattributes>0</sortattributes>
         </videonavepisodes>
@@ -800,9 +619,4 @@
             <sortattributes>0</sortattributes>
         </videonavyears>
     </viewstates>
-    <resolutions />
-    <audio>
-        <mute>false</mute>
-        <fvolumelevel>1.000000</fvolumelevel>
-    </audio>
 </settings>

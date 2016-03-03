@@ -1,6 +1,32 @@
 ====================================================================
 Castaway sports addon by [COLOR yellow]@natko1412[/COLOR]
 ====================================================================
+v0.1.1 [29-Feb-2016]
+-fix tvone
+
+v0.1.0 [28-Feb-2016]
+-add tvrex.net (NBA full matches)
+-add hdfree.tv (sport tv)
+-add parental control
+-add sports-x.net (sport tv)
+-add tugoleada.com (spanish football streams)
+-add thefootballcouch.com (football highlights/shows/matches)
+-add livefootballvideo.com (full matches)
+-add livetv.sx NBA archive (full matches)
+-add rutube NHL (full matches)
+-add livefootballol channel list (p2p)
+-add nbafull.com
+-add cache to liveresolver
+-add sport2life
+-add ifirstrow.eu
+-fix fullmatchtv.com
+-fix rutube videos (nhl)
+-fix serbiaplus.club
+-fix livetv.sx regex
+-remove nba & nhlstream.net
+-remove time4tv
+-remove zonasports.in
+
 
 v0.0.9 [07-Feb-2016]
 -fix livetv.sx custom base url

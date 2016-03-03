@@ -18,7 +18,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>"script.thumbnailscleaner"</defaultID>
-		<label>[COLOR blue][B]Thumbnails Cleaner[/B][/COLOR]</label>
+		<label>[COLOR blue][B]Thumbnail Cleaner[/B][/COLOR]</label>
 		<label2>Favourite</label2>
 		<icon>DefaultFolder.png</icon>
 		<thumb>C:\Users\blowe\AppData\Roaming\Kodi\addons\script.thumbnailscleaner\icon.png</thumb>

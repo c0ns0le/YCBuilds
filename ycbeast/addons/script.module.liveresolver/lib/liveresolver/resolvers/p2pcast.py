@@ -21,23 +21,22 @@
 
 import re,urllib,urlparse,base64,json,socket
 from liveresolver.modules import client
-
+from liveresolver.modules.log_utils import log 
 
 def resolve(url):
     try:
         referer = urlparse.parse_qs(urlparse.urlparse(url).query)['referer'][0]
 
         page = urlparse.parse_qs(urlparse.urlparse(url).query)['id'][0]
-        page = 'http://p2pcast.tv/stream.php?id=%s&live=0&p2p=0&stretching=uniform' % page
+        page = 'http://p2pcast.tech/stream.php?id=%s&live=0&p2p=0&stretching=uniform' % page
 
         result = client.request(page, referer=referer)
-
-        token = client.request('http://p2pcast.tv/getTok.php', referer=page, headers={'User-Agent': client.agent(), 'X-Requested-With': 'XMLHttpRequest'})
+        token = client.request('http://p2pcast.tech/getTok.php', referer=page, headers={'User-Agent': client.agent(), 'X-Requested-With': 'XMLHttpRequest'})
         try: token = json.loads(token)['token']
         except: token = ''
-        url = re.compile('murl\s*=\s*[\'|\"](.+?)[\'|\"]').findall(result)[0]
+        url = re.compile('murl\s*=\s*[\'|\"](.+?)[\'|\"]').findall(result)[0] 
         url = base64.b64decode(url) + token
-        url += '|Referer='+page+'&User-Agent=%s&X-Requested-With=ShockwaveFlash/19.0.0.245&Host=%s'%(client.agent(),urlparse.urlparse(url).netloc)
+        url += '|Referer='+page+'&User-Agent=%s&X-Requested-With=ShockwaveFlash/20.0.0.286&Host=%s'%(client.agent(),urlparse.urlparse(url).netloc)
 
         return url
     except:

@@ -123,7 +123,7 @@ class main():
                 url = self.base + urls[i]
                 evento = events[i]
                 ln_num = names[i]
-                title = "{} {} ({})".format(evento, ln_num, pl_name)
+                title = "%s %s (%s)"%(evento, ln_num, pl_name)
                 if not 'bet' in pl_name.lower():
                     new.append((url,title))
 

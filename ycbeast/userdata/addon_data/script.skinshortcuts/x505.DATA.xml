@@ -2,14 +2,6 @@
 <shortcuts>
 	<shortcut>
 		<defaultID />
-		<label>New KidsTV</label>
-		<label2>Custom shortcut</label2>
-		<icon>DefaultShortcut.png</icon>
-		<thumb>image://http%3a%2f%2fwww.oakparkonline.org%2falpha%2fwp-content%2fuploads%2f2012%2f09%2fmerry-christmas-christian-a8fcczit.jpg/</thumb>
-		<action>ActivateWindow(10025,"plugin://plugin.video.newkidstv",return)</action>
-	</shortcut>
-	<shortcut>
-		<defaultID />
 		<label>Disney Jr.</label>
 		<label2>Custom shortcut</label2>
 		<icon>DefaultShortcut.png</icon>
@@ -18,11 +10,19 @@
 	</shortcut>
 	<shortcut>
 		<defaultID />
-		<label>[COLOR blue][B]Kids Collection[/B][/COLOR]</label>
+		<label>New KidsTV</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fwww.oakparkonline.org%2falpha%2fwp-content%2fuploads%2f2012%2f09%2fmerry-christmas-christian-a8fcczit.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.newkidstv",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>[COLOR blue][B]Disney Collection[/B][/COLOR]</label>
 		<label2>Custom item</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>image://http%3a%2f%2fs30.postimg.org%2fjsccn9npt%2fThe_DCollection.jpg/</thumb>
-		<action>ActivateWindow(Programs,"plugin://plugin.program.super.favourites/?label=Kids&amp;mode=400&amp;path=special%3A%2F%2Fprofile%2Faddon_data%2Fplugin.program.super.favourites%2FSuper+Favourites%2FKids&amp;image=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.kmER%2Ficons%2Ficon.png&amp;fanart=https%3A%2F%2Fi.ytimg.com%2Fvi%2FXJtQ0lNDdnY%2Fmaxresdefault.jpg&amp;content_type=",return)</action>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.phstreams/?name=The+Disney+Collection&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2FDisne%2FDisne_Directory.xml&amp;audio=0&amp;image=http%3A%2F%2Fs4.postimg.org%2F4aztnsvj1%2Fdcollection.jpg&amp;fanart=http%3A%2F%2Fimg1.goodfon.su%2Foriginal%2F1920x1080%2F7%2F52%2Fking-queen-crown-poker.jpg&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID />
@@ -43,9 +43,9 @@
 	<shortcut>
 		<defaultID />
 		<label>All Kids Stuff</label>
-		<label2>Video Add-On</label2>
+		<label2>Custom item</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb>image://C%3a%5cUsers%5cblowe%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.allinone%2ficons%2fks.png/</thumb>
-		<action>ActivateWindow(10025,"plugin://plugin.video.allinone/?mode=KidsMenu",return)</action>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.phstreams/?name=%5BCOLOR+orangered%5DK%5B%2FCOLOR%5D%5BCOLOR+white%5DIDS%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fzenica.watchkodi.com%2FDirectories%2FMain%2520Directory%2FKids%2520Main.xml&amp;audio=0&amp;image=http%3A%2F%2Fs6.postimg.org%2Fmvzjgehoh%2FKids.png&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F4ph8mo5q9%2FBackdrop.png&amp;tvshow=0&amp;content=0&amp;action=ndmode",return)</action>
 	</shortcut>
 </shortcuts>

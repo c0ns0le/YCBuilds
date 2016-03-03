@@ -1,5 +1,7 @@
 from resources.lib.modules import client,webutils
 import re,sys
+from resources.lib.modules.log_utils import log
+
 from addon.common.addon import Addon
 addon = Addon('plugin.video.castaway', sys.argv)
 
@@ -81,7 +83,7 @@ class main():
                 health = re.findall('&nbsp;(\d+)',link)[0]
                 streamer_tmp,video,eid,lid,ci,si,jj,url = re.findall('show_webplayer\(\'(\w+)\',\s*\'(\w+)\',\s*(\w+),\s*(\w+),\s*(\w+),\s*(\w+),\s*\'(\w+)\'\).+?href="(.+?)">',link)[0]
                 title = "%s (health %s%%) %s %s"%(streamer_tmp,health,lang, bitrate)
-                new.append((url,title))
+                new.append((url,title.replace('ifr','flash')))
             except:
                 pass
         return new
@@ -108,10 +110,15 @@ class main():
     def __prepare_events(self,events):
         new=[]
         for ev in events:
+            log(ev)
             url = self.base + ev.find('a')['href']
             event = ev.find('a').getText()
             info = ev.find('span',{'class':'evdesc'}).getText()
-            league = re.findall('\((.+?)\)',info)[0]
+            try:
+                league = re.findall('\((.+?)\)',info)[0]
+            except:
+                league = ''
+
             time = re.findall('(\d+:\d+)',info)[0]
             day,month = re.findall('(\d+) (\w+) at',info)[0]
             time = self.convert_time(time,month, day)

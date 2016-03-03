@@ -63,7 +63,6 @@ resolver_dict={ 'sawlive.tv': 'sawlive',
             'playerapp1.pw' : 'dinozap','playerapp2.pw' : 'dinozap','dinostream.pw' : 'dinozap','dinozap.info'  : 'dinozap','livesports15.ucoz.com' : 'dinozap','dinozap.pw' : 'dinozap','playerhd1.pw' : 'dinozap','playerhd2.pw' : 'dinozap',
             'tv.verdirectotv.org' : 'dinozap','hdcastream.info' : 'dinozap','serverhd.eu' : 'dinozap','sitenow.me' : 'dinozap','sstream.pw' : 'dinozap','uefahd.com' : 'dinozap',
             'boxlivetv.eu' : 'dinozap',
-            'weplayer.pw':'dinozap',
             'streamcasttv.biz':'streamcasttv',
             'vaughnlive.tv' : 'vaughnlive',
             'hdcast.org' : 'hdcast_org',
@@ -77,5 +76,6 @@ resolver_dict={ 'sawlive.tv': 'sawlive',
             'castasap.pw' : 'castasap',
             'flashlive.pw' : 'castasap',
             'castflash.pw' : 'castasap',
-            'fastflash.pw' : 'castasap'
+            'fastflash.pw' : 'castasap',
+            'deltatv.xyz' : 'deltatv'
               }

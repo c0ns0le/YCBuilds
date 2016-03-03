@@ -54,16 +54,8 @@ class main():
 
 
 	def resolve(self,url):
-		from resources.lib.modules import vk
-		urls = vk.resolve(url)
-		hd = addon.get_setting('vk_bitrate') == 'HD'
-		for url in urls:
-			if hd:
-				if url['quality']=='720p':
-					return url['url']
-			else:
-				if url['quality']!='720p':
-					return url['url']
+		import urlresolver
+		return urlresolver.resolve(url)
 
 
 

@@ -114,7 +114,10 @@ class main():
             url = self.base + ev.find('a')['href']
             event = ev.find('a').getText()
             infoa = ev.find('span',{'class':'evdesc'}).getText()
-            league = re.findall('\((.+?)\)',infoa)[0]
+            try:
+                league = re.findall('\((.+?)\)',infoa)[0]
+            except:
+                league = ''
             time = re.findall('(\d+:\d+)',infoa)[0]
             day,month = re.findall('(\d+) (\w+) at',infoa)[0]
             time = self.convert_time(time,month, day)

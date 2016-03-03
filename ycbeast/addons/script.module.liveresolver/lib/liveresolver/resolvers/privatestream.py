@@ -5,7 +5,7 @@ import re,urlparse
 from liveresolver.modules import client
 
 def resolve(url):
-    try:
+    #try:
         
         referer = url
         pageUrl = url
@@ -23,6 +23,6 @@ def resolve(url):
 
 
         return url
-    except:
-        return
+    #except:
+    #    return
 

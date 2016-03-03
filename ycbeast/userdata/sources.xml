@@ -4,6 +4,11 @@
     </programs>
     <video>
         <default pathversion="1"></default>
+        <source>
+            <name>YCBeast Tutorials</name>
+            <path pathversion="1">/storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/userdata/addon_data/plugin.video.youtubelibrary/Streams/TV/</path>
+            <allowsharing>true</allowsharing>
+        </source>
     </video>
     <music>
         <default pathversion="1"></default>
@@ -39,8 +44,8 @@
             <allowsharing>true</allowsharing>
         </source>
         <source>
-            <name>ares</name>
-            <path pathversion="1">http://www.areswizard.co.uk/zip/</path>
+            <name>.ares</name>
+            <path pathversion="1">http://areswizard.srve.io/aw_zip/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>
@@ -55,7 +60,7 @@
         </source>
         <source>
             <name>..YCBeast</name>
-            <path pathversion="1">http://jasongentili.com/repo/</path>
+            <path pathversion="1">http://ycrepo.info/ycbeast/</path>
             <allowsharing>true</allowsharing>
         </source>
         <source>

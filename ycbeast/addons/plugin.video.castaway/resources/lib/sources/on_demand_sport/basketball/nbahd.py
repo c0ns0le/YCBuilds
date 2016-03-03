@@ -25,7 +25,7 @@ class main():
 		items=soup.findAll('div',{'class':'thumb'})
 		out=[]
 		for item in items:
-			url=self.base + item.find('a')['href']
+			url = item.find('a')['href']
 			title=item.find('a')['title'].encode('utf-8')
 			thumb=item.find('img')['src'].encode('utf-8')
 
@@ -34,6 +34,8 @@ class main():
 		return out
 
 	def links(self,url, img=' '):
+		if 'nbahd.com' not in url:
+			url = self.base + url
 		html = client.request(url)
 		soup = webutils.bs(html)
 		tags=soup.find('div',{'class':'entry-content rich-content'}).findAll('p')
@@ -73,9 +75,9 @@ class main():
 		try:
 			link=soup.find('iframe',{'frameborder':'0'})['src']
 		except:    
-			sd = re.findall('<source src="(.+?)" type=\'video/mp4\' data-res="360p">',html)[0]
+			sd = url=re.findall('<source src=["\']([^"\']+)["\'] type=["\']video/mp4["\'] data-res=["\']360p',html)[0]
 			try:
-				hd = re.findall('<source src="(.+?)" type=\'video/mp4\' data-res="720p">',html)[0]
+				hd = url=re.findall('<source src=["\']([^"\']+)["\'] type=["\']video/mp4["\'] data-res=["\']720p',html)[0]
 			except:
 				hd = sd
 			return hd
@@ -83,11 +85,13 @@ class main():
 		if 'http' not in link:
 			link = 'http://nbahd.com' + link
 		try:
-			html = client.request(link)
-			urls = re.findall('src="(.+?)" type="video/mp4"',html)
-			try: url = urls[1]
-			except: url = urls[0]
-			return url
+			html=client.request(link)
+			sd = url=re.findall('<source src=["\']([^"\']+)["\'] type=["\']video/mp4["\'] data-res=["\']360p',html)[0]
+			try:
+				hd = url=re.findall('<source src=["\']([^"\']+)["\'] type=["\']video/mp4["\'] data-res=["\']720p',html)[0]
+			except:
+				hd = sd
+			return hd
 		except:
 				try:
 					import urlresolver
@@ -100,9 +104,12 @@ class main():
 
 
 	def next_page(self):
+
 		html = client.request(self.url)
 		try:
-			next_page=self.base + re.findall('<a.+?rel="next".+?href="(.+?)"',html)[0]
+			next_page=re.findall('<a.+?rel="next".+?href="(.+?)"',html)[0]
+			if 'nbahd.com' not in next_page:
+				next_page = self.base + next_page
 		except:
 			next_page=None
 		return next_page

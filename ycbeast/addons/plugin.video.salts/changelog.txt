@@ -1,3 +1,24 @@
+[B]Version 2.0.11[/B]
+- Add movcav scraper
+- Improve 2ddl scraper
+- Improve WatchHD scraper
+- Fix MWM scraper
+- Fix unicode errors from trakt
+- Add Premiumize.V2 scraper
+- Fail gracefully when section list does not exist
+
+[B]Version 2.0.9[/B]
+- Add 2DDL Scraper
+- Require uid/pw for alluc
+- Add onlinedizi scraper
+- Fix WatchHD scraper
+- Fix TWTS scraper
+- Fix HDMovie14 scraper
+- Fix FireMoviesHD scraper
+- Fix mira scraper
+- Update Rainierland scraper
+- Update Translations
+
 [B]Version 2.0.8[/B]
 - Add Episodes to Premiumize scraper
 - Add vivo.to scraper

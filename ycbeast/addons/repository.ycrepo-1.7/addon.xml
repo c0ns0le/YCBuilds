@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.ycrepo" name="YC Repository" version="1.7" provider-name="ForTheJest">
+	<extension point="xbmc.addon.repository" name="YC Repository">
+		<info compressed="false">http://jasongentili.com/bucket/Plugins/addons.xml</info>
+		<checksum>http://jasongentili.com/bucket/Plugins/addons.xml.md5</checksum>
+		<datadir zip="true">http://jasongentili.com/bucket/Plugins/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>YC Repository</summary>
+		<description>Kodi Repository for the YCBeast, YCFireSlick and YCSports Builds and other addons. Version 1.7 - Released FEB.29.2016 - Faith is often the death of Reason - All praises to tha great spaghetti monster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+

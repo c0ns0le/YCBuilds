@@ -21,7 +21,7 @@
     <setting id="google_drive_id" value="" />
     <setting id="google_drive_secret" value="" />
     <setting id="progress_mode" value="0" />
-    <setting id="remote_path" value="/sdcard/backups/" />
+    <setting id="remote_path" value="/sdcard/Android/data/org.xbmc.kodi/files/.kodi/backups/" />
     <setting id="remote_path_2" value="" />
     <setting id="remote_selection" value="0" />
     <setting id="remove_auth_button" value="" />

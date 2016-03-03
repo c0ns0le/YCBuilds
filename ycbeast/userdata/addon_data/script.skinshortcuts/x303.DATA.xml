@@ -18,7 +18,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>ycbeasttutorial</defaultID>
-		<label>[COLOR limegreen][B]All Tutorials [/B][/COLOR]</label>
+		<label>[COLOR limegreen][B]All Tutorials[/B][/COLOR]</label>
 		<label2>Custom item</label2>
 		<icon>DefaultFolder.png</icon>
 		<thumb>https://i.ytimg.com/vi/lbO5rFdldV4/hqdefault.jpg</thumb>

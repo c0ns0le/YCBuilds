@@ -71,744 +71,876 @@ class Ustvnow:
 
     def get_channels(self, quality):
         Addon.log('get_channels,' + str(quality))
-        token_check = self._get_json('gtv/1/live/getcustomerkey', {'token': Addon.get_setting('token')})['username']
-        if token_check != Addon.get_setting('email'):
-            self.token = self._login()
-        else:
-            self.token = Addon.get_setting('token')
-        passkey = self._get_json('gtv/1/live/viewdvrlist', {'token': self.token})['globalparams']['passkey']
         try:
-            stream_check = self._get_json('stream/1/live/view', {'token': self.token, 'key': passkey, 'scode': 'whtm'})['domain']
+	    token_check = self._get_json('gtv/1/live/getcustomerkey', {'token': Addon.get_setting('token')})['username']
+	    if token_check != Addon.get_setting('email'):
+	        self.token = self._login()
+	    else:
+	        self.token = Addon.get_setting('token')
+	    activation_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['need_account_activation']
+	    if activation_check == True:
+                Addon.set_setting('activation', 'false')
+                self.dlg.ok(Addon.get_string(30000), Addon.get_string(30031))
+                exit()
+            else:
+                Addon.set_setting('activation', 'true')
+	    renew_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['need_account_renew']
+	    if renew_check == True:
+                Addon.set_setting('renew', 'false')
+                self.dlg.ok(Addon.get_string(30000), Addon.get_string(30032))
+                exit()
+            else:
+                Addon.set_setting('renew', 'true')
+	    passkey = self._get_json('gtv/1/live/viewdvrlist', {'token': self.token})['globalparams']['passkey']
+	    try:
+	        stream_check = self._get_json('stream/1/live/view', {'token': self.token, 'key': passkey, 'scode': 'whtm'})['domain']
+	    except:
+	        self.token = self._login_alt()
+	    dvr_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['plan_name']
+	    if 'DVR' in dvr_check:
+	        Addon.set_setting('dvr', 'true')
+	    else:
+	        Addon.set_setting('dvr', 'false')
+	    account_type = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['plan_free']
+	    if account_type == 1 and dvr_check != 'Nittany Plan':
+	        Addon.set_setting('free_package', 'true')
+	    else:
+	        Addon.set_setting('free_package', 'false')
+	    content = self._get_json('gtv/1/live/channelguide', {'token': self.token})
+	    channels = []
+	    results = content['results'];
+	    for i in results:
+	        try:
+	            if i['order'] == 1:
+	                from datetime import datetime
+	                event_date_time = datetime.fromtimestamp(i['ut_start']).strftime('%I:%M %p').lstrip('0')
+	                name = Addon.cleanChanName(i['stream_code'])
+	                mediatype = i['mediatype']
+	                poster_url = self.mcBASE_URL + '/gtv/1/live/viewposter?srsid=' + str(i['srsid']) + '&cs=' + i['callsign'] + '&tid=' + mediatype
+	                mediatype = mediatype.replace('SH', 'tvshow').replace('EP', 'episode').replace('MV', 'movie').replace('SP', 'tvshow')
+	                rec_url = '/gtv/1/dvr/updatedvr?scheduleid=' + str(i['scheduleid']) + '&token=' + self.token + '&action=add'
+	                set_url = '/gtv/1/dvr/updatedvrtimer?connectorid=' + str(i['connectorid']) + '&prgsvcid=' + str(i['prgsvcid']) + '&eventtime=' + str(i['event_time']) + '&token=' + self.token + '&action=add'
+	                if Addon.get_setting('free_package') == 'true':
+	                    if name in ['CW','ABC','FOX','PBS','CBS','NBC','MY9']:
+	                        channels.append({
+	                            'name': name,
+	                            'episode_title': i['episode_title'],
+	                            'title': i['title'],
+	                            'plot': i['description'],
+	                            'mediatype': mediatype,
+	                            'playable': True,
+	                            'poster_url': poster_url,
+	                            'rec_url': rec_url,
+	                            'set_url': set_url,
+	                            'event_date_time': event_date_time
+	                            })
+	                else:
+	                    channels.append({
+	                        'name': name,
+	                        'episode_title': i['episode_title'],
+	                        'title': i['title'],
+	                        'plot': i['description'],
+	                        'mediatype': mediatype,
+	                        'playable': True,
+	                        'poster_url': poster_url,
+	                        'rec_url': rec_url,
+	                        'set_url': set_url,
+	                        'event_date_time': event_date_time
+	                        })
+	        except:
+	            pass
+	    return channels 
         except:
-            self.token = self._login_alt()
-        dvr_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['plan_name']
-        if 'DVR' in dvr_check:
-            Addon.set_setting('dvr', 'true')
-        else:
-            Addon.set_setting('dvr', 'false')
-        account_type = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['plan_free']
-        if account_type == 1 and dvr_check != 'Nittany Plan':
-            Addon.set_setting('free_package', 'true')
-        else:
-            Addon.set_setting('free_package', 'false')
-        content = self._get_json('gtv/1/live/channelguide', {'token': self.token})
-        channels = []
-        results = content['results'];
-        for i in results:
-            try:
-                if i['order'] == 1:
-                    from datetime import datetime
-                    event_date_time = datetime.fromtimestamp(i['ut_start']).strftime('%I:%M %p').lstrip('0')
-                    name = Addon.cleanChanName(i['stream_code'])
-                    mediatype = i['mediatype']
-                    poster_url = self.mcBASE_URL + '/gtv/1/live/viewposter?srsid=' + str(i['srsid']) + '&cs=' + i['callsign'] + '&tid=' + mediatype
-                    mediatype = mediatype.replace('SH', 'tvshow').replace('EP', 'episode').replace('MV', 'movie')
-                    rec_url = '/gtv/1/dvr/updatedvr?scheduleid=' + str(i['scheduleid']) + '&token=' + self.token + '&action=add'
-                    set_url = '/gtv/1/dvr/updatedvrtimer?connectorid=' + str(i['connectorid']) + '&prgsvcid=' + str(i['prgsvcid']) + '&eventtime=' + str(i['event_time']) + '&token=' + self.token + '&action=add'
-                    if Addon.get_setting('free_package') == 'true':
-                        if name in ['CW','ABC','FOX','PBS','CBS','NBC','MY9']:
-                            channels.append({
-                                'name': name,
-                                'episode_title': i['episode_title'],
-                                'title': i['title'],
-                                'plot': i['description'],
-                                'mediatype': mediatype,
-                                'playable': True,
-                                'poster_url': poster_url,
-                                'rec_url': rec_url,
-                                'set_url': set_url,
-                                'event_date_time': event_date_time
-                                })
-                    else:
-                        channels.append({
-                            'name': name,
-                            'episode_title': i['episode_title'],
-                            'title': i['title'],
-                            'plot': i['description'],
-                            'mediatype': mediatype,
-                            'playable': True,
-                            'poster_url': poster_url,
-                            'rec_url': rec_url,
-                            'set_url': set_url,
-                            'event_date_time': event_date_time
-                            })
-            except:
-                pass
-        return channels 
+            if Addon.get_setting('activation') == 'true' and Addon.get_setting('renew') == 'true':
+	        self.dlg.ok(Addon.get_string(30000), Addon.get_string(30011))
+	    exit()
 
     def get_link(self, quality):
         Addon.log('get_link,' + str(quality))
-        token_check = self._get_json('gtv/1/live/getcustomerkey', {'token': Addon.get_setting('token')})['username']
-        if token_check != Addon.get_setting('email'):
-            self.token = self._login()
-        else:
-            self.token = Addon.get_setting('token')
-        passkey = self._get_json('gtv/1/live/viewdvrlist', {'token': self.token})['globalparams']['passkey']
         try:
-            stream_check = self._get_json('stream/1/live/view', {'token': self.token, 'key': passkey, 'scode': 'whtm'})['domain']
+	    token_check = self._get_json('gtv/1/live/getcustomerkey', {'token': Addon.get_setting('token')})['username']
+	    if token_check != Addon.get_setting('email'):
+	        self.token = self._login()
+	    else:
+	        self.token = Addon.get_setting('token')
+	    activation_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['need_account_activation']
+	    if activation_check == True:
+                Addon.set_setting('activation', 'false')
+                self.dlg.ok(Addon.get_string(30000), Addon.get_string(30031))
+                exit()
+            else:
+                Addon.set_setting('activation', 'true')
+	    renew_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['need_account_renew']
+	    if renew_check == True:
+                Addon.set_setting('renew', 'false')
+                self.dlg.ok(Addon.get_string(30000), Addon.get_string(30032))
+                exit()
+            else:
+                Addon.set_setting('renew', 'true')
+	    passkey = self._get_json('gtv/1/live/viewdvrlist', {'token': self.token})['globalparams']['passkey']
+	    try:
+	        stream_check = self._get_json('stream/1/live/view', {'token': self.token, 'key': passkey, 'scode': 'whtm'})['domain']
+	    except:
+	        self.token = self._login_alt()
+	    content = self._get_json('gtv/1/live/channelguide', {'token': self.token})
+	    channels = []
+	    results = content['results'];
+	    quality = (quality + 1)
+	    #used for alternate stream options
+	    src = random.choice(['lv5', 'lv7', 'lv9'])
+	    #used for alternate stream options
+	    stream_type = 'rtmp'
+	    for i in results:
+	        try:
+	            if i['order'] == 1:
+	                if quality == 4 and i['scode'] == 'whvl':
+	                    quality = (quality - 1)
+	                name = Addon.cleanChanName(i['stream_code'])
+	                stream = self._get_json('stream/1/live/view', {'token': self.token, 'key': passkey, 'scode': i['scode']})['stream']
+	                if Addon.get_setting('live_stream_option') == '0':
+	                    url = stream.replace('smil:', 'mp4:').replace('USTVNOW1', 'USTVNOW').replace('USTVNOW', 'USTVNOW' + str(quality))
+	                else:
+	                    url = stream_type + '://' + str(src) + '.ustvnow.com:1935/dvrtest?key=' + passkey + '/mp4:' + i['streamname'] + str(quality)
+	                if Addon.get_setting('free_package') == 'true':
+	                    if name in ['CW','ABC','FOX','PBS','CBS','NBC','MY9']:
+	                        channels.append({ 
+	                            'name': name,    
+	                            'url': url
+	                             })
+	                else:
+	                    channels.append({
+	                        'name': name,
+	                        'url': url
+	                        })
+	        except:
+	            pass
+	    return channels
         except:
-            self.token = self._login_alt()
-        content = self._get_json('gtv/1/live/channelguide', {'token': self.token})
-        channels = []
-        results = content['results'];
-        quality = (quality + 1)
-        #used for alternate stream options
-        src = random.choice(['lv5', 'lv7', 'lv9'])
-        #used for alternate stream options
-        stream_type = 'rtmp'
-        for i in results:
-            try:
-                if i['order'] == 1:
-                    if quality == 4 and i['scode'] == 'whvl':
-                        quality = (quality - 1)
-                    name = Addon.cleanChanName(i['stream_code'])
-                    stream = self._get_json('stream/1/live/view', {'token': self.token, 'key': passkey, 'scode': i['scode']})['stream']
-                    if Addon.get_setting('live_stream_option') == '0':
-                        url = stream.replace('smil:', 'mp4:').replace('USTVNOW1', 'USTVNOW').replace('USTVNOW', 'USTVNOW' + str(quality))
-                    else:
-                        url = stream_type + '://' + str(src) + '.ustvnow.com:1935/dvrtest?key=' + passkey + '/mp4:' + i['streamname'] + str(quality)
-                    if Addon.get_setting('free_package') == 'true':
-                        if name in ['CW','ABC','FOX','PBS','CBS','NBC','MY9']:
-                            channels.append({ 
-                                'name': name,    
-                                'url': url
-                                })
-                    else:
-                        channels.append({
-                            'name': name,
-                            'url': url
-                            })
-            except:
-                pass
-        return channels 
+            if Addon.get_setting('activation') == 'true' and Addon.get_setting('renew') == 'true':
+	        self.dlg.ok(Addon.get_string(30000), Addon.get_string(30011))
+	    exit()
 
     def get_dvr_link(self, quality_type, recordings_quality):
         Addon.log('get_dvr_link,' + str(recordings_quality))
-        token_check = self._get_json('gtv/1/live/getcustomerkey', {'token': Addon.get_setting('token')})['username']
-        if token_check != Addon.get_setting('email'):
-            self.token = self._login()
-        else:
-            self.token = Addon.get_setting('token')
-        passkey = self._get_json('gtv/1/live/viewdvrlist', {'token': self.token})['globalparams']['passkey']
         try:
-            stream_check = self._get_json('stream/1/live/view', {'token': self.token, 'key': passkey, 'scode': 'whtm'})['domain']
+	    token_check = self._get_json('gtv/1/live/getcustomerkey', {'token': Addon.get_setting('token')})['username']
+	    if token_check != Addon.get_setting('email'):
+	        self.token = self._login()
+	    else:
+	        self.token = Addon.get_setting('token')
+	    activation_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['need_account_activation']
+	    if activation_check == True:
+                Addon.set_setting('activation', 'false')
+                self.dlg.ok(Addon.get_string(30000), Addon.get_string(30031))
+                exit()
+            else:
+                Addon.set_setting('activation', 'true')
+	    renew_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['need_account_renew']
+	    if renew_check == True:
+                Addon.set_setting('renew', 'false')
+                self.dlg.ok(Addon.get_string(30000), Addon.get_string(30032))
+                exit()
+            else:
+                Addon.set_setting('renew', 'true')
+	    passkey = self._get_json('gtv/1/live/viewdvrlist', {'token': self.token})['globalparams']['passkey']
+	    try:
+	        stream_check = self._get_json('stream/1/live/view', {'token': self.token, 'key': passkey, 'scode': 'whtm'})['domain']
+	    except:
+	        self.token = self._login_alt()
+	    content = self._get_json('gtv/1/live/viewdvrlist', {'token': self.token})
+	    channels = []
+	    results = content['results'];
+	    #used for alternate stream options
+	    app_name = 'dvrrokuplay'
+	    #used for alternate stream options
+	    stream_type = 'rtsp'
+	    for i in results:
+	        try:
+	            name = Addon.cleanChanName(i['stream_code'])
+	            scheduleid = str(i['scheduleid'])
+	            stream = self._get_json('stream/1/dvr/play', {'token': self.token, 'key': passkey, 'scheduleid': i['scheduleid']})['stream']
+	            if Addon.get_setting('recordings_stream_option') == '0':
+	                url = stream.replace('smil:', 'mp4:').replace('.smil', '_' + str(recordings_quality) + '.mp4').replace('350', str(recordings_quality))
+	            else:
+	                url = stream_type + '://' + i['dvrlocation'] + '.ustvnow.com:1935/' + app_name + '/mp4:' + [i['filename_low'], i['filename_med'], i['filename_high']][quality_type]
+	            if Addon.get_setting('free_package') == 'true':
+	                if name in ['CW','ABC','FOX','PBS','CBS','NBC','MY9']:
+	                    channels.append({ 
+	                        'scheduleid': scheduleid,    
+	                        'url': url
+	                        })
+	            else:
+	                channels.append({
+	                    'scheduleid': scheduleid,
+	                    'url': url
+	                    })
+	        except:
+	            pass
+	    return channels 
         except:
-            self.token = self._login_alt()
-        content = self._get_json('gtv/1/live/viewdvrlist', {'token': self.token})
-        channels = []
-        results = content['results'];
-        #used for alternate stream options
-        app_name = 'dvrrokuplay'
-        #used for alternate stream options
-        stream_type = 'rtsp'
-        for i in results:
-            try:
-                name = Addon.cleanChanName(i['stream_code'])
-                scheduleid = str(i['scheduleid'])
-                stream = self._get_json('stream/1/dvr/play', {'token': self.token, 'key': passkey, 'scheduleid': i['scheduleid']})['stream']
-                if Addon.get_setting('recordings_stream_option') == '0':
-                    url = stream.replace('smil:', 'mp4:').replace('.smil', '_' + str(recordings_quality) + '.mp4').replace('350', str(recordings_quality))
-                else:
-                    url = stream_type + '://' + i['dvrlocation'] + '.ustvnow.com:1935/' + app_name + '/mp4:' + [i['filename_low'], i['filename_med'], i['filename_high']][quality_type]
-                if Addon.get_setting('free_package') == 'true':
-                    if name in ['CW','ABC','FOX','PBS','CBS','NBC','MY9']:
-                        channels.append({ 
-                            'scheduleid': scheduleid,    
-                            'url': url
-                            })
-                else:
-                    channels.append({
-                        'scheduleid': scheduleid,
-                        'url': url
-                        })
-            except:
-                pass
-        return channels    
+            if Addon.get_setting('activation') == 'true' and Addon.get_setting('renew') == 'true':
+	        self.dlg.ok(Addon.get_string(30000), Addon.get_string(30011))
+	    exit()  
 
     def get_recordings(self, type='recordings'):
         from datetime import datetime
         Addon.log('get_recordings')
-        token_check = self._get_json('gtv/1/live/getcustomerkey', {'token': Addon.get_setting('token')})['username']
-        if token_check != Addon.get_setting('email'):
-            self.token = self._login()
-        else:
-            self.token = Addon.get_setting('token')
-        passkey = self._get_json('gtv/1/live/viewdvrlist', {'token': self.token})['globalparams']['passkey']
         try:
-            stream_check = self._get_json('stream/1/live/view', {'token': self.token, 'key': passkey, 'scode': 'whtm'})['domain']
+	    token_check = self._get_json('gtv/1/live/getcustomerkey', {'token': Addon.get_setting('token')})['username']
+	    if token_check != Addon.get_setting('email'):
+	        self.token = self._login()
+	    else:
+	        self.token = Addon.get_setting('token')
+	    activation_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['need_account_activation']
+	    if activation_check == True:
+                Addon.set_setting('activation', 'false')
+                self.dlg.ok(Addon.get_string(30000), Addon.get_string(30031))
+                exit()
+            else:
+                Addon.set_setting('activation', 'true')
+	    renew_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['need_account_renew']
+	    if renew_check == True:
+                Addon.set_setting('renew', 'false')
+                self.dlg.ok(Addon.get_string(30000), Addon.get_string(30032))
+                exit()
+            else:
+                Addon.set_setting('renew', 'true')
+	    passkey = self._get_json('gtv/1/live/viewdvrlist', {'token': self.token})['globalparams']['passkey']
+	    try:
+	        stream_check = self._get_json('stream/1/live/view', {'token': self.token, 'key': passkey, 'scode': 'whtm'})['domain']
+	    except:
+	        self.token = self._login_alt()
+	    dvr_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['plan_name']
+	    if 'DVR' in dvr_check:
+	        Addon.set_setting('dvr', 'true')
+	    else:
+	        Addon.set_setting('dvr', 'false')
+	    account_type = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['plan_free']
+	    if account_type == 1 and dvr_check != 'Nittany Plan':
+	        Addon.set_setting('free_package', 'true')
+	    else:
+	        Addon.set_setting('free_package', 'false')
+	    content = self._get_json('gtv/1/live/viewdvrlist', {'token': self.token})
+	    recordings = []
+	    scheduled = []
+	    recurring = []
+	    achannels = []
+	    results = content['results'];
+	    for i in results:
+	        chan = Addon.cleanChanName(i['callsign'])
+	        mediatype = i['connectorid'][:2]
+	        icon = self.mcBASE_URL + '/gtv/1/live/viewposter?srsid=' + str(i['srsid']) + '&cs=' + i['callsign'] + '&tid=' + mediatype
+	        title = i['title']
+	        plot = i['description']
+	        plot = plot.replace("&amp;", "&").replace('&quot;','"')
+	        orig_air_date = i['orig_air_date']
+	        event_time = datetime.fromtimestamp(i['ut_start']).strftime('%I:%M %p').lstrip('0')
+	        event_date_month = datetime.fromtimestamp(i['ut_start']).strftime('%m').lstrip('0')
+	        event_date_day = datetime.fromtimestamp(i['ut_start']).strftime('%d').lstrip('0')
+	        event_date_year = datetime.fromtimestamp(i['ut_start']).strftime('%y')
+	        event_date_name = datetime.fromtimestamp(i['ut_start']).strftime('%A - ')
+	        event_date_time = event_date_name + event_date_month + '/' + event_date_day + '/' + event_date_year + ' at ' + event_time
+	        dvrtimertype = i['dvrtimertype']
+	        event_inprogress = i['event_inprogress']
+	        if event_inprogress == 0:
+	            expire_time = datetime.fromtimestamp(i['ut_expires']).strftime('%I:%M %p').lstrip('0')
+	            expire_date_month = datetime.fromtimestamp(i['ut_expires']).strftime('%m').lstrip('0')
+	            expire_date_day = datetime.fromtimestamp(i['ut_expires']).strftime('%d').lstrip('0')
+	            expire_date_year = datetime.fromtimestamp(i['ut_expires']).strftime('%y')
+	            expire_date_name = datetime.fromtimestamp(i['ut_expires']).strftime('%A - ')
+	            expire_date_time = expire_date_name + expire_date_month + '/' + expire_date_day + '/' + expire_date_year + ' at ' + expire_time
+	        rec_date = i['recordedonmmddyyyy']
+	        synopsis = i['synopsis']
+	        duration = i['runtime']
+	        episode_title = i['episode_title']
+	        app_name = 'dvrrokuplay'
+	        del_url = '/gtv/1/dvr/updatedvr?scheduleid=' + str(i['scheduleid']) + '&token=' + self.token + '&action=remove'
+	        remove_url = '/gtv/1/dvr/updatedvrtimer?connectorid=' + str(i['connectorid']) + '&prgsvcid=' + str(i['prgsvcid']) + '&eventtime=' + str(i['event_time']) + '&token=' + self.token + '&action=remove'
+	        set_url = '/gtv/1/dvr/updatedvrtimer?connectorid=' + str(i['connectorid']) + '&prgsvcid=' + str(i['prgsvcid']) + '&eventtime=' + str(i['event_time']) +'&token=' + self.token + '&action=add'
+	        if (type == 'recordings' and event_inprogress == 0):
+	            recordings.append({'channel': chan,
+	                               'title': title,
+	                               'episode_title': episode_title,
+	                               'tvshowtitle': title,
+	                               'plot': plot,
+	                               'rec_date': rec_date,
+	                               'icon': icon,
+	                               'duration': duration,
+	                               'orig_air_date': orig_air_date,
+	                               'event_date_time': event_date_time,
+	                               'expire_date_time': expire_date_time,
+	                               'synopsis': synopsis,
+	                               'playable': (event_inprogress == 0),
+	                               'del_url': del_url,
+	                               'set_url': set_url,
+	                               'remove_url': remove_url,
+	                               'dvrtimertype': dvrtimertype,
+	                               'mediatype': mediatype,
+	                               'scheduleid': i['scheduleid']
+	                               })
+	        elif (type == 'scheduled' and event_inprogress != 0):
+	            scheduled.append({'channel': chan,
+	                              'title': title,
+	                              'episode_title': episode_title,
+	                              'tvshowtitle': title,
+	                              'plot': plot,
+	                              'rec_date': rec_date,
+	                              'icon': icon,
+	                              'duration': duration,
+	                              'orig_air_date': orig_air_date,
+	                              'event_date_time': event_date_time,
+	                              'synopsis': synopsis,
+	                              'playable': False,
+	                              'del_url': del_url,
+	                              'set_url': set_url,
+	                              'remove_url': remove_url,
+	                              'dvrtimertype': dvrtimertype,
+	                              'mediatype': mediatype,
+	                               })
+	        elif (type == 'recurring' and dvrtimertype !=0):
+	            aChannelname = {'title': title}
+	            aChannel = {'title': title}
+	            if aChannelname not in achannels:
+	                achannels.append(aChannelname)
+	                recurring.append({'channel': chan,
+	                                  'title': title,
+	                                  'episode_title': episode_title,
+	                                  'tvshowtitle': title,
+	                                  'plot': plot,
+	                                  'rec_date': rec_date,
+	                                  'icon': icon,
+	                                  'duration': duration,
+	                                  'orig_air_date': orig_air_date,
+	                                  'event_date_time': event_date_time,
+	                                  'synopsis': synopsis,
+	                                  'playable': False,
+	                                  'remove_url': remove_url
+	                                   })
+	    if (type == 'recordings'):
+	        return recordings
+	    elif (type == 'scheduled'):
+	        return scheduled
+	    elif (type == 'recurring'):
+	        return recurring
+	    else:
+	        return []
+	    return recordings
         except:
-            self.token = self._login_alt()
-        dvr_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['plan_name']
-        if 'DVR' in dvr_check:
-            Addon.set_setting('dvr', 'true')
-        else:
-            Addon.set_setting('dvr', 'false')
-        account_type = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['plan_free']
-        if account_type == 1 and dvr_check != 'Nittany Plan':
-            Addon.set_setting('free_package', 'true')
-        else:
-            Addon.set_setting('free_package', 'false')
-        content = self._get_json('gtv/1/live/viewdvrlist', {'token': self.token})
-        recordings = []
-        scheduled = []
-        recurring = []
-        achannels = []
-        results = content['results'];
-        for i in results:
-            chan = Addon.cleanChanName(i['callsign'])
-            mediatype = i['connectorid'][:2]
-            icon = self.mcBASE_URL + '/gtv/1/live/viewposter?srsid=' + str(i['srsid']) + '&cs=' + i['callsign'] + '&tid=' + mediatype
-            title = i['title']
-            plot = i['description']
-            plot = plot.replace("&amp;", "&").replace('&quot;','"')
-            orig_air_date = i['orig_air_date']
-            event_time = datetime.fromtimestamp(i['ut_start']).strftime('%I:%M %p').lstrip('0')
-            event_date_month = datetime.fromtimestamp(i['ut_start']).strftime('%m').lstrip('0')
-            event_date_day = datetime.fromtimestamp(i['ut_start']).strftime('%d').lstrip('0')
-            event_date_year = datetime.fromtimestamp(i['ut_start']).strftime('%y')
-            event_date_name = datetime.fromtimestamp(i['ut_start']).strftime('%A - ')
-            event_date_time = event_date_name + event_date_month + '/' + event_date_day + '/' + event_date_year + ' at ' + event_time
-            dvrtimertype = i['dvrtimertype']
-            event_inprogress = i['event_inprogress']
-            if event_inprogress == 0:
-                expire_time = datetime.fromtimestamp(i['ut_expires']).strftime('%I:%M %p').lstrip('0')
-                expire_date_month = datetime.fromtimestamp(i['ut_expires']).strftime('%m').lstrip('0')
-                expire_date_day = datetime.fromtimestamp(i['ut_expires']).strftime('%d').lstrip('0')
-                expire_date_year = datetime.fromtimestamp(i['ut_expires']).strftime('%y')
-                expire_date_name = datetime.fromtimestamp(i['ut_expires']).strftime('%A - ')
-                expire_date_time = expire_date_name + expire_date_month + '/' + expire_date_day + '/' + expire_date_year + ' at ' + expire_time
-            rec_date = i['recordedonmmddyyyy']
-            synopsis = i['synopsis']
-            duration = i['runtime']
-            episode_title = i['episode_title']
-            app_name = 'dvrrokuplay'
-            del_url = '/gtv/1/dvr/updatedvr?scheduleid=' + str(i['scheduleid']) + '&token=' + self.token + '&action=remove'
-            remove_url = '/gtv/1/dvr/updatedvrtimer?connectorid=' + str(i['connectorid']) + '&prgsvcid=' + str(i['prgsvcid']) + '&eventtime=' + str(i['event_time']) + '&token=' + self.token + '&action=remove'
-            set_url = '/gtv/1/dvr/updatedvrtimer?connectorid=' + str(i['connectorid']) + '&prgsvcid=' + str(i['prgsvcid']) + '&eventtime=' + str(i['event_time']) +'&token=' + self.token + '&action=add'
-            if (type == 'recordings' and event_inprogress == 0):
-                recordings.append({'channel': chan,
-                                   'title': title,
-                                   'episode_title': episode_title,
-                                   'tvshowtitle': title,
-                                   'plot': plot,
-                                   'rec_date': rec_date,
-                                   'icon': icon,
-                                   'duration': duration,
-                                   'orig_air_date': orig_air_date,
-                                   'event_date_time': event_date_time,
-                                   'expire_date_time': expire_date_time,
-                                   'synopsis': synopsis,
-                                   'playable': (event_inprogress == 0),
-                                   'del_url': del_url,
-                                   'set_url': set_url,
-                                   'remove_url': remove_url,
-                                   'dvrtimertype': dvrtimertype,
-                                   'mediatype': mediatype,
-                                   'scheduleid': i['scheduleid']
-                                   })
-            elif (type == 'scheduled' and event_inprogress != 0):
-                scheduled.append({'channel': chan,
-                                   'title': title,
-                                   'episode_title': episode_title,
-                                   'tvshowtitle': title,
-                                   'plot': plot,
-                                   'rec_date': rec_date,
-                                   'icon': icon,
-                                   'duration': duration,
-                                   'orig_air_date': orig_air_date,
-                                   'event_date_time': event_date_time,
-                                   'synopsis': synopsis,
-                                   'playable': False,
-                                   'del_url': del_url,
-                                   'set_url': set_url,
-                                   'remove_url': remove_url,
-                                   'dvrtimertype': dvrtimertype,
-                                   'mediatype': mediatype,
-                                   })
-            elif (type == 'recurring' and dvrtimertype !=0):
-                aChannelname = {'title': title}
-                aChannel = {'title': title}
-                if aChannelname not in achannels:
-                    achannels.append(aChannelname)
-                    recurring.append({'channel': chan,
-                                   'title': title,
-                                   'episode_title': episode_title,
-                                   'tvshowtitle': title,
-                                   'plot': plot,
-                                   'rec_date': rec_date,
-                                   'icon': icon,
-                                   'duration': duration,
-                                   'orig_air_date': orig_air_date,
-                                   'event_date_time': event_date_time,
-                                   'synopsis': synopsis,
-                                   'playable': False,
-                                   'remove_url': remove_url
-                                   })
-        if (type == 'recordings'):
-            return recordings
-        elif (type == 'scheduled'):
-            return scheduled
-        elif (type == 'recurring'):
-            return recurring
-        else:
-            return []
-        return recordings
+            if Addon.get_setting('activation') == 'true' and Addon.get_setting('renew') == 'true':
+	        self.dlg.ok(Addon.get_string(30000), Addon.get_string(30011))
+	    exit()
 
     def get_movies(self, quality, type='now'):
         from datetime import datetime
         Addon.log('get_movies' + str(quality))
-        token_check = self._get_json('gtv/1/live/getcustomerkey', {'token': Addon.get_setting('token')})['username']
-        if token_check != Addon.get_setting('email'):
-            self.token = self._login()
-        else:
-            self.token = Addon.get_setting('token')
-        passkey = self._get_json('gtv/1/live/viewdvrlist', {'token': self.token})['globalparams']['passkey']
         try:
-            stream_check = self._get_json('stream/1/live/view', {'token': self.token, 'key': passkey, 'scode': 'whtm'})['domain']
+	    token_check = self._get_json('gtv/1/live/getcustomerkey', {'token': Addon.get_setting('token')})['username']
+	    if token_check != Addon.get_setting('email'):
+	        self.token = self._login()
+	    else:
+	        self.token = Addon.get_setting('token')
+	    activation_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['need_account_activation']
+	    if activation_check == True:
+                Addon.set_setting('activation', 'false')
+                self.dlg.ok(Addon.get_string(30000), Addon.get_string(30031))
+                exit()
+            else:
+                Addon.set_setting('activation', 'true')
+	    renew_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['need_account_renew']
+	    if renew_check == True:
+                Addon.set_setting('renew', 'false')
+                self.dlg.ok(Addon.get_string(30000), Addon.get_string(30032))
+                exit()
+            else:
+                Addon.set_setting('renew', 'true')
+	    passkey = self._get_json('gtv/1/live/viewdvrlist', {'token': self.token})['globalparams']['passkey']
+	    try:
+	        stream_check = self._get_json('stream/1/live/view', {'token': self.token, 'key': passkey, 'scode': 'whtm'})['domain']
+	    except:
+	        self.token = self._login_alt()
+	    dvr_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['plan_name']
+	    if 'DVR' in dvr_check:
+	        Addon.set_setting('dvr', 'true')
+	    else:
+	        Addon.set_setting('dvr', 'false')
+	    account_type = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['plan_free']
+	    if account_type == 1 and dvr_check != 'Nittany Plan':
+	        Addon.set_setting('free_package', 'true')
+	    else:
+	        Addon.set_setting('free_package', 'false')
+	    content = self._get_json('gtv/1/live/upcoming', {'token': self.token})
+	    now = []
+	    today = []
+	    later = []
+	    results = content;
+	    for i in results:
+	        chan = Addon.cleanChanName(i['callsign'])
+	        mediatype = i['connectorid'][:2]
+	        icon = self.mcBASE_URL + '/gtv/1/live/viewposter?srsid=' + str(i['srsid']) + '&cs=' + i['callsign'] + '&tid=' + mediatype
+	        title = i['title']
+	        plot = i['description']
+	        plot = plot.replace("&amp;", "&").replace('&quot;','"')
+	        orig_air_date = i['orig_air_date']
+	        event_time = datetime.fromtimestamp(i['ut_start']).strftime('%I:%M %p').lstrip('0')
+	        event_date_month = datetime.fromtimestamp(i['ut_start']).strftime('%m').lstrip('0')
+	        event_date_day = datetime.fromtimestamp(i['ut_start']).strftime('%d').lstrip('0')
+	        event_date_year = datetime.fromtimestamp(i['ut_start']).strftime('%y')
+	        event_date_name = datetime.fromtimestamp(i['ut_start']).strftime('%A - ')
+	        event_date_time = event_date_name + event_date_month + '/' + event_date_day + '/' + event_date_year + ' at ' + event_time
+	        event_date_time_now = datetime.fromtimestamp(i['ut_start']).strftime('%I:%M %p').lstrip('0')
+	        dvrtimertype = i['dvrtimertype']
+	        event_inprogress = i['event_inprogress']
+	        timecat = i['timecat']
+	        synopsis = i['synopsis']
+	        duration = i['runtime']
+	        episode_title = i['episode_title']
+	        app_name = 'dvrrokuplay'
+	        rec_url = '/gtv/1/dvr/updatedvr?scheduleid=' + str(i['scheduleid']) + '&token=' + self.token + '&action=add'
+	
+	        if (type == 'now' and event_inprogress == 1):
+	            if Addon.get_setting('free_package') == 'true':
+	                if chan in ['CW','ABC','FOX','PBS','CBS','NBC','MY9']:
+	                    now.append({'channel': chan,
+	                                'title': title,
+	                                'episode_title': episode_title,
+	                                'tvshowtitle': title,
+	                                'plot': plot,
+	                                'icon': icon,
+	                                'duration': duration,
+	                                'orig_air_date': orig_air_date,
+	                                'event_date_time_now': event_date_time_now,
+	                                'synopsis': synopsis,
+	                                'playable': (event_inprogress == 1),
+	                                'dvrtimertype': dvrtimertype,
+	                                'mediatype': mediatype,
+	                                'rec_url': rec_url
+	                                 })
+	            else:
+	                now.append({'channel': chan,
+	                            'title': title,
+	                            'episode_title': episode_title,
+	                            'tvshowtitle': title,
+	                            'plot': plot,
+	                            'icon': icon,
+	                            'duration': duration,
+	                            'orig_air_date': orig_air_date,
+	                            'event_date_time_now': event_date_time_now,
+	                            'synopsis': synopsis,
+	                            'playable': (event_inprogress == 1),
+	                            'dvrtimertype': dvrtimertype,
+	                            'mediatype': mediatype,
+	                            'rec_url': rec_url
+	                             })
+	        elif (type == 'today' and event_inprogress != 1 and timecat == 'Today'):
+	            if Addon.get_setting('free_package') == 'true':
+	                if chan in ['CW','ABC','FOX','PBS','CBS','NBC','MY9']:
+	                    today.append({'channel': chan,
+	                                  'title': title,
+	                                  'episode_title': episode_title,
+	                                  'tvshowtitle': title,
+	                                  'plot': plot,
+	                                  'icon': icon,
+	                                  'duration': duration,
+	                                  'orig_air_date': orig_air_date,
+	                                  'event_date_time': event_date_time,
+	                                  'synopsis': synopsis,
+	                                  'playable': (event_inprogress == 1),
+	                                  'dvrtimertype': dvrtimertype,
+	                                  'mediatype': mediatype,
+	                                  'rec_url': rec_url
+	                                   })
+	            else:
+	                today.append({'channel': chan,
+	                              'title': title,
+	                              'episode_title': episode_title,
+	                              'tvshowtitle': title,
+	                              'plot': plot,
+	                              'icon': icon,
+	                              'duration': duration,
+	                              'orig_air_date': orig_air_date,
+	                              'event_date_time': event_date_time,
+	                              'synopsis': synopsis,
+	                              'playable': (event_inprogress == 1),
+	                              'dvrtimertype': dvrtimertype,
+	                              'mediatype': mediatype,
+	                              'rec_url': rec_url
+	                               })
+	        elif (type == 'later' and event_inprogress !=0  and timecat == 'Tomorrow'):
+	            if Addon.get_setting('free_package') == 'true':
+	                if chan in ['CW','ABC','FOX','PBS','CBS','NBC','MY9']:
+	                    later.append({'channel': chan,
+	                                  'title': title,
+	                                  'episode_title': episode_title,
+	                                  'tvshowtitle': title,
+	                                  'plot': plot,
+	                                  'icon': icon,
+	                                  'duration': duration,
+	                                  'orig_air_date': orig_air_date,
+	                                  'event_date_time': event_date_time,
+	                                  'synopsis': synopsis,
+	                                  'playable': (event_inprogress == 1),
+	                                  'dvrtimertype': dvrtimertype,
+	                                  'mediatype': mediatype,
+	                                  'rec_url': rec_url
+	                                   })
+	            else:
+	                later.append({'channel': chan,
+	                              'title': title,
+	                              'episode_title': episode_title,
+	                              'tvshowtitle': title,
+	                              'plot': plot,
+	                              'icon': icon,
+	                              'duration': duration,
+	                              'orig_air_date': orig_air_date,
+	                              'event_date_time': event_date_time,
+	                              'synopsis': synopsis,
+	                              'playable': (event_inprogress == 1),
+	                              'dvrtimertype': dvrtimertype,
+	                              'mediatype': mediatype,
+	                              'rec_url': rec_url
+	                               })
+	    if (type == 'now'):
+	        return now
+	    elif (type == 'today'):
+	        return today
+	    elif (type == 'later'):
+	        return later
+	    else:
+	        return []
+	    return now
         except:
-            self.token = self._login_alt()
-        dvr_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['plan_name']
-        if 'DVR' in dvr_check:
-            Addon.set_setting('dvr', 'true')
-        else:
-            Addon.set_setting('dvr', 'false')
-        account_type = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['plan_free']
-        if account_type == 1 and dvr_check != 'Nittany Plan':
-            Addon.set_setting('free_package', 'true')
-        else:
-            Addon.set_setting('free_package', 'false')
-        content = self._get_json('gtv/1/live/upcoming', {'token': self.token})
-        now = []
-        today = []
-        later = []
-        results = content;
-        for i in results:
-            chan = Addon.cleanChanName(i['callsign'])
-            mediatype = i['connectorid'][:2]
-            icon = self.mcBASE_URL + '/gtv/1/live/viewposter?srsid=' + str(i['srsid']) + '&cs=' + i['callsign'] + '&tid=' + mediatype
-            title = i['title']
-            plot = i['description']
-            plot = plot.replace("&amp;", "&").replace('&quot;','"')
-            orig_air_date = i['orig_air_date']
-            event_time = datetime.fromtimestamp(i['ut_start']).strftime('%I:%M %p').lstrip('0')
-            event_date_month = datetime.fromtimestamp(i['ut_start']).strftime('%m').lstrip('0')
-            event_date_day = datetime.fromtimestamp(i['ut_start']).strftime('%d').lstrip('0')
-            event_date_year = datetime.fromtimestamp(i['ut_start']).strftime('%y')
-            event_date_name = datetime.fromtimestamp(i['ut_start']).strftime('%A - ')
-            event_date_time = event_date_name + event_date_month + '/' + event_date_day + '/' + event_date_year + ' at ' + event_time
-            event_date_time_now = datetime.fromtimestamp(i['ut_start']).strftime('%I:%M %p').lstrip('0')
-            dvrtimertype = i['dvrtimertype']
-            event_inprogress = i['event_inprogress']
-            timecat = i['timecat']
-            synopsis = i['synopsis']
-            duration = i['runtime']
-            episode_title = i['episode_title']
-            app_name = 'dvrrokuplay'
-            rec_url = '/gtv/1/dvr/updatedvr?scheduleid=' + str(i['scheduleid']) + '&token=' + self.token + '&action=add'
-
-            if (type == 'now' and event_inprogress == 1):
-                if Addon.get_setting('free_package') == 'true':
-                    if chan in ['CW','ABC','FOX','PBS','CBS','NBC','MY9']:
-                        now.append({'channel': chan,
-                                       'title': title,
-                                       'episode_title': episode_title,
-                                       'tvshowtitle': title,
-                                       'plot': plot,
-                                       'icon': icon,
-                                       'duration': duration,
-                                       'orig_air_date': orig_air_date,
-                                       'event_date_time_now': event_date_time_now,
-                                       'synopsis': synopsis,
-                                       'playable': (event_inprogress == 1),
-                                       'dvrtimertype': dvrtimertype,
-                                       'mediatype': mediatype,
-                                       'rec_url': rec_url
-                                       })
-                else:
-                    now.append({'channel': chan,
-                                       'title': title,
-                                       'episode_title': episode_title,
-                                       'tvshowtitle': title,
-                                       'plot': plot,
-                                       'icon': icon,
-                                       'duration': duration,
-                                       'orig_air_date': orig_air_date,
-                                       'event_date_time_now': event_date_time_now,
-                                       'synopsis': synopsis,
-                                       'playable': (event_inprogress == 1),
-                                       'dvrtimertype': dvrtimertype,
-                                       'mediatype': mediatype,
-                                       'rec_url': rec_url
-                                       })
-            elif (type == 'today' and event_inprogress != 1 and timecat == 'Today'):
-                if Addon.get_setting('free_package') == 'true':
-                    if chan in ['CW','ABC','FOX','PBS','CBS','NBC','MY9']:
-                        today.append({'channel': chan,
-                                       'title': title,
-                                       'episode_title': episode_title,
-                                       'tvshowtitle': title,
-                                       'plot': plot,
-                                       'icon': icon,
-                                       'duration': duration,
-                                       'orig_air_date': orig_air_date,
-                                       'event_date_time': event_date_time,
-                                       'synopsis': synopsis,
-                                       'playable': (event_inprogress == 1),
-                                       'dvrtimertype': dvrtimertype,
-                                       'mediatype': mediatype,
-                                       'rec_url': rec_url
-                                       })
-                else:
-                    today.append({'channel': chan,
-                                       'title': title,
-                                       'episode_title': episode_title,
-                                       'tvshowtitle': title,
-                                       'plot': plot,
-                                       'icon': icon,
-                                       'duration': duration,
-                                       'orig_air_date': orig_air_date,
-                                       'event_date_time': event_date_time,
-                                       'synopsis': synopsis,
-                                       'playable': (event_inprogress == 1),
-                                       'dvrtimertype': dvrtimertype,
-                                       'mediatype': mediatype,
-                                       'rec_url': rec_url
-                                       })
-            elif (type == 'later' and event_inprogress !=0  and timecat == 'Tomorrow'):
-                if Addon.get_setting('free_package') == 'true':
-                    if chan in ['CW','ABC','FOX','PBS','CBS','NBC','MY9']:
-                        later.append({'channel': chan,
-                                       'title': title,
-                                       'episode_title': episode_title,
-                                       'tvshowtitle': title,
-                                       'plot': plot,
-                                       'icon': icon,
-                                       'duration': duration,
-                                       'orig_air_date': orig_air_date,
-                                       'event_date_time': event_date_time,
-                                       'synopsis': synopsis,
-                                       'playable': (event_inprogress == 1),
-                                       'dvrtimertype': dvrtimertype,
-                                       'mediatype': mediatype,
-                                       'rec_url': rec_url
-                                       })
-                else:
-                    later.append({'channel': chan,
-                                       'title': title,
-                                       'episode_title': episode_title,
-                                       'tvshowtitle': title,
-                                       'plot': plot,
-                                       'icon': icon,
-                                       'duration': duration,
-                                       'orig_air_date': orig_air_date,
-                                       'event_date_time': event_date_time,
-                                       'synopsis': synopsis,
-                                       'playable': (event_inprogress == 1),
-                                       'dvrtimertype': dvrtimertype,
-                                       'mediatype': mediatype,
-                                       'rec_url': rec_url
-                                       })
-        if (type == 'now'):
-            return now
-        elif (type == 'today'):
-            return today
-        elif (type == 'later'):
-            return later
-        else:
-            return []
-        return now
+            if Addon.get_setting('activation') == 'true' and Addon.get_setting('renew') == 'true':
+	        self.dlg.ok(Addon.get_string(30000), Addon.get_string(30011))
+	    exit()
 
     def get_sports(self, quality, type='now'):
         Addon.log('get_sports,' + str(quality))
-        token_check = self._get_json('gtv/1/live/getcustomerkey', {'token': Addon.get_setting('token')})['username']
-        if token_check != Addon.get_setting('email'):
-            self.token = self._login()
-        else:
-            self.token = Addon.get_setting('token')
-        passkey = self._get_json('gtv/1/live/viewdvrlist', {'token': self.token})['globalparams']['passkey']
         try:
-            stream_check = self._get_json('stream/1/live/view', {'token': self.token, 'key': passkey, 'scode': 'whtm'})['domain']
+	    token_check = self._get_json('gtv/1/live/getcustomerkey', {'token': Addon.get_setting('token')})['username']
+	    if token_check != Addon.get_setting('email'):
+	        self.token = self._login()
+	    else:
+	        self.token = Addon.get_setting('token')
+	    activation_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['need_account_activation']
+	    if activation_check == True:
+                Addon.set_setting('activation', 'false')
+                self.dlg.ok(Addon.get_string(30000), Addon.get_string(30031))
+                exit()
+            else:
+                Addon.set_setting('activation', 'true')
+	    renew_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['need_account_renew']
+	    if renew_check == True:
+                Addon.set_setting('renew', 'false')
+                self.dlg.ok(Addon.get_string(30000), Addon.get_string(30032))
+                exit()
+            else:
+                Addon.set_setting('renew', 'true')
+	    passkey = self._get_json('gtv/1/live/viewdvrlist', {'token': self.token})['globalparams']['passkey']
+	    try:
+	        stream_check = self._get_json('stream/1/live/view', {'token': self.token, 'key': passkey, 'scode': 'whtm'})['domain']
+	    except:
+	        self.token = self._login_alt()
+	    dvr_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['plan_name']
+	    if 'DVR' in dvr_check:
+	        Addon.set_setting('dvr', 'true')
+	    else:
+	        Addon.set_setting('dvr', 'false')
+	    account_type = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['plan_free']
+	    if account_type == 1 and dvr_check != 'Nittany Plan':
+	        Addon.set_setting('free_package', 'true')
+	    else:
+	        Addon.set_setting('free_package', 'false')
+	    content = self._get_json('gtv/1/live/channelguide', {'token': self.token})
+	    now = []
+	    today = []
+	    later = []
+	    results = content['results'];
+	    import time, datetime
+	    date_today = datetime.date.today()
+	    sports = ['Basketball', 'Football', 'Baseball', 'Soccer', 'Tennis', 'Golf', 'Skating', 'Skateboarding', 'Skiing', 'Snowboarding', 'Rugby', 'Nascar', 'Bowling']
+	    for i in results:
+	        from datetime import datetime
+	        event_time = datetime.fromtimestamp(i['ut_start']).strftime('%I:%M %p').lstrip('0')
+	        event_date_month = datetime.fromtimestamp(i['ut_start']).strftime('%m').lstrip('0')
+	        event_date_day = datetime.fromtimestamp(i['ut_start']).strftime('%d').lstrip('0')
+	        event_date_year = datetime.fromtimestamp(i['ut_start']).strftime('%y')
+	        event_date_name = datetime.fromtimestamp(i['ut_start']).strftime('%A - ')
+	        event_date_time = event_date_name + event_date_month + '/' + event_date_day + '/' + event_date_year + ' at ' + event_time
+	        event_date_time_now = datetime.fromtimestamp(i['ut_start']).strftime('%I:%M %p').lstrip('0')
+	        try:
+	            if type == 'now' and i['order'] == 1:
+	                name = Addon.cleanChanName(i['stream_code'])
+	                mediatype = i['mediatype']
+	                poster_url = self.mcBASE_URL + '/gtv/1/live/viewposter?srsid=' + str(i['srsid']) + '&cs=' + i['callsign'] + '&tid=' + mediatype
+	                mediatype = mediatype.replace('SH', 'tvshow').replace('EP', 'episode').replace('MV', 'movie').replace('SP', 'tvshow')
+	                rec_url = '/gtv/1/dvr/updatedvr?scheduleid=' + str(i['scheduleid']) + '&token=' + self.token + '&action=add'
+	                set_url = '/gtv/1/dvr/updatedvrtimer?connectorid=' + str(i['connectorid']) + '&prgsvcid=' + str(i['prgsvcid']) + '&eventtime=' + str(i['event_time']) + '&token=' + self.token + '&action=add'
+	                if any(i['title'].find(s)>=0 for s in sports) or name == 'ESPN':
+	                    if Addon.get_setting('free_package') == 'true':
+	                        if name in ['CW','ABC','FOX','PBS','CBS','NBC','MY9']:
+	                            now.append({
+	                                    'name': name,
+	                                    'episode_title': i['episode_title'],
+	                                    'title': i['title'],
+	                                    'plot': i['description'],
+	                                    'mediatype': mediatype,
+	                                    'playable': True,
+	                                    'poster_url': poster_url,
+	                                    'rec_url': rec_url,
+	                                    'set_url': set_url,
+	                                    'event_date_time_now': event_date_time_now
+	                                    })
+	                    else:
+	                        now.append({
+	                                'name': name,
+	                                'episode_title': i['episode_title'],
+	                                'title': i['title'],
+	                                'plot': i['description'],
+	                                'mediatype': mediatype,
+	                                'playable': True,
+	                                'poster_url': poster_url,
+	                                'rec_url': rec_url,
+	                                'set_url': set_url,
+	                                'event_date_time_now': event_date_time_now
+	                                })
+	
+	            elif type == 'today' and i['order'] != 1 and str(date_today) == str(i['event_date']):
+	                name = Addon.cleanChanName(i['stream_code'])
+	                mediatype = i['mediatype']
+	                poster_url = self.mcBASE_URL + '/gtv/1/live/viewposter?srsid=' + str(i['srsid']) + '&cs=' + i['callsign'] + '&tid=' + mediatype
+	                mediatype = mediatype.replace('SH', 'tvshow').replace('EP', 'episode').replace('MV', 'movie').replace('SP', 'tvshow')
+	                rec_url = '/gtv/1/dvr/updatedvr?scheduleid=' + str(i['scheduleid']) + '&token=' + self.token + '&action=add'
+	                set_url = '/gtv/1/dvr/updatedvrtimer?connectorid=' + str(i['connectorid']) + '&prgsvcid=' + str(i['prgsvcid']) + '&eventtime=' + str(i['event_time']) + '&token=' + self.token + '&action=add'
+	                if any(i['title'].find(s)>=0 for s in sports) or name == 'ESPN':
+	                    if Addon.get_setting('free_package') == 'true':
+	                        if name in ['CW','ABC','FOX','PBS','CBS','NBC','MY9']:
+	                            today.append({
+	                                    'name': name,
+	                                    'episode_title': i['episode_title'],
+	                                    'title': i['title'],
+	                                    'plot': i['description'],
+	                                    'mediatype': mediatype,
+	                                    'playable': True,
+	                                    'poster_url': poster_url,
+	                                    'rec_url': rec_url,
+	                                    'set_url': set_url,
+	                                    'event_date_time': event_date_time
+	                                    })
+	                    else:
+	                        today.append({
+	                                'name': name,
+	                                'episode_title': i['episode_title'],
+	                                'title': i['title'],
+	                                'plot': i['description'],
+	                                'mediatype': mediatype,
+	                                'playable': True,
+	                                'poster_url': poster_url,
+	                                'rec_url': rec_url,
+	                                'set_url': set_url,
+	                                'event_date_time': event_date_time
+	                                })
+	
+	            elif type == 'later' and i['order'] != 1 and str(date_today) != str(i['event_date']):
+	                name = Addon.cleanChanName(i['stream_code'])
+	                mediatype = i['mediatype']
+	                poster_url = self.mcBASE_URL + '/gtv/1/live/viewposter?srsid=' + str(i['srsid']) + '&cs=' + i['callsign'] + '&tid=' + mediatype
+	                mediatype = mediatype.replace('SH', 'tvshow').replace('EP', 'episode').replace('MV', 'movie').replace('SP', 'tvshow')
+	                rec_url = '/gtv/1/dvr/updatedvr?scheduleid=' + str(i['scheduleid']) + '&token=' + self.token + '&action=add'
+	                set_url = '/gtv/1/dvr/updatedvrtimer?connectorid=' + str(i['connectorid']) + '&prgsvcid=' + str(i['prgsvcid']) + '&eventtime=' + str(i['event_time']) + '&token=' + self.token + '&action=add'
+	                if any(i['title'].find(s)>=0 for s in sports) or name == 'ESPN':
+	                    if Addon.get_setting('free_package') == 'true':
+	                         if name in ['CW','ABC','FOX','PBS','CBS','NBC','MY9']:
+	                            later.append({
+	                                    'name': name,
+	                                    'episode_title': i['episode_title'],
+	                                    'title': i['title'],
+	                                    'plot': i['description'],
+	                                    'mediatype': mediatype,
+	                                    'playable': True,
+	                                    'poster_url': poster_url,
+	                                    'rec_url': rec_url,
+	                                    'set_url': set_url,
+	                                    'event_date_time': event_date_time
+	                                    })
+	                    else:
+	                        later.append({
+	                                'name': name,
+	                                'episode_title': i['episode_title'],
+	                                'title': i['title'],
+	                                'plot': i['description'],
+	                                'mediatype': mediatype,
+	                                'playable': True,
+	                                'poster_url': poster_url,
+	                                'rec_url': rec_url,
+	                                'set_url': set_url,
+	                                'event_date_time': event_date_time
+	                                })
+	        except:
+	            pass
+	    if (type == 'now'):
+	        return now
+	    elif (type == 'today'):
+	        return today
+	    elif (type == 'later'):
+	        return later
+	    else:
+	        return []
+	    return now
         except:
-            self.token = self._login_alt()
-        dvr_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['plan_name']
-        if 'DVR' in dvr_check:
-            Addon.set_setting('dvr', 'true')
-        else:
-            Addon.set_setting('dvr', 'false')
-        account_type = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['plan_free']
-        if account_type == 1 and dvr_check != 'Nittany Plan':
-            Addon.set_setting('free_package', 'true')
-        else:
-            Addon.set_setting('free_package', 'false')
-        content = self._get_json('gtv/1/live/channelguide', {'token': self.token})
-        now = []
-        today = []
-        later = []
-        results = content['results'];
-        import time, datetime
-        date_today = datetime.date.today()
-        sports = ['Basketball', 'Football', 'Baseball', 'Soccer', 'Tennis', 'Golf', 'Skating', 'Skateboarding', 'Skiing', 'Snowboarding', 'Rugby', 'Nascar', 'Bowling']
-        for i in results:
-            from datetime import datetime
-            event_time = datetime.fromtimestamp(i['ut_start']).strftime('%I:%M %p').lstrip('0')
-            event_date_month = datetime.fromtimestamp(i['ut_start']).strftime('%m').lstrip('0')
-            event_date_day = datetime.fromtimestamp(i['ut_start']).strftime('%d').lstrip('0')
-            event_date_year = datetime.fromtimestamp(i['ut_start']).strftime('%y')
-            event_date_name = datetime.fromtimestamp(i['ut_start']).strftime('%A - ')
-            event_date_time = event_date_name + event_date_month + '/' + event_date_day + '/' + event_date_year + ' at ' + event_time
-            event_date_time_now = datetime.fromtimestamp(i['ut_start']).strftime('%I:%M %p').lstrip('0')
-            try:
-                if type == 'now' and i['order'] == 1:
-                    name = Addon.cleanChanName(i['stream_code'])
-                    mediatype = i['mediatype']
-                    poster_url = self.mcBASE_URL + '/gtv/1/live/viewposter?srsid=' + str(i['srsid']) + '&cs=' + i['callsign'] + '&tid=' + mediatype
-                    mediatype = mediatype.replace('SH', 'tvshow').replace('EP', 'episode').replace('MV', 'movie')
-                    rec_url = '/gtv/1/dvr/updatedvr?scheduleid=' + str(i['scheduleid']) + '&token=' + self.token + '&action=add'
-                    set_url = '/gtv/1/dvr/updatedvrtimer?connectorid=' + str(i['connectorid']) + '&prgsvcid=' + str(i['prgsvcid']) + '&eventtime=' + str(i['event_time']) + '&token=' + self.token + '&action=add'
-                    if i['title'] in sports or name == 'ESPN':
-                        if Addon.get_setting('free_package') == 'true':
-                            if name in ['CW','ABC','FOX','PBS','CBS','NBC','MY9']:
-                                now.append({
-                                    'name': name,
-                                    'episode_title': i['episode_title'],
-                                    'title': i['title'],
-                                    'plot': i['description'],
-                                    'mediatype': mediatype,
-                                    'playable': True,
-                                    'poster_url': poster_url,
-                                    'rec_url': rec_url,
-                                    'set_url': set_url,
-                                    'event_date_time_now': event_date_time_now
-                                    })
-                        else:
-                            now.append({
-                                'name': name,
-                                'episode_title': i['episode_title'],
-                                'title': i['title'],
-                                'plot': i['description'],
-                                'mediatype': mediatype,
-                                'playable': True,
-                                'poster_url': poster_url,
-                                'rec_url': rec_url,
-                                'set_url': set_url,
-                                'event_date_time_now': event_date_time_now
-                                })
-
-                elif type == 'today' and i['order'] != 1 and str(date_today) == str(i['event_date']):
-                    name = Addon.cleanChanName(i['stream_code'])
-                    mediatype = i['mediatype']
-                    poster_url = self.mcBASE_URL + '/gtv/1/live/viewposter?srsid=' + str(i['srsid']) + '&cs=' + i['callsign'] + '&tid=' + mediatype
-                    mediatype = mediatype.replace('SH', 'tvshow').replace('EP', 'episode').replace('MV', 'movie')
-                    rec_url = '/gtv/1/dvr/updatedvr?scheduleid=' + str(i['scheduleid']) + '&token=' + self.token + '&action=add'
-                    set_url = '/gtv/1/dvr/updatedvrtimer?connectorid=' + str(i['connectorid']) + '&prgsvcid=' + str(i['prgsvcid']) + '&eventtime=' + str(i['event_time']) + '&token=' + self.token + '&action=add'
-                    if i['title'] in sports or name == 'ESPN':
-                        if Addon.get_setting('free_package') == 'true':
-                            if name in ['CW','ABC','FOX','PBS','CBS','NBC','MY9']:
-                                today.append({
-                                    'name': name,
-                                    'episode_title': i['episode_title'],
-                                    'title': i['title'],
-                                    'plot': i['description'],
-                                    'mediatype': mediatype,
-                                    'playable': True,
-                                    'poster_url': poster_url,
-                                    'rec_url': rec_url,
-                                    'set_url': set_url,
-                                    'event_date_time': event_date_time
-                                    })
-                        else:
-                            today.append({
-                                'name': name,
-                                'episode_title': i['episode_title'],
-                                'title': i['title'],
-                                'plot': i['description'],
-                                'mediatype': mediatype,
-                                'playable': True,
-                                'poster_url': poster_url,
-                                'rec_url': rec_url,
-                                'set_url': set_url,
-                                'event_date_time': event_date_time
-                                })
-
-                elif type == 'later' and i['order'] != 1 and str(date_today) != str(i['event_date']):
-                    name = Addon.cleanChanName(i['stream_code'])
-                    mediatype = i['mediatype']
-                    poster_url = self.mcBASE_URL + '/gtv/1/live/viewposter?srsid=' + str(i['srsid']) + '&cs=' + i['callsign'] + '&tid=' + mediatype
-                    mediatype = mediatype.replace('SH', 'tvshow').replace('EP', 'episode').replace('MV', 'movie')
-                    rec_url = '/gtv/1/dvr/updatedvr?scheduleid=' + str(i['scheduleid']) + '&token=' + self.token + '&action=add'
-                    set_url = '/gtv/1/dvr/updatedvrtimer?connectorid=' + str(i['connectorid']) + '&prgsvcid=' + str(i['prgsvcid']) + '&eventtime=' + str(i['event_time']) + '&token=' + self.token + '&action=add'
-                    if i['title'] in sports or name == 'ESPN':
-                        if Addon.get_setting('free_package') == 'true':
-                            if name in ['CW','ABC','FOX','PBS','CBS','NBC','MY9']:
-                                later.append({
-                                    'name': name,
-                                    'episode_title': i['episode_title'],
-                                    'title': i['title'],
-                                    'plot': i['description'],
-                                    'mediatype': mediatype,
-                                    'playable': True,
-                                    'poster_url': poster_url,
-                                    'rec_url': rec_url,
-                                    'set_url': set_url,
-                                    'event_date_time': event_date_time
-                                    })
-                        else:
-                            later.append({
-                                'name': name,
-                                'episode_title': i['episode_title'],
-                                'title': i['title'],
-                                'plot': i['description'],
-                                'mediatype': mediatype,
-                                'playable': True,
-                                'poster_url': poster_url,
-                                'rec_url': rec_url,
-                                'set_url': set_url,
-                                'event_date_time': event_date_time
-                                })
-            except:
-                pass
-        if (type == 'now'):
-            return now
-        elif (type == 'today'):
-            return today
-        elif (type == 'later'):
-            return later
-        else:
-            return []
-        return now
+            if Addon.get_setting('activation') == 'true' and Addon.get_setting('renew') == 'true':
+	        self.dlg.ok(Addon.get_string(30000), Addon.get_string(30011))
+	    exit()
 
     def get_guidedata(self, quality):
         Addon.log('get_guidedata')
-        token_check = self._get_json('gtv/1/live/getcustomerkey', {'token': Addon.get_setting('token')})['username']
-        if token_check != Addon.get_setting('email'):
-            self.token = self._login()
-        else:
-            self.token = Addon.get_setting('token')
-        passkey = self._get_json('gtv/1/live/viewdvrlist', {'token': self.token})['globalparams']['passkey']
         try:
-            stream_check = self._get_json('stream/1/live/view', {'token': self.token, 'key': passkey, 'scode': 'whtm'})['domain']
-        except:
-            self.token = self._login_alt()
-        content = self._get_json('gtv/1/live/channelguide', {'token': self.token})
-        results = content['results'];
-        now = time();
-        doc = minidom.Document();
-        base = doc.createElement('tv');
-        base.setAttribute("cache-version", str(now));
-        base.setAttribute("cache-time", str(now));
-        base.setAttribute("generator-info-name", "IPTV Plugin");
-        base.setAttribute("generator-info-url", "http://www.xmltv.org/");
-        doc.appendChild(base)
-        channels = self.get_channels(quality);
-
-        for channel in channels:
-            name = channel['name'];
-            id = channel['name'];
-            c_entry = doc.createElement('channel');
-            c_entry.setAttribute("id", id);
-            base.appendChild(c_entry)
-            dn_entry = doc.createElement('display-name');
-            dn_entry_content = doc.createTextNode(Addon.cleanChanName(name));
-            dn_entry.appendChild(dn_entry_content);
-            c_entry.appendChild(dn_entry);
-            dn_entry = doc.createElement('display-name');
-            dn_entry_content = doc.createTextNode(Addon.cleanChanName(id));
-            dn_entry.appendChild(dn_entry_content);
-            c_entry.appendChild(dn_entry);
-
-        for programme in results:
-
-            event_time = datetime.fromtimestamp(programme['ut_start']).strftime('%I:%M %p').lstrip('0')
-            event_date_month = datetime.fromtimestamp(programme['ut_start']).strftime('%m').lstrip('0')
-            event_date_day = datetime.fromtimestamp(programme['ut_start']).strftime('%d').lstrip('0')
-            event_date_year = datetime.fromtimestamp(programme['ut_start']).strftime('%y')
-            event_date_name = datetime.fromtimestamp(programme['ut_start']).strftime('%A - ')
-            event_date_time = event_date_name + event_date_month + '/' + event_date_day + '/' + event_date_year + ' at ' + event_time
-            if programme['event_inprogress'] == 1:
-                event_date_time = 'Started at ' + datetime.fromtimestamp(programme['ut_start']).strftime('%I:%M %p').lstrip('0')
-                event_inprogress = '1'
+	    token_check = self._get_json('gtv/1/live/getcustomerkey', {'token': Addon.get_setting('token')})['username']
+	    if token_check != Addon.get_setting('email'):
+	        self.token = self._login()
+	    else:
+	        self.token = Addon.get_setting('token')
+	    activation_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['need_account_activation']
+	    if activation_check == True:
+                Addon.set_setting('activation', 'false')
+                self.dlg.ok(Addon.get_string(30000), Addon.get_string(30031))
+                exit()
             else:
-                event_inprogress= '0'
-            mediatype = programme['mediatype']
-            mediatype = mediatype.replace('SH', 'tvshow').replace('EP', 'episode').replace('MV', 'movie')
-            rec_url = '/gtv/1/dvr/updatedvr?scheduleid=' + str(programme['scheduleid']) + '&token=' + self.token + '&action=add'
-            set_url = '/gtv/1/dvr/updatedvrtimer?connectorid=' + str(programme['connectorid']) + '&prgsvcid=' + str(programme['prgsvcid']) + '&eventtime=' + str(programme['event_time']) + '&token=' + self.token + '&action=add'
-
-            start_time 	= datetime.fromtimestamp(float(programme['ut_start']));
-            stop_time	= start_time + timedelta(seconds=int(programme['runtime']));
-            
-            pg_entry = doc.createElement('programme');
-            pg_entry.setAttribute("start", start_time.strftime('%Y%m%d%H%M%S 0'));
-            pg_entry.setAttribute("stop", stop_time.strftime('%Y%m%d%H%M%S 0'));
-            pg_entry.setAttribute("channel", programme['callsign']);
-            base.appendChild(pg_entry);
-            
-            t_entry = doc.createElement('title');
-            t_entry.setAttribute("lang", "en");
-            t_entry_content = doc.createTextNode(programme['title']);
-            t_entry.appendChild(t_entry_content);
-            pg_entry.appendChild(t_entry);
-            
-            st_entry = doc.createElement('sub-title');
-            st_entry.setAttribute("lang", "en");
-            st_entry_content = doc.createTextNode(programme['episode_title']);
-            st_entry.appendChild(st_entry_content);
-            pg_entry.appendChild(st_entry);
-
-            d_entry = doc.createElement('desc');
-            d_entry.setAttribute("lang", "en");
-            d_entry_content = doc.createTextNode(programme['description']);
-            d_entry.appendChild(d_entry_content);
-            pg_entry.appendChild(d_entry);
-
-            dt_entry = doc.createElement('date');
-            dt_entry_content = doc.createTextNode(start_time.strftime('%Y%m%d'));
-            dt_entry.appendChild(dt_entry_content);
-            pg_entry.appendChild(dt_entry);
-
-            c_entry = doc.createElement('category');
-            c_entry_content = doc.createTextNode(programme['xcdrappname']);
-            c_entry.appendChild(c_entry_content);
-            pg_entry.appendChild(c_entry);
-            d_entry = doc.createElement('length');
-            d_entry.setAttribute("units", "seconds");
-            d_entry_content = doc.createTextNode(str(programme['actualremainingtime']));
-            d_entry.appendChild(d_entry_content);
-            pg_entry.appendChild(d_entry);
-            en_entry = doc.createElement('episode-num');
-            en_entry.setAttribute('system', 'dd_progid');
-            en_entry_content = doc.createTextNode(programme['content_id']);
-            en_entry.appendChild(en_entry_content);
-            pg_entry.appendChild(en_entry);
-
-            i_entry = doc.createElement('icon');
-            i_entry.setAttribute("src", self.mcBASE_URL + '/gtv/1/live/viewposter?srsid=' + str(programme['srsid']) + '&cs=' + programme['callsign'] + '&tid=' + programme['mediatype']);
-            pg_entry.appendChild(i_entry);
-
-            d_entry = doc.createElement('event_date_time');
-            d_entry_content = doc.createTextNode(str(event_date_time));
-            d_entry.appendChild(d_entry_content);
-            pg_entry.appendChild(d_entry);
-
-            d_entry = doc.createElement('mediatype');
-            d_entry_content = doc.createTextNode(str(mediatype));
-            d_entry.appendChild(d_entry_content);
-            pg_entry.appendChild(d_entry);
-
-            i_entry = doc.createElement('rec_url');
-            i_entry.setAttribute("src", rec_url);
-            pg_entry.appendChild(i_entry);
-
-            i_entry = doc.createElement('set_url');
-            i_entry.setAttribute("src", set_url);
-            pg_entry.appendChild(i_entry);
-
-            d_entry = doc.createElement('event_inprogress');
-            d_entry_content = doc.createTextNode(str(event_inprogress));
-            d_entry.appendChild(d_entry_content);
-            pg_entry.appendChild(d_entry);
-
-        return doc
+                Addon.set_setting('activation', 'true')
+	    renew_check = self._get_json('gtv/1/live/getuserbytoken', {'token': self.token})['data']['need_account_renew']
+	    if renew_check == True:
+                Addon.set_setting('renew', 'false')
+                self.dlg.ok(Addon.get_string(30000), Addon.get_string(30032))
+                exit()
+            else:
+                Addon.set_setting('renew', 'true')
+	    passkey = self._get_json('gtv/1/live/viewdvrlist', {'token': self.token})['globalparams']['passkey']
+	    try:
+	        stream_check = self._get_json('stream/1/live/view', {'token': self.token, 'key': passkey, 'scode': 'whtm'})['domain']
+	    except:
+	        self.token = self._login_alt()
+	    content = self._get_json('gtv/1/live/channelguide', {'token': self.token})
+	    results = content['results'];
+	    now = time();
+	    doc = minidom.Document();
+	    base = doc.createElement('tv');
+	    base.setAttribute("cache-version", str(now));
+	    base.setAttribute("cache-time", str(now));
+	    base.setAttribute("generator-info-name", "IPTV Plugin");
+	    base.setAttribute("generator-info-url", "http://www.xmltv.org/");
+	    doc.appendChild(base)
+	    channels = self.get_channels(quality);
+	
+	    for channel in channels:
+	        name = channel['name'];
+	        id = channel['name'];
+	        c_entry = doc.createElement('channel');
+	        c_entry.setAttribute("id", id);
+	        base.appendChild(c_entry)
+	        dn_entry = doc.createElement('display-name');
+	        dn_entry_content = doc.createTextNode(Addon.cleanChanName(name));
+	        dn_entry.appendChild(dn_entry_content);
+	        c_entry.appendChild(dn_entry);
+	        dn_entry = doc.createElement('display-name');
+	        dn_entry_content = doc.createTextNode(Addon.cleanChanName(id));
+	        dn_entry.appendChild(dn_entry_content);
+	        c_entry.appendChild(dn_entry);
+	
+	    for programme in results:
+	        event_time = datetime.fromtimestamp(programme['ut_start']).strftime('%I:%M %p').lstrip('0')
+	        event_date_month = datetime.fromtimestamp(programme['ut_start']).strftime('%m').lstrip('0')
+	        event_date_day = datetime.fromtimestamp(programme['ut_start']).strftime('%d').lstrip('0')
+	        event_date_year = datetime.fromtimestamp(programme['ut_start']).strftime('%y')
+	        event_date_name = datetime.fromtimestamp(programme['ut_start']).strftime('%A - ')
+	        event_date_time = event_date_name + event_date_month + '/' + event_date_day + '/' + event_date_year + ' at ' + event_time
+	        if programme['event_inprogress'] == 1:
+	            event_date_time = 'Started at ' + datetime.fromtimestamp(programme['ut_start']).strftime('%I:%M %p').lstrip('0')
+	            event_inprogress = '1'
+	        else:
+	            event_inprogress= '0'
+	        mediatype = programme['mediatype']
+	        mediatype = mediatype.replace('SH', 'tvshow').replace('EP', 'episode').replace('MV', 'movie').replace('SP', 'tvshow')
+	        rec_url = '/gtv/1/dvr/updatedvr?scheduleid=' + str(programme['scheduleid']) + '&token=' + self.token + '&action=add'
+	        set_url = '/gtv/1/dvr/updatedvrtimer?connectorid=' + str(programme['connectorid']) + '&prgsvcid=' + str(programme['prgsvcid']) + '&eventtime=' + str(programme['event_time']) + '&token=' + self.token + '&action=add'
+	
+	        start_time = datetime.fromtimestamp(float(programme['ut_start']));
+	        stop_time = start_time + timedelta(seconds=int(programme['runtime']));
+	            
+	        pg_entry = doc.createElement('programme');
+	        pg_entry.setAttribute("start", start_time.strftime('%Y%m%d%H%M%S 0'));
+	        pg_entry.setAttribute("stop", stop_time.strftime('%Y%m%d%H%M%S 0'));
+	        pg_entry.setAttribute("channel", programme['callsign']);
+	        base.appendChild(pg_entry);
+	            
+	        t_entry = doc.createElement('title');
+	        t_entry.setAttribute("lang", "en");
+	        t_entry_content = doc.createTextNode(programme['title']);
+	        t_entry.appendChild(t_entry_content);
+	        pg_entry.appendChild(t_entry);
+	            
+	        st_entry = doc.createElement('sub-title');
+	        st_entry.setAttribute("lang", "en");
+	        st_entry_content = doc.createTextNode(programme['episode_title']);
+	        st_entry.appendChild(st_entry_content);
+	        pg_entry.appendChild(st_entry);
+	
+	        d_entry = doc.createElement('desc');
+	        d_entry.setAttribute("lang", "en");
+	        d_entry_content = doc.createTextNode(programme['description']);
+	        d_entry.appendChild(d_entry_content);
+	        pg_entry.appendChild(d_entry);
+	
+	        dt_entry = doc.createElement('date');
+	        dt_entry_content = doc.createTextNode(start_time.strftime('%Y%m%d'));
+	        dt_entry.appendChild(dt_entry_content);
+	        pg_entry.appendChild(dt_entry);
+	
+	        c_entry = doc.createElement('category');
+	        c_entry_content = doc.createTextNode(programme['xcdrappname']);
+	        c_entry.appendChild(c_entry_content);
+	        pg_entry.appendChild(c_entry);
+	        d_entry = doc.createElement('length');
+	        d_entry.setAttribute("units", "seconds");
+	        d_entry_content = doc.createTextNode(str(programme['actualremainingtime']));
+	        d_entry.appendChild(d_entry_content);
+	        pg_entry.appendChild(d_entry);
+	        en_entry = doc.createElement('episode-num');
+	        en_entry.setAttribute('system', 'dd_progid');
+	        en_entry_content = doc.createTextNode(programme['content_id']);
+	        en_entry.appendChild(en_entry_content);
+	        pg_entry.appendChild(en_entry);
+	
+	        i_entry = doc.createElement('icon');
+	        i_entry.setAttribute("src", self.mcBASE_URL + '/gtv/1/live/viewposter?srsid=' + str(programme['srsid']) + '&cs=' + programme['callsign'] + '&tid=' + programme['mediatype']);
+	        pg_entry.appendChild(i_entry);
+	
+	        d_entry = doc.createElement('event_date_time');
+	        d_entry_content = doc.createTextNode(str(event_date_time));
+	        d_entry.appendChild(d_entry_content);
+	        pg_entry.appendChild(d_entry);
+	
+	        d_entry = doc.createElement('mediatype');
+	        d_entry_content = doc.createTextNode(str(mediatype));
+	        d_entry.appendChild(d_entry_content);
+	        pg_entry.appendChild(d_entry);
+	
+	        i_entry = doc.createElement('rec_url');
+	        i_entry.setAttribute("src", rec_url);
+	        pg_entry.appendChild(i_entry);
+	
+	        i_entry = doc.createElement('set_url');
+	        i_entry.setAttribute("src", set_url);
+	        pg_entry.appendChild(i_entry);
+	
+	        d_entry = doc.createElement('event_inprogress');
+	        d_entry_content = doc.createTextNode(str(event_inprogress));
+	        d_entry.appendChild(d_entry_content);
+	        pg_entry.appendChild(d_entry);
+	
+	    return doc
+        except:
+            if Addon.get_setting('activation') == 'true' and Addon.get_setting('renew') == 'true':
+	        self.dlg.ok(Addon.get_string(30000), Addon.get_string(30011))
+	    exit()
 
     def get_tvguide(self, filename, type='channels', name=''):
         Addon.log('get_tvguide,' + type + ',' + name)
